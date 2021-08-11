@@ -25,6 +25,7 @@ class TreeController extends Controller
             //Titulo
             $trees = $this->getDataEstructura(Auth::id(), $type);
             $type = ucfirst($type);
+            //dd($type);
             $base = Auth::user();
             $base->logoarbol = asset('assets/img/sistema/favicon.png');
             $binario = $this->getBinaryPoints(Auth::user()->id);
@@ -119,7 +120,7 @@ class TreeController extends Controller
                 'matriz' => 'binary_id',
                 'alterno' => 'alternativo_id'
             ];
-            
+
             $childres = $this->getData($id, 1, $genealogyType[$type]);
             $trees = $this->getChildren($childres, 2, $genealogyType[$type]);
             return $trees;
@@ -180,7 +181,7 @@ class TreeController extends Controller
     }
 
     /**
-     * Se trare la informacion de los hijos 
+     * Se trare la informacion de los hijos
      *
      * @param integer $id - id a buscar hijos
      * @param integer $nivel - nivel en que los hijos se encuentra
@@ -203,7 +204,7 @@ class TreeController extends Controller
     }
 
     /**
-     * Se trare la informacion de los hijos 
+     * Se trare la informacion de los hijos
      *
      * @param integer $id - id a buscar hijos
      * @param integer $nivel - nivel en que los hijos se encuentra
@@ -230,13 +231,13 @@ class TreeController extends Controller
      * @return void
      */
     public function getChidrens2($parent, $array_tree_user, $nivel, $typeTree, $allNetwork)
-    {   
+    {
         try {
             if (!is_array($array_tree_user))
             $array_tree_user = [];
-        
+
             $data = $this->getData($parent, $nivel, $typeTree);
-            
+
             if (count($data) > 0) {
                 if ($allNetwork == 1) {
                     foreach($data as $user){
@@ -259,13 +260,13 @@ class TreeController extends Controller
     }
 
     public function getChidrenHasta5($parent, $array_tree_user, $nivel, $typeTree, $allNetwork)
-    {   
+    {
         try {
             if (!is_array($array_tree_user))
             $array_tree_user = [];
-        
+
             $data = $this->getData($parent, $nivel, $typeTree);
-            
+
             if (count($data) > 0) {
                 if ($allNetwork == 1) {
                     foreach($data as $user){
@@ -304,16 +305,16 @@ class TreeController extends Controller
         try {
             if (!is_array($array_tree_user))
             $array_tree_user = [];
-        
+
             $data = $this->getDataSponsor($child, $nivel, $typeTree);
-            
+
             if (count($data) > 0) {
                 foreach($data as $user){
                     $array_tree_user [] = $user;
                     $array_tree_user = $this->getSponsor($user->$keySponsor, $array_tree_user, ($nivel+1), $typeTree, $keySponsor);
                 }
             }
-            return $array_tree_user;   
+            return $array_tree_user;
         } catch (\Throwable $th) {
             Log::error('Tree - getSponsor -> Error: '.$th);
             abort(403, "Ocurrio un error, contacte con el administrador");
@@ -321,9 +322,9 @@ class TreeController extends Controller
     }
 
 
-    
+
     /**
-   * Obtiene un ID de Posicionamiento Valido 
+   * Obtiene un ID de Posicionamiento Valido
    *
    * @param integer $id - primer id a verificar
    * @param string $lado - lado donde se insertara el referido
