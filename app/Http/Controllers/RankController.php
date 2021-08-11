@@ -7,11 +7,23 @@ use App\Models\Ranks;
 use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Log;
 
 class RankController extends Controller
 {
     //
+
+    public function testRank()
+    {
+        Log::info('Inicio Cron CheckRango '.Carbon::now());
+        $userRanks = User::all()->where('point_rank', '>', 0);
+        foreach ($userRanks as $user) {
+            $this->checkRank($user->id);
+        }
+        Log::info('Fin Cron CheckRango '.Carbon::now());
+
+        return ('Fin Cron CheckRango '.Carbon::now());
+    }
 
     /**
      * Permite verificar el rango de un usuario

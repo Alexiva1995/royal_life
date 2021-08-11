@@ -4,7 +4,7 @@
 
 <section>
 <div class="row match-height d-flex justify-content-center">
-    <div class="col-md-6 col-12">
+    <div class="col-md-12 col-12">
         <div class="card">
 
             <div class="card-header">

@@ -17,7 +17,8 @@
                                     <th>Paquete</th>
                                     <th>Fecha de Creación</th>
                                     <th>Monto</th>
-                                    <th>Estado</th>      
+                                    <th>Estado</th>  
+                                    <th>Accion</th>      
                                 </tr>
 
                             </thead>
@@ -40,9 +41,77 @@
                                     @elseif($orden->status >= '2')
                                     <td> <a class=" btn btn-danger text-white text-bold-600">Cancelado</a></td>
                                     @endif
+                                    <td>
+                                        <a class="btn btn-outline-primary text-white text-bold-600" data-toggle="modal"
+                                            data-target="#ModalStatus{{$orden->id}}"><i class="fa fa-eye"></i></a>
 
+                                    </td>
                                     
                                 </tr>
+
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="ModalStatus{{$orden->id}}" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Cancelar compra</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <form action="{{ route('orden.detail') }}" method="POST">
+                                                @csrf
+                                                <div class="modal-body">
+
+                                                    <input type="hidden" name="id" value="{{$orden->id}}">
+                                                    Detalles de la Orden
+                                                    <br>
+                                                    <input type="hidden"  name="iduser" value="{{$orden->iduser}}">
+                                                    <br>
+                                                    <p>Usuario</p>
+                                                    <input id="monto_bruto" name="monto_bruto" type="text"
+                                                        class="inputransparente text-white form-control" 
+                                                        value="{{$orden->name}}">
+                                                    <input type="hidden"  name="total" value="">
+                                                    <br>
+                                                    <p>Paquete</p>
+                                                    <input id="monto_bruto" name="monto_bruto" type="text"
+                                                        class="inputransparente text-white form-control" 
+                                                        value="{{$orden->monto}}">
+                                                    <input type="hidden"  name="total" value="">
+                                                    <br>
+                                                    <p>Fecha de Creacion</p>
+                                                    <input id="monto_bruto" name="monto_bruto" type="text"
+                                                        class="inputransparente text-white form-control" 
+                                                        value="{{date('Y-m-d', strtotime($orden->created_at))}}">
+                                                    <input type="hidden"  name="total" value="">
+                                                    <br>
+                                                    <p>Monto</p>
+                                                    <input id="monto_bruto" name="monto_bruto" type="text"
+                                                        class="inputransparente text-white form-control" 
+                                                        value="{{$orden->total}}">
+                                                    <input type="hidden"  name="total" value="">
+                                                    <br>
+                                                    <p class="text-center">Estado</p>
+                                                    @if ($orden->status == '0')
+                                                    <a class=" btn btn-info text-white text-bold-600 d-flex justify-content-center" data-toggle="modal" data-target="#ModalStatus{{$orden->id}}">Esperando</a>
+                                                    @elseif($orden->status == '1')
+                                                    <a class=" btn btn-success text-white text-bold-600 d-flex justify-content-center">Aprobado</a>
+                                                    @elseif($orden->status >= '2')
+                                                    <a class=" btn btn-danger text-white text-bold-600 d-flex justify-content-center">Cancelado</a>
+                                                    @endif
+                                                    
+                                                    <br>
+                                                                                                
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
 
                                 <!-- Modal -->
                                 <div class="modal fade" id="ModalStatus{{$orden->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

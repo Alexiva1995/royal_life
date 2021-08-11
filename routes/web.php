@@ -163,6 +163,7 @@ Route::prefix('dashboard')->middleware('menu', 'auth')->group(function ()
         //Rutas para los reportes
         Route::prefix('reports')->group(function(){
             Route::get('purchase', 'ReporteController@indexPedidos')->name('reports.pedidos');
+            Route::post('/detailOrden', 'ReporteController@detailOrden')->name('orden.detail');
             Route::get('commission', 'ReporteController@indexComision')->name('reports.comision');
         });
 
@@ -172,4 +173,6 @@ Route::prefix('dashboard')->middleware('menu', 'auth')->group(function ()
     });
 
     Route::get('dataGrafica', 'HomeController@dataGrafica')->name('dataGrafica');
+
+    Route::get('testRank', 'RankController@testRank')->name('testRank');
 });

@@ -54,4 +54,9 @@ class ReporteController extends Controller
     {
         
     }
+
+    public function detailOrden()
+    {
+        return back();
+    }
 }
