@@ -282,6 +282,24 @@ class Menu
                 'complementoruta' => '',
             ],
             // Fin Soporte
+
+            'Crons' => [
+                'submenu' => 1,
+                'ruta' => 'javascript:;',
+                'blank'=> '', // si es para una pagina diferente del sistema solo coloquen _blank
+                'icon' => 'fa fa-list-alt',
+                'complementoruta' => '',
+                'submenus' => [
+                    
+                    [
+                        'name' => 'Check role',
+                        'blank'=> '', // si es para una pagina diferente del sistema solo coloquen _blank
+                        'ruta' => route('testRank'),
+                        'complementoruta' => ''
+                    ]
+
+                ]
+            ],
         ];
     }
 }

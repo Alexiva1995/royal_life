@@ -7,7 +7,7 @@
 
 <section>
     <div class="row match-height d-flex justify-content-center">
-        <div class="col-md-6 col-12">
+        <div class="col-md-12 col-12">
             <div class="card bg-lp">
                 <div class="card-header">
                     <h4 class="card-title text-white">Editando el Ticket #{{ $ticket->id}}</h4>
