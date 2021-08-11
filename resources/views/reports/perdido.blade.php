@@ -43,7 +43,7 @@
                                     @endif
                                     <td>
                                         <a class="btn btn-outline-primary text-white text-bold-600" data-toggle="modal"
-                                            data-target="#ModalStatus{{$orden->id}}"><i class="fa fa-eye"></i></a>
+                                            data-target="#ModalDetail{{$orden->id}}"><i class="fa fa-eye"></i></a>
 
                                     </td>
                                     
@@ -51,7 +51,7 @@
 
 
                                 <!-- Modal -->
-                                <div class="modal fade" id="ModalStatus{{$orden->id}}" tabindex="-1"
+                                <div class="modal fade" id="ModalDetail{{$orden->id}}" tabindex="-1"
                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
