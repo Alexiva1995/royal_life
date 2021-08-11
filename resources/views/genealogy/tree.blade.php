@@ -6,7 +6,11 @@
 
     <div class="row   d-flex justify-content-center">
 
-      {{--   @include('genealogy.component.points')--}}
+      {{--  --}}
+
+      @if($type == 'Matriz')
+      @include('genealogy.component.points')
+      @endif
 
         <div class="col-md-6 col-sm-12 art" >
             <div class="container ">
