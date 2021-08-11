@@ -4,12 +4,12 @@
 
 <div class="container">
 
-    <div class="row mt-3 mb-5 pb-3">
+    <div class="row   d-flex justify-content-center">
 
-        @include('genealogy.component.points')
+      {{--   @include('genealogy.component.points')--}}
 
-        <div class="col-md-4 col-sm-12 art" id="tarjeta">
-            <div class="container p-2">
+        <div class="col-md-6 col-sm-12 art" >
+            <div class="container ">
                 <div class="row">
                     <div class="col-12 mb-3 d-flex justify-content-center">
                         <img id="imagen" class="rounded-circle" width="110px" height="110px">
@@ -36,100 +36,102 @@
             </div>
         </div>
 
-    </div>
+        <div class="col-12 " >
+            <div class="padre ">
+                <ul>
+                    <li class="baseli">
 
-    <div class="col-12">
-        <div class="padre">
-            <ul>
-                <li class="baseli">
-
-                    <a class="base" href="#">
-                        @if (empty($base->photoDB))
-                        <img src="{{asset('assets/img/royal_green/logos/logo.svg')}}" alt="{{$base->name}}"
-                            title="{{$base->name}}" class="pt-1 rounded-circle"
-                            style="width: 95%;height: 107%;margin-left: 0px;margin-top: -8px;">
-                        @else
-                        <img src="{{asset('storage/photo/'.$base->photoDB)}}" alt="{{$base->name}}"
-                            title="{{$base->name}}" class="pt-1 rounded-circle"
-                            style="width: 95%;height: 107%;margin-left: 0px;margin-top: -8px;">
-                        @endif
-                    </a>
-
-                    {{-- Nivel 1 --}}
-                    <ul>
-                        @foreach ($trees as $child)
-                        {{-- genera el lado binario derecho haciendo vacio --}}
-                        @include('genealogy.component.sideEmpty', ['side' => 'D', 'cant' => count($trees),'ladouser' =>
-                        $child->binary_side])
-                        <li href="#prestamo" data-toggle="modal">
-                            @include('genealogy.component.subniveles', ['data' => $child])
-                            @if (!empty($child->children))
-                            {{-- nivel 2 --}}
-                            <ul>
-                                @foreach ($child->children as $child2)
-                                {{-- genera el lado binario derecho haciendo vacio --}}
-                                @include('genealogy.component.sideEmpty', ['side' => 'D', 'cant' =>
-                                count($child->children),'ladouser' => $child2->binary_side])
-                                <li>
-                                    @include('genealogy.component.subniveles', ['data' => $child2])
-                                    @if (!empty($child2->children))
-                                    {{-- nivel 3 --}}
-                                    <ul>
-                                        @foreach ($child2->children as $child3)
-                                        {{-- genera el lado binario derecho haciendo vacio --}}
-                                        @include('genealogy.component.sideEmpty', ['side' => 'D', 'cant' =>
-                                        count($child2->children),'ladouser' => $child3->binary_side])
-                                        <li>
-                                            @include('genealogy.component.subniveles', ['data' => $child3])
-                                            {{-- @if (!empty($child->children)) --}}
-                                            {{-- nivel 4 
-                                            <ul>
-                                                @foreach ($child->children as $child)
-                                                <li>
-                                                    @include('genealogy.component.subniveles', ['data' => $child])
-                                                    @if (!empty($child->children))
-                                                     nivel 5 
-                                                    <ul>
-                                                        @foreach ($child->children as $child)
-                                                        <li>
-                                                            @include('genealogy.component.subniveles', ['data' => $child])
-                                                        </li>
-                                                        @endforeach
-                                                    </ul>
-                                                    fin nivel 5
-                                                    @endif
-                                                </li>
-                                                @endforeach
-                                            </ul>
-                                             fin nivel 4  --}}
-                                            {{-- @endif --}}
-                                        </li>
-                                        {{-- genera el lado binario izquierdo haciendo vacio --}}
-                                        @include('genealogy.component.sideEmpty', ['side' => 'I', 'cant' =>
-                                        count($child2->children),'ladouser' => $child3->binary_side])
-                                        @endforeach
-                                    </ul>
-                                    {{-- fin nivel 3 --}}
-                                    @endif
-                                </li>
-                                {{-- genera el lado binario izquierdo haciendo vacio --}}
-                                @include('genealogy.component.sideEmpty', ['side' => 'I', 'cant' =>
-                                count($child->children),'ladouser' => $child2->binary_side])
-                                @endforeach
-                            </ul>
-                            {{-- fin nivel 2 --}}
+                        <a class="base" href="#">
+                            @if (empty($base->photoDB))
+                            <img src="{{asset('assets/img/royal_green/logos/logo.svg')}}" alt="{{$base->name}}"
+                                title="{{$base->name}}" class="pt-1 rounded-circle"
+                                style="width: 95%;height: 107%;margin-left: 0px;margin-top: -8px;">
+                            @else
+                            <img src="{{asset('storage/photo/'.$base->photoDB)}}" alt="{{$base->name}}"
+                                title="{{$base->name}}" class="pt-1 rounded-circle"
+                                style="width: 95%;height: 107%;margin-left: 0px;margin-top: -8px;">
                             @endif
-                        </li>
-                        {{-- genera el lado binario izquierdo haciendo vacio --}}
-                        @include('genealogy.component.sideEmpty', ['side' => 'I', 'cant' => count($trees),'ladouser' =>
-                        $child->binary_side])
-                        @endforeach
-                    </ul>
-                    {{-- fin nivel 1 --}}
-                </li>
-            </ul>
+                        </a>
+
+                        {{-- Nivel 1 --}}
+                        <ul>
+                            @foreach ($trees as $child)
+                            {{-- genera el lado binario derecho haciendo vacio --}}
+                            @include('genealogy.component.sideEmpty', ['side' => 'D', 'cant' => count($trees),'ladouser' =>
+                            $child->binary_side])
+                            <li href="#prestamo" data-toggle="modal">
+                                @include('genealogy.component.subniveles', ['data' => $child])
+                                @if (!empty($child->children))
+                                {{-- nivel 2 --}}
+                                <ul>
+                                    @foreach ($child->children as $child2)
+                                    {{-- genera el lado binario derecho haciendo vacio --}}
+                                    @include('genealogy.component.sideEmpty', ['side' => 'D', 'cant' =>
+                                    count($child->children),'ladouser' => $child2->binary_side])
+                                    <li>
+                                        @include('genealogy.component.subniveles', ['data' => $child2])
+                                        @if (!empty($child2->children))
+                                        {{-- nivel 3 --}}
+                                        <ul>
+                                            @foreach ($child2->children as $child3)
+                                            {{-- genera el lado binario derecho haciendo vacio --}}
+                                            @include('genealogy.component.sideEmpty', ['side' => 'D', 'cant' =>
+                                            count($child2->children),'ladouser' => $child3->binary_side])
+                                            <li>
+                                                @include('genealogy.component.subniveles', ['data' => $child3])
+                                                {{-- @if (!empty($child->children)) --}}
+                                                {{-- nivel 4
+                                                <ul>
+                                                    @foreach ($child->children as $child)
+                                                    <li>
+                                                        @include('genealogy.component.subniveles', ['data' => $child])
+                                                        @if (!empty($child->children))
+                                                         nivel 5
+                                                        <ul>
+                                                            @foreach ($child->children as $child)
+                                                            <li>
+                                                                @include('genealogy.component.subniveles', ['data' => $child])
+                                                            </li>
+                                                            @endforeach
+                                                        </ul>
+                                                        fin nivel 5
+                                                        @endif
+                                                    </li>
+                                                    @endforeach
+                                                </ul>
+                                                 fin nivel 4  --}}
+                                                {{-- @endif --}}
+                                            </li>
+                                            {{-- genera el lado binario izquierdo haciendo vacio --}}
+                                            @include('genealogy.component.sideEmpty', ['side' => 'I', 'cant' =>
+                                            count($child2->children),'ladouser' => $child3->binary_side])
+                                            @endforeach
+                                        </ul>
+                                        {{-- fin nivel 3 --}}
+                                        @endif
+                                    </li>
+                                    {{-- genera el lado binario izquierdo haciendo vacio --}}
+                                    @include('genealogy.component.sideEmpty', ['side' => 'I', 'cant' =>
+                                    count($child->children),'ladouser' => $child2->binary_side])
+                                    @endforeach
+                                </ul>
+                                {{-- fin nivel 2 --}}
+                                @endif
+                            </li>
+                            {{-- genera el lado binario izquierdo haciendo vacio --}}
+                            @include('genealogy.component.sideEmpty', ['side' => 'I', 'cant' => count($trees),'ladouser' =>
+                            $child->binary_side])
+                            @endforeach
+                        </ul>
+                        {{-- fin nivel 1 --}}
+                    </li>
+                </ul>
+            </div>
         </div>
+
     </div>
+
+
 
     @if (Auth::id() != $base->id)
     <div class="col-12 text-center">
@@ -149,7 +151,7 @@
         if (data.photoDB == null) {
             $('#imagen').attr('src', "{{asset('assets/img/royal_green/logos/arbol.svg')}}");
         } else {
-            $('#imagen').attr('src', '/storage/photo/' + data.photoDB); 
+            $('#imagen').attr('src', '/storage/photo/' + data.photoDB);
         }
 
         var date_db = new Date (data.created_at);
