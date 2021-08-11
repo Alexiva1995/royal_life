@@ -10,7 +10,6 @@
                       <h1 class="text-white">Lista de Ordenes</h1>
                         <table class="table nowrap scroll-horizontal-vertical myTable table-striped">
                             <thead class="">
-
                                 <tr class="text-center text-white bg-purple-alt2">                                
                                     <th>ID</th>
                                     <th>Usuario</th>
@@ -20,7 +19,6 @@
                                     <th>Estado</th>  
                                     <th>Accion</th>      
                                 </tr>
-
                             </thead>
                             <tbody>
 
@@ -33,7 +31,6 @@
                                     <td>{{date('Y-m-d', strtotime($orden->created_at))}}</td>
                                     {{-- <td>{{$orden->idtransacion}}</td> --}}
                                     <td>{{$orden->total}}</td>
-
                                     @if ($orden->status == '0')
                                     <td> <a class=" btn btn-info text-white text-bold-600" data-toggle="modal" data-target="#ModalStatus{{$orden->id}}">Esperando</a></td>
                                     @elseif($orden->status == '1')
@@ -44,11 +41,8 @@
                                     <td>
                                         <a class="btn btn-outline-primary text-white text-bold-600" data-toggle="modal"
                                             data-target="#ModalDetail{{$orden->id}}"><i class="fa fa-eye"></i></a>
-
                                     </td>
-                                    
                                 </tr>
-
 
                                 <!-- Modal -->
                                 <div class="modal fade" id="ModalDetail{{$orden->id}}" tabindex="-1"
@@ -65,34 +59,33 @@
                                             <form action="{{ route('orden.detail') }}" method="POST">
                                                 @csrf
                                                 <div class="modal-body">
-
-                                                    <input type="hidden" name="id" value="{{$orden->id}}">
+                                                    <input type="hidden" name="id" value="{{$orden->id}}" disabled>
                                                     Detalles de la Orden
                                                     <br>
-                                                    <input type="hidden"  name="iduser" value="{{$orden->iduser}}">
+                                                    <input type="hidden"  name="iduser" value="{{$orden->iduser}}" disabled>
                                                     <br>
                                                     <p>Usuario</p>
                                                     <input id="monto_bruto" name="monto_bruto" type="text"
                                                         class="inputransparente text-white form-control" 
-                                                        value="{{$orden->name}}">
+                                                        value="{{$orden->name}}" disabled>
                                                     <input type="hidden"  name="total" value="">
                                                     <br>
                                                     <p>Paquete</p>
                                                     <input id="monto_bruto" name="monto_bruto" type="text"
                                                         class="inputransparente text-white form-control" 
-                                                        value="{{$orden->monto}}">
+                                                        value="{{$orden->monto}}" disabled>
                                                     <input type="hidden"  name="total" value="">
                                                     <br>
                                                     <p>Fecha de Creacion</p>
                                                     <input id="monto_bruto" name="monto_bruto" type="text"
                                                         class="inputransparente text-white form-control" 
-                                                        value="{{date('Y-m-d', strtotime($orden->created_at))}}">
+                                                        value="{{date('Y-m-d', strtotime($orden->created_at))}}" disabled>
                                                     <input type="hidden"  name="total" value="">
                                                     <br>
                                                     <p>Monto</p>
                                                     <input id="monto_bruto" name="monto_bruto" type="text"
                                                         class="inputransparente text-white form-control" 
-                                                        value="{{$orden->total}}">
+                                                        value="{{$orden->total}}" disabled>
                                                     <input type="hidden"  name="total" value="">
                                                     <br>
                                                     <p class="text-center">Estado</p>
@@ -103,15 +96,12 @@
                                                     @elseif($orden->status >= '2')
                                                     <a class=" btn btn-danger text-white text-bold-600 d-flex justify-content-center">Cancelado</a>
                                                     @endif
-                                                    
-                                                    <br>
-                                                                                                
+                                                    <br>                        
                                                 </div>
                                             </form>
                                         </div>
                                     </div>
                                 </div>
-
 
                                 <!-- Modal -->
                                 <div class="modal fade" id="ModalStatus{{$orden->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -155,7 +145,6 @@
         </div>
     </div>
 </div>
-
 @endsection
 
 {{-- permite llamar a las opciones de las tablas --}}
