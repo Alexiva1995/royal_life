@@ -31,13 +31,13 @@
                                     </select>
                                 </fieldset>
                             </div> --}}
-                            <input type="hidden" name="group_id" value="{{$idgrupo}}">
+                     {{--             <input type="hidden" name="group_id" value="{{$idgrupo}}">
                             <div class="col-12 col-md-6">
                                 <fieldset class="form-group">
                                     <label for="">Deposito Minimo</label>
                                     <input type="number" name="minimum_deposit" class="form-control" required step="any">
                                 </fieldset>
-                            </div>
+                            </div> --}}
                             <div class="col-12 col-md-6">
                                 <fieldset class="form-group">
                                     <label for="">Fecha Vencimiento</label>

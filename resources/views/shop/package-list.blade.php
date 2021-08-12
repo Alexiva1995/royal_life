@@ -7,7 +7,7 @@
                 <div class="card-body card-dashboard">
                     <div class="table-responsive">
                         <h1 class="text-white">Lista de Paquetes</h1>
-                        
+
                         <table class="table nowrap scroll-horizontal-vertical myTable table-striped">
 
                             <thead class="">
