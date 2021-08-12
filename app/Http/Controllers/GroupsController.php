@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Categories;
 use App\Models\Groups;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -18,7 +19,7 @@ class GroupsController extends Controller
     public function index()
     {
         try {
-            $categories = Groups::all()->except('created_at', 'updated_at');
+            $categories = Categories::all()->except('created_at', 'updated_at');
 
             return view('manager_services.categories.index', compact('categories'));
         } catch (\Throwable $th) {
@@ -45,8 +46,9 @@ class GroupsController extends Controller
      */
     public function store(Request $request)
     {
+      //  dd($request);
         $validate = $request->validate([
-            'name' => ['required', 'unique:groups'],
+            'name' => ['required', 'unique:categories'],
             'img' => ['required', 'mimes:jpeg,png']
         ]);
         try {
@@ -54,13 +56,13 @@ class GroupsController extends Controller
 
                 $path = $request->file('img')->store(
                     'groups'
-                );               
-
-                $group = Groups::create($request->all());
+                );
+              //   dd($validate);
+                $group = Categories::create($request->all());
 
                 $group->img = $path;
                 $group->save();
-                
+
                 return redirect()->back()->with('msj-success', 'Nuevo Grupo Creada');
             }
         } catch (\Throwable $th) {
@@ -89,7 +91,7 @@ class GroupsController extends Controller
     public function edit($id)
     {
         try {
-            $category = Groups::find($id)->only('name', 'description', 'id', 'status', 'img');
+            $category = Categories::find($id)->only('name', 'description', 'id', 'status', 'img');
             $category['img'] = asset('media/'.$category['img']);
             return json_encode($category);
         } catch (\Throwable $th) {
@@ -107,7 +109,7 @@ class GroupsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $category = Groups::find($id);
+        $category = Categories::find($id);
         if ($category->name != $request->name) {
             $validate = $request->validate([
                 'name' => ['required', 'unique:groups'],
@@ -121,7 +123,7 @@ class GroupsController extends Controller
                 'img' => ['required', 'mimes:jpeg,png'],
             ]);
         }
-        
+
         try {
             if ($validate) {
 
@@ -135,8 +137,8 @@ class GroupsController extends Controller
                     );
                     $category->img = $path;
                 }
-                $category->save();                
-                
+                $category->save();
+
                 return redirect()->back()->with('msj-success', 'Grupo '.$id.' Actualizada ');
             }
         } catch (\Throwable $th) {
@@ -154,7 +156,7 @@ class GroupsController extends Controller
     public function destroy($id)
     {
         try {
-            Groups::find($id)->delete();
+            Categories::find($id)->delete();
 
             return redirect()->back()->with('msj-success', 'Grupo '.$id.' Eliminada');
         } catch (\Throwable $th) {

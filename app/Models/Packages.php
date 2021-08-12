@@ -9,7 +9,7 @@ class Packages extends Model
     protected $table = 'packages';
 
     protected $fillable = [
-        'name', 'group_id', 'price', 'description', 'status', 'minimum_deposit', 'expired'
+        'name', 'categories_id', 'price', 'description', 'status', 'minimum_deposit', 'expired'
     ];
 
       /**
@@ -17,9 +17,9 @@ class Packages extends Model
      *
      * @return void
      */
-    public function getGroup()
+    public function getCategories()
     {
-        return $this->belongsTo('App\Models\Groups', 'group_id', 'id');
+        return $this->belongsTo('App\Models\Categories', 'categories_id', 'id');
     }
 
     /**

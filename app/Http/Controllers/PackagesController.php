@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Categories;
 use App\Models\Groups;
 use App\Models\Packages;
 use Illuminate\Http\Request;
@@ -19,7 +20,7 @@ class PackagesController extends Controller
     {
          try {
 
-             $categories = Groups::all()->where('status', 1);
+             $categories = Categories::all()->where('status', 1);
 
             return view('manager_services.services.index', compact('categories'));
          } catch (\Throwable $th) {
@@ -37,11 +38,13 @@ class PackagesController extends Controller
     {
         try {
 
-            $categories = Groups::all()->where('status', 1);
+            $categories = Categories::all()->where('status', 1);
             if (!empty(request()->category)) {
 
-                $category = Groups::find(request()->category);
+                $category = Categories::find(request()->category);
+              //  dd($category);
                 $services = $category->getPackage;
+              //  dd($services);
                 $name_category = $category->name;
                 $idgrupo = $category->id;
             }
@@ -63,7 +66,7 @@ class PackagesController extends Controller
     {
         $validate = $request->validate([
             'name' => ['required'],
-            'group_id' => ['required'],
+            'categories_id' => ['required'],
             'minimum_deposit' => ['required', 'numeric'],
             'expired' => ['required', 'date'],
             'price' => ['required', 'numeric'],
@@ -72,7 +75,7 @@ class PackagesController extends Controller
         try {
             if ($validate) {
                 Packages::create($request->all());
-                $route = route('package.index').'?category='.$request->group_id;
+                $route = route('package.index').'?category='.$request->categories_id;
                 return redirect($route)->with('msj-success', 'Nuevo Servicio Creado');
             }
         } catch (\Throwable $th) {
@@ -92,7 +95,7 @@ class PackagesController extends Controller
     {
         try {
             $service = Packages::find($id);
-            $category = $service->group_id;
+            $category = $service->categories_id;
             $service->delete();
             $route = route('package.index').'?category='.$category;
             return redirect($route)->with('msj-success', 'Servicio '.$id.' Eliminado');
@@ -142,7 +145,7 @@ class PackagesController extends Controller
 
              $validate = $request->validate([
                 'name' => ['required'],
-                'group_id' => ['required'],
+                'categories_id' => ['required'],
                 'minimum_deposit' => ['required', 'numeric'],
                 'expired' => ['required', 'date'],
                 'price' => ['required', 'numeric'],
@@ -152,7 +155,7 @@ class PackagesController extends Controller
              if ($validate) {
                  $service = Packages::find($id);
                  $service->name = $request->name;
-                 $service->group_id = $request->group_id;
+                 $service->categories_id = $request->categories_id;
                  $service->minimum_deposit = $request->minimum_deposit;
                  $service->expired = $request->expired;
                  $service->price = $request->price;

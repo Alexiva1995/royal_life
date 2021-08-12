@@ -16,8 +16,8 @@ class CreatePackagesTable extends Migration
         Schema::create('packages', function (Blueprint $table) {
             $table->bigIncrements('id')->unsigned();
             $table->string('name');
-            // $table->bigInteger('group_id')->unsigned();
-            // $table->foreign('group_id')->references('id')->on('groups');
+             $table->unsignedBigInteger('categories_id');
+             $table->foreign('categories_id')->references('id')->on('categories');
             $table->double('price')->default(0);
             // $table->double('minimum_deposit')->default(0)->comment('deposito minimo');
             $table->date('expired')->nullable()->comment('Fecha de vencimiento del paquete');
@@ -25,6 +25,7 @@ class CreatePackagesTable extends Migration
             $table->enum('status', [0, 1])->default(1)->comment('0 - desactivado, 1 - activado');
             $table->timestamps();
         });
+
     }
 
     /**

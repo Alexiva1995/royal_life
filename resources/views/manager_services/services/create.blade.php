@@ -55,7 +55,7 @@
                                 <tr class="text-center text-white bg-purple-alt2">
                                     <th>ID</th>
                                     <th>Nombre</th>
-                                    <th>Deposito Minimo</th>
+                                {{--    <th>Deposito Minimo</th>--}}
                                     <th>Fecha Vencimiento</th>
                                     <th>Precio</th>
                                     <th>Description</th>
@@ -68,7 +68,7 @@
                                 <tr class="text-center">
                                     <td>{{$service->id}}</td>
                                     <td>{{$service->name}}</td>
-                                    <td>{{$service->minimum_deposit}}</td>
+                                   {{--       <td>{{$service->minimum_deposit}}</td>--}}
                                     <td>{{date('d-m-Y', strtotime($service->expired))}}</td>
                                     <td>{{$service->price}}</td>
                                     <td>

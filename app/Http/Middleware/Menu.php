@@ -127,7 +127,7 @@ class Menu
                         'name' => 'Wallet',
                         'blank'=> '', // si es para una pagina diferente del sistema solo coloquen _blank
                         'ruta' => route('wallet.index'),
-                        'complementoruta' => '' 
+                        'complementoruta' => ''
                     ],
                     [
                         'name' => 'Retiros',
@@ -181,12 +181,33 @@ class Menu
             // Fin Ordenes
 
             // Paquetes
+
             'Paquetes' => [
-                'submenu' => 0,
-                'ruta' => route('products.package-list'),
+                'submenu' => 1,
+                'ruta' => 'javascripts:;',
                 'blank'=> '', // si es para una pagina diferente del sistema solo coloquen _blank
                 'icon' => 'feather icon-archive',
                 'complementoruta' => '',
+                'submenus' => [
+                    [
+                        'name' => 'Lista de paquetes',
+                        'blank'=> '', // si es para una pagina diferente del sistema solo coloquen _blank
+                        'ruta' =>route('products.package-list'),
+                        'complementoruta' => ''
+                    ],
+                    [
+                        'name' => 'Crear paquete',
+                        'blank'=> '', // si es para una pagina diferente del sistema solo coloquen _blank
+                        'ruta' => route('products.package-index'),
+                        'complementoruta' => ''
+                    ],
+                    [
+                        'name' => 'Categorias',
+                        'blank'=> '', // si es para una pagina diferente del sistema solo coloquen _blank
+                        'ruta' => route('products.categories-create'),
+                        'complementoruta' => ''
+                    ],
+                ],
             ],
             // Fin Paquetes
 
@@ -290,7 +311,7 @@ class Menu
                 'icon' => 'fa fa-list-alt',
                 'complementoruta' => '',
                 'submenus' => [
-                    
+
                     [
                         'name' => 'Check role',
                         'blank'=> '', // si es para una pagina diferente del sistema solo coloquen _blank

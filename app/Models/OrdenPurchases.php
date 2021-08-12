@@ -9,11 +9,11 @@ class OrdenPurchases extends Model
 {
 
     use HasFactory;
-    
+
     protected $table = 'orden_purchases';
 
     protected $fillable = [
-        'iduser', 'group_id', 'package_id', 
+        'iduser', 'categories_id', 'package_id',
         'cantidad', 'total', 'idtransacion',
         'status', 'monto'
     ];
@@ -35,7 +35,7 @@ class OrdenPurchases extends Model
      */
     public function getGroupOrden()
     {
-        return $this->belongsTo('App\Models\Groups', 'group_id');
+        return $this->belongsTo('App\Models\Groups', 'categories_id');
     }
 
     /**

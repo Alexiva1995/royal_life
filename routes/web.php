@@ -142,6 +142,8 @@ Route::prefix('dashboard')->middleware('menu', 'auth')->group(function ()
             Route::get('package-grupos', 'GroupsController@index')->name('products.package-grupos');
             Route::get('package-index', 'PackagesController@index')->name('products.package-index');
             Route::get('package-create', 'PackagesController@create')->name('products.package-create');
+            Route::get('package-categoria-create', 'GroupsController@index')->name('products.categories-create');
+
         });
 
          //Ruta de liquidacion

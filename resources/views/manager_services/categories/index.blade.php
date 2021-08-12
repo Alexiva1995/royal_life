@@ -27,7 +27,7 @@
                 <div class="card-body card-dashboard">
                     <div class="col-12">
                         <button class="btn btn-primary" data-toggle="modal" data-target="#modalNewCategories">
-                            <i class="fa fa-plus">Nuevo Grupo</i>
+                            <i class="fa fa-plus">Nueva Categoria</i>
                         </button>
                     </div>
                     <div class="table-responsive">
