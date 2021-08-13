@@ -108,7 +108,9 @@ class GroupsController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $user = User::find(Auth::user()->id);
         $category = Categories::find($id);
+        $category->update($request->all());
         if ($category->name != $request->name) {
             $validate = $request->validate([
                 'name' => ['required', 'unique:groups'],
@@ -130,12 +132,13 @@ class GroupsController extends Controller
                 $category->name = $request->name;
                 $category->status = $request->status;
                 $category->description = $request->description;
-                if ($request->file('img')) {
-                    $path = $request->file('img')->store(
-                        'groups'
-                    );
-                    $category->img = $path;
-                }
+                if ($request->hasFile('img')) {
+                    $file = $request->file('img');
+                    $name = $user->id.'_'.$file->getClientOriginalName();
+                    $file->move(public_path('storage') . '/photo-profile', $name);
+                    $category->img = $name;
+                 }
+        
                 $category->save();
 
                 return redirect()->back()->with('msj-success', 'Grupo '.$id.' Actualizada ');
