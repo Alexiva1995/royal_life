@@ -1,4 +1,7 @@
 <!-- Modal -->
+@foreach ($categories as $item )
+
+
 <div class="modal fade" id="modalNewServices" tabindex="-1" role="dialog" aria-labelledby="modalNewServicesTitle"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-centered" role="document">
@@ -15,9 +18,11 @@
                         @csrf
                         <div class="row">
                             <div class="col-12">
+
+                                <input type="hidden" name="categories_id" value="{{$item->id}}" >
                                 <fieldset class="form-group">
                                     <label for="">Nombre</label>
-                                    <input type="text" name="name" class="form-control" required>
+                                    <input type="text" name="name" class="form-control" required >
                                 </fieldset>
                             </div>
                             {{-- <div class="col-12">
@@ -81,3 +86,4 @@
         </div>
     </div>
 </div>
+@endforeach
