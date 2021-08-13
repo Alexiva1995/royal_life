@@ -48,7 +48,7 @@ class GroupsController extends Controller
      */
     public function store(Request $request)
     {
-        $user = User::find(Auth::user()->id);
+       
       //  dd($request);
         $request->validate([
             'name' => ['required', 'unique:categories'],
@@ -57,7 +57,7 @@ class GroupsController extends Controller
         try {
             if ($request->hasFile('img')) {
                 $path = $request->file('img');
-                $name = $user->id.".".$path->getClientOriginalExtension();
+                $name = $path->getClientOriginalName();
                 $path->move(public_path('storage') . '/photo-profile', $name);
                 $group = Categories::create($request->all());
                 $group->img = $name;
