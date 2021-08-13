@@ -33,7 +33,7 @@
                             </div>
                             <div class="col-12">
                                 <div class="text-center">
-                                    <img :src="Category.img" alt="" width="100" height="100">
+                               {{--   <img :src="Category.img" alt="" width="100" height="100"> --}}
                                 </div>
                                 <fieldset class="form-group">
                                     <label for="">Imagen</label>

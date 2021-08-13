@@ -18,6 +18,7 @@ class PackagesController extends Controller
      */
     public function index()
     {
+
          try {
 
              $categories = Categories::all()->where('status', 1);

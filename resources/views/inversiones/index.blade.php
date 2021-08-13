@@ -10,11 +10,11 @@
 
                     @if(auth()->user()->admin == 1)
                     <div class="">
-                        
+
                         <button class="btn btn-primary bg-white mt-1 waves-effect waves-light text-white ml-auto" data-toggle="modal" data-target="#modalPorcentajeGanancia">Cambiar %</button>
-                        
+
                     </div>
-                        
+
                     @endif
                     <div>
                         <table class="table w-100 nowrap scroll-horizontal-vertical myTable table-striped w-100 text-white ">
@@ -22,7 +22,7 @@
                             <thead class="">
 
                                 <tr class="text-center text-white bg-purple-alt2">
-                                    <th>#</th>
+                                    <th>id</th>
                                     <th>Correo</th>
                                     {{-- <th>Paquete</th> --}}
                                     <th>Inversion</th>
@@ -68,7 +68,7 @@
                             </tbody>
                         </table>
                     </div>
-                   
+
                 </div>
             </div>
         </div>
@@ -87,7 +87,7 @@
             </button>
             </div>
             <form action="{{route('updatePorcentajeGanancia')}}" method="POST">
-                @csrf 
+                @csrf
                 @method('PUT')
                 <div class="modal-body bg-lp" >
                     <label for="porcentaje_ganancia" class="text-white">Ingrese el nuevo porcentaje de ganancia</label>
