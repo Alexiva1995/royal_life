@@ -22,11 +22,11 @@
                             <div class="col-12 col-md-4">
                                 <a href="{{route('package.create').'/?category='.$grupo->id}}">
                                     <div class="card">
-                                        <div class="card-content">
-                                            <img class="card-img-top img-fluid" src="{{ asset('storage/photo-profile/'.$grupo->img) }}" alt="{{$grupo->name}}">
+                                        <div class="card-content text-center">
+                                            <img class="" src="{{ asset('storage/photo-profile/'.$grupo->img) }}"  width="150" height="150" alt="{{$grupo->name}} ">
                                             <div class="card-body">
-                                                <h4 class="card-title">{{$grupo->name}}</h4>
-                                                <h5>Crea nuevo <br> Paquete Aqui</h5>
+                                                <h4 class=" text-white  text-center">{{$grupo->name}}</h4>
+                                                <h5 class="text-white text-center">Crea nuevo <br> Paquete Aqui</h5>
                                             </div>
                                         </div>
                                     </div>

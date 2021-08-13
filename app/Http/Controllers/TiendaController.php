@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\InversionController;
 use App\Http\Controllers\WalletController;
-
+use App\Models\Categories;
 
 class TiendaController extends Controller
 {
@@ -45,11 +45,11 @@ class TiendaController extends Controller
             $packages = Packages::orderBy('id', 'desc')->paginate();
 
             $invertido = Auth::user()->inversionMasAlta();
-            // dd($invertido);
+
             if(isset($invertido)){
                 $invertido = $invertido->invertido;
             }
-            
+
             return view('shop.index', compact('packages', 'invertido'));
         } catch (\Throwable $th) {
             Log::error('Tienda - Index -> Error: '.$th);
@@ -68,7 +68,8 @@ class TiendaController extends Controller
         try {
             // title
             //YA NO VA ERA DE HDLR
-            $category = Groups::find($idgroup);
+            $category = Categories::find($idgroup);
+
             $services = $category->getPackage->where('status', 1);
 
             return view('shop.products', compact('services'));
@@ -77,7 +78,7 @@ class TiendaController extends Controller
             abort(403, "Ocurrio un error, contacte con el administrador");
         }
     }
-    
+
     /**
      * Permiete procesar la orden de compra
      *
@@ -85,24 +86,28 @@ class TiendaController extends Controller
      * @return void
      */
     public function procesarOrden(Request $request)
-    {
+    { // dd($request);
         $validate = $request->validate([
             'idproduct' => 'required'
         ]);
-        
+
         //try {
             if ($validate) {
                 $paquete = Packages::find($request->idproduct);
-
+//dd($paquete);
                 if(isset(Auth::user()->inversionMasAlta()->invertido)){
-                    
+
+
                     $inversion = Auth::user()->inversionMasAlta();
                     $pagado = $inversion->invertido;
 
-                    $nuevoInvertido = ($paquete->price - $pagado); 
+                    $nuevoInvertido = ($paquete->price - $pagado);
                     $porcentaje = ($nuevoInvertido * 0.03);
 
                     $total = ($nuevoInvertido + $porcentaje);
+
+//                    $categoria_id = OrdenPurchases::where('categories_id','=', $paquete->categories_id);
+                  //  dd($categoria_id);
                     //ACTUALIZAMOS LA INVERSION
                     /*
                     $inversion->invertido += $nuevoInvertido;
@@ -116,14 +121,15 @@ class TiendaController extends Controller
                         'package_id' => $paquete->id,
                         'cantidad' => 1,
                         'total' => $total,
-                        'monto' => $nuevoInvertido
+                        'monto' => $nuevoInvertido,
+                       // 'categories_id'=>$categoria_id
                     ];
-                
+
                     //$orden = OrdenPurchases::findOrFail($inversion->orden_id)->update($data);
                     $data['idorden'] = $this->saveOrden($data);
                     $data['descripcion'] = "Upgrade al paquete " . $paquete->name;
-                    //$data['inversion_id'] = $inversion->id;  
-                    
+                    //$data['inversion_id'] = $inversion->id;
+
                 }else{
                     $porcentaje = 0; //($paquete->price * 0.03);
 
@@ -135,13 +141,13 @@ class TiendaController extends Controller
                         'total' => $total,
                         'monto' => $paquete->price
                     ];
-                    
+
                     $data['idorden'] = $this->saveOrden($data);
-                    $data['descripcion'] = $paquete->description;    
+                    $data['descripcion'] = $paquete->description;
                 }
-                
-                
-               
+
+
+
 
                 $url = $this->generalUrlOrden($data);
                // dd($url);
@@ -226,7 +232,7 @@ class TiendaController extends Controller
                 "cancel_url" => route('shop.proceso.status', 'Cancelada')
             ]);
 
-            
+
             curl_setopt_array($curl, array(
                 CURLOPT_URL => "https://api.nowpayments.io/v1/invoice",
                 CURLOPT_RETURNTRANSFER => true,
@@ -249,11 +255,11 @@ class TiendaController extends Controller
                 } else {
                     $response = json_decode($response);
                     // dd($response);
-                   
+
                     $orden = OrdenPurchases::where('id', $data['idorden'])->first();
-            
+
                     $orden->update(['idtransacion' => $response->id]);
-                  
+
                     $resul = $response->invoice_url;
                 }
 
@@ -272,13 +278,13 @@ class TiendaController extends Controller
         $user = User::findOrFail($orden->iduser);
 
         $this->walletController->payAll();
-  
+
         if(isset($user->inversionMasAlta()->invertido)){
-      
+
             $inversion = $user->inversionMasAlta();
             $pagado = $inversion->invertido;
 
-            $nuevoInvertido = ($orden->getPackageOrden->price - $pagado); 
+            $nuevoInvertido = ($orden->getPackageOrden->price - $pagado);
             $porcentaje = ($nuevoInvertido * 0.03);
 
             $total = ($nuevoInvertido + $porcentaje);
@@ -294,13 +300,13 @@ class TiendaController extends Controller
             $inversion = $inversion->id;
 
         }else{
-        
+
             $inversion = $this->registeInversion($request->id);
         }
-    
+
         $orden->inversion_id = $inversion;
         $orden->save();
-        
+
         $user = User::findOrFail($orden->iduser);
         $user->status = '1';
         $user->save();
@@ -314,7 +320,7 @@ class TiendaController extends Controller
         if ($orden != null) {
             $paquete = $orden->getPackageOrden;
             $total = $orden->cantidad * $paquete->price;
-            
+
             //dd([$paquete->id, $orden->id, $orden->cantidad, $paquete->expired, $orden->iduser]);
             return $this->inversionController->saveInversion($paquete->id, $total, $paquete->expired, $orden->iduser);
         }
@@ -333,7 +339,7 @@ class TiendaController extends Controller
             'Content-Type:application/json'
         ];
 
-        $resul = ''; 
+        $resul = '';
         $curl = curl_init();
 
         $fechaTo = Carbon::now();
@@ -349,12 +355,12 @@ class TiendaController extends Controller
             CURLOPT_CUSTOMREQUEST => "GET",
             CURLOPT_HTTPHEADER => $headers
         ));
-            
+
         $response = curl_exec($curl);
         $err = curl_error($curl);
         curl_close($curl);
         if ($err) {
-            Log::error('Tienda - checkStatusOrden -> Error curl: '.$err);        
+            Log::error('Tienda - checkStatusOrden -> Error curl: '.$err);
         } else {
             $response = json_decode($response);
             $pagos = $response->data;
