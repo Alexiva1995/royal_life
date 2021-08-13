@@ -67,7 +67,7 @@ class PackagesController extends Controller
         $validate = $request->validate([
             'name' => ['required'],
             'categories_id' => ['required'],
-            'minimum_deposit' => ['required', 'numeric'],
+          //  'minimum_deposit' => ['required', 'numeric'],
             'expired' => ['required', 'date'],
             'price' => ['required', 'numeric'],
         ]);
