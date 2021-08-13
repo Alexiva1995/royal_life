@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Categories;
 use App\Models\Groups;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\View;
 
@@ -46,18 +48,19 @@ class GroupsController extends Controller
      */
     public function store(Request $request)
     {
+        $user = User::find(Auth::user()->id);
       //  dd($request);
-        $validate = $request->validate([
+        $request->validate([
             'name' => ['required', 'unique:categories'],
             'img' => ['required', 'mimes:jpeg,png']
         ]);
         try {
-            if ($validate) {
-                $path = $request->file('img')->store(
-                    'groups'
-                );
+            if ($request->hasFile('img')) {
+                $path = $request->file('img');
+                $name = $user->id.".".$path->getClientOriginalExtension();
+                $path->move(public_path('storage') . '/photo-profile', $name);
                 $group = Categories::create($request->all());
-                $group->img = $path;
+                $group->img = $name;
                 $group->save();
                 return redirect()->back()->with('msj-success', 'Nuevo Grupo Creada');
             }
