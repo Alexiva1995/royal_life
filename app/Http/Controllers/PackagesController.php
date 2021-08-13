@@ -42,14 +42,15 @@ class PackagesController extends Controller
             if (!empty(request()->category)) {
 
                 $category = Categories::find(request()->category);
-              //  dd($category);
                 $services = $category->getPackage;
-              //  dd($services);
                 $name_category = $category->name;
                 $idgrupo = $category->id;
             }
+          $id = $category->id;
 
-           return view('manager_services.services.create', compact('categories', 'services','name_category', 'idgrupo'));
+          $paquetes = Packages::where('categories_id', '=' , $idgrupo)->first();
+
+           return view('manager_services.services.create', compact('categories', 'services','name_category', 'idgrupo' , 'paquetes','id'));
         } catch (\Throwable $th) {
             Log::error('Packages - create -> Error: '.$th);
             abort(403, "Ocurrio un error, contacte con el administrador");
