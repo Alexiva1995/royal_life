@@ -19,10 +19,10 @@
                         <div class="row">
                             <div class="col-12">
 
-                                <input type="hidden" name="categories_id" value="{{$item->id}}" >
+                                <input type="hidden" name="categories_id" value="{{$id}}" >
                                 <fieldset class="form-group">
                                     <label for="">Nombre</label>
-                                    <input type="text" name="name" class="form-control" required >
+                                    <input type="text" name="name" class="form-control" required>
                                 </fieldset>
                             </div>
                             {{-- <div class="col-12">

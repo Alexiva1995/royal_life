@@ -53,16 +53,12 @@ class GroupsController extends Controller
         ]);
         try {
             if ($validate) {
-
                 $path = $request->file('img')->store(
                     'groups'
                 );
-              //   dd($validate);
                 $group = Categories::create($request->all());
-
                 $group->img = $path;
                 $group->save();
-
                 return redirect()->back()->with('msj-success', 'Nuevo Grupo Creada');
             }
         } catch (\Throwable $th) {

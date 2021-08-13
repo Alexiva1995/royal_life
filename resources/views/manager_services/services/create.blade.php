@@ -48,13 +48,16 @@
                             <h5>Categoria Selecionada: {{$name_category}}</h5>
                             @endif
                         </form>
-                    </div> --}}
+                    </div>--}}
+
+
                     <div class="table-responsive mt-2">
                         <table class="table nowrap scroll-horizontal-vertical myTable table-striped">
                             <thead class="">
                                 <tr class="text-center text-white bg-purple-alt2">
                                     <th>ID</th>
                                     <th>Nombre</th>
+                                    <th>Categoria</th>
                                 {{--    <th>Deposito Minimo</th>--}}
                                     <th>Fecha Vencimiento</th>
                                     <th>Precio</th>
@@ -64,10 +67,15 @@
                                 </tr>
                             </thead>
                             <tbody>
+
+
+
+
                                 @foreach ($services as $service)
                                 <tr class="text-center">
                                     <td>{{$service->id}}</td>
                                     <td>{{$service->name}}</td>
+                                    <td>{{ $name_category }}</td>
                                    {{--       <td>{{$service->minimum_deposit}}</td>--}}
                                     <td>{{date('d-m-Y', strtotime($service->expired))}}</td>
                                     <td>{{$service->price}}</td>
@@ -96,7 +104,8 @@
                                         </button>
                                     </td>
                                 </tr>
-                                @endforeach
+                       @endforeach
+
                             </tbody>
                         </table>
                     </div>
