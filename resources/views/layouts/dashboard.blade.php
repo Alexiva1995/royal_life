@@ -23,8 +23,8 @@
     {{-- Header --}}
     @include('layouts.componenteDashboard.header')
     {{-- Fin Header --}}
-    {{-- Sidebar 
-    @include('layouts.componenteDashboard.sidebar')--}}
+    {{-- Sidebar --}}
+    @include('layouts.componenteDashboard.sidebar')
     {{-- Fin Sidebar --}}
     {{-- Cuerpo --}}
     <!-- BEGIN: Content-->
