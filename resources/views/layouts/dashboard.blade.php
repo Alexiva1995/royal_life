@@ -15,7 +15,7 @@
     {{-- Fin Styles --}}
 </head>
 
-<body class="vertical-layout vertical-menu-modern 2-columns  navbar-floating footer-static  text-white" style="background:#11262C" data-open="click"
+<body class="vertical-layout vertical-menu-modern 2-columns  navbar-floating footer-static  text-white" style="background:#E5E5E5" data-open="click"
     data-menu="vertical-menu-modern" data-col="2-columns">
     {{-- Notificaciones del sistema --}}
     @include('layouts.componenteDashboard.messageSystem')
