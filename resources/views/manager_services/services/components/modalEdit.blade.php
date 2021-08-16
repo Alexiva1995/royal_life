@@ -16,13 +16,14 @@
                         @csrf
                         <div class="row">
                             <div class="col-12">
+                                <input type="hidden" name="categories_id" value="{{$id}}" >
                                 <fieldset class="form-group">
                                     <label for="">Package Name</label>
                                     <input type="text" name="name" class="form-control" required v-model="Service.name">
                                 </fieldset>
                             </div>
-                            <div class="col-12">
-                                <fieldset class="form-group">
+                      {{--        <div class="col-12">
+                            <fieldset class="form-group">
                                     <label for="">Elige una Categoria</label>
                                     <select name="group_id" id="" class="form-control" required v-model="Service.group_id">
                                         <option value="" disabled selected>Elige una opcion</option>
@@ -31,13 +32,13 @@
                                         @endforeach
                                     </select>
                                 </fieldset>
-                            </div>
-                            <div class="col-12 col-md-6">
+                            </div> --}}
+                        {{--    <div class="col-12 col-md-6">
                                 <fieldset class="form-group">
                                     <label for="">Deposito Minimo</label>
                                     <input type="number" name="minimum_deposit" class="form-control" required v-model="Service.minimum_deposit">
                                 </fieldset>
-                            </div>
+                            </div>  --}}
                             <div class="col-12 col-md-6">
                                 <fieldset class="form-group">
                                     <label for="">Fecha Vencimiento</label>

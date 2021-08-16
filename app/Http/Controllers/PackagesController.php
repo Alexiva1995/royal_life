@@ -148,7 +148,7 @@ class PackagesController extends Controller
              $validate = $request->validate([
                 'name' => ['required'],
                 'categories_id' => ['required'],
-                'minimum_deposit' => ['required', 'numeric'],
+           //     'minimum_deposit' => ['required', 'numeric'],
                 'expired' => ['required', 'date'],
                 'price' => ['required', 'numeric'],
              ]);
@@ -157,13 +157,14 @@ class PackagesController extends Controller
              if ($validate) {
                  $service = Packages::find($id);
                  $service->name = $request->name;
-                 $service->categories_id = $request->categories_id;
-                 $service->minimum_deposit = $request->minimum_deposit;
+                dd($service->categories_id = $request->categories_id);
+
+//                 $service->minimum_deposit = $request->minimum_deposit;
                  $service->expired = $request->expired;
                  $service->price = $request->price;
                  $service->status = $request->status;
                  $service->description = $request->description;
-                 $service->save();
+                 $service->update();
                  $route = route('package.index').'?category='.$request->group_id;
                  return redirect($route)->with('msj-success', 'Servicio '.$id.' Actualizado ');
              }
