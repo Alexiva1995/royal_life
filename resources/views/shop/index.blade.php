@@ -16,7 +16,7 @@
         <div class="card" style="background:#11262C">
             <div class="card-content">
                 <div class="card-body card-dashboard">
-                   <h1 class="text-white">Lista de Paquetes</h1>
+                   <h1 class="text-white">Lista de Paquetes {{$id}}</h1>
                     <div class="row">
                         @foreach ($packages as $items)
                             <div class="col col-md-4">
@@ -28,6 +28,8 @@
                                         <form action="{{route('shop.procces')}}" method="POST" target="_blank" class="d-inline">
                                         @csrf
                                         <input type="hidden" name="idproduct" value="{{$items->id}}">
+                                        <input type="hidden" name="categories_id" value="{{$id}}">
+                                        <p>{{$items->price}}</p>
                                         <button class="btn btn-block text-white" type="submit" style="background: #cb9b32;" @if($invertido >= $items->price) disabled @endif>
                                             @if($invertido == null)
                                                 Comprar
@@ -38,7 +40,7 @@
                                         </form>
                                     </div>
                                 </div>
-                            </div>  
+                            </div>
                         @endforeach
                     </div>
                 </div>
