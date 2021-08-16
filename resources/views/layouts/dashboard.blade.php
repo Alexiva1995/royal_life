@@ -23,16 +23,16 @@
     {{-- Header --}}
     @include('layouts.componenteDashboard.header')
     {{-- Fin Header --}}
-    {{-- Sidebar --}}
-    @include('layouts.componenteDashboard.sidebar')
+    {{-- Sidebar 
+    @include('layouts.componenteDashboard.sidebar')--}}
     {{-- Fin Sidebar --}}
     {{-- Cuerpo --}}
     <!-- BEGIN: Content-->
-    <div class="app-content content" style="background: #E5E5E5;">
-        <div class="content-overlay"></div>
-        <div class="header-navbar-shadow" style="background: #E5E5E5;"></div>
-        <div class="content-wrapper" style="background: #E5E5E5;">
-            <div class="content-header row">
+    <div class="" style="background: #E5E5E5;">
+        <div class=""></div>
+        <div class="" style="background: #E5E5E5;"></div>
+        <div class="" style="background: #E5E5E5;">
+            <div class="">
                 {{-- Migaja de pan --}}
                 @if (!empty($titleg))
                 @include('layouts.componenteDashboard.breadcrumb')

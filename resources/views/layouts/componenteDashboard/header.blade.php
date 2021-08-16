@@ -1,13 +1,12 @@
 <!-- BEGIN: Header-->
 <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu navbar-dark navbar-shadow text-white">
 
-    
         <img src="{{ asset('assets/img/royal_green/logos/logo.svg') }}" class="ml-5 pl-5" alt="">
       
         <div class="collapse navbar-collapse justify-content-end" id="">
           <ul class="navbar-nav ">
             <li class="nav-item active">
-              <a class="nav-link ml-3 h5" href="{{route('home.user')}}">inicio <span class="sr-only">(current)</span></a>
+              <a class="nav-link ml-3 h5" href="{{route('inicio')}}">inicio <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link ml-3 h5" href="{{route('shop')}}">Tienda</a>
