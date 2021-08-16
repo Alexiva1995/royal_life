@@ -13,14 +13,14 @@
 @section('content')
 <div id="adminServices" >
     <div class="col-12">
-        <div class="card" style="background:#11262C">
+        <div class="" style="background:#E5E5E5">
             <div class="card-content">
                 <div class="card-body card-dashboard">
-                   <h1 class="text-white">Lista de Paquetes </h1>
+                   <h1 class="text-white">Tienda</h1>
                     <div class="row">
                         @foreach ($packages as $items)
                             <div class="col col-md-4">
-                                <div class="card text-center" style="background:#11262C">
+                                <div class="card text-center" style="background:#FFFFFF">
                                     <div class="card-body">
                                         <div class="card-header d-flex align-items-center" style="background: #173138;">
                                             <img class="m-2" src="{{$items->img()}}" alt="" style="width: 100%; heigh:100%;">
@@ -30,7 +30,8 @@
                                         <input type="hidden" name="idproduct" value="{{$items->id}}">
                                         <input type="hidden" name="categories_id" value="">
                                         <p>{{$items->price}}</p>
-                                        <button class="btn btn-block text-white" type="submit" style="background: #cb9b32;" @if($invertido >= $items->price) disabled @endif>
+                                        <p class="">{{$items->description}}</p>
+                                        <button class="btn btn-block " type="submit" style="background: #cb9b32;" @if($invertido >= $items->price) disabled @endif>
                                             @if($invertido == null)
                                                 Comprar
                                             @else
