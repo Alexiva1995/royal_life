@@ -180,4 +180,10 @@ Route::prefix('dashboard')->middleware('menu', 'auth')->group(function ()
 
     Route::get('inicio', 'HomeController@inicio')->name('inicio');
 
+
+    Route::get('/categoria/{Categories}', 'CategoriasController@show')->name('categorias.show');
+
+
+
+
 });
