@@ -22,15 +22,14 @@
                             <div class="col col-md-4">
                                 <div class="card text-center" style="background:#FFFFFF">
                                     <div class="card-body">
-                                        <div class="card-header d-flex align-items-center" style="background: #173138;">
-                                            <img class="m-2" src="{{$items->img()}}" alt="" style="width: 100%; heigh:100%;">
-                                        </div>
+
+                                            <img class="" src="{{ asset('storage/photo-profile/'.$items->img)}}"   width="130" height="130">
+
                                         <form action="{{route('shop.procces')}}" method="POST" target="_blank" class="d-inline">
                                         @csrf
                                         <input type="hidden" name="idproduct" value="{{$items->id}}">
                                         <input type="hidden" name="categories_id" value="">
-                                        <p>{{$items->price}}</p>
-                                        <p class="">{{$items->description}}</p>
+                                        <p style="color: rgb(0, 0, 0);">{{$items->description}}</p>
                                         <button class="btn btn-block " type="submit" style="background: #cb9b32;" @if($invertido >= $items->price) disabled @endif>
                                             @if($invertido == null)
                                                 Comprar
