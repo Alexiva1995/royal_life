@@ -25,6 +25,7 @@ class PackagesController extends Controller
              $categories = Categories::all()->where('status', 1);
 
             return view('manager_services.services.index', compact('categories'));
+
          } catch (\Throwable $th) {
             Log::error('Packages - index -> Error: '.$th);
             abort(403, "Ocurrio un error, contacte con el administrador");
