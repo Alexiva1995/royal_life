@@ -42,7 +42,7 @@ class TiendaController extends Controller
     {
         try {
             // title
-            $packages = Packages::orderBy('id', 'desc')->paginate();
+            $packages = Packages::orderBy('id', 'desc')->paginate(8);
 
             $invertido = Auth::user()->inversionMasAlta();
 
