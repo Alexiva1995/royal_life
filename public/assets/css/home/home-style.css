@@ -50,3 +50,16 @@
     border-radius: 0.4285rem;
     transform: translate(-50%, -50%);
 }
+.texto-simple{
+    color: black;
+    width: 65%;
+    margin-left: 17%;
+
+}
+.texto-title{
+    font-size: 50px;
+}
+.text-card{
+    color:#66FFCC;
+    font-size: 20px;
+}
