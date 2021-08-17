@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Categories;
 use App\Models\Groups;
 use App\Models\Packages;
+use App\Models\Categories;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\View;
+use Intervention\Image\Facades\Image;
 
 class PackagesController extends Controller
 {
@@ -66,17 +67,25 @@ class PackagesController extends Controller
      */
     public function store(Request $request)
     {
+        //dd($request->all());
+
         $validate = $request->validate([
             'name' => ['required'],
             'categories_id' => ['required'],
-          //  'minimum_deposit' => ['required', 'numeric'],
             'expired' => ['required', 'date'],
             'price' => ['required', 'numeric'],
+            'img' => ['required', 'mimes:jpeg,png']
         ]);
+
+          $path = $request->file('img');
+          $name = $path->getClientOriginalName();
+          $path->move(public_path('storage') . '/photo-profile', $name);
 
         try {
             if ($validate) {
-                Packages::create($request->all());
+               $paquete =  Packages::create($request->all());
+                $paquete->img = $name;
+                $paquete->save();
                 $route = route('package.index').'?category='.$request->categories_id;
                 return redirect($route)->with('msj-success', 'Nuevo Servicio Creado');
             }
