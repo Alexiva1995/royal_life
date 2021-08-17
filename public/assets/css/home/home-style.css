@@ -1,0 +1,52 @@
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.texto-encima{
+    position: absolute;
+    top: 30%;
+    color: black;
+    left: 24%;
+    font-size: 50px;
+    width: 45%;
+    transform: translate(-50%, -50%);
+}
+.centrado{
+    position: absolute;
+    color: black;
+    top: 44%;
+    left: 24%;
+    text-align: justify;
+    width: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.sobre{
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    text-align: justify;
+    transform: translate(-50%, -50%);
+}
+.debajo{
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    text-align: justify;
+    transform: translate(-50%, -50%);
+}
+
+.btn-pry{
+    border-color: #66FFCC !important;
+    color: black!important;
+    box-shadow: 0 8px 25px -8px #66ffcc;
+    position: absolute;
+    top: 53%;
+    left: 15%;
+    width: 13%;
+    background-color: #66FFCC;
+    border-radius: 0.4285rem;
+    transform: translate(-50%, -50%);
+}
