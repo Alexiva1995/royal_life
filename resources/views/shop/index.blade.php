@@ -37,13 +37,20 @@
             <div class="card-content ">
                 <div class="card-body card-group mt-12 ">
                    <h1 class="text-white">Tienda</h1>
-                    <div class="row">
-                        <div class="card" style="background:#FFFFFF" >
+                   <div class=" d-fex col-md-3">
+                    <div class="row d-flex justify-content-start mt-5">
+                        <div class="card col-12" style="background:#FFFFFF" >
                             <h6> <strong> categorias </strong></h6>
                         </div>
-
+                    </div>
+                </div>
+                    <div class="container d-fex col-md-8">
+                     <div class="row d-flex justify-content-end mt-5">
                         @foreach ($packages as $items)
-                            <div class="col col-md-3">
+                        <div class="col-md-6">
+                            
+                            <div class="col-md-12 ">
+                               
                                 <div class="card text-center zoom" style="background:#FFFFFF">
                                         <p class=" text-center  " style= "background: #67FFCC;  ">
                                             <img class=" text-center " src="{{asset('storage/photo-profile/'.$items->img)}}"   width="150" height="150" >
@@ -72,8 +79,10 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
                         @endforeach
                     </div>
+                </div>
                 </div>
             </div>
         </div>
