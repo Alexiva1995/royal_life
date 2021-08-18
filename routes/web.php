@@ -183,7 +183,7 @@ Route::prefix('dashboard')->middleware('menu', 'auth')->group(function ()
 
     Route::get('/categoria/{Categories}', 'CategoriasController@show')->name('categorias.show');
 
-
+    Route::get('/', 'TiendaController@index2')->name('shop2');
 
 
 });
