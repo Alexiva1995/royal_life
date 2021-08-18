@@ -24,51 +24,60 @@
     -ms-transition:all 0.3s ease;
     width:100%;
 }
+.card {
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+}
 
 </style>
 @endpush
 
 @section('content')
-<div class="container ">
-    <div class="row">
-         <div class="col-md-10">
-
-
-            <div class="container d-fex col-md-6  ">
-                <div class="row d-flex justify-content-end mt-5">
-                <div class="card" style="background:#FFFFFF">
-
-
-                <div class="card-body  card-group mt-12" style="background:#FFFFFF" >
-
-                 <h3></h3>
-
-                 </div>
-                 </div>
-
-                </div>
-            </div>
-
-         </div>
-     </div>
-</div>
 
 <div class="container">
-<div class="row">
+    <div class="row  ">
+
+        <div class="card col col-3  mt-5" style="background:#FFFFFF" >
+            <h6> <strong> categorias </strong></h6>
+
+           @foreach ( $categorias as $categoria )
+
+            <div class="form-check">
+                <input class="form-check-input"
+                       type="checkbox"
+                       value="{{$categoria->id}}"
+                       id="flexCheckDefault">
+
+                <label class="form-check-label"
+                       for="flexCheckDefault"
+                       style="color:  #303030;">
+                       <a class="nav-link" href="{{ route('categorias.show', ['Categories' => $categoria->id ]) }}">
+                        {{ $categoria->name }}
+                     </a>
+                </label>
+              </div>
+              @endforeach
+            </div>
+
+
     @foreach ($packages as $paquete )
-<div class="col-md-4 mt-4">
-    <div class="card shadow zoom"  style="background:#FFFFFF">
-        <p class=" text-center  " style= "background: #67FFCC;  ">
-         <img class=" card-img-top " src="{{asset('storage/photo-profile/'.$paquete->img)}}"   width="150" height="150" >
-        </p>
 
-        <div class="card-body hover2">
-           <h3 class="card-title texto3"><strong>hola</strong></h3>
-           <div class="meta-receta d-flex justify-content-between">
-           </div>
-        </div>
+    <div class=" col col-md-4 mt-5  ">
+        <div class="col">
+        <div class="card col-mt-4 col-md-12 shadow zoom "  style="background:#FFFFFF">
+             <p class=" text-center card  " style= "background: #67FFCC;      ">
+                <img class="  " src="{{asset('storage/photo-profile/'.$paquete->img)}}"   width="150" height="150" >
+            </p>
+                <div class="card-body hover2">
+                    <h3 class="card-title texto3"><strong>{{$paquete->name}}</strong></h3>
+                    <p>{{ Str::words( strip_tags($paquete->description) , 15 )}}</p>
+                 <div class="meta-receta d-flex justify-content-between">
+
+                 </div>
+                </div>
+            </div>
           </div>
-
         </div>
         @endforeach
    </div>
