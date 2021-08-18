@@ -45,7 +45,9 @@
         </div>
     </div>
     {{-- Fin Cuerpo --}}
-
+ {{-- footer Sidebar --}}
+ @include('layouts.componenteDashboard.footer')
+ {{-- Fin footer --}}
     {{-- formulario de salir --}}
     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
         {{ csrf_field() }}
