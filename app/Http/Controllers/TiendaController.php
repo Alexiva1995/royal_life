@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\View;
 use App\Http\Controllers\WalletController;
 use App\Http\Controllers\InversionController;
+use Facade\Ignition\Support\Packagist\Package;
 
 class TiendaController extends Controller
 {
@@ -43,25 +44,38 @@ class TiendaController extends Controller
     {
         try {
             // title
+
+
             $packages = Packages::orderBy('id', 'desc')->paginate(8);
 
             $invertido = Auth::user()->inversionMasAlta();
-            $categorias = Categories::all();
+
 
             if(isset($invertido)){
                 $invertido = $invertido->invertido;
             }
 
-            $productos = [];
+            /*$productos = [];
             foreach ($categorias as $categoria){
                $productos [ Str::slug($categoria->name)][] = Packages::where('categories_id' , $categoria->id)->get();
-            }
+            } */
 
-            return view('shop.index', compact('packages', 'invertido', 'categorias' ,'productos'));
+
+
+            return view('shop.index', compact('packages', 'invertido'));
         } catch (\Throwable $th) {
             Log::error('Tienda - Index -> Error: '.$th);
             abort(403, "Ocurrio un error, contacte con el administrador");
         }
+    }
+
+    public function index2()
+    {
+        $packages = Packages::all();
+
+
+            return view('shop.indexshop2', compact('packages'));
+
     }
 
     /**

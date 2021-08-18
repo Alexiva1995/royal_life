@@ -9,9 +9,17 @@ use Illuminate\Http\Request;
 class CategoriasController extends Controller
 {
     public function show(Categories $categories){
-       $productos = Packages::where('categories_id', $categories->id)->paginate(8);
 
+        $categorias = Categories::all();
+        foreach ($categorias as $categoria){
 
-       return view('categorias.show', compact('productos','categories'));
+        }
+
+       // return $categoria->id ;
+        $packages = Packages::where('categories_id','=',  $categoria->id)->paginate(8);
+        //return $packages;
+      // $packages = Packages::orderBy('id', 'desc')->paginate(8);
+
+       return view('categorias.show', compact('packages','categoria'));
   }
 }

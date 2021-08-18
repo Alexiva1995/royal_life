@@ -47,7 +47,7 @@
                             <div class="form-check">
                                 <input class="form-check-input"
                                        type="checkbox"
-                                       value=""
+                                       value="{{$categoria->id}}"
                                        id="flexCheckDefault">
 
                                 <label class="form-check-label"
@@ -64,26 +64,12 @@
                      </div>
                     <div class="container d-fex col-md-6">
                      <div class="row d-flex justify-content-end mt-5">
-                        @foreach ($packages as $items)
-                        <div class="col-md-6">
+                        @foreach ($packages as $producto )
 
-                            <div class="col-md-12 ">
+                        @include('ui.productos')
 
-                                <div class="card text-center zoom" style="background:#FFFFFF">
-                                        <p class=" text-center  " style= "background: #67FFCC;  ">
-                                            <img class=" text-center " src="{{asset('storage/photo-profile/'.$items->img)}}"   width="150" height="150" >
-                                        </p>
-                                    <div class="card-body">
 
-                                        <input type="hidden" name="idproduct" value="{{$items->id}}">
-                                        <input type="hidden" name="categories_id" value="">
-                                        <p class="text-right" style="color: rgb(0, 0, 0);">  <strong>  ${{$items->price}}</strong></p>
-                                        <p class="text-left"  style="color:  #000000;"><strong>{{$items->name}}</strong></p>
-                                        <p class="text-left" style="color:  #303030;">{{ Str::words( strip_tags($items->description) , 15 )}}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                         @endforeach
                     </div>
                 </div>
@@ -93,4 +79,32 @@
     </div>
 </div>
 </div>
+
+<div class="col-md-4 mt-4">
+    <div class="card shadow zoom">
+
+        <div class="card-body hover2">
+           <h3 class="card-title texto3"><strong>hola</strong></h3>
+           <div class="meta-receta d-flex justify-content-between">
+
+
+
+
+
+         </div>
+
+
+
+
+          </div>
+
+
+
+
+        </div>
+   </div>
+</div>
+
+
+
 @endsection
