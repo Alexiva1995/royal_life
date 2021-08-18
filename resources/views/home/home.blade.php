@@ -71,6 +71,7 @@
                 </div>
             </div>
         </div>
+
         <div style="background:#F0FFFA; ">
             <div class="text-center">
                 <h1 class="texto-title"><strong>Los más vendidos</strong></h1>
@@ -78,27 +79,387 @@
                     provident, cumque voluptatum nemo libero quod esse repudiandae repellat distinctio at porro nisi?
                     Dignissimos corrupti in ullam inventore dolor?</p>
             </div>
-
-            <div class="container">
-                <div class="row">
-                    <div class="card col-4" style="background: white;">
+                    <div class="container">
+                        <div class="row d-flex justify-content-center">
+                    <div class="card col-md-3 mb-1 ml-md-1" style="background: white;">
                         <div class="d-flex">
-                            <img src="{{asset('assets/img/home/producto21.png')}}" alt="">
+                            <div class="" style="background:#66FFCC; ">
+                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="">
                         </div>
-                        <div class="">
+                        <div class="col-6">
                             <h4 class="card-title">Card title</h4>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-
-
                             <p class="card-text" style="color: black;">
                                 Some quick example text to build on the card title
                                 and make up the bulk of the card's content.
                             </p>
                         </div>
                     </div>
+                    </div>
+
+                    <div class="card col-md-3 mb-1 ml-md-1" style="background: white;">
+                        <div class="d-flex">
+                            <div style="background:#66FFCC; ">
+                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="">
+                        </div>
+                        <div class="col-6">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text" style="color: black;">
+                                Some quick example text to build on the card title
+                                and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card col-md-3 mb-1 ml-md-1" style="background: white;">
+                        <div class="d-flex">
+                            <div style="background:#66FFCC; ">
+                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="">
+                        </div>
+                        <div class="col-6">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text" style="color: black;">
+                                Some quick example text to build on the card title
+                                and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card col-md-3 mb-1 ml-md-1" style="background: white;">
+                        <div class="d-flex">
+                            <div style="background:#66FFCC; ">
+                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="">
+                        </div>
+                        <div class="col-6">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text" style="color: black;">
+                                Some quick example text to build on the card title
+                                and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card col-md-3 mb-1 ml-md-1" style="background: white;">
+                        <div class="d-flex">
+                            <div style="background:#66FFCC; ">
+                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="">
+                        </div>
+                        <div class="col-6">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text" style="color: black;">
+                                Some quick example text to build on the card title
+                                and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card col-md-3 mb-1 ml-md-1" style="background: white;">
+                        <div class="d-flex">
+                            <div style="background:#66FFCC; ">
+                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="">
+                        </div>
+                        <div class="col-6">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text" style="color: black;">
+                                Some quick example text to build on the card title
+                                and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                    
                 </div>
+            </div>
+
+        </div>
+
+        <div class="contenedor d-flex" style="background: #173138">
+            <div class="texto-arriba">
+               <strong>Productos CBD con los mas altos estandares de calidad</strong>
+            </div>
+            <div class="texto-abajo">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nihil illum doloremque modi excepturi, voluptatem quam voluptatibus maiores harum expedita ex aut quidem est dolores vitae similique, explicabo facere quae.
+             </div>
+            <img src="{{asset('assets/img/home/formas_fondo2.png')}}" alt="" width="50%">
+            <img src="{{asset('assets/img/home/cbd1.png')}}" alt="" width="50%">
+        </div>
+
+        <div class="container mt-5">
+            <div class="text-center">
+                <h1 class="texto-title"><strong> Productos </strong></h1>
+                <p class="texto-simple">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab doloribus vitae
+                    provident, cumque voluptatum nemo libero quod esse repudiandae repellat distinctio at porro nisi?
+                    Dignissimos corrupti in ullam inventore dolor?</p>
             </div>
         </div>
 
+        <div class="container ">
+            <div class="row d-flex justify-content-center">
+               <div class="col-md-4">
+                   <div class="col-md-12 ">
+                       <div class="card text-center zoom" style="background:#FFFFFF">
+                               <p class=" text-center  " style= "background: #67FFCC;  ">
+                                   <img class=" text-center " src="{{asset('assets/img/home/producto21.png')}}"   width="150" height="150" >
+                               </p>
+                           <div class="card-body">
+                               <p class="text-right" style="color: rgb(0, 0, 0);">  <strong>$31</strong></p>
+                               <p class="text-left"  style="color:  #000000;"><strong>Pomada CBD</strong></p>
+                               <p class="text-left" style="color:  #303030;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-4">
+                <div class="col-md-12 ">
+                    <div class="card text-center zoom" style="background:#FFFFFF">
+                            <p class=" text-center  " style= "background: #67FFCC;  ">
+                                <img class=" text-center " src="{{asset('assets/img/home/producto21.png')}}"   width="150" height="150" >
+                            </p>
+                        <div class="card-body">
+                            <p class="text-right" style="color: rgb(0, 0, 0);">  <strong>$31</strong></p>
+                            <p class="text-left"  style="color:  #000000;"><strong>Pomada CBD</strong></p>
+                            <p class="text-left" style="color:  #303030;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="col-md-12 ">
+                    <div class="card text-center zoom" style="background:#FFFFFF">
+                            <p class=" text-center  " style= "background: #67FFCC;  ">
+                                <img class=" text-center " src="{{asset('assets/img/home/producto21.png')}}"   width="150" height="150" >
+                            </p>
+                        <div class="card-body">
+                            <p class="text-right" style="color: rgb(0, 0, 0);">  <strong>$31</strong></p>
+                            <p class="text-left"  style="color:  #000000;"><strong>Pomada CBD</strong></p>
+                            <p class="text-left" style="color:  #303030;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="col-md-12 ">
+                    <div class="card text-center zoom" style="background:#FFFFFF">
+                            <p class=" text-center  " style= "background: #67FFCC;  ">
+                                <img class=" text-center " src="{{asset('assets/img/home/producto21.png')}}"   width="150" height="150" >
+                            </p>
+                        <div class="card-body">
+                            <p class="text-right" style="color: rgb(0, 0, 0);">  <strong>$31</strong></p>
+                            <p class="text-left"  style="color:  #000000;"><strong>Pomada CBD</strong></p>
+                            <p class="text-left" style="color:  #303030;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="col-md-4">
+                <div class="col-md-12 ">
+                    <div class="card text-center zoom" style="background:#FFFFFF">
+                            <p class=" text-center  " style= "background: #67FFCC;  ">
+                                <img class=" text-center " src="{{asset('assets/img/home/producto21.png')}}"   width="150" height="150" >
+                            </p>
+                        <div class="card-body">
+                            <p class="text-right" style="color: rgb(0, 0, 0);">  <strong>$31</strong></p>
+                            <p class="text-left"  style="color:  #000000;"><strong>Pomada CBD</strong></p>
+                            <p class="text-left" style="color:  #303030;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="col-md-12 ">
+                    <div class="card text-center zoom" style="background:#FFFFFF">
+                            <p class=" text-center  " style= "background: #67FFCC;  ">
+                                <img class=" text-center " src="{{asset('assets/img/home/producto21.png')}}"   width="150" height="150" >
+                            </p>
+                        <div class="card-body">
+                            <p class="text-right" style="color: rgb(0, 0, 0);">  <strong>$31</strong></p>
+                            <p class="text-left"  style="color:  #000000;"><strong>Pomada CBD</strong></p>
+                            <p class="text-left" style="color:  #303030;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="col-md-12 ">
+                    <div class="card text-center zoom" style="background:#FFFFFF">
+                            <p class=" text-center  " style= "background: #67FFCC;  ">
+                                <img class=" text-center " src="{{asset('assets/img/home/producto21.png')}}"   width="150" height="150" >
+                            </p>
+                        <div class="card-body">
+                            <p class="text-right" style="color: rgb(0, 0, 0);">  <strong>$31</strong></p>
+                            <p class="text-left"  style="color:  #000000;"><strong>Pomada CBD</strong></p>
+                            <p class="text-left" style="color:  #303030;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="col-md-12 ">
+                    <div class="card text-center zoom" style="background:#FFFFFF">
+                            <p class=" text-center  " style= "background: #67FFCC;  ">
+                                <img class=" text-center " src="{{asset('assets/img/home/producto21.png')}}"   width="150" height="150" >
+                            </p>
+                        <div class="card-body">
+                            <p class="text-right" style="color: rgb(0, 0, 0);">  <strong>$31</strong></p>
+                            <p class="text-left"  style="color:  #000000;"><strong>Pomada CBD</strong></p>
+                            <p class="text-left" style="color:  #303030;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="col-md-12 ">
+                    <div class="card text-center zoom" style="background:#FFFFFF">
+                            <p class=" text-center  " style= "background: #67FFCC;  ">
+                                <img class=" text-center " src="{{asset('assets/img/home/producto21.png')}}"   width="150" height="150" >
+                            </p>
+                        <div class="card-body">
+                            <p class="text-right" style="color: rgb(0, 0, 0);">  <strong>$31</strong></p>
+                            <p class="text-left"  style="color:  #000000;"><strong>Pomada CBD</strong></p>
+                            <p class="text-left" style="color:  #303030;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="col-md-12 ">
+                    <div class="card text-center zoom" style="background:#FFFFFF">
+                            <p class=" text-center  " style= "background: #67FFCC;  ">
+                                <img class=" text-center " src="{{asset('assets/img/home/producto21.png')}}"   width="150" height="150" >
+                            </p>
+                        <div class="card-body">
+                            <p class="text-right" style="color: rgb(0, 0, 0);">  <strong>$31</strong></p>
+                            <p class="text-left"  style="color:  #000000;"><strong>Pomada CBD</strong></p>
+                            <p class="text-left" style="color:  #303030;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="col-md-12 ">
+                    <div class="card text-center zoom" style="background:#FFFFFF">
+                            <p class=" text-center  " style= "background: #67FFCC;  ">
+                                <img class=" text-center " src="{{asset('assets/img/home/producto21.png')}}"   width="150" height="150" >
+                            </p>
+                        <div class="card-body">
+                            <p class="text-right" style="color: rgb(0, 0, 0);">  <strong>$31</strong></p>
+                            <p class="text-left"  style="color:  #000000;"><strong>Pomada CBD</strong></p>
+                            <p class="text-left" style="color:  #303030;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="col-md-12 ">
+                    <div class="card text-center zoom" style="background:#FFFFFF">
+                            <p class=" text-center  " style= "background: #67FFCC;  ">
+                                <img class=" text-center " src="{{asset('assets/img/home/producto21.png')}}"   width="150" height="150" >
+                            </p>
+                        <div class="card-body">
+                            <p class="text-right" style="color: rgb(0, 0, 0);">  <strong>$31</strong></p>
+                            <p class="text-left"  style="color:  #000000;"><strong>Pomada CBD</strong></p>
+                            <p class="text-left" style="color:  #303030;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="col-md-12 ">
+                    <div class="card text-center zoom" style="background:#FFFFFF">
+                            <p class=" text-center  " style= "background: #67FFCC;  ">
+                                <img class=" text-center " src="{{asset('assets/img/home/producto21.png')}}"   width="150" height="150" >
+                            </p>
+                        <div class="card-body">
+                            <p class="text-right" style="color: rgb(0, 0, 0);">  <strong>$31</strong></p>
+                            <p class="text-left"  style="color:  #000000;"><strong>Pomada CBD</strong></p>
+                            <p class="text-left" style="color:  #303030;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="col-md-12 ">
+                    <div class="card text-center zoom" style="background:#FFFFFF">
+                            <p class=" text-center  " style= "background: #67FFCC;  ">
+                                <img class=" text-center " src="{{asset('assets/img/home/producto21.png')}}"   width="150" height="150" >
+                            </p>
+                        <div class="card-body">
+                            <p class="text-right" style="color: rgb(0, 0, 0);">  <strong>$31</strong></p>
+                            <p class="text-left"  style="color:  #000000;"><strong>Pomada CBD</strong></p>
+                            <p class="text-left" style="color:  #303030;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="col-md-12 ">
+                    <div class="card text-center zoom" style="background:#FFFFFF">
+                            <p class=" text-center  " style= "background: #67FFCC;  ">
+                                <img class=" text-center " src="{{asset('assets/img/home/producto21.png')}}"   width="150" height="150" >
+                            </p>
+                        <div class="card-body">
+                            <p class="text-right" style="color: rgb(0, 0, 0);">  <strong>$31</strong></p>
+                            <p class="text-left"  style="color:  #000000;"><strong>Pomada CBD</strong></p>
+                            <p class="text-left" style="color:  #303030;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           </div>
+       </div>
+       <div class="container mt-5">
+        <div class="text-center">
+            <h1 class="texto-title"><strong> Clientes satisfechos </strong></h1>
+            <p class="texto-simple">curabitur lacus arcu, sodales in quam sed, commodo efficitur liguia</p>
+        </div>
+    </div>
+    <div class="testimonials-clean">
+        <div class="container">
+            <div class="row people">
+                <div class="col-md-6 item">
+                    <div class="box">
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quam provident pariatur cum! Porro, magni in earum debitis unde quaerat error reiciendis optio modi consequatur sapiente consequuntur laboriosam praesentium consectetur?</p>
+                    </div>
+                    <div class="author"><img class="rounded-circle" src="{{asset('assets/img/home/producto21.png')}}">
+                        <h5 class="name">Ben Johnson</h5>
+                        <p class="title">CEO of Company Inc.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 item">
+                    <div class="box">
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quod veritatis dicta tempore id. Mollitia dolor quo molestiae fugiat laudantium, odio repellendus tenetur provident nihil rerum quod placeat? Voluptate, asperiores.</p>
+                    </div>
+                    <div class="author"><img class="rounded-circle" src="{{asset('assets/img/home/producto21.png')}}">
+                        <h5 class="name">Carl Kent</h5>
+                        <p class="title">Founder of Style Co.</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <img src="{{asset('assets/img/home/Rectangle29.png')}}" alt="" style="margin-top: -215px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="contenedorborder mb-2" style="background: #173138">
+                <div class="texto-dearriba">
+                    <strong>Faucibus pulvinar euismod tincidunt</strong>
+                 </div>
+                 <div class="texto-debajo">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nihil illum doloremque modi excepturi, voluptatem quam voluptatibus maiores harum expedita ex aut quidem est dolores vitae similique, explicabo facere quae.
+                 </div>
+                 <button class="btn btn-pri"><strong>Contactanos</strong></button>
+                <img src="{{asset('assets/img/home/formas_fondo22.png')}}" alt="">
+            </div>
+        </div>
+    </div>
         @endsection
