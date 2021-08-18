@@ -32,14 +32,15 @@
 
 <div class="container">
     <h2 class="titulo-categoria text-uppercase mt-5 mb-4">
+        {{$categoria->name}}
     </h2>
     <div class="row">
 
-       <h1> {{$productos}} </h1>
+    @foreach ($packages as $producto )
+    @include('ui.productos')
+    @endforeach
 
     </div>
-
-
 
 
 @endsection

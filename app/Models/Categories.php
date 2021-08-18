@@ -10,7 +10,11 @@ class Categories extends Model
     protected $table = 'categories';
 
     protected $fillable = [
-        'name', 'status', 'description', 'img'
+        'id',
+        'name',
+        'status',
+        'description',
+        'img'
     ];
 /**
      * Permite obtener todos los paquetes de un grupo
