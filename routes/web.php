@@ -180,6 +180,7 @@ Route::prefix('dashboard')->middleware('menu', 'auth')->group(function ()
     
     Route::prefix('backofice')->group(function(){
     Route::get('/inicio', 'HomeController@inicio')->name('inicio');
+    Route::get('/about', 'HomeController@about')->name('about');
     Route::get('/shopBackofice', 'TiendaController@shop')->name('shop.backofice');
     });
 });

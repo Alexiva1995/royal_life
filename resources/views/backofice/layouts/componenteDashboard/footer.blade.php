@@ -35,7 +35,7 @@
                 <div class="col-sm-4 col-md-2 item">
                     <h3 class="white">Nosotros</h3>
                     <ul>
-                        <li><a href="#">¿Quienes Sómos?</a></li>
+                        <li><a href="{{route('about')}}">¿Quienes Sómos?</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-4 col-md-3 item">

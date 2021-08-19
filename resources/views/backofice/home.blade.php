@@ -83,7 +83,7 @@
                         <div class="row d-flex justify-content-center">
                     <div class="card-body col-md-3 mb-1 ml-md-1" style="background: white;">
                         <div class="d-flex">
-                            <div class="" style="background:#66FFCC; ">
+                            <div style="background:#66FFCC; ">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="">
                         </div>
                         <div class="col-6">

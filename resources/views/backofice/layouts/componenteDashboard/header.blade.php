@@ -11,7 +11,7 @@
               <a class="nav-link ml-3 h5" href="{{route('shop.backofice')}}">Tienda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link  ml-3 h5" href="#">Nosotros</a>
+              <a class="nav-link  ml-3 h5" href="{{route('about')}}">Nosotros</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link ml-3 h5" href="{{route('ticket.list-user')}}">Contacto</a>
