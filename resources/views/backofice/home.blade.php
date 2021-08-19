@@ -72,16 +72,16 @@
             </div>
         </div>
 
-        <div style="background:#F0FFFA; ">
-            <div class="text-center">
+        <div class="p-5" style="background:#F0FFFA;">
+            <div class="container mb-3">
                 <h1 class="texto-title mt-5"><strong>Los más vendidos</strong></h1>
-                <p class="texto-simple">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab doloribus vitae
-                    provident, cumque voluptatum nemo libero quod esse repudiandae repellat distinctio at porro nisi?
-                    Dignissimos corrupti in ullam inventore dolor?</p>
+                <p style="color: black">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab doloribus vitae
+                    provident, cumque voluptatum nemo libero quod esse repudiandae repellat distinctio at porro nisi.
+                    </p>
             </div>
-                    <div class="container">
+                    
                         <div class="row d-flex justify-content-center">
-                    <div class="card col-md-3 mb-1 ml-md-1" style="background: white;">
+                    <div class="card-body col-md-3 mb-1 ml-md-1" style="background: white;">
                         <div class="d-flex">
                             <div class="" style="background:#66FFCC; ">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="">
@@ -96,7 +96,7 @@
                     </div>
                     </div>
 
-                    <div class="card col-md-3 mb-1 ml-md-1" style="background: white;">
+                    <div class="card-body col-md-3 mb-1 ml-md-1" style="background: white;">
                         <div class="d-flex">
                             <div style="background:#66FFCC; ">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="">
@@ -111,7 +111,7 @@
                     </div>
                     </div>
 
-                    <div class="card col-md-3 mb-1 ml-md-1" style="background: white;">
+                    <div class="card-body col-md-3 mb-1 ml-md-1" style="background: white;">
                         <div class="d-flex">
                             <div style="background:#66FFCC; ">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="">
@@ -126,7 +126,7 @@
                     </div>
                     </div>
 
-                    <div class="card col-md-3 mb-5 ml-md-1" style="background: white;">
+                    <div class="card-body col-md-3 mb-5 ml-md-1" style="background: white;">
                         <div class="d-flex">
                             <div style="background:#66FFCC; ">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="">
@@ -141,7 +141,7 @@
                     </div>
                     </div>
 
-                    <div class="card col-md-3 mb-5 ml-md-1" style="background: white;">
+                    <div class="card-body col-md-3 mb-5 ml-md-1" style="background: white;">
                         <div class="d-flex">
                             <div style="background:#66FFCC; ">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="">
@@ -156,7 +156,7 @@
                     </div>
                     </div>
 
-                    <div class="card col-md-3 mb-5 ml-md-1" style="background: white;">
+                    <div class="card-body col-md-3 mb-5 ml-md-1" style="background: white;">
                         <div class="d-flex">
                             <div style="background:#66FFCC; ">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="">
@@ -172,7 +172,7 @@
                     </div>
                     
                 </div>
-            </div>
+            
 
         </div>
 
@@ -423,20 +423,36 @@
             <div class="row people">
                 <div class="col-md-6 item">
                     <div class="box">
-                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quam provident pariatur cum! Porro, magni in earum debitis unde quaerat error reiciendis optio modi consequatur sapiente consequuntur laboriosam praesentium consectetur?</p>
+                        <div style="margin-top: 8px;">
+                            <img src="{{ asset('assets/img/home/Vector.png') }}" alt="">
+                            <img src="{{ asset('assets/img/home/Vector.png') }}" alt="">
+                            <img src="{{ asset('assets/img/home/Vector.png') }}" alt="">
+                            <img src="{{ asset('assets/img/home/Vector.png') }}" alt="">
+                            <img src="{{ asset('assets/img/home/Vector.png') }}" alt="">
+                        </div>
+                        <div>
+                        <p class="description" style="margin-top: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quam provident pariatur cum! Porro, magni in earum debitis unde quaerat error reiciendis optio modi consequatur sapiente consequuntur laboriosam praesentium consectetur?</p>
                     </div>
-                    <div class="author"><img class="rounded-circle" src="{{asset('assets/img/home/producto21.png')}}">
-                        <h5 class="name">Ben Johnson</h5>
-                        <p class="title">CEO of Company Inc.</p>
+                    </div>
+                    <div class="author"><img class="rounded-circle" src="{{asset('assets/img/home/Ellipse.png')}}" style="margin-top: 5px;">
+                        <h5 class="name" style="margin-top: 5px;">Antonio Medina</h5>
+                        <p class="title"><strong>Cliente</strong></p>
                     </div>
                 </div>
                 <div class="col-md-6 item">
                     <div class="box">
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quod veritatis dicta tempore id. Mollitia dolor quo molestiae fugiat laudantium, odio repellendus tenetur provident nihil rerum quod placeat? Voluptate, asperiores.</p>
+                        <div style="margin-top: 8px;">
+                            <img src="{{ asset('assets/img/home/Vector.png') }}" alt="">
+                            <img src="{{ asset('assets/img/home/Vector.png') }}" alt="">
+                            <img src="{{ asset('assets/img/home/Vector.png') }}" alt="">
+                            <img src="{{ asset('assets/img/home/Vector.png') }}" alt="">
+                            <img src="{{ asset('assets/img/home/Vector.png') }}" alt="">
+                        </div>
+                        <p class="description" style="margin-top: 30px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quod veritatis dicta tempore id. Mollitia dolor quo molestiae fugiat laudantium, odio repellendus tenetur provident nihil rerum quod placeat? Voluptate, asperiores.</p>
                     </div>
-                    <div class="author"><img class="rounded-circle" src="{{asset('assets/img/home/producto21.png')}}">
-                        <h5 class="name">Carl Kent</h5>
-                        <p class="title">Founder of Style Co.</p>
+                    <div class="author"><img class="rounded-circle" src="{{asset('assets/img/home/Ellipse1.png')}}" style="margin-top: 5px;">
+                        <h5 class="name" style="margin-top: 5px;">Felipe Minaya</h5>
+                        <p class="title"><strong>Cliente</strong></p>
                     </div>
                 </div>
                 <div class="container">

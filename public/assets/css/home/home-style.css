@@ -240,7 +240,7 @@
   
   .testimonials-clean .item .author {
     position: absolute;
-    margin-top:-185px;
+    margin-top:-200px;
     background: white;
     padding-left:25px;
     height: 25%;
@@ -254,8 +254,8 @@
   }
   
   .testimonials-clean .item .title {
-    font-size:13px;
-    color:#9da9ae;
+    font-size: 14px;
+    color: #253E45
   }
   
   .testimonials-clean .item .description {
