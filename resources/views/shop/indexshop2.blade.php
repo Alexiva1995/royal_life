@@ -82,7 +82,7 @@ border-radius: 5px;
 
     <div class=" col col-md-4 mt-5  ">
         <div class="col">
-        <div class="card col-mt-4 col-md-12 shadow zoom "  style="background:#FFFFFF">
+        <div class="card col-mt-5 col-md-10 shadow zoom "  style="background:#FFFFFF">
              <p class=" text-center bdr bar  " style= "background: #67FFCC;      ">
                 <img class="  " src="{{asset('storage/photo-profile/'.$paquete->img)}}"   width="150" height="150" >
             </p>
