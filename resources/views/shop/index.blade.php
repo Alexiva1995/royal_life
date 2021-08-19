@@ -79,32 +79,4 @@
     </div>
 </div>
 </div>
-
-<div class="col-md-4 mt-4">
-    <div class="card shadow zoom">
-
-        <div class="card-body hover2">
-           <h3 class="card-title texto3"><strong>hola</strong></h3>
-           <div class="meta-receta d-flex justify-content-between">
-
-
-
-
-
-         </div>
-
-
-
-
-          </div>
-
-
-
-
-        </div>
-   </div>
-</div>
-
-
-
 @endsection

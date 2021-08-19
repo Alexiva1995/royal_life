@@ -6,7 +6,7 @@
 
         <div class="card text-center zoom" style="background:#FFFFFF">
                 <p class=" text-center  " style= "background: #67FFCC;  ">
-                <img class=" text-center " src="{{asset('storage/photo-profile/'.$producto->img)}}"   width="150" height="150" >
+                <img class=" text-center  text-center bdr bar " src="{{asset('storage/photo-profile/'.$producto->img)}}"   width="150" height="150" >
                 </p>
             <div class="card-body">
 

@@ -9,6 +9,8 @@
 <script src="{{asset('assets/app-assets/vendors/js/extensions/polyfill.min.js')}}"></script>
 @endpush
 
+
+
 @push('custom_css')
 <style>
 .zoom:hover {
@@ -37,7 +39,8 @@
 }
 .bar {
     position: relative;
-   top: 10px;
+    top: 10px;
+
 }
 
 .form-check-input{
@@ -52,10 +55,10 @@ border-radius: 5px;
 
 @section('content')
 
-<div class="container">
-    <div class="row  ">
 
-        <div class="card col col-3  mt-5" style="background:#FFFFFF" >
+<div class="row d-flex align-items-center">
+  {{--  <div class="container ">
+        <div class="card col col-3  mt-5 " style="background:#FFFFFF" >
             <h6> <strong> categorias </strong></h6>
 
            @foreach ( $categorias as $categoria )
@@ -73,13 +76,18 @@ border-radius: 5px;
                         {{ $categoria->name }}
                      </a>
                 </label>
-              </div>
-              @endforeach
             </div>
+             @endforeach
+
+        </div>
+    </div>
+
+
 
 
     @foreach ($packages as $paquete )
-
+    <div class="container">
+        <div class="row d-flex justify-content-end mt-5">
     <div class=" col col-md-4 mt-5  ">
         <div class="col">
         <div class="card col-mt-5 col-md-10 shadow zoom "  style="background:#FFFFFF">
@@ -98,6 +106,75 @@ border-radius: 5px;
         </div>
         @endforeach
    </div>
+</div> --}}
+
+<div id="adminServices" >
+    <div class="">
+     <div class="col-12 ">
+
+        <div class="" style="background:#E5E5E5">
+            <div class="card-content ">
+                <div class="card-body card-group mt-12 ">
+                   <h1 class="text-white">Tienda</h1>
+                   <div class=" d-fex col-md-3">
+                    <div class="row d-flex justify-content-start mt-5">
+                        <div class="card col-12" style="background:#FFFFFF" >
+                            <h6> <strong> categorias </strong></h6>
+
+                           @foreach ( $categorias as $categoria )
+
+                            <div class="form-check">
+                                <input class="form-check-input"
+                                       type="checkbox"
+                                       value="{{$categoria->id}}"
+                                       id="flexCheckDefault">
+
+                                <label class="form-check-label"
+                                       for="flexCheckDefault"
+                                       style="color:  #303030;">
+                                       <a class="nav-link" href="{{ route('categorias.show', ['Categories' => $categoria->id ]) }}">
+                                        {{ $categoria->name }}
+                                     </a>
+                                </label>
+                              </div>
+                              @endforeach
+                            </div>
+                     </div>
+                     </div>
+                    <div class="container d-fex col-md-6">
+                     <div class="row d-flex justify-content-end mt-5">
+                        @foreach ($packages as $producto )
+
+                        <div class="col-md-6">
+
+
+                            <div class="col-md-12 ">
+
+                                <div class="card col-mt-5 col-md-12 shadow zoom " style="background:#FFFFFF">
+                                    <p class=" text-center bdr bar  " style= "background: #67FFCC;      ">
+                                        <img class="  " src="{{asset('storage/photo-profile/'.$producto->img)}}"   width="150" height="150" >
+                                    </p>
+                                    <div class="card-body">
+
+                                        <input type="hidden" name="idproduct" value="{{$producto->categoria_id}}}">
+                                        <input type="hidden" name="categories_id" value="{{$categoria->id}}">
+                                        <p class="text-right" style="color: rgb(0, 0, 0);"><strong>  ${{$producto->price}}</strong></p>
+                                        <p class="text-left"  style="color:  #000000;"><strong>{{$producto->name}}</strong></p>
+                                        <p class="text-left"  style="color:  #303030;">{{ Str::words( strip_tags($producto->description) , 15 )}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        @endforeach
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 
 @endsection
