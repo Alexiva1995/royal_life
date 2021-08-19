@@ -74,7 +74,7 @@
 
         <div style="background:#F0FFFA; ">
             <div class="text-center">
-                <h1 class="texto-title"><strong>Los más vendidos</strong></h1>
+                <h1 class="texto-title mt-5"><strong>Los más vendidos</strong></h1>
                 <p class="texto-simple">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab doloribus vitae
                     provident, cumque voluptatum nemo libero quod esse repudiandae repellat distinctio at porro nisi?
                     Dignissimos corrupti in ullam inventore dolor?</p>
@@ -126,7 +126,7 @@
                     </div>
                     </div>
 
-                    <div class="card col-md-3 mb-1 ml-md-1" style="background: white;">
+                    <div class="card col-md-3 mb-5 ml-md-1" style="background: white;">
                         <div class="d-flex">
                             <div style="background:#66FFCC; ">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="">
@@ -141,7 +141,7 @@
                     </div>
                     </div>
 
-                    <div class="card col-md-3 mb-1 ml-md-1" style="background: white;">
+                    <div class="card col-md-3 mb-5 ml-md-1" style="background: white;">
                         <div class="d-flex">
                             <div style="background:#66FFCC; ">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="">
@@ -156,7 +156,7 @@
                     </div>
                     </div>
 
-                    <div class="card col-md-3 mb-1 ml-md-1" style="background: white;">
+                    <div class="card col-md-3 mb-5 ml-md-1" style="background: white;">
                         <div class="d-flex">
                             <div style="background:#66FFCC; ">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="">
@@ -202,7 +202,7 @@
                    <div class="col-md-12 ">
                        <div class="card text-center zoom" style="background:#FFFFFF">
                                <p class=" text-center  " style= "background: #67FFCC;  ">
-                                   <img class=" text-center " src="{{asset('assets/img/home/producto21.png')}}"   width="150" height="150" >
+                                   <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" >
                                </p>
                            <div class="card-body">
                                <p class="text-right" style="color: rgb(0, 0, 0);">  <strong>$31</strong></p>
@@ -216,7 +216,7 @@
                 <div class="col-md-12 ">
                     <div class="card text-center zoom" style="background:#FFFFFF">
                             <p class=" text-center  " style= "background: #67FFCC;  ">
-                                <img class=" text-center " src="{{asset('assets/img/home/producto21.png')}}"   width="150" height="150" >
+                                <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" >
                             </p>
                         <div class="card-body">
                             <p class="text-right" style="color: rgb(0, 0, 0);">  <strong>$31</strong></p>
@@ -230,7 +230,7 @@
                 <div class="col-md-12 ">
                     <div class="card text-center zoom" style="background:#FFFFFF">
                             <p class=" text-center  " style= "background: #67FFCC;  ">
-                                <img class=" text-center " src="{{asset('assets/img/home/producto21.png')}}"   width="150" height="150" >
+                                <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" >
                             </p>
                         <div class="card-body">
                             <p class="text-right" style="color: rgb(0, 0, 0);">  <strong>$31</strong></p>
@@ -244,7 +244,7 @@
                 <div class="col-md-12 ">
                     <div class="card text-center zoom" style="background:#FFFFFF">
                             <p class=" text-center  " style= "background: #67FFCC;  ">
-                                <img class=" text-center " src="{{asset('assets/img/home/producto21.png')}}"   width="150" height="150" >
+                                <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" >
                             </p>
                         <div class="card-body">
                             <p class="text-right" style="color: rgb(0, 0, 0);">  <strong>$31</strong></p>
@@ -259,7 +259,7 @@
                 <div class="col-md-12 ">
                     <div class="card text-center zoom" style="background:#FFFFFF">
                             <p class=" text-center  " style= "background: #67FFCC;  ">
-                                <img class=" text-center " src="{{asset('assets/img/home/producto21.png')}}"   width="150" height="150" >
+                                <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" >
                             </p>
                         <div class="card-body">
                             <p class="text-right" style="color: rgb(0, 0, 0);">  <strong>$31</strong></p>
@@ -273,7 +273,7 @@
                 <div class="col-md-12 ">
                     <div class="card text-center zoom" style="background:#FFFFFF">
                             <p class=" text-center  " style= "background: #67FFCC;  ">
-                                <img class=" text-center " src="{{asset('assets/img/home/producto21.png')}}"   width="150" height="150" >
+                                <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" >
                             </p>
                         <div class="card-body">
                             <p class="text-right" style="color: rgb(0, 0, 0);">  <strong>$31</strong></p>
@@ -287,7 +287,7 @@
                 <div class="col-md-12 ">
                     <div class="card text-center zoom" style="background:#FFFFFF">
                             <p class=" text-center  " style= "background: #67FFCC;  ">
-                                <img class=" text-center " src="{{asset('assets/img/home/producto21.png')}}"   width="150" height="150" >
+                                <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" >
                             </p>
                         <div class="card-body">
                             <p class="text-right" style="color: rgb(0, 0, 0);">  <strong>$31</strong></p>
@@ -301,7 +301,7 @@
                 <div class="col-md-12 ">
                     <div class="card text-center zoom" style="background:#FFFFFF">
                             <p class=" text-center  " style= "background: #67FFCC;  ">
-                                <img class=" text-center " src="{{asset('assets/img/home/producto21.png')}}"   width="150" height="150" >
+                                <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" >
                             </p>
                         <div class="card-body">
                             <p class="text-right" style="color: rgb(0, 0, 0);">  <strong>$31</strong></p>
@@ -315,7 +315,7 @@
                 <div class="col-md-12 ">
                     <div class="card text-center zoom" style="background:#FFFFFF">
                             <p class=" text-center  " style= "background: #67FFCC;  ">
-                                <img class=" text-center " src="{{asset('assets/img/home/producto21.png')}}"   width="150" height="150" >
+                                <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" >
                             </p>
                         <div class="card-body">
                             <p class="text-right" style="color: rgb(0, 0, 0);">  <strong>$31</strong></p>
@@ -329,7 +329,7 @@
                 <div class="col-md-12 ">
                     <div class="card text-center zoom" style="background:#FFFFFF">
                             <p class=" text-center  " style= "background: #67FFCC;  ">
-                                <img class=" text-center " src="{{asset('assets/img/home/producto21.png')}}"   width="150" height="150" >
+                                <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" >
                             </p>
                         <div class="card-body">
                             <p class="text-right" style="color: rgb(0, 0, 0);">  <strong>$31</strong></p>
@@ -343,7 +343,7 @@
                 <div class="col-md-12 ">
                     <div class="card text-center zoom" style="background:#FFFFFF">
                             <p class=" text-center  " style= "background: #67FFCC;  ">
-                                <img class=" text-center " src="{{asset('assets/img/home/producto21.png')}}"   width="150" height="150" >
+                                <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" >
                             </p>
                         <div class="card-body">
                             <p class="text-right" style="color: rgb(0, 0, 0);">  <strong>$31</strong></p>
@@ -357,7 +357,7 @@
                 <div class="col-md-12 ">
                     <div class="card text-center zoom" style="background:#FFFFFF">
                             <p class=" text-center  " style= "background: #67FFCC;  ">
-                                <img class=" text-center " src="{{asset('assets/img/home/producto21.png')}}"   width="150" height="150" >
+                                <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" >
                             </p>
                         <div class="card-body">
                             <p class="text-right" style="color: rgb(0, 0, 0);">  <strong>$31</strong></p>
@@ -371,7 +371,7 @@
                 <div class="col-md-12 ">
                     <div class="card text-center zoom" style="background:#FFFFFF">
                             <p class=" text-center  " style= "background: #67FFCC;  ">
-                                <img class=" text-center " src="{{asset('assets/img/home/producto21.png')}}"   width="150" height="150" >
+                                <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" >
                             </p>
                         <div class="card-body">
                             <p class="text-right" style="color: rgb(0, 0, 0);">  <strong>$31</strong></p>
@@ -385,7 +385,7 @@
                 <div class="col-md-12 ">
                     <div class="card text-center zoom" style="background:#FFFFFF">
                             <p class=" text-center  " style= "background: #67FFCC;  ">
-                                <img class=" text-center " src="{{asset('assets/img/home/producto21.png')}}"   width="150" height="150" >
+                                <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" >
                             </p>
                         <div class="card-body">
                             <p class="text-right" style="color: rgb(0, 0, 0);">  <strong>$31</strong></p>
@@ -399,7 +399,7 @@
                 <div class="col-md-12 ">
                     <div class="card text-center zoom" style="background:#FFFFFF">
                             <p class=" text-center  " style= "background: #67FFCC;  ">
-                                <img class=" text-center " src="{{asset('assets/img/home/producto21.png')}}"   width="150" height="150" >
+                                <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" >
                             </p>
                         <div class="card-body">
                             <p class="text-right" style="color: rgb(0, 0, 0);">  <strong>$31</strong></p>
@@ -409,9 +409,9 @@
                     </div>
                 </div>
             </div>
-
            </div>
        </div>
+       
        <div class="container mt-5">
         <div class="text-center">
             <h1 class="texto-title"><strong> Clientes satisfechos </strong></h1>

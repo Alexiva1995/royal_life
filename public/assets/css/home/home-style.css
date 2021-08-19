@@ -35,7 +35,7 @@
     color: white;
     top: 68%;
     left: 24%;
-    text-align: center;
+    text-align: initial;
     width: 30%;
     transform: translate(-50%, -50%);
 }
