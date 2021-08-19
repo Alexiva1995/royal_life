@@ -221,4 +221,9 @@ class HomeController extends Controller
     {
         return view('backofice.home');
     }
+
+    public function about()
+    {
+        return view('backofice.about');
+    }
 }
