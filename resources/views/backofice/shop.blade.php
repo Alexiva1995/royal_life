@@ -56,7 +56,17 @@ border-radius: 5px;
 @section('content')
 
 
-<div class="row d-flex align-items-center">
+        <div class="" style="background: #173138">
+            <div class="texto-tienda">
+                <strong>Tienda</strong>
+             </div>
+             <div class="texto-tiendaB">
+               <p>Inicio <strong> > </strong>Tienda</p>
+             </div>
+            <img src="{{asset('assets/img/home/formas_fondo3.png')}}" alt=""  style="width: 100%;">
+        </div>
+
+<div class="">
   {{--  <div class="container ">
         <div class="card col col-3  mt-5 " style="background:#FFFFFF" >
             <h6> <strong> categorias </strong></h6>
