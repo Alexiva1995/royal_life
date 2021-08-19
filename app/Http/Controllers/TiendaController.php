@@ -411,4 +411,14 @@ class TiendaController extends Controller
             abort(403, "Ocurrio un error, contacte con el administrador");
         }
     }
+
+    public function shop()
+    {
+        $packages = Packages::all();
+
+
+            return view('backofice.shop', compact('packages'));
+
+    }
+
 }
