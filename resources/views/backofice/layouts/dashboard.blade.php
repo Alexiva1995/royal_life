@@ -28,10 +28,10 @@
     {{-- Fin Sidebar --}}
     {{-- Cuerpo --}}
     <!-- BEGIN: Content-->
-    <div class="" style="background: #E5E5E5;">
+    <div class="" style="background: #ffffff;">
         <div class=""></div>
-        <div class="" style="background: #E5E5E5;"></div>
-        <div class="" style="background: #E5E5E5;">
+        <div class="" style="background: #ffffff;"></div>
+        <div class="" style="background: #ffffff;">
             <div class="">
                 {{-- Migaja de pan --}}
                 @if (!empty($titleg))

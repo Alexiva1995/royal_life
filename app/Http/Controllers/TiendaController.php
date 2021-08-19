@@ -420,5 +420,9 @@ class TiendaController extends Controller
             return view('backofice.shop', compact('packages'));
 
     }
+    public function cheking()
+    {
+       return  view('backofice.checkout');
+    }
 
 }
