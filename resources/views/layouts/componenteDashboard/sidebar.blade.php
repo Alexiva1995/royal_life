@@ -1,4 +1,4 @@
- <!-- BEGIN: Main Menu
+ <!-- BEGIN: Main Menu-->
  <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow bg-purple-alt" data-scroll-to-active="true">
     <div class="navbar-header">
         <ul class="nav navbar-nav flex-row">
@@ -45,4 +45,4 @@
         </ul>
     </div>
 </div>
-END: Main Menu-->
+<!-- END: Main Menu-->

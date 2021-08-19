@@ -2,21 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use Carbon\Carbon;
-use App\Models\User;
 use App\Models\Groups;
-use App\Models\Packages;
-use App\Models\Categories;
-use Illuminate\Support\Str;
-use Illuminate\Http\Request;
 use App\Models\OrdenPurchases;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\Auth;
+use App\Models\Packages;
+use App\Models\User;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\View;
-use App\Http\Controllers\WalletController;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\InversionController;
-use Facade\Ignition\Support\Packagist\Package;
+use App\Http\Controllers\WalletController;
+use App\Models\Categories;
 
 class TiendaController extends Controller
 {
@@ -44,38 +42,19 @@ class TiendaController extends Controller
     {
         try {
             // title
-
-
-            $packages = Packages::orderBy('id', 'desc')->paginate(8);
+            $packages = Packages::orderBy('id', 'desc')->paginate();
 
             $invertido = Auth::user()->inversionMasAlta();
-
 
             if(isset($invertido)){
                 $invertido = $invertido->invertido;
             }
-
-            /*$productos = [];
-            foreach ($categorias as $categoria){
-               $productos [ Str::slug($categoria->name)][] = Packages::where('categories_id' , $categoria->id)->get();
-            } */
-
-
 
             return view('shop.index', compact('packages', 'invertido'));
         } catch (\Throwable $th) {
             Log::error('Tienda - Index -> Error: '.$th);
             abort(403, "Ocurrio un error, contacte con el administrador");
         }
-    }
-
-    public function index2()
-    {
-        $packages = Packages::all();
-
-
-            return view('shop.indexshop2', compact('packages'));
-
     }
 
     /**
