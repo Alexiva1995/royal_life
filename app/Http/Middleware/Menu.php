@@ -321,6 +321,15 @@ class Menu
 
                 ]
             ],
+            // Inicio
+            'backofice' => [
+                'submenu' => 0,
+                'ruta' => route('inicio'),
+                'blank'=> '', // si es para una pagina diferente del sistema solo coloquen _blank
+                'icon' => 'feather icon-home',
+                'complementoruta' => '',
+            ],
+            // Fin inicio
         ];
     }
 }

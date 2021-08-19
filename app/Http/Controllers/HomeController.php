@@ -216,4 +216,9 @@ class HomeController extends Controller
      
         return response()->json(['valores' => $data]);
     }
+
+    public function inicio()
+    {
+        return view('backofice.home');
+    }
 }

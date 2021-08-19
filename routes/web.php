@@ -177,4 +177,9 @@ Route::prefix('dashboard')->middleware('menu', 'auth')->group(function ()
     Route::get('dataGrafica', 'HomeController@dataGrafica')->name('dataGrafica');
 
     Route::get('testRank', 'RankController@testRank')->name('testRank');
+    
+    Route::prefix('backofice')->group(function(){
+    Route::get('/inicio', 'HomeController@inicio')->name('inicio');
+    Route::get('/shopBackofice', 'TiendaController@shop')->name('shop.backofice');
+    });
 });
