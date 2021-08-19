@@ -19,7 +19,6 @@ class CreatePackagesTable extends Migration
              $table->unsignedBigInteger('categories_id');
              $table->foreign('categories_id')->references('id')->on('categories');
             $table->double('price')->default(0);
-            $table->text('img')->nullable();
             // $table->double('minimum_deposit')->default(0)->comment('deposito minimo');
             $table->date('expired')->nullable()->comment('Fecha de vencimiento del paquete');
             $table->text('description')->nullable();

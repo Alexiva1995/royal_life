@@ -13,7 +13,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form method="POST" class="form form-vertical" action="{{route('package.store')}}" enctype="multipart/form-data">
+                <form method="POST" class="form form-vertical" action="{{route('package.store')}}">
                     <div class="form-body">
                         @csrf
                         <div class="row">
@@ -23,13 +23,6 @@
                                 <fieldset class="form-group">
                                     <label for="">Nombre</label>
                                     <input type="text" name="name" class="form-control" required>
-                                </fieldset>
-                            </div>
-
-                            <div class="col-12">
-                                <fieldset class="form-group">
-                                    <label for="">Imagen</label>
-                                    <input type="file" name="img" class="form-control" required accept="image/jpeg, image/png">
                                 </fieldset>
                             </div>
                             {{-- <div class="col-12">
@@ -62,7 +55,6 @@
                                     <input type="number" name="price" class="form-control" required step="any">
                                 </fieldset>
                             </div>
-
                             <div class="col-12 col-md-6">
                                 <fieldset class="form-group">
                                     <label for="">Estado</label>
@@ -73,9 +65,6 @@
                                     </select>
                                 </fieldset>
                             </div>
-
-
-
                             <div class="col-12">
                                 <fieldset class="form-group">
                                     <label for="">Descripcion</label>

@@ -27,10 +27,10 @@ class InversionController extends Controller
     {
        try {
            $this->checkStatus();
-
+           
            if (Auth::user()->admin == 1) {
                 $inversiones = Inversion::all();
-
+            
             }else{
                 $inversiones = Inversion::where('iduser', '=',Auth::id())->orderBy('status')->get();
             }
@@ -38,7 +38,7 @@ class InversionController extends Controller
             foreach ($inversiones as $inversion) {
                 $inversion->correo = $inversion->getInversionesUser->email;
             }
-
+            
             return view('inversiones.index', compact('inversiones'));
         } catch (\Throwable $th) {
             Log::error('InversionController - index -> Error: '.$th);
@@ -63,7 +63,7 @@ class InversionController extends Controller
     //         foreach ($inversiones as $inversion) {
     //             $inversion->correo = $inversion->getInversionesUser->email;
     //         }
-
+            
     //         return view('inversiones.index', compact('inversiones'));
     //     } catch (\Throwable $th) {
     //         Log::error('InversionController - index -> Error: '.$th);
@@ -77,7 +77,7 @@ class InversionController extends Controller
      * @param integer $paquete - ID del Paquete Comprado
      * @param float $invertido - Monto Total Invertido
      * @param string $vencimiento - Fecha de Vencimiento del paquete
-     * @param integer $iduser - ID del usuario
+     * @param integer $iduser - ID del usuario 
      * @return void
      */
     public function saveInversion(int $paquete, float $invertido, $vencimiento, int $iduser)
@@ -88,7 +88,7 @@ class InversionController extends Controller
                 ['package_id', '=', $paquete],
                 //['orden_id', '=', $orden],
             ])->first();
-
+            
             if ($check == null) {
                 $data = [
                     'iduser' => $iduser,
@@ -102,7 +102,7 @@ class InversionController extends Controller
                     'fecha_vencimiento' => $vencimiento,
                     'ganancia_acumulada' => 0,
                 ];
-
+                
                 $inversion = Inversion::create($data);
                 return $inversion->id;
             }
@@ -137,14 +137,14 @@ class InversionController extends Controller
                     ['status', '=', 1]
                 ])->first();
             }
-
+          
             if ($inversion != null) {
-
+             
                 $capital = ($inversion->capital + $ganacia);
                 $inversion->ganacia = ($inversion->ganacia + $ganacia);
-                $inversion->capital = $capital;
+                $inversion->capital = $capital;      
                 $inversion->porcentaje_fondo = $porcentaje;
-
+          
                 $inversion->save();
             }
         } catch (\Throwable $th) {
@@ -169,11 +169,11 @@ class InversionController extends Controller
                     ['status', '=', 1]
                 ])->first();
             }
-
+        
             if ($inversion != null) {
-
+                
                 $inversion->porcentaje_fondo = $porcentaje;
-
+          
                 $inversion->save();
             }
         } catch (\Throwable $th) {
@@ -185,7 +185,7 @@ class InversionController extends Controller
     public function updatePorcentajeGanancia(Request $request)
     {
         $porcentaje = $request->porcentaje_ganancia / 100;
-
+        
         $porcentajeUtilidad = PorcentajeUtilidad::orderBy('id', 'desc')->first();
 
         if($porcentajeUtilidad == null){

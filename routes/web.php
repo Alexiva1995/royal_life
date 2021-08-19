@@ -177,13 +177,4 @@ Route::prefix('dashboard')->middleware('menu', 'auth')->group(function ()
     Route::get('dataGrafica', 'HomeController@dataGrafica')->name('dataGrafica');
 
     Route::get('testRank', 'RankController@testRank')->name('testRank');
-
-    Route::get('inicio', 'HomeController@inicio')->name('inicio');
-
-
-    Route::get('/categoria/{Categories}', 'CategoriasController@show')->name('categorias.show');
-
-    Route::get('/', 'TiendaController@index2')->name('shop2');
-
-
 });

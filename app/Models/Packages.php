@@ -9,13 +9,7 @@ class Packages extends Model
     protected $table = 'packages';
 
     protected $fillable = [
-        'name',
-        'categories_id',
-        'price',
-        'img',
-        'description',
-        'status',
-        'expired',
+        'name', 'categories_id', 'price', 'description', 'status', 'minimum_deposit', 'expired'
     ];
 
       /**
