@@ -58,6 +58,25 @@
     width: 80%;
     transform: translate(-50%, -50%);
 }
+.texto-tienda {
+  position: absolute;
+    color: white;
+    top: 35%;
+    left: 18%;
+    text-align: center;
+    width: 60%;
+    font-size: 50px;
+    transform: translate(-50%, -50%);
+}
+.texto-tiendaB {
+  position: absolute;
+  color: white;
+  top: 43%;
+  left: 16%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
 @media(max-width:720px){
     .texto-arriba{
         position: absolute;
