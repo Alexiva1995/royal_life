@@ -38,7 +38,7 @@
                         <li><a href="#">¿Quienes Sómos?</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-4 col-md-2 item">
+                <div class="col-sm-4 col-md-3 item">
                     <h3 class="white">Recibe nuestras <br> NewLetters</h3>
                     <p>¡Subcribete y recibe un correo con las últimas promociones de nuestros productos!</p>
                     <div class="input-group mb-3">
