@@ -30,6 +30,23 @@
         margin-bottom: 10px; /* Added */
 }
 
+.bdr
+{
+    border-radius: 6px;overflow:hidden;
+
+}
+.bar {
+    position: relative;
+   top: 10px;
+}
+
+.form-check-input{
+    background: #F5F5F5;
+border: 1px solid #DADADA;
+box-sizing: border-box;
+border-radius: 5px;
+}
+
 </style>
 @endpush
 
@@ -44,7 +61,7 @@
            @foreach ( $categorias as $categoria )
 
             <div class="form-check">
-                <input class="form-check-input"
+                <input class="form-check-input "
                        type="checkbox"
                        value="{{$categoria->id}}"
                        id="flexCheckDefault">
@@ -66,7 +83,7 @@
     <div class=" col col-md-4 mt-5  ">
         <div class="col">
         <div class="card col-mt-4 col-md-12 shadow zoom "  style="background:#FFFFFF">
-             <p class=" text-center card  " style= "background: #67FFCC;      ">
+             <p class=" text-center bdr bar  " style= "background: #67FFCC;      ">
                 <img class="  " src="{{asset('storage/photo-profile/'.$paquete->img)}}"   width="150" height="150" >
             </p>
                 <div class="card-body hover2">
