@@ -1,4 +1,4 @@
-@extends('layouts.dashboard')
+@extends('backofice.layouts.dashboard')
 
 @push('vendor_css')
 <link rel="stylesheet" type="text/css" href="{{asset('assets/app-assets/vendors/css/extensions/sweetalert2.min.css')}}">
@@ -8,6 +8,7 @@
 <script src="{{asset('assets/app-assets/vendors/js/extensions/sweetalert2.all.min.js')}}"></script>
 <script src="{{asset('assets/app-assets/vendors/js/extensions/polyfill.min.js')}}"></script>
 @endpush
+
 
 @push('custom_css')
 <style>
@@ -25,10 +26,32 @@
     width:100%;
 }
 
+.bdr
+{
+    border-radius: 6px;overflow:hidden;
+
+}
+.bar {
+    position: relative;
+    top: 15px;
+	height:200px;
+}
+
 </style>
 @endpush
 
 @section('content')
+<div class="" style="background: #173138">
+    <div class="texto-tienda">
+        <strong>Categorias</strong>
+     </div>
+     <div class="texto-tiendaB">
+       <p>Tienda <strong> > </strong>{{$categoria->name}}</p>
+     </div>
+    <img src="{{asset('assets/img/home/formas_fondo3.png')}}" alt=""  style="width: 100%; ">
+
+</div>
+
 
 <div class="container">
     <h2 class="titulo-categoria text-uppercase mt-5 mb-4">
