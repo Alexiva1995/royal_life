@@ -94,6 +94,15 @@ box-sizing: border-box;
         display: flex;
       }
 
+.text-iz{
+
+    position: relative;
+    top: 1px;
+	height:200px;
+    left: -155px;
+
+}
+
 
 </style>
 @endpush
@@ -115,11 +124,11 @@ box-sizing: border-box;
 <div class="">
 
 
-<div class="container ml-10" >
-    <div class="">
+<div class="container ml-24" >
+    <div class="ml-7">
      <div class="col-12 ">
 
-        <div class="" style="background:#ffffff">
+        <div class="ml-7" style="background:#ffffff">
             <div class="card-content ">
                 <div class="card-body card-group mt-12 ">
 
@@ -139,9 +148,9 @@ box-sizing: border-box;
 
                                 <label class="form-check-label mb-1"
                                        for="flexCheckDefault"
-                                       style="color:  #303030;">
-                                       <a class="text-dark zoom s" href="{{ route('categorias.show', ['Categories' => $categoria->id ]) }}">
-                                      <strong>{{ $categoria->name }}</strong>
+                                       style="">
+                                       <a class="s" href="{{ route('categorias.show', ['Categories' => $categoria->id ]) }}">
+                                      <strong class=" text-dark ">{{ $categoria->name }}</strong>
                                      </a>
                                 </label>
                               </div>
@@ -175,7 +184,7 @@ box-sizing: border-box;
                                         <input type="hidden" name="idproduct" value="{{$producto->categoria_id}}}">
                                         <input type="hidden" name="idproduct" value="">
                                         {{-- <input type="hidden" name="categories_id" value="{{$categoria->id}}"> --}}
-                                        <p class="text-right" style="color: rgb(0, 0, 0);"><strong>  ${{$producto->price}}</strong></p>
+                                        <p class="text-right" style="color: rgb(0, 0, 0);"><strong class="text-iz">{{$categoria->name}}</strong> <strong>${{$producto->price}}</strong></p>
                                         <p class="text-left"  style="color:  #000000;"><strong>{{$producto->name}}</strong></p>
                                         <p class="text-left"  style="color:  #303030;">{{ Str::words( strip_tags($producto->description) , 15 )}}</p>
 
