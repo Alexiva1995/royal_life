@@ -44,17 +44,17 @@
 </div>
 <div class="p-5" style="background:#F0FFFA;">
     <div class="row d-flex justify-content-center">
-        <div class=" mb-1 col-md-3 ml-md-1" style="height: 400px;background: white;">
+        <div class="card mb-1 col-md-3 ml-md-1" style="height: 400px;background: white;">
             <img class="mx-auto d-block mt-1 mb-2" src="{{asset('assets/img/home/about1.png')}}">
             <div class="text-center text-about mb-1"><strong> Evios <br> seguros </strong></div>
             <p class="text-center mb-1" style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut laboriosam, modi, nihil omnis error, et unde deleniti distinctio inventore esse porro quidem soluta dignissimos odio expedita blanditiis alias enim saepe?</p>
         </div>
-        <div class="mb-1 col-md-3 ml-md-1" style="height: 400px;background: white;">
+        <div class="card mb-1 col-md-3 ml-md-1" style="height: 400px;background: white;">
             <img class="mx-auto d-block mt-3 mb-2" src="{{asset('assets/img/home/about2.png')}}" alt="">
             <div class="text-center text-about mb-1"><strong> Atención <br> Personalizada</strong></div>
             <p class="text-center mb-1" style="color: black;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat impedit in, assumenda corrupti modi voluptatum, vel voluptate accusamus ducimus quo dicta ea repellat sed distinctio, facere cum! Velit, quisquam aliquid.</p>
         </div>
-        <div class="mb-1 col-md-3 ml-md-1" style="height: 400px;background: white;">
+        <div class="card mb-1 col-md-3 ml-md-1" style="height: 400px;background: white;">
             <img class="mx-auto d-block mt-3 mb-2" src="{{asset('assets/img/home/about3.png')}}" alt="">
             <div class="text-center text-about mb-1"><strong> Productos <br> legales</strong></div>
             <p class="text-center mb-1" style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dicta voluptatum doloribus expedita ab laborum odit dignissimos quidem laudantium nulla beatae ut voluptas reprehenderit ducimus porro dolorem, temporibus ullam sint.</p>
