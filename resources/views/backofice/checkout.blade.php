@@ -75,11 +75,11 @@ color: #303030;
       }
 
 .btn-custom{
-    width: 188px;
-    height: 40px;
+    width: 220px;
+    height: 45px;
     left: 100px;
     background: #67FFCC;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 
 </style>
@@ -230,7 +230,7 @@ color: #303030;
                 class="btn btn-custom text-dark"
                 type="submit"
                 style="background: #67FFCC"
-                ><strong> Realizar pedido </strong></button>
+                ><strong style="color:#000000;"> Realizar pedido </strong></button>
 
   </div>
 

@@ -48,12 +48,52 @@
 
 }
 
-.form-check-input{
+.caja{
     background: #F5F5F5;
 border: 1px solid #DADADA;
 box-sizing: border-box;
 border-radius: 5px;
 }
+.btn-custom{
+    width: 220px;
+    height: auto;
+
+    background: #67FFCC;
+    border-radius: 7px;
+}
+
+.circulo{
+
+width: 15px;
+height: 15px;
+left: 206px;
+top: 810px;
+
+background: #FFFFFF;
+border: 2px solid #000000;
+box-sizing: border-box;
+}
+
+.s{
+    color: #67FFCC;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+
+}
+
+.s:hover, s:focus {
+    color: #67FFCC;
+    background-size: 100% 2px;
+}
+
+.container {
+        display: flex;
+      }
+
 
 </style>
 @endpush
@@ -73,58 +113,9 @@ border-radius: 5px;
         </div>
 
 <div class="">
-  {{--  <div class="container ">
-        <div class="card col col-3  mt-5 " style="background:#FFFFFF" >
-            <h6> <strong> categorias </strong></h6>
-
-           @foreach ( $categorias as $categoria )
-
-            <div class="form-check">
-                <input class="form-check-input "
-                       type="checkbox"
-                       value="{{$categoria->id}}"
-                       id="flexCheckDefault">
-
-                <label class="form-check-label"
-                       for="flexCheckDefault"
-                       style="color:  #303030;">
-                       <a class="nav-link" href="{{ route('categorias.show', ['Categories' => $categoria->id ]) }}">
-                        {{ $categoria->name }}
-                     </a>
-                </label>
-            </div>
-             @endforeach
-
-        </div>
-    </div>
 
 
-
-
-    @foreach ($packages as $paquete )
-    <div class="container">
-        <div class="row d-flex justify-content-end mt-5">
-    <div class=" col col-md-4 mt-5  ">
-        <div class="col">
-        <div class="card col-mt-5 col-md-10 shadow zoom "  style="background:#FFFFFF">
-             <p class=" text-center bdr bar  " style= "background: #67FFCC;      ">
-                <img class="  " src="{{asset('storage/photo-profile/'.$paquete->img)}}"   width="150" height="150" >
-            </p>
-                <div class="card-body hover2">
-                    <h3 class="card-title texto3"><strong>{{$paquete->name}}</strong></h3>
-                    <p>{{ Str::words( strip_tags($paquete->description) , 15 )}}</p>
-                 <div class="meta-receta d-flex justify-content-between">
-
-                 </div>
-                </div>
-            </div>
-          </div>
-        </div>
-        @endforeach
-   </div>
-</div> --}}
-
-<div id="adminServices" >
+<div class="container ml-10" >
     <div class="">
      <div class="col-12 ">
 
@@ -135,9 +126,10 @@ border-radius: 5px;
                    <div class=" d-fex col-md-3">
                     <div class="row d-flex justify-content-start mt-5">
                         <div class="card col-12" style="background:#FFFFFF" >
-                            <h6> <strong> categorias </strong></h6>
-
-                           {{-- @foreach ( $categorias as $categoria )
+                            <div class="card-body">
+                            <h6> <strong> Categorias </strong></h6>
+                            <hr class="hr">
+                            @foreach ( $categorias as $categoria )
 
                             <div class="form-check">
                                 <input class="form-check-input"
@@ -145,19 +137,26 @@ border-radius: 5px;
                                        value="{{$categoria->id}}"
                                        id="flexCheckDefault">
 
-                                <label class="form-check-label"
+                                <label class="form-check-label mb-1"
                                        for="flexCheckDefault"
                                        style="color:  #303030;">
-                                       <a class="nav-link" href="{{ route('categorias.show', ['Categories' => $categoria->id ]) }}">
-                                        {{ $categoria->name }}
+                                       <a class="text-dark zoom s" href="{{ route('categorias.show', ['Categories' => $categoria->id ]) }}">
+                                      <strong>{{ $categoria->name }}</strong>
                                      </a>
                                 </label>
                               </div>
-                              @endforeach --}}
+                              @endforeach
+                              <br>
+                              <h6><strong> Precio </strong><h6>
+                              <hr class="hr">
+                              <div class="progress" style="height: 3px;">
+                                <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
                             </div>
+                        </div>
                      </div>
                      </div>
-                    <div class="container d-fex col-md-6">
+                    <div class="container d-fex col-md-8">
                      <div class="row d-flex justify-content-end mt-5">
                         @foreach ($packages as $producto )
 
@@ -181,10 +180,10 @@ border-radius: 5px;
                                         <p class="text-left"  style="color:  #303030;">{{ Str::words( strip_tags($producto->description) , 15 )}}</p>
 
                                         <button
-                                        class="btn btn-block text-white"
+                                        class="btn btn-custom text-white"
                                         type="submit"
                                         style="background: #67FFCC;"
-                                        >Comprar</button>
+                                        > <strong style="color:#000000;"> Comprar  </strong></button>
                                         </form>
                                     </div>
                                 </div>

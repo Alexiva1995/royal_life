@@ -16,7 +16,7 @@ class CategoriasController extends Controller
         }
 
        // return $categoria->id ;
-        $packages = Packages::where('categories_id','=',  $categoria->id)->paginate(8);
+        $packages = Packages::where('categories_id','=',  1)->paginate(8);
         //return $packages;
       // $packages = Packages::orderBy('id', 'desc')->paginate(8);
 
