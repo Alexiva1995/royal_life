@@ -34,36 +34,36 @@
         </div>
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <div class=" mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
+                <div class="card mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
                     <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
                     <div class="text-center text-card">Cremas</div>
                     <p class="text-center" style="color: black;"><strong> ver todos los productos</strong> <img
                             src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></p>
                 </div>
-                <div class="mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
+                <div class="card mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
                     <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
                     <div class="text-center text-card">Cremas</div>
                     <p class="text-center" style="color: black;"><strong> ver todos los productos</strong> <img src="{{asset('assets/img/home/Arrow1.png')}}" alt=""> </p>
                 </div>
-                <div class="mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
+                <div class="card mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
                     <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
                     <div class="text-center text-card">Cremas</div>
                     <p class="text-center" style="color: black;"><strong> ver todos los productos</strong> <img
                             src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></p>
                 </div>
-                <div class="mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
+                <div class="card mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
                     <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
                     <div class="text-center text-card">Cremas</div>
                     <p class="text-center" style="color: black;"><strong> ver todos los productos</strong> <img
                             src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></p>
                 </div>
-                <div class="mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
+                <div class="card mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
                     <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
                     <div class="text-center text-card">Cremas</div>
                     <p class="text-center" style="color: black;"><strong> ver todos los productos</strong> <img
                             src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></p>
                 </div>
-                <div class="mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
+                <div class="card mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
                     <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
                     <div class="text-center text-card">Cremas</div>
                     <p class="text-center" style="color: black;"><strong> ver todos los productos</strong> <img
