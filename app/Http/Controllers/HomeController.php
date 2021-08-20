@@ -226,4 +226,8 @@ class HomeController extends Controller
     {
         return view('backofice.about');
     }
+
+    public function contact_us(){
+        return view('backofice.contact_us');
+    }
 }

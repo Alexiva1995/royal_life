@@ -14,7 +14,7 @@
               <a class="nav-link  ml-3 h5" href="{{route('about')}}">Nosotros</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link ml-3 h5" href="{{route('ticket.list-user')}}">Contacto</a>
+                <a class="nav-link ml-3 h5" href="{{route('contact_us')}}">Contacto</a>
               </li>
           </ul>
         </div>
