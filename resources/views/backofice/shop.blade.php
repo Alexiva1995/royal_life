@@ -169,6 +169,7 @@ box-sizing: border-box;
                      <div class="row d-flex justify-content-end mt-5">
                         @foreach ($packages as $producto )
 
+
                         <div class="col-md-6">
 
 
@@ -181,11 +182,10 @@ box-sizing: border-box;
                                     <div class="card-body bar2">
                                         <form action="{{route('cheking.backofice')}}" method="POST" target="_blank" class="d-inline">
                                             @csrf
-                                        <input type="hidden" name="idproduct" value="{{$producto->categoria_id}}}">
-                                        <input type="hidden" name="idproduct" value="">
-                                        {{-- <input type="hidden" name="categories_id" value="{{$categoria->id}}"> --}}
+
+                                         <input type="hidden" name="categories_id" value="{{$producto->categories_id}}">
                                         <p class="text-right" style="color: rgb(0, 0, 0);"><strong class="text-iz">{{$categoria->name}}</strong> <strong>${{$producto->price}}</strong></p>
-                                        <p class="text-left"  style="color:  #000000;"><strong>{{$producto->name}}</strong></p>
+                                        <p class="text-left"  style="color:  #000000;"><strong>{{$producto->categories_id}}</strong></p>
                                         <p class="text-left"  style="color:  #303030;">{{ Str::words( strip_tags($producto->description) , 15 )}}</p>
 
                                         <button
