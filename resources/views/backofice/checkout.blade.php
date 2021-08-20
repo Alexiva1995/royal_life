@@ -61,9 +61,27 @@ color: #303030;
 
 .cheking{
     position: relative;
-    padding-left: 500px;
-    padding-top: -1000px;
+    padding-left: 100px;
+
 }
+.hr{
+    position: absolute;
+    margin-top: 150px;
+    width:100%;
+}
+
+.container {
+        display: flex;
+      }
+
+.btn-custom{
+    width: 188px;
+    height: 40px;
+    left: 100px;
+    background: #67FFCC;
+    border-radius: 10px;
+}
+
 </style>
 @endpush
 
@@ -82,12 +100,12 @@ color: #303030;
 </div>
 
 
-<div class="mt-5 ml-5 mb-5">
+<div class="mt-5 ml-10 mb-5 container ">
 
 <div class="col-5  ml-5 " style="background: #ffffff;">
 <form action="#" class="credit-card-div">
-    <div class="panel panel-default ml-5" >
-     <div class="panel-heading  ml-5">
+    <div class="panel panel-default " >
+     <div class="panel-heading  ">
         <h2> <strong>Detalles de facturacion </strong> </h2>
 
 <br>
@@ -160,55 +178,78 @@ color: #303030;
                   </div>
     </form>
 
-<div>
+
+
+
+    <div class="mt-2 ml-5 mb-5 cheking">
+      <div class="col-8  ml-5 text-dark " >
+
+          <h2>Tu orden</h2>
+  <div class="row my-5">
+    <table class="table table-borderless factura">
+
+        <tr>
+          <th>Productos</th>
+          <th></th>
+          <th></th>
+          <th>Subtotal</th>
+        </tr>
+      <tbody>
+        <tr>
+        </tr>
+        <tr>
+          <td>Crema chocolate</td>
+          <td></td>
+          <td></td>
+          <td>$31</td>
+        </tr>
+      </tbody>
+        <tr>
+          <th>Subtotal</th>
+          <th></th>
+          <th></th>
+          <th>$31</th>
+        </tr>
+        <tfoot>
+        <tr>
+        <hr class="hr">
+          <th>Total</th>
+          <th></th>
+          <th></th>
+          <th>$31</th>
+        </tr>
+      </tfoot>
+
+    </table>
+            <input
+                type="hidden"
+                name="idproduct"
+                value="{{}}">
+
+            <button
+                class="btn btn-custom text-dark"
+                type="submit"
+                style="background: #67FFCC"
+                ><strong> Realizar pedido </strong></button>
+
+  </div>
+
+  </div>
+
+      </div>
+  </div>
+
+  <div>
+
+
+
+
 
 <div>
 
 
-<div class="mt-2 ml-5 mb-5 cheking">
-        <div class="col-4  ml-5 text-dark " >
 
-            <h2>Tu orden</h2>
-    <div class="row my-5">
-      <table class="table table-borderless factura">
 
-          <tr>
-            <th>Productos</th>
-            <th></th>
-            <th>Subtotal</th>
-            <th></th>
-          </tr>
 
-        <tbody>
-          <tr>
-          </tr>
-          <tr>
-            <td>Crema chocolate</td>
-            <td></td>
-            <td></td>
-            <td>$31</td>
-          </tr>
-        </tbody>
-          <tr>
-            <th>Subtotal</th>
-            <th></th>
-            <th></th>
-            <th>$31</th>
-          </tr>
-          <tfoot>
-          <tr>
-            <th>Total</th>
-            <th></th>
-            <th></th>
-            <th>$31</th>
-          </tr>
-        </tfoot>
-      </table>
-    </div>
-
-</div>
-
-        </div>
-</div>
 
 @endsection
