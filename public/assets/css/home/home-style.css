@@ -173,6 +173,11 @@
     font-size: 20px;
 }
 
+.text-about{
+  color:#000000;
+  font-size: 20px;
+}
+
 .card-home{
     position: relative;
     display: -webkit-box;
