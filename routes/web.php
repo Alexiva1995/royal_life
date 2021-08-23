@@ -182,6 +182,7 @@ Route::prefix('dashboard')->middleware('menu', 'auth')->group(function ()
     Route::get('/inicio', 'HomeController@inicio')->name('inicio');
     Route::get('/about', 'HomeController@about')->name('about');
     Route::get('/contact_us', 'HomeController@contact_us')->name('contact_us');
+    Route::post('/contactar', 'HomeController@contact')->name('contact');
     Route::get('/shopBackofice', 'TiendaController@shop')->name('shop.backofice');
     Route::post('/shopBackofice/checking', 'TiendaController@cheking')->name('cheking.backofice');
 

@@ -12,7 +12,7 @@
                         dolore? Est quisquam, doloremque odit deleniti veritatis consectetur. Dolor debitis cumque,
                         consequuntur voluptatibus provident molestias.</p>
                 </div>
-                <button class="btn btn-pry"><strong>ir a la tienda</strong></button>
+                <a href="{{route('shop.backofice')}}" class="btn btn-pry"><strong>ir a la tienda</strong></a>
                 <img src="{{asset('assets/img/home/Polygon5.png')}}" alt="" class="debajo">
                 <img src="{{asset('assets/img/home/producto1.png')}}" alt="" class="sobre">
 
@@ -37,38 +37,38 @@
                 <div class="card mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
                     <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
                     <div class="text-center text-card">Cremas</div>
-                    <p class="text-center" style="color: black;"><strong> ver todos los productos</strong> <img
-                            src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></p>
+                    <a class="text-center" style="color: black;" href="{{route('shop.backofice')}}"><strong> ver todos los productos</strong> <img
+                            src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></a>
                 </div>
                 <div class="card mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
                     <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
                     <div class="text-center text-card">Cremas</div>
-                    <p class="text-center" style="color: black;"><strong> ver todos los productos</strong> <img
-                            src="{{asset('assets/img/home/Arrow1.png')}}" alt=""> </p>
+                    <a class="text-center" style="color: black;" href="{{route('shop.backofice')}}"><strong> ver todos los productos</strong> <img
+                            src="{{asset('assets/img/home/Arrow1.png')}}" alt=""> </a>
                 </div>
                 <div class="card mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
                     <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
                     <div class="text-center text-card">Cremas</div>
-                    <p class="text-center" style="color: black;"><strong> ver todos los productos</strong> <img
-                            src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></p>
+                    <a class="text-center" style="color: black;" href="{{route('shop.backofice')}}"><strong> ver todos los productos</strong> <img
+                            src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></a>
                 </div>
                 <div class="card mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
                     <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
                     <div class="text-center text-card">Cremas</div>
-                    <p class="text-center" style="color: black;"><strong> ver todos los productos</strong> <img
-                            src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></p>
+                    <a class="text-center" style="color: black;" href="{{route('shop.backofice')}}"><strong> ver todos los productos</strong> <img
+                            src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></a>
                 </div>
                 <div class="card mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
                     <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
                     <div class="text-center text-card">Cremas</div>
-                    <p class="text-center" style="color: black;"><strong> ver todos los productos</strong> <img
-                            src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></p>
+                    <a class="text-center" style="color: black;" href="{{route('shop.backofice')}}"><strong> ver todos los productos</strong> <img
+                            src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></a>
                 </div>
                 <div class="card mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
                     <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
                     <div class="text-center text-card">Cremas</div>
-                    <p class="text-center" style="color: black;"><strong> ver todos los productos</strong> <img
-                            src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></p>
+                    <a class="text-center" style="color: black;" href="{{route('shop.backofice')}}"><strong> ver todos los productos</strong> <img
+                            src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></a>
                 </div>
             </div>
         </div>
@@ -201,7 +201,7 @@
 
         <div class="container ">
             <div class="row d-flex justify-content-center">
-                <div class="col-md-4">
+                <a href="{{route('shop.backofice')}}" class="col-md-4">
                     <div class="col-md-12 ">
                         <div class="card text-center zoom" style="background:#FFFFFF">
                             <p class=" text-center  " style="background: #67FFCC;  ">
@@ -215,8 +215,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
+                </a>
+                <a href="{{route('shop.backofice')}}" class="col-md-4">
                     <div class="col-md-12 ">
                         <div class="card text-center zoom" style="background:#FFFFFF">
                             <p class=" text-center  " style="background: #67FFCC;  ">
@@ -230,8 +230,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
+                </a>
+                <a href="{{route('shop.backofice')}}" class="col-md-4">
                     <div class="col-md-12 ">
                         <div class="card text-center zoom" style="background:#FFFFFF">
                             <p class=" text-center  " style="background: #67FFCC;  ">
@@ -245,8 +245,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
+                </a>
+                <a href="{{route('shop.backofice')}}"  class="col-md-4">
                     <div class="col-md-12 ">
                         <div class="card text-center zoom" style="background:#FFFFFF">
                             <p class=" text-center  " style="background: #67FFCC;  ">
@@ -260,9 +260,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="col-md-4">
+                <a href="{{route('shop.backofice')}}"  class="col-md-4">
                     <div class="col-md-12 ">
                         <div class="card text-center zoom" style="background:#FFFFFF">
                             <p class=" text-center  " style="background: #67FFCC;  ">
@@ -276,8 +276,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
+                </a>
+                <a href="{{route('shop.backofice')}}"  class="col-md-4">
                     <div class="col-md-12 ">
                         <div class="card text-center zoom" style="background:#FFFFFF">
                             <p class=" text-center  " style="background: #67FFCC;  ">
@@ -291,8 +291,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
+                </a>
+                <a href="{{route('shop.backofice')}}"  class="col-md-4">
                     <div class="col-md-12 ">
                         <div class="card text-center zoom" style="background:#FFFFFF">
                             <p class=" text-center  " style="background: #67FFCC;  ">
@@ -306,8 +306,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
+                </a>
+                <a href="{{route('shop.backofice')}}"  class="col-md-4">
                     <div class="col-md-12 ">
                         <div class="card text-center zoom" style="background:#FFFFFF">
                             <p class=" text-center  " style="background: #67FFCC;  ">
@@ -321,8 +321,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
+                </a>
+                <a href="{{route('shop.backofice')}}"  class="col-md-4">
                     <div class="col-md-12 ">
                         <div class="card text-center zoom" style="background:#FFFFFF">
                             <p class=" text-center  " style="background: #67FFCC;  ">
@@ -336,8 +336,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
+                </a>
+                <a href="{{route('shop.backofice')}}"  class="col-md-4">
                     <div class="col-md-12 ">
                         <div class="card text-center zoom" style="background:#FFFFFF">
                             <p class=" text-center  " style="background: #67FFCC;  ">
@@ -351,8 +351,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
+                </a>
+                <a href="{{route('shop.backofice')}}"  class="col-md-4">
                     <div class="col-md-12 ">
                         <div class="card text-center zoom" style="background:#FFFFFF">
                             <p class=" text-center  " style="background: #67FFCC;  ">
@@ -366,8 +366,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
+                </a>
+                <a href="{{route('shop.backofice')}}"  class="col-md-4">
                     <div class="col-md-12 ">
                         <div class="card text-center zoom" style="background:#FFFFFF">
                             <p class=" text-center  " style="background: #67FFCC;  ">
@@ -381,8 +381,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
+                </a>
+                <a href="{{route('shop.backofice')}}"  class="col-md-4">
                     <div class="col-md-12 ">
                         <div class="card text-center zoom" style="background:#FFFFFF">
                             <p class=" text-center  " style="background: #67FFCC;  ">
@@ -396,8 +396,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
+                </a>
+                <a href="{{route('shop.backofice')}}"  class="col-md-4">
                     <div class="col-md-12 ">
                         <div class="card text-center zoom" style="background:#FFFFFF">
                             <p class=" text-center  " style="background: #67FFCC;  ">
@@ -411,8 +411,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
+                </a>
+                <a href="{{route('shop.backofice')}}"  class="col-md-4">
                     <div class="col-md-12 ">
                         <div class="card text-center zoom" style="background:#FFFFFF">
                             <p class=" text-center  " style="background: #67FFCC;  ">
@@ -426,7 +426,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
 
@@ -501,7 +501,7 @@
                         excepturi, voluptatem quam voluptatibus maiores harum expedita ex aut quidem est dolores vitae
                         similique, explicabo facere quae.
                     </div>
-                    <button class="btn btn-pri"><strong>Contactanos</strong></button>
+                    <a href="{{route('contact_us')}}" class="btn btn-pri"><strong>Contactanos</strong></a>
                     <img src="{{asset('assets/img/home/formas_fondo22.png')}}" alt="">
                 </div>
             </div>
