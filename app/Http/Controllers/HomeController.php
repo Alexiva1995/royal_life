@@ -9,8 +9,11 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\View;
 use App\Http\Controllers\TreeController;
 use App\Http\Controllers\WalletController;
+use App\Mail\contactEmail;
 use App\Models\OrdenPurchases;
 use Carbon\Carbon;
+use Illuminate\Http\Client\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Str;
 
 class HomeController extends Controller
@@ -228,6 +231,22 @@ class HomeController extends Controller
     }
 
     public function contact_us(){
+       
         return view('backofice.contact_us');
     }
+
+    public function contact(){
+      $message = request()->validate([
+            'name'=> 'required',
+            'email'=>'required',
+            'telefono'=>'required',
+            'asunto'=>'required',
+            'mensaje'=>'required',
+
+        ]);
+        Mail::to(env('MAIL_FROM_ADDRESS'),env('MAIL_FROM_NAME'))->send(new contactEmail($message));
+       
+        return 'Mensaje enviado';
+    }
 }
+

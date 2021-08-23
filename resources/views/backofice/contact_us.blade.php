@@ -79,7 +79,7 @@ color: #303030;
         <strong>Contáctanos</strong>
     </div>
     <div class="texto-tiendaB d-flex">
-        <p class="ml-1"><strong> Inicio </strong></p><strong class="ml-1"> > </strong><p style="color: #52CCA7" class="ml-1"><strong> Contacto </strong></p>
+        <a class="ml-1 text-white" href="{{route('inicio')}}"><strong> Inicio </strong></a><strong class="ml-1"> > </strong><p style="color: #52CCA7" class="ml-1"><strong> Contacto </strong></p>
     </div>
     <img src="{{asset('assets/img/home/formas_fondo3.png')}}" alt="" style="width: 100%;">
 </div>
@@ -89,7 +89,8 @@ color: #303030;
 <div class="col-md-7 mt-5 mb-5 justify-content-end">
 
     <div class="card p-5" style="height: 450px;background: #ffffff;">
-        <form action="#" class="credit-card-div">
+        <form action={{route('contact')}} method="POST" class="credit-card-div">
+            {{ csrf_field() }}
             <div class="panel panel-default ">
                 <div class="panel-heading  ">
                     <h3><strong>Déjanos un mensaje</strong></h3>
@@ -97,11 +98,11 @@ color: #303030;
                     <div class="row ">
                         <div class="col-md-6 col-sm-6 col-xs-3">
                             <span class="help-block text-muted text textcustom">Tu nombre</span>
-                            <input type="text" class="form-control custominput" style="background:  #F6F6F7;" />
+                            <input name="name" type="text" class="form-control custominput" style="background:  #F6F6F7;" />
                         </div>
                         <div class="col-md-6 col-sm-6 col-xs-3">
                             <span class="help-block text-muted textcustom">Email</span>
-                            <input type="text" class="form-control custominput" style="background:   #F6F6F7;" />
+                            <input type="text" name="email" class="form-control custominput" style="background:   #F6F6F7;" />
                         </div>
                     </div>
 
@@ -109,12 +110,12 @@ color: #303030;
 
                     <div class="row ">
                         <div class="col-md-6 col-sm-6 col-xs-3">
-                            <span class="help-block text-muted text textcustom">Nombres </span>
-                            <input type="text" class="form-control custominput" style="background:  #F6F6F7;" />
+                            <span class="help-block text-muted text textcustom">Telefono </span>
+                            <input type="text" name="telefono" class="form-control custominput" style="background:  #F6F6F7;" />
                         </div>
                         <div class="col-md-6 col-sm-6 col-xs-3">
-                            <span class="help-block text-muted textcustom">Apellidos</span>
-                            <input type="text" class="form-control custominput" style="background:   #F6F6F7;" />
+                            <span class="help-block text-muted textcustom">Asunto</span>
+                            <input type="text" name="asunto" class="form-control custominput" style="background:   #F6F6F7;" />
                         </div>
                     </div>
 
@@ -122,14 +123,14 @@ color: #303030;
 
                     <div class="row ">
                         <div class="col-md-12 pad-adjust">
-                            <span class="help-block text-muted ">Mensaje</span>
-                            <textarea type="text" class="form-control custominput"
+                            <span class="help-block text-muted text textcustom">Mensaje</span>
+                            <textarea name="mensaje" type="text" class="form-control custominput"
                                 style="background:  #F6F6F7"></textarea>
                         </div>
                     </div>
 
                     <br>
-                    <button class="btn btn-con mt-2"><strong> Enviar </strong></button>
+                    <button type="submit" class="btn btn-con mt-2"><strong> Enviar </strong></button>
                 </div>
             </div>
         </form>
