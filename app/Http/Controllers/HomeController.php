@@ -244,9 +244,13 @@ class HomeController extends Controller
             'mensaje'=>'required',
 
         ]);
+        if($message){
         Mail::to(env('MAIL_FROM_ADDRESS'),env('MAIL_FROM_NAME'))->send(new contactEmail($message));
-       
-        return 'Mensaje enviado';
+    
+        return back()->with('msj-success','Mensaje enviado');
+    }else{
+        return back()->with('msj-danger','No se pudo enviar este mensaje');
+    }
     }
 }
 
