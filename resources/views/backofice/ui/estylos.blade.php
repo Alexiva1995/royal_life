@@ -26,12 +26,15 @@
 }
 .bar {
     position: relative;
-    top: 15px;
-	height:240px;
+    top: -10px;
+	height:270px;
+    width: 287px;
+    left: -23px;
 }
 
 .bar2 {
     position: relative;
+    height:285px;
 
 }
 
