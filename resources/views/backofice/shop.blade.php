@@ -20,9 +20,9 @@
             <div class="texto-tienda">
                 <strong>Tienda</strong>
              </div>
-             <div class="texto-tiendaB">
-               <p>Inicio <strong> > </strong>Tienda</p>
-             </div>
+             <div class="texto-tiendaB d-flex">
+                <a class="ml-1 text-white" href="{{route('inicio')}}"><strong> Inicio </strong></a><strong class="ml-1"> > </strong><p style="color: #52CCA7" class="ml-1"><strong>Tienda</strong></p>
+            </div>
             <img src="{{asset('assets/img/home/formas_fondo3.png')}}" alt=""  style="width: 100%; ">
 
         </div>
