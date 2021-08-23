@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Categories;
 use App\Models\Groups;
 use App\Models\Packages;
+use App\Models\Categories;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\View;
+use Intervention\Image\Facades\Image;
 
 class PackagesController extends Controller
 {
@@ -24,6 +25,7 @@ class PackagesController extends Controller
              $categories = Categories::all()->where('status', 1);
 
             return view('manager_services.services.index', compact('categories'));
+
          } catch (\Throwable $th) {
             Log::error('Packages - index -> Error: '.$th);
             abort(403, "Ocurrio un error, contacte con el administrador");
@@ -66,17 +68,22 @@ class PackagesController extends Controller
      */
     public function store(Request $request)
     {
+       // dd($request->all());
+       //
         $validate = $request->validate([
             'name' => ['required'],
             'categories_id' => ['required'],
-          //  'minimum_deposit' => ['required', 'numeric'],
             'expired' => ['required', 'date'],
             'price' => ['required', 'numeric'],
+           // 'img' => ['required', 'mimes:jpeg,png']
         ]);
+
+       // dd($request['img']);
 
         try {
             if ($validate) {
-                Packages::create($request->all());
+               $paquete =  Packages::create($request->all());
+                $paquete->save();
                 $route = route('package.index').'?category='.$request->categories_id;
                 return redirect($route)->with('msj-success', 'Nuevo Servicio Creado');
             }
@@ -148,7 +155,7 @@ class PackagesController extends Controller
              $validate = $request->validate([
                 'name' => ['required'],
                 'categories_id' => ['required'],
-                'minimum_deposit' => ['required', 'numeric'],
+           //     'minimum_deposit' => ['required', 'numeric'],
                 'expired' => ['required', 'date'],
                 'price' => ['required', 'numeric'],
              ]);
@@ -157,13 +164,14 @@ class PackagesController extends Controller
              if ($validate) {
                  $service = Packages::find($id);
                  $service->name = $request->name;
-                 $service->categories_id = $request->categories_id;
-                 $service->minimum_deposit = $request->minimum_deposit;
+                dd($service->categories_id = $request->categories_id);
+
+//                 $service->minimum_deposit = $request->minimum_deposit;
                  $service->expired = $request->expired;
                  $service->price = $request->price;
                  $service->status = $request->status;
                  $service->description = $request->description;
-                 $service->save();
+                 $service->update();
                  $route = route('package.index').'?category='.$request->group_id;
                  return redirect($route)->with('msj-success', 'Servicio '.$id.' Actualizado ');
              }

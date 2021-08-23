@@ -25,6 +25,13 @@
                                     <input type="text" name="name" class="form-control" required>
                                 </fieldset>
                             </div>
+
+                            <div class="col-12">
+                                <fieldset class="form-group">
+                                    <label for="">Imagen</label>
+                                    <input type="file" name="img" class="form-control" required accept="image/png">
+                                </fieldset>
+                            </div>
                             {{-- <div class="col-12">
                                 <fieldset class="form-group">
                                     <label for="">Elige una Categoria</label>
@@ -43,6 +50,7 @@
                                     <input type="number" name="minimum_deposit" class="form-control" required step="any">
                                 </fieldset>
                             </div> --}}
+
                             <div class="col-12 col-md-6">
                                 <fieldset class="form-group">
                                     <label for="">Fecha Vencimiento</label>
