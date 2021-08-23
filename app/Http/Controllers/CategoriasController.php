@@ -8,27 +8,13 @@ use Illuminate\Http\Request;
 
 class CategoriasController extends Controller
 {
-    public function show(Request  $request , Categories $categories){
+    public function show($categoria){
 
-        $categorias = Categories::all();
 
-        foreach ($categorias as $categoria){
-            $data = ['categories_id'=> $categoria->id];
-         //  dd($categoria);
-          $id = $categoria->id ;
-          //dd($id) ;
-          $packages = Packages::where('categories_id', '=' , $id)->get(); /*->paginate(8); */
-            //dd( $categoria->id);
-        }
+    $packages = Packages::where('categories_id', '=' , $categoria )->paginate(8);
 
 
 
-       // return $categoria->id ;
-
-        //return $packages;
-      // $packages = Packages::orderBy('id', 'desc')->paginate(8);
-
-
-       return view('categorias.show', compact('packages','data','categoria'));
+       return view('categorias.show', compact('packages','categoria'));
   }
 }

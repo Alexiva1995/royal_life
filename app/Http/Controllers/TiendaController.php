@@ -417,7 +417,7 @@ class TiendaController extends Controller
         $packages = Packages::all();
 
 
-            return view('backofice.shop', compact('packages'));
+         return view('backofice.shop', compact('packages'));
 
     }
     public function cheking()
