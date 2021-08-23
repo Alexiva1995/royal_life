@@ -64,7 +64,7 @@ color: #303030;
 .container {
         display: flex;
       }
-
+ 
 .btn-custom{
     width: 188px;
     height: 40px;
@@ -128,7 +128,7 @@ input[type=text]:hover:not([disabled]), input[type=text]:focus, input[type=texta
                         <div class="col-md-12 pad-adjust">
                             <span class="help-block text-muted text textcustom">Mensaje</span>
                             <textarea name="mensaje" type="text" class="form-control custominput"
-                                style="background:  #F6F6F7"></textarea>
+                                style="background:  #F6F6F7; color: black;"></textarea>
                         </div>
                     </div>
 
@@ -155,4 +155,4 @@ input[type=text]:hover:not([disabled]), input[type=text]:focus, input[type=texta
 </div>
 </div>
 
-        @endsection
+@endsection
