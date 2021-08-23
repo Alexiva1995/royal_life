@@ -79,6 +79,8 @@ left: -155px;
             <div class="row d-flex justify-content-end mt-5">
                @foreach ($packages as $producto )
 
+               @if($producto->categories_id != null)
+
 
                <div class="col-md-6">
                    <div class="col-md-12 ">
@@ -93,7 +95,7 @@ left: -155px;
 
                                <input type="hidden" name="categories_id" value="{{$producto->categories_id}}">
                                <p class="text-right" style="color: rgb(0, 0, 0);"><strong class="text-iz"></strong> <strong>${{$producto->price}}</strong></p>
-                               <p class="text-left"  style="color:  #000000;"><strong>{{$producto->categories_id}}</strong></p>
+                               <p class="text-left"  style="color:  #000000;"><strong>{{$producto->categories_id}}</strong>{{$producto->name}}</p>
                                <p class="text-left"  style="color:  #303030;">{{ Str::words( strip_tags($producto->description) , 15 )}}</p>
 
                                <button
@@ -102,6 +104,9 @@ left: -155px;
                                style="background: #67FFCC;"
                                > <strong style="color:#000000;"> Comprar  </strong></button>
                                </form>
+                               @else
+                               <h1>Sin categoria</h1>
+                               @endif
                            </div>
                        </div>
 

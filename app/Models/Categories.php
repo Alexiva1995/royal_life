@@ -7,10 +7,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class Categories extends Model
 {
+
+
     protected $table = 'categories';
 
     protected $fillable = [
-        'name', 'status', 'description', 'img'
+        'name',
+        'id',
+        'status',
+        'description',
+        'img'
     ];
 /**
      * Permite obtener todos los paquetes de un grupo
