@@ -112,11 +112,11 @@ color: #303030;
          <div class="row ">
                   <div class="col-md-6 col-sm-6 col-xs-3">
                       <span class="help-block text-muted text textcustom" >Nombres  </span>
-                      <input type="text" class="form-control custominput" style="background:  #F6F6F7;" />
+                      <input type="text" class="form-control custominput text-dark" style="background:  #F6F6F7;" />
                   </div>
              <div class="col-md-6 col-sm-6 col-xs-3">
                       <span class="help-block text-muted textcustom" >Apellidos</span>
-                      <input type="text" class="form-control custominput" style="background:   #F6F6F7;"/>
+                      <input type="text" class="form-control custominput  text-dark" style="background:   #F6F6F7;"/>
                   </div>
               </div>
 
@@ -125,7 +125,7 @@ color: #303030;
          <div class="row ">
                   <div class="col-md-12 pad-adjust">
                     <span class="help-block text-muted " >Pais</span>
-                      <input type="text" class="form-control custominput" style="background:  #F6F6F7" />
+                      <input type="text" class="form-control custominput  text-dark" style="background:  #F6F6F7" />
                   </div>
               </div>
 
@@ -134,7 +134,7 @@ color: #303030;
               <div class="row ">
                 <div class="col-md-12 pad-adjust">
                     <span class="help-block text-muted " >Direccion</span>
-                    <input type="text" class="form-control custominput" style="background:  #F6F6F7" />
+                    <input type="text" class="form-control custominput  text-dark" style="background:  #F6F6F7" />
                 </div>
             </div>
 
@@ -143,7 +143,7 @@ color: #303030;
             <div class="row ">
                 <div class="col-md-12 pad-adjust">
                     <span class="help-block text-muted " >Pueblo/Ciudad</span>
-                    <input type="text" class="form-control custominput" style="background:  #F6F6F7" />
+                    <input type="text" class="form-control custominput  text-dark" style="background:  #F6F6F7" />
                 </div>
             </div>
 
@@ -152,7 +152,7 @@ color: #303030;
             <div class="row ">
                 <div class="col-md-12 pad-adjust">
                     <span class="help-block text-muted " >Estado</span>
-                    <input type="text" class="form-control custominput" style="background:  #F6F6F7" />
+                    <input type="text" class="form-control custominput  text-dark" style="background:  #F6F6F7" />
                 </div>
             </div>
 
@@ -162,14 +162,14 @@ color: #303030;
             <div class="row ">
                 <div class="col-md-6 col-sm-6 col-xs-3">
                     <span class="help-block text-muted " >Email</span>
-                    <input type="text" class="form-control custominput" style="background:  #F6F6F7;" />
+                    <input type="text" class="form-control custominput  text-dark" style="background:  #F6F6F7;" />
                 </div>
 
                 <br>
 
            <div class="col-md-6 col-sm-6 col-xs-3">
                     <span class="help-block text-muted " >Telefono</span>
-                    <input type="text" class="form-control custominput" style="background:   #F6F6F7;"/>
+                    <input type="text" class="form-control custominput  text-dark" style="background:   #F6F6F7;"/>
                 </div>
             </div>
          </div>
