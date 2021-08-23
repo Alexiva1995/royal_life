@@ -42,7 +42,7 @@ box-sizing: border-box;
 border-radius: 5px;
 }
 .btn-custom{
-    width: 220px;
+    width: 100%;
     height: auto;
 
     background: #67FFCC;
