@@ -72,7 +72,10 @@ color: #303030;
     background: #67FFCC;
     border-radius: 10px;
 }
-
+input[type=text]:hover:not([disabled]), input[type=text]:focus, input[type=textarea]:hover:not([disabled]), input[type=textarea]:focus, input[type=search], input[type=search]:focus, input[type=search]:active, input[type=text]:read-only, input[type=password]:hover:not([disabled]), input[type=password]:focus, label:hover ~ input[type=text], label:hover ~ input[type=password] {
+    background: #11262C;
+    color: #000000;
+}
 </style>
 <div class="" style="background: #173138">
     <div class="texto-con">
