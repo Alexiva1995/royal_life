@@ -11,11 +11,17 @@ class CategoriasController extends Controller
     public function show(Request  $request , Categories $categories){
 
         $categorias = Categories::all();
+
         foreach ($categorias as $categoria){
             $data = ['categories_id'=> $categoria->id];
-           dd($categoria);
-            $packages = Packages::where('categories_id','=',  $categoria->id)->paginate(8);
+         //  dd($categoria);
+          $id = $categoria->id ;
+          //dd($id) ;
+          $packages = Packages::where('categories_id', '=' , $id)->get(); /*->paginate(8); */
+            //dd( $categoria->id);
         }
+
+
 
        // return $categoria->id ;
 
