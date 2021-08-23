@@ -10,7 +10,7 @@
 @endpush
 
 
-@include('backofice.ui.estylos')
+@include('backofice.ui.estylos'){{--Estilos de la tienda--}}
 
 @section('content')
 <div class="" style="background: #173138">
@@ -26,17 +26,14 @@
 
 
 <div class="container">
-    <h2 class="titulo-categoria text-uppercase mt-5 mb-4">
-
-    </h2>
+    <h2 class="titulo-categoria text-uppercase mt-5 mb-4"></h2>
     <div class="row">
 
         @include('backofice.ui.cardcategorias')
 
         @include('backofice.ui.productos')
+
        </div>
-
-
     </div>
 
 
