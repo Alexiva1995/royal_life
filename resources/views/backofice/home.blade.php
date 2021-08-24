@@ -298,7 +298,7 @@
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-top: -5px;">cremas</p>
+                                <p style="margin-top: -7px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
@@ -315,7 +315,7 @@
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-top: -5px;">cremas</p>
+                                <p style="margin-top: -7px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
@@ -332,7 +332,7 @@
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-top: -5px;">cremas</p>
+                                <p style="margin-top: -7px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
@@ -349,7 +349,7 @@
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-top: -5px;">cremas</p>
+                                <p style="margin-top: -7px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
@@ -366,7 +366,7 @@
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-top: -5px;">cremas</p>
+                                <p style="margin-top: -7px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
@@ -383,7 +383,7 @@
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-top: -5px;">cremas</p>
+                                <p style="margin-top: -7px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
@@ -400,7 +400,7 @@
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-top: -5px;">cremas</p>
+                                <p style="margin-top: -7px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
@@ -417,7 +417,7 @@
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-top: -5px;">cremas</p>
+                                <p style="margin-top: -7px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
@@ -434,7 +434,7 @@
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-top: -5px;">cremas</p>
+                                <p style="margin-top: -7px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
@@ -451,7 +451,7 @@
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-top: -5px;">cremas</p>
+                                <p style="margin-top: -7px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
@@ -468,7 +468,7 @@
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-top: -5px;">cremas</p>
+                                <p style="margin-top: -7px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
@@ -485,7 +485,7 @@
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-top: -5px;">cremas</p>
+                                <p style="margin-top: -7px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
@@ -502,7 +502,7 @@
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-top: -5px;">cremas</p>
+                                <p style="margin-top: -7px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
@@ -519,7 +519,7 @@
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-top: -5px;">cremas</p>
+                                <p style="margin-top: -7px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
@@ -536,7 +536,7 @@
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-top: -5px;">cremas</p>
+                                <p style="margin-top: -7px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
