@@ -30,7 +30,7 @@
 <div class="">
 
 
-<div class="container ml-24" >
+<div class="container ml-24">
     <div class="ml-7">
      <div class="row">
 

@@ -28,12 +28,9 @@
 <div class="container">
     <h2 class="titulo-categoria text-uppercase mt-5 mb-4"></h2>
     <div class="row">
-
         @include('backofice.ui.cardcategorias')
-
         @include('backofice.ui.productos')
-
-       </div>
+    </div>
     </div>
 
 
