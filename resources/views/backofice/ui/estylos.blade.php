@@ -1,5 +1,9 @@
+
+
 @push('custom_css')
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
+
 .zoom:hover {
     -webkit-transform:scale(1.05);
     -moz-transform:scale(1.05);
@@ -26,12 +30,16 @@
 }
 .bar {
     position: relative;
-    top: 15px;
-	height:240px;
+    top: -10px;
+	height:210px;
+    width: 287px;
+    left: -23px;
+
 }
 
 .bar2 {
     position: relative;
+    height:220px;
 
 }
 
@@ -42,7 +50,7 @@ box-sizing: border-box;
 border-radius: 5px;
 }
 .btn-custom{
-    width: 220px;
+    width: 100%;
     height: auto;
 
     background: #67FFCC;
@@ -62,19 +70,23 @@ box-sizing: border-box;
 }
 
 .s{
-    color: #67FFCC;
+    color: #303030;
     text-decoration: none;
     background-image: linear-gradient(currentColor, currentColor);
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 2px;
     transition: background-size .3s;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 14px;
 
 }
 
 .s:hover, s:focus {
     color: #67FFCC;
     background-size: 100% 2px;
+
 }
 
 .container {
@@ -91,8 +103,46 @@ box-sizing: border-box;
     background-size: 25px 50px;
     background-size: 50% 50%;
 
+
 }
 
+.texto{
+    font-size: 20px;
+    position: relative;
+    top: 12px;
+}
+.texto2{
+    font-size: 18px;
+}
+
+
+
+.fuente{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+}
+.tarjeta{
+    position: relative;
+    top: 20px;
+}
+.tarjeta2{
+    position: relative;
+    top: -90px;
+
+}
+
+.circulo{
+
+position: relative;
+width: 15px;
+height: 15px;
+left: 108px;
+top: 110px;
+
+background: #FFFFFF;
+border: 2px solid #000000;
+box-sizing: border-box;
+}
 
 </style>
 @endpush

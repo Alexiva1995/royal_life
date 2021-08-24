@@ -30,9 +30,9 @@
 <div class="">
 
 
-<div class="container ml-24" >
+<div class="container ml-24">
     <div class="ml-7">
-     <div class="col-12 ">
+     <div class="row">
 
          @include('backofice.ui.cardcategorias') {{-- lista de categorias  --}}
 
