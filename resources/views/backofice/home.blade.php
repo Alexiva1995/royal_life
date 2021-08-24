@@ -5,7 +5,7 @@
         <div class="carousel-inner" role="listbox">
             <div class="contenedor carousel-item active">
                 <div class="texto-encima d-flex justify-content-center">
-                    <p style=" line-height: 3.5rem;">Tellus nibh <strong> mattis <br> ultricies</strong> phasellus</p>
+                    <p style=" line-height: 4.5rem;">Tellus nibh <strong> mattis <br> ultricies</strong> phasellus</p>
                 </div>
                 <div class="centrado d-flex justify-content-center">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sit ipsa quod, aut quo inventore
@@ -26,155 +26,245 @@
 
         <div class="container mt-5">
             <div class="text-center">
-                <h1 class="texto-title"><strong> Categorias de nuetros productos </strong></h1>
-                <p class="texto-simple">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab doloribus vitae
-                    provident, cumque voluptatum nemo libero quod esse repudiandae repellat distinctio at porro nisi?
-                    Dignissimos corrupti in ullam inventore dolor?</p>
+                <h1 class="texto-title mb-2"><strong> Categorias de nuetros productos </strong></h1>
+                <p class="texto-simple">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tellus pharetra amet
+                    nunc sed etiam nibh et, morbi. Morbi commodo lorem purus non dui.</p>
             </div>
         </div>
-        <div class="container">
+        <div class="carousel-inner">
             <div class="row d-flex justify-content-center">
                 <div class="card mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
                     <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
-                    <div class="text-center text-card">Cremas</div>
-                    <a class="text-center" style="color: black;" href="{{route('shop.backofice')}}"><strong> ver todos los productos</strong> <img
-                            src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></a>
+                    <div class="text-center text-card"><strong>Cremas</strong></div>
+                    <a class="text-center" style="color: black;" href="{{route('shop.backofice')}}"><strong> ver todos
+                            los productos</strong> <img src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></a>
                 </div>
                 <div class="card mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
                     <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
-                    <div class="text-center text-card">Cremas</div>
-                    <a class="text-center" style="color: black;" href="{{route('shop.backofice')}}"><strong> ver todos los productos</strong> <img
-                            src="{{asset('assets/img/home/Arrow1.png')}}" alt=""> </a>
+                    <div class="text-center text-card"><strong>Cremas</strong></div>
+                    <a class="text-center" style="color: black;" href="{{route('shop.backofice')}}"><strong> ver todos
+                            los productos</strong> <img src="{{asset('assets/img/home/Arrow1.png')}}" alt=""> </a>
                 </div>
                 <div class="card mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
                     <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
-                    <div class="text-center text-card">Cremas</div>
-                    <a class="text-center" style="color: black;" href="{{route('shop.backofice')}}"><strong> ver todos los productos</strong> <img
-                            src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></a>
+                    <div class="text-center text-card"><strong>Cremas</strong></div>
+                    <a class="text-center" style="color: black;" href="{{route('shop.backofice')}}"><strong> ver todos
+                            los productos</strong> <img src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></a>
                 </div>
                 <div class="card mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
                     <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
-                    <div class="text-center text-card">Cremas</div>
-                    <a class="text-center" style="color: black;" href="{{route('shop.backofice')}}"><strong> ver todos los productos</strong> <img
-                            src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></a>
+                    <div class="text-center text-card"><strong>Cremas</strong></div>
+                    <a class="text-center" style="color: black;" href="{{route('shop.backofice')}}"><strong> ver todos
+                            los productos</strong> <img src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></a>
                 </div>
                 <div class="card mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
                     <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
-                    <div class="text-center text-card">Cremas</div>
-                    <a class="text-center" style="color: black;" href="{{route('shop.backofice')}}"><strong> ver todos los productos</strong> <img
-                            src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></a>
+                    <div class="text-center text-card"><strong>Cremas</strong></div>
+                    <a class="text-center" style="color: black;" href="{{route('shop.backofice')}}"><strong> ver todos
+                            los productos</strong> <img src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></a>
                 </div>
                 <div class="card mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
                     <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
-                    <div class="text-center text-card">Cremas</div>
-                    <a class="text-center" style="color: black;" href="{{route('shop.backofice')}}"><strong> ver todos los productos</strong> <img
-                            src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></a>
+                    <div class="text-center text-card"><strong>Cremas</strong></div>
+                    <a class="text-center" style="color: black;" href="{{route('shop.backofice')}}"><strong> ver todos
+                            los productos</strong> <img src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></a>
                 </div>
             </div>
         </div>
 
-        <div class="p-5" style="background:#F0FFFA;">
+        <div class="p-1" style="background:#F0FFFA;">
             <div class="container mb-3">
-                <h1 class="texto-title mt-5"><strong>Los más vendidos</strong></h1>
-                <p style="color: black">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab doloribus vitae
-                    provident, cumque voluptatum nemo libero quod esse repudiandae repellat distinctio at porro nisi.
+                <h1 class="texto-title mt-5 ml-3 mb-1"><strong>Los más vendidos</strong></h1>
+                <p style="color: black; font-size: 20px;" class="ml-3">Lorem, ipsum dolor sit amet, consectetur
+                    adipisicing elit. Purus malesuada et.
                 </p>
             </div>
-
             <div class="row d-flex justify-content-center">
-                <div class="card-body col-md-3 mb-1 ml-md-1" style="background: white;">
+                <div class="card-body cus-md-3 mb-1 ml-md-1" style="background: white;">
                     <div class="d-flex">
-                        <div style="background:#66FFCC; ">
-                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="">
+                        <div style="height:145px;width:100px;background:#66FFCC;">
+                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}"
+                                style="width: 90%;">
                         </div>
                         <div class="col-6">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text" style="color: black;">
-                                Some quick example text to build on the card title
-                                and make up the bulk of the card's content.
-                            </p>
+                            <h5><strong>Pomada CBD</strong></h5>
+                            <p class="card-text" style="color: black; width: 160px;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pellentesque auctor.</p>
+                            <a href="" class="btn btn-cre">
+                                <p style="margin-top: -7px;">cremas</p>
+                            </a>
+                            <p
+                                style="color: black;margin-left: 140px;font-size: 20px;margin-bottom: 0;margin-top: -5px;">
+                                <strong>31$</strong></p>
                         </div>
                     </div>
                 </div>
 
-                <div class="card-body col-md-3 mb-1 ml-md-1" style="background: white;">
+                <div class="card-body cus-md-3 mb-1 ml-md-1" style="background: white;">
                     <div class="d-flex">
-                        <div style="background:#66FFCC; ">
-                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="">
+                        <div style="height:145px;width:100px;background:#66FFCC;">
+                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}"
+                                style="width: 90%;">
                         </div>
                         <div class="col-6">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text" style="color: black;">
-                                Some quick example text to build on the card title
-                                and make up the bulk of the card's content.
-                            </p>
+                            <h5><strong>Pomada CBD</strong></h5>
+                            <p class="card-text" style="color: black; width: 160px;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pellentesque auctor.</p>
+                            <a href="" class="btn btn-cre">
+                                <p style="margin-top: -7px;">cremas</p>
+                            </a>
+                            <p
+                                style="color: black;margin-left: 140px;font-size: 20px;margin-bottom: 0;margin-top: -5px;">
+                                <strong>31$</strong></p>
                         </div>
                     </div>
                 </div>
 
-                <div class="card-body col-md-3 mb-1 ml-md-1" style="background: white;">
+
+                <div class="card-body cus-md-3 mb-1 ml-md-1" style="background: white;">
                     <div class="d-flex">
-                        <div style="background:#66FFCC; ">
-                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="">
+                        <div style="height:145px;width:100px;background:#66FFCC;">
+                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}"
+                                style="width: 90%;">
                         </div>
                         <div class="col-6">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text" style="color: black;">
-                                Some quick example text to build on the card title
-                                and make up the bulk of the card's content.
-                            </p>
+                            <h5><strong>Pomada CBD</strong></h5>
+                            <p class="card-text" style="color: black; width: 160px;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pellentesque auctor.</p>
+                            <a href="" class="btn btn-cre">
+                                <p style="margin-top: -7px;">cremas</p>
+                            </a>
+                            <p
+                                style="color: black;margin-left: 140px;font-size: 20px;margin-bottom: 0;margin-top: -5px;">
+                                <strong>31$</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body cus-md-3 mb-1 ml-md-1" style="background: white;">
+                    <div class="d-flex">
+                        <div style="height:145px;width:100px;background:#66FFCC;">
+                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}"
+                                style="width: 90%;">
+                        </div>
+                        <div class="col-6">
+                            <h5><strong>Pomada CBD</strong></h5>
+                            <p class="card-text" style="color: black; width: 160px;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pellentesque auctor.</p>
+                            <a href="" class="btn btn-cre">
+                                <p style="margin-top: -7px;">cremas</p>
+                            </a>
+                            <p
+                                style="color: black;margin-left: 140px;font-size: 20px;margin-bottom: 0;margin-top: -5px;">
+                                <strong>31$</strong></p>
                         </div>
                     </div>
                 </div>
 
-                <div class="card-body col-md-3 mb-5 ml-md-1" style="background: white;">
+                <div class="card-body cus-md-3 mb-1 ml-md-1" style="background: white;">
                     <div class="d-flex">
-                        <div style="background:#66FFCC; ">
-                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="">
+                        <div style="height:145px;width:100px;background:#66FFCC;">
+                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}"
+                                style="width: 90%;">
                         </div>
                         <div class="col-6">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text" style="color: black;">
-                                Some quick example text to build on the card title
-                                and make up the bulk of the card's content.
-                            </p>
+                            <h5><strong>Pomada CBD</strong></h5>
+                            <p class="card-text" style="color: black; width: 160px;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pellentesque auctor.</p>
+                            <a href="" class="btn btn-cre">
+                                <p style="margin-top: -7px;">cremas</p>
+                            </a>
+                            <p
+                                style="color: black;margin-left: 140px;font-size: 20px;margin-bottom: 0;margin-top: -5px;">
+                                <strong>31$</strong></p>
                         </div>
                     </div>
                 </div>
 
-                <div class="card-body col-md-3 mb-5 ml-md-1" style="background: white;">
+
+                <div class="card-body cus-md-3 mb-1 ml-md-1" style="background: white;">
                     <div class="d-flex">
-                        <div style="background:#66FFCC; ">
-                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="">
+                        <div style="height:145px;width:100px;background:#66FFCC;">
+                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}"
+                                style="width: 90%;">
                         </div>
                         <div class="col-6">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text" style="color: black;">
-                                Some quick example text to build on the card title
-                                and make up the bulk of the card's content.
-                            </p>
+                            <h5><strong>Pomada CBD</strong></h5>
+                            <p class="card-text" style="color: black; width: 160px;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pellentesque auctor.</p>
+                            <a href="" class="btn btn-cre">
+                                <p style="margin-top: -7px;">cremas</p>
+                            </a>
+                            <p
+                                style="color: black;margin-left: 140px;font-size: 20px;margin-bottom: 0;margin-top: -5px;">
+                                <strong>31$</strong></p>
                         </div>
                     </div>
                 </div>
 
-                <div class="card-body col-md-3 mb-5 ml-md-1" style="background: white;">
+
+                <div class="card-body cus-md-3 mb-1 ml-md-1" style="background: white;">
                     <div class="d-flex">
-                        <div style="background:#66FFCC; ">
-                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="">
+                        <div style="height:145px;width:100px;background:#66FFCC;">
+                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}"
+                                style="width: 90%;">
                         </div>
                         <div class="col-6">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text" style="color: black;">
-                                Some quick example text to build on the card title
-                                and make up the bulk of the card's content.
-                            </p>
+                            <h5><strong>Pomada CBD</strong></h5>
+                            <p class="card-text" style="color: black; width: 160px;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pellentesque auctor.</p>
+                            <a href="" class="btn btn-cre">
+                                <p style="margin-top: -7px;">cremas</p>
+                            </a>
+                            <p
+                                style="color: black;margin-left: 140px;font-size: 20px;margin-bottom: 0;margin-top: -5px;">
+                                <strong>31$</strong></p>
                         </div>
                     </div>
                 </div>
+
+
+                <div class="card-body cus-md-3 mb-1 ml-md-1" style="background: white;">
+                    <div class="d-flex">
+                        <div style="height:145px;width:100px;background:#66FFCC;">
+                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}"
+                                style="width: 90%;">
+                        </div>
+                        <div class="col-6">
+                            <h5><strong>Pomada CBD</strong></h5>
+                            <p class="card-text" style="color: black; width: 160px;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pellentesque auctor.</p>
+                            <a href="" class="btn btn-cre">
+                                <p style="margin-top: -7px;">cremas</p>
+                            </a>
+                            <p
+                                style="color: black;margin-left: 140px;font-size: 20px;margin-bottom: 0;margin-top: -5px;">
+                                <strong>31$</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-body cus-md-3 mb-1 ml-md-1" style="background: white;">
+                    <div class="d-flex">
+                        <div style="height:145px;width:100px;background:#66FFCC;">
+                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}"
+                                style="width: 90%;">
+                        </div>
+                        <div class="col-6">
+                            <h5><strong>Pomada CBD</strong></h5>
+                            <p class="card-text" style="color: black; width: 160px;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pellentesque auctor.</p>
+                            <a href="" class="btn btn-cre">
+                                <p style="margin-top: -7px;">cremas</p>
+                            </a>
+                            <p
+                                style="color: black;margin-left: 140px;font-size: 20px;margin-bottom: 0;margin-top: -5px;">
+                                <strong>31$</strong></p>
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
-
-
         </div>
 
         <div class="contenedor d-flex" style="background: #173138">
@@ -192,241 +282,269 @@
 
         <div class="container mt-5">
             <div class="text-center">
-                <h1 class="texto-title"><strong> Productos </strong></h1>
-                <p class="texto-simple">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab doloribus vitae
-                    provident, cumque voluptatum nemo libero quod esse repudiandae repellat distinctio at porro nisi?
-                    Dignissimos corrupti in ullam inventore dolor?</p>
+                <h1 class="texto-title mb-2"><strong> Productos </strong></h1>
+                <p class="texto-simple mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ligula facilisi
+                    quis <br> lectus morbi phasellus arcu. Mus viverra feugiat mattis sollicitudin consequat</p>
             </div>
         </div>
 
         <div class="container ">
             <div class="row d-flex justify-content-center">
-                <a href="{{route('shop.backofice')}}" class="col-md-4">
-                    <div class="col-md-12 ">
-                        <div class="card text-center zoom" style="background:#FFFFFF">
-                            <p class=" text-center  " style="background: #67FFCC;  ">
-                                <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
-                            </p>
-                            <div class="card-body">
-                                <p class="text-right" style="color:rgb(0, 0, 0);"> <strong>$31</strong></p>
-                                <p class="text-left" style="color:#000000;"><strong>Pomada CBD</strong></p>
-                                <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit.</p>
-                            </div>
+                <div class="col-md-4">
+                    <div class="card text-center" style="background:#FFFFFF">
+                        <p class="text-center"
+                            style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
+                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
+                        </p>
+                        <div class="card-body">
+                            <a href="" class="btn btn-cren">
+                                <p style="margin-top: -5px;">cremas</p>
+                            </a>
+                            <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
+                            <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
+                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.</p>
                         </div>
                     </div>
-                </a>
-                <a href="{{route('shop.backofice')}}" class="col-md-4">
-                    <div class="col-md-12 ">
-                        <div class="card text-center zoom" style="background:#FFFFFF">
-                            <p class=" text-center  " style="background: #67FFCC;  ">
-                                <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
-                            </p>
-                            <div class="card-body">
-                                <p class="text-right" style="color: rgb(0, 0, 0);"> <strong>$31</strong></p>
-                                <p class="text-left" style="color:  #000000;"><strong>Pomada CBD</strong></p>
-                                <p class="text-left" style="color:  #303030;">Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit.</p>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center" style="background:#FFFFFF">
+                        <p class="text-center"
+                            style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
+                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
+                        </p>
+                        <div class="card-body">
+                            <a href="" class="btn btn-cren">
+                                <p style="margin-top: -5px;">cremas</p>
+                            </a>
+                            <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
+                            <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
+                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.</p>
                         </div>
                     </div>
-                </a>
-                <a href="{{route('shop.backofice')}}" class="col-md-4">
-                    <div class="col-md-12 ">
-                        <div class="card text-center zoom" style="background:#FFFFFF">
-                            <p class=" text-center  " style="background: #67FFCC;  ">
-                                <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
-                            </p>
-                            <div class="card-body">
-                                <p class="text-right" style="color: rgb(0, 0, 0);"> <strong>$31</strong></p>
-                                <p class="text-left" style="color:  #000000;"><strong>Pomada CBD</strong></p>
-                                <p class="text-left" style="color:  #303030;">Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit.</p>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center" style="background:#FFFFFF">
+                        <p class="text-center"
+                            style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
+                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
+                        </p>
+                        <div class="card-body">
+                            <a href="" class="btn btn-cren">
+                                <p style="margin-top: -5px;">cremas</p>
+                            </a>
+                            <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
+                            <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
+                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.</p>
                         </div>
                     </div>
-                </a>
-                <a href="{{route('shop.backofice')}}"  class="col-md-4">
-                    <div class="col-md-12 ">
-                        <div class="card text-center zoom" style="background:#FFFFFF">
-                            <p class=" text-center  " style="background: #67FFCC;  ">
-                                <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
-                            </p>
-                            <div class="card-body">
-                                <p class="text-right" style="color: rgb(0, 0, 0);"> <strong>$31</strong></p>
-                                <p class="text-left" style="color:  #000000;"><strong>Pomada CBD</strong></p>
-                                <p class="text-left" style="color:  #303030;">Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit.</p>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center" style="background:#FFFFFF">
+                        <p class="text-center"
+                            style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
+                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
+                        </p>
+                        <div class="card-body">
+                            <a href="" class="btn btn-cren">
+                                <p style="margin-top: -5px;">cremas</p>
+                            </a>
+                            <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
+                            <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
+                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.</p>
                         </div>
                     </div>
-                </a>
-
-                <a href="{{route('shop.backofice')}}"  class="col-md-4">
-                    <div class="col-md-12 ">
-                        <div class="card text-center zoom" style="background:#FFFFFF">
-                            <p class=" text-center  " style="background: #67FFCC;  ">
-                                <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
-                            </p>
-                            <div class="card-body">
-                                <p class="text-right" style="color: rgb(0, 0, 0);"> <strong>$31</strong></p>
-                                <p class="text-left" style="color:  #000000;"><strong>Pomada CBD</strong></p>
-                                <p class="text-left" style="color:  #303030;">Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit.</p>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center" style="background:#FFFFFF">
+                        <p class="text-center"
+                            style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
+                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
+                        </p>
+                        <div class="card-body">
+                            <a href="" class="btn btn-cren">
+                                <p style="margin-top: -5px;">cremas</p>
+                            </a>
+                            <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
+                            <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
+                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.</p>
                         </div>
                     </div>
-                </a>
-                <a href="{{route('shop.backofice')}}"  class="col-md-4">
-                    <div class="col-md-12 ">
-                        <div class="card text-center zoom" style="background:#FFFFFF">
-                            <p class=" text-center  " style="background: #67FFCC;  ">
-                                <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
-                            </p>
-                            <div class="card-body">
-                                <p class="text-right" style="color: rgb(0, 0, 0);"> <strong>$31</strong></p>
-                                <p class="text-left" style="color:  #000000;"><strong>Pomada CBD</strong></p>
-                                <p class="text-left" style="color:  #303030;">Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit.</p>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center" style="background:#FFFFFF">
+                        <p class="text-center"
+                            style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
+                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
+                        </p>
+                        <div class="card-body">
+                            <a href="" class="btn btn-cren">
+                                <p style="margin-top: -5px;">cremas</p>
+                            </a>
+                            <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
+                            <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
+                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.</p>
                         </div>
                     </div>
-                </a>
-                <a href="{{route('shop.backofice')}}"  class="col-md-4">
-                    <div class="col-md-12 ">
-                        <div class="card text-center zoom" style="background:#FFFFFF">
-                            <p class=" text-center  " style="background: #67FFCC;  ">
-                                <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
-                            </p>
-                            <div class="card-body">
-                                <p class="text-right" style="color: rgb(0, 0, 0);"> <strong>$31</strong></p>
-                                <p class="text-left" style="color:  #000000;"><strong>Pomada CBD</strong></p>
-                                <p class="text-left" style="color:  #303030;">Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit.</p>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center" style="background:#FFFFFF">
+                        <p class="text-center"
+                            style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
+                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
+                        </p>
+                        <div class="card-body">
+                            <a href="" class="btn btn-cren">
+                                <p style="margin-top: -5px;">cremas</p>
+                            </a>
+                            <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
+                            <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
+                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.</p>
                         </div>
                     </div>
-                </a>
-                <a href="{{route('shop.backofice')}}"  class="col-md-4">
-                    <div class="col-md-12 ">
-                        <div class="card text-center zoom" style="background:#FFFFFF">
-                            <p class=" text-center  " style="background: #67FFCC;  ">
-                                <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
-                            </p>
-                            <div class="card-body">
-                                <p class="text-right" style="color: rgb(0, 0, 0);"> <strong>$31</strong></p>
-                                <p class="text-left" style="color:  #000000;"><strong>Pomada CBD</strong></p>
-                                <p class="text-left" style="color:  #303030;">Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit.</p>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center" style="background:#FFFFFF">
+                        <p class="text-center"
+                            style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
+                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
+                        </p>
+                        <div class="card-body">
+                            <a href="" class="btn btn-cren">
+                                <p style="margin-top: -5px;">cremas</p>
+                            </a>
+                            <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
+                            <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
+                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.</p>
                         </div>
                     </div>
-                </a>
-                <a href="{{route('shop.backofice')}}"  class="col-md-4">
-                    <div class="col-md-12 ">
-                        <div class="card text-center zoom" style="background:#FFFFFF">
-                            <p class=" text-center  " style="background: #67FFCC;  ">
-                                <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
-                            </p>
-                            <div class="card-body">
-                                <p class="text-right" style="color: rgb(0, 0, 0);"> <strong>$31</strong></p>
-                                <p class="text-left" style="color:  #000000;"><strong>Pomada CBD</strong></p>
-                                <p class="text-left" style="color:  #303030;">Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit.</p>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center" style="background:#FFFFFF">
+                        <p class="text-center"
+                            style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
+                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
+                        </p>
+                        <div class="card-body">
+                            <a href="" class="btn btn-cren">
+                                <p style="margin-top: -5px;">cremas</p>
+                            </a>
+                            <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
+                            <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
+                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.</p>
                         </div>
                     </div>
-                </a>
-                <a href="{{route('shop.backofice')}}"  class="col-md-4">
-                    <div class="col-md-12 ">
-                        <div class="card text-center zoom" style="background:#FFFFFF">
-                            <p class=" text-center  " style="background: #67FFCC;  ">
-                                <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
-                            </p>
-                            <div class="card-body">
-                                <p class="text-right" style="color: rgb(0, 0, 0);"> <strong>$31</strong></p>
-                                <p class="text-left" style="color:  #000000;"><strong>Pomada CBD</strong></p>
-                                <p class="text-left" style="color:  #303030;">Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit.</p>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center" style="background:#FFFFFF">
+                        <p class="text-center"
+                            style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
+                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
+                        </p>
+                        <div class="card-body">
+                            <a href="" class="btn btn-cren">
+                                <p style="margin-top: -5px;">cremas</p>
+                            </a>
+                            <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
+                            <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
+                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.</p>
                         </div>
                     </div>
-                </a>
-                <a href="{{route('shop.backofice')}}"  class="col-md-4">
-                    <div class="col-md-12 ">
-                        <div class="card text-center zoom" style="background:#FFFFFF">
-                            <p class=" text-center  " style="background: #67FFCC;  ">
-                                <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
-                            </p>
-                            <div class="card-body">
-                                <p class="text-right" style="color: rgb(0, 0, 0);"> <strong>$31</strong></p>
-                                <p class="text-left" style="color:  #000000;"><strong>Pomada CBD</strong></p>
-                                <p class="text-left" style="color:  #303030;">Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit.</p>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center" style="background:#FFFFFF">
+                        <p class="text-center"
+                            style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
+                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
+                        </p>
+                        <div class="card-body">
+                            <a href="" class="btn btn-cren">
+                                <p style="margin-top: -5px;">cremas</p>
+                            </a>
+                            <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
+                            <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
+                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.</p>
                         </div>
                     </div>
-                </a>
-                <a href="{{route('shop.backofice')}}"  class="col-md-4">
-                    <div class="col-md-12 ">
-                        <div class="card text-center zoom" style="background:#FFFFFF">
-                            <p class=" text-center  " style="background: #67FFCC;  ">
-                                <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
-                            </p>
-                            <div class="card-body">
-                                <p class="text-right" style="color: rgb(0, 0, 0);"> <strong>$31</strong></p>
-                                <p class="text-left" style="color:  #000000;"><strong>Pomada CBD</strong></p>
-                                <p class="text-left" style="color:  #303030;">Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit.</p>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center" style="background:#FFFFFF">
+                        <p class="text-center"
+                            style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
+                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
+                        </p>
+                        <div class="card-body">
+                            <a href="" class="btn btn-cren">
+                                <p style="margin-top: -5px;">cremas</p>
+                            </a>
+                            <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
+                            <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
+                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.</p>
                         </div>
                     </div>
-                </a>
-                <a href="{{route('shop.backofice')}}"  class="col-md-4">
-                    <div class="col-md-12 ">
-                        <div class="card text-center zoom" style="background:#FFFFFF">
-                            <p class=" text-center  " style="background: #67FFCC;  ">
-                                <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
-                            </p>
-                            <div class="card-body">
-                                <p class="text-right" style="color: rgb(0, 0, 0);"> <strong>$31</strong></p>
-                                <p class="text-left" style="color:  #000000;"><strong>Pomada CBD</strong></p>
-                                <p class="text-left" style="color:  #303030;">Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit.</p>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center" style="background:#FFFFFF">
+                        <p class="text-center"
+                            style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
+                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
+                        </p>
+                        <div class="card-body">
+                            <a href="" class="btn btn-cren">
+                                <p style="margin-top: -5px;">cremas</p>
+                            </a>
+                            <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
+                            <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
+                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.</p>
                         </div>
                     </div>
-                </a>
-                <a href="{{route('shop.backofice')}}"  class="col-md-4">
-                    <div class="col-md-12 ">
-                        <div class="card text-center zoom" style="background:#FFFFFF">
-                            <p class=" text-center  " style="background: #67FFCC;  ">
-                                <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
-                            </p>
-                            <div class="card-body">
-                                <p class="text-right" style="color: rgb(0, 0, 0);"> <strong>$31</strong></p>
-                                <p class="text-left" style="color:  #000000;"><strong>Pomada CBD</strong></p>
-                                <p class="text-left" style="color:  #303030;">Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit.</p>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center" style="background:#FFFFFF">
+                        <p class="text-center"
+                            style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
+                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
+                        </p>
+                        <div class="card-body">
+                            <a href="" class="btn btn-cren">
+                                <p style="margin-top: -5px;">cremas</p>
+                            </a>
+                            <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
+                            <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
+                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.</p>
                         </div>
                     </div>
-                </a>
-                <a href="{{route('shop.backofice')}}"  class="col-md-4">
-                    <div class="col-md-12 ">
-                        <div class="card text-center zoom" style="background:#FFFFFF">
-                            <p class=" text-center  " style="background: #67FFCC;  ">
-                                <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
-                            </p>
-                            <div class="card-body">
-                                <p class="text-right" style="color: rgb(0, 0, 0);"> <strong>$31</strong></p>
-                                <p class="text-left" style="color:  #000000;"><strong>Pomada CBD</strong></p>
-                                <p class="text-left" style="color:  #303030;">Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit.</p>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center" style="background:#FFFFFF">
+                        <p class="text-center"
+                            style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
+                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
+                        </p>
+                        <div class="card-body">
+                            <a href="" class="btn btn-cren">
+                                <p style="margin-top: -5px;">cremas</p>
+                            </a>
+                            <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
+                            <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
+                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.</p>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
         </div>
 
