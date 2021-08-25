@@ -290,7 +290,24 @@
 
         <div class="container ">
             <div class="row d-flex justify-content-center">
-                <div class="col-md-4 mb-1">
+                <div class="col-md-4 mb-1 cus-md-4">
+                    <div class="card-body product text-center">
+                        <p class="text-center"
+                            style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
+                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
+                        </p>
+                        <div class="card-body">
+                            <a href="" class="btn btn-cren">
+                                <p style="margin-left: -16px;margin-top: -10px;">cremas</p>
+                            </a>
+                            <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
+                            <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
+                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                  <div class="col-md-4 mb-1 cus-md-4">
                     <div class="card-body product text-center">
                         <p class="text-center"
                             style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
@@ -307,7 +324,7 @@
                         </div>
                     </div>
                 </div>
-                  <div class="col-md-4 mb-1">
+                  <div class="col-md-4 mb-1 cus-md-4">
                     <div class="card-body product text-center">
                         <p class="text-center"
                             style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
@@ -324,7 +341,7 @@
                         </div>
                     </div>
                 </div>
-                  <div class="col-md-4 mb-1">
+                  <div class="col-md-4 mb-1 cus-md-4">
                     <div class="card-body product text-center">
                         <p class="text-center"
                             style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
@@ -341,7 +358,7 @@
                         </div>
                     </div>
                 </div>
-                  <div class="col-md-4 mb-1">
+                  <div class="col-md-4 mb-1 cus-md-4">
                     <div class="card-body product text-center">
                         <p class="text-center"
                             style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
@@ -358,7 +375,7 @@
                         </div>
                     </div>
                 </div>
-                  <div class="col-md-4 mb-1">
+                  <div class="col-md-4 mb-1 cus-md-4">
                     <div class="card-body product text-center">
                         <p class="text-center"
                             style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
@@ -375,7 +392,7 @@
                         </div>
                     </div>
                 </div>
-                  <div class="col-md-4 mb-1">
+                  <div class="col-md-4 mb-1 cus-md-4">
                     <div class="card-body product text-center">
                         <p class="text-center"
                             style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
@@ -392,7 +409,7 @@
                         </div>
                     </div>
                 </div>
-                  <div class="col-md-4 mb-1">
+                  <div class="col-md-4 mb-1 cus-md-4">
                     <div class="card-body product text-center">
                         <p class="text-center"
                             style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
@@ -409,7 +426,7 @@
                         </div>
                     </div>
                 </div>
-                  <div class="col-md-4 mb-1">
+                  <div class="col-md-4 mb-1 cus-md-4">
                     <div class="card-body product text-center">
                         <p class="text-center"
                             style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
@@ -426,7 +443,7 @@
                         </div>
                     </div>
                 </div>
-                  <div class="col-md-4 mb-1">
+                  <div class="col-md-4 mb-1 cus-md-4">
                     <div class="card-body product text-center">
                         <p class="text-center"
                             style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
@@ -443,7 +460,7 @@
                         </div>
                     </div>
                 </div>
-                  <div class="col-md-4 mb-1">
+                  <div class="col-md-4 mb-1 cus-md-4">
                     <div class="card-body product text-center">
                         <p class="text-center"
                             style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
@@ -460,7 +477,7 @@
                         </div>
                     </div>
                 </div>
-                  <div class="col-md-4 mb-1">
+                  <div class="col-md-4 mb-1 cus-md-4">
                     <div class="card-body product text-center">
                         <p class="text-center"
                             style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
@@ -477,7 +494,7 @@
                         </div>
                     </div>
                 </div>
-                  <div class="col-md-4 mb-1">
+                  <div class="col-md-4 mb-1 cus-md-4">
                     <div class="card-body product text-center">
                         <p class="text-center"
                             style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
@@ -494,7 +511,7 @@
                         </div>
                     </div>
                 </div>
-                  <div class="col-md-4 mb-1">
+                  <div class="col-md-4 mb-1 cus-md-4">
                     <div class="card-body product text-center">
                         <p class="text-center"
                             style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
@@ -511,24 +528,7 @@
                         </div>
                     </div>
                 </div>
-                  <div class="col-md-4 mb-1">
-                    <div class="card-body product text-center">
-                        <p class="text-center"
-                            style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
-                            <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
-                        </p>
-                        <div class="card-body">
-                            <a href="" class="btn btn-cren">
-                                <p style="margin-left: -13px;margin-top: -10px;">cremas</p>
-                            </a>
-                            <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
-                            <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
-                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit.</p>
-                        </div>
-                    </div>
-                </div>
-                  <div class="col-md-4 mb-1">
+                  <div class="col-md-4 mb-1 cus-md-4">
                     <div class="card-body product text-center">
                         <p class="text-center"
                             style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
