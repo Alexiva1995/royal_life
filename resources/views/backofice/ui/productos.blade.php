@@ -7,7 +7,7 @@
 
 
            <div class="col-md-12 ">
-            <a class="card-body bar2" href="{{route('cheking.backofice')}}" method="GET">
+            <a class="card-body bar2" href="{{route('detalle.producto')}}" method="GET">
                <div class=" card col-mt-5 col-md-12  zoom " style="background:#FFFFFF">
                  {{--     <p class=" text-center bdr bar  " style= "background: #67FFCC;      ">--}}
                        <p class="text-center bdr bar "
