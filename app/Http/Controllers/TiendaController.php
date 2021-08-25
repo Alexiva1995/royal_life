@@ -426,4 +426,8 @@ class TiendaController extends Controller
        return  view('backofice.checkout');
     }
 
+    public function detalleproducto(){
+        return view('backofice.detalleproducto');
+    }
+
 }
