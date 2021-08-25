@@ -10,10 +10,14 @@
             <a class="card-body bar2" href="{{route('cheking.backofice')}}" method="GET">
                <div class=" card col-mt-5 col-md-12  zoom " style="background:#FFFFFF">
                  {{--     <p class=" text-center bdr bar  " style= "background: #67FFCC;      ">--}}
-                       <img class=" text-center bdr bar img" src="{{asset('storage/photo-profile/'.$producto->img)}}" style= "background: #67FFCC;">
+                       <p class="text-center bdr bar "
+                       style="background: #67FFCC;">
+                       <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
+                   </p>
                     @csrf
                    {{--    <form action="{{route('cheking.backofice')}}" method="POST">
                            @csrf --}}
+
                        <p class="text-right" style="color: rgb(0, 0, 0);"><a class="text-iz box"></a> <strong class="texto">${{$producto->price}}</strong></p>
                        <p class="text-left"  style="color: #000000;"><strong class="texto2 fuente">{{$producto->name}}</strong></p>
                        <p class="text-left"  style="color: #303030;">{{ Str::words( strip_tags($producto->description) , 15 )}}</p>

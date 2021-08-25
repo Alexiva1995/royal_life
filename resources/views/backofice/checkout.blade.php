@@ -11,62 +11,23 @@
 
 @push('custom_css')
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
+
 .custominput{
     border: 0;
 }
 
-.textcustom{
-font-style: normal;
-font-weight: normal;
-font-size: 15px;
-line-height: 18px;
 
-color: #303030;
-}
-
-.factura {
-  table-layout: fixed;
-}
-
-.fact-info > div > h5 {
-  font-weight: bold;
-}
-
-.factura > thead {
-  border-top: solid 3px #000;
-  border-bottom: 3px solid #000;
-}
-
-.factura > thead > tr > th:nth-child(2), .factura > tbod > tr > td:nth-child(2) {
-  width: 300px;
-}
-
-.factura > thead > tr > th:nth-child(n+3) {
-  text-align: right;
-}
-
-.factura > tbody > tr > td:nth-child(n+3) {
-  text-align: right;
-}
-
-.factura > tfoot > tr > th, .factura > tfoot > tr > th:nth-child(n+3) {
-  font-size: 24px;
-  text-align: right;
-}
-
-.cond {
-  border-top: solid 2px #000;
-}
 
 
 .cheking{
     position: relative;
-    padding-left: 100px;
+    padding-left: -400px;
 
 }
 .hr{
     position: absolute;
-    margin-top: 150px;
+    margin-top: 180px;
     width:100%;
 }
 
@@ -77,9 +38,27 @@ color: #303030;
 .btn-custom{
     width: 220px;
     height: 45px;
-    left: 100px;
+    left: 215px;
     background: #67FFCC;
     border-radius: 7px;
+}
+.fuente{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+
+}
+.tamañofuente{
+    font-size: 15px;
+}
+.orden{
+    position: relative;
+    margin-top: -19px;
+}
+.requerido{
+  color:red;
+    margin-left: 1px;
+    top:-1px;
+    font-size: 15px;
 }
 
 </style>
@@ -103,20 +82,21 @@ color: #303030;
 <div class="mt-5 ml-10 mb-5 container ">
 
 <div class="col-5  ml-5 " style="background: #ffffff;">
-<form action="#" class="credit-card-div">
+<form action="#" class="credit-card-div fuente">
     <div class="panel panel-default " >
      <div class="panel-heading  ">
         <h2> <strong>Detalles de facturacion </strong> </h2>
 
 <br>
          <div class="row ">
-                  <div class="col-md-6 col-sm-6 col-xs-3">
-                      <span class="help-block text-muted text textcustom" >Nombres  </span>
-                      <input type="text" class="form-control custominput text-dark" style="background:  #F6F6F7;" />
+                  <div class="col-md-6 col-sm-6 col-xs-3 form-group">
+                      <span class="help-block text-muted text textcustom  control-span">Nombres  <sup class="requerido">*</sup>
+                      </span>
+                      <input type="text" class="form-control custominput text-dark mt-1" style="background:  #F6F6F7;" />
                   </div>
              <div class="col-md-6 col-sm-6 col-xs-3">
-                      <span class="help-block text-muted textcustom" >Apellidos</span>
-                      <input type="text" class="form-control custominput  text-dark" style="background:   #F6F6F7;"/>
+                      <span class="help-block text-muted textcustom mb-1" >Apellidos <sup class="requerido">*</sup></span>
+                      <input type="text" class="form-control custominput  text-dark mt-1" style="background:   #F6F6F7;"/>
                   </div>
               </div>
 
@@ -124,8 +104,8 @@ color: #303030;
 
          <div class="row ">
                   <div class="col-md-12 pad-adjust">
-                    <span class="help-block text-muted " >Pais</span>
-                      <input type="text" class="form-control custominput  text-dark" style="background:  #F6F6F7" />
+                    <span class="help-block text-muted " >Pais<sup class="requerido">*</sup></span>
+                      <input type="text" class="form-control custominput  text-dark mt-1" style="background:  #F6F6F7" />
                   </div>
               </div>
 
@@ -133,8 +113,8 @@ color: #303030;
 
               <div class="row ">
                 <div class="col-md-12 pad-adjust">
-                    <span class="help-block text-muted " >Direccion</span>
-                    <input type="text" class="form-control custominput  text-dark" style="background:  #F6F6F7" />
+                    <span class="help-block text-muted " >Direccion<sup class="requerido">*</sup></span>
+                    <input type="text" class="form-control custominput  text-dark mt-1" style="background:  #F6F6F7" />
                 </div>
             </div>
 
@@ -142,8 +122,8 @@ color: #303030;
 
             <div class="row ">
                 <div class="col-md-12 pad-adjust">
-                    <span class="help-block text-muted " >Pueblo/Ciudad</span>
-                    <input type="text" class="form-control custominput  text-dark" style="background:  #F6F6F7" />
+                    <span class="help-block text-muted " >Pueblo/Ciudad<sup class="requerido">*</sup></span>
+                    <input type="text" class="form-control custominput  text-dark mt-1" style="background:  #F6F6F7" />
                 </div>
             </div>
 
@@ -151,8 +131,8 @@ color: #303030;
 
             <div class="row ">
                 <div class="col-md-12 pad-adjust">
-                    <span class="help-block text-muted " >Estado</span>
-                    <input type="text" class="form-control custominput  text-dark" style="background:  #F6F6F7" />
+                    <span class="help-block text-muted " >Estado<sup class="requerido">*</sup></span>
+                    <input type="text" class="form-control custominput  text-dark mt-1" style="background:  #F6F6F7" />
                 </div>
             </div>
 
@@ -161,15 +141,15 @@ color: #303030;
 
             <div class="row ">
                 <div class="col-md-6 col-sm-6 col-xs-3">
-                    <span class="help-block text-muted " >Email</span>
-                    <input type="text" class="form-control custominput  text-dark" style="background:  #F6F6F7;" />
+                    <span class="help-block text-muted " >Email<sup class="requerido">*</sup></span>
+                    <input type="text" class="form-control custominput  text-dark mt-1" style="background:  #F6F6F7;" />
                 </div>
 
                 <br>
 
            <div class="col-md-6 col-sm-6 col-xs-3">
-                    <span class="help-block text-muted " >Telefono</span>
-                    <input type="text" class="form-control custominput  text-dark" style="background:   #F6F6F7;"/>
+                    <span class="help-block text-muted " >Telefono<sup class="requerido">*</sup></span>
+                    <input type="text" class="form-control custominput  text-dark mt-1" style="background:   #F6F6F7;"/>
                 </div>
             </div>
          </div>
@@ -180,43 +160,41 @@ color: #303030;
 
 
 
-
-    <div class="mt-2 ml-5 mb-5 cheking">
-      <div class="col-8  ml-5 text-dark " >
-
-          <h2>Tu orden</h2>
-  <div class="row my-5">
-    <table class="table table-borderless factura">
+<div class="mt-2 ml-5 mb-5 cheking fuente">
+    <div class="col-10  ml-5 text-dark " >
+        <div class="row orden">
+            <table class="table table-borderless factura">
 
         <tr>
-          <th>Productos</th>
+          <h2 class="ml-1 "><strong>Tu orden <strong></h2>
+          <th class=""><strong class="tamañofuente">Productos </strong></th>
           <th></th>
           <th></th>
-          <th>Subtotal</th>
+          <th class="text-right "><strong class="tamañofuente"> Subtotal </strong></th>
         </tr>
       <tbody>
         <tr>
         </tr>
         <tr>
-          <td>Crema chocolate</td>
+          <td><h6>Crema chocolate </h6></td>
           <td></td>
           <td></td>
-          <td>$31</td>
+          <td class="text-right">$31</td>
         </tr>
       </tbody>
         <tr>
-          <th>Subtotal</th>
+          <th><strong class="tamañofuente"> Subtotal </strong></th>
           <th></th>
           <th></th>
-          <th>$31</th>
+          <th class="text-right"> <strong class="tamañofuente">$31</strong></th>
         </tr>
         <tfoot>
         <tr>
         <hr class="hr">
-          <th>Total</th>
+          <th class="text-left"><h6><strong>Total </strong></h6></th>
           <th></th>
           <th></th>
-          <th>$31</th>
+          <th class="text-right "><h6><strong>$31<strong></h6></th>
         </tr>
       </tfoot>
 
@@ -227,25 +205,15 @@ color: #303030;
                 value="{{}}">
 
             <button
-                class="btn btn-custom text-dark"
+                class="btn btn-custom text-dark "
                 type="submit"
                 style="background: #67FFCC"
-                ><strong style="color:#000000;"> Realizar pedido </strong></button>
-
-  </div>
-
-  </div>
-
-      </div>
-  </div>
-
-  <div>
+                ><strong style="color:#173138"> Realizar pedido </strong></button>
 
 
-
-
-
-<div>
+        </div>
+    </div>
+</div>
 
 
 
