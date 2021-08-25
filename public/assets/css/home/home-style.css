@@ -15,7 +15,7 @@
   position: absolute;
   top: 30%;
   color: #303030;
-  left: 26%;
+  left: 25%;
   font-size: 60px;
   width: 50%;
   text-align: justify;
@@ -185,7 +185,7 @@
   position: absolute;
     color: black;
     top: 44%;
-    left: 26%;
+    left: 25%;
     text-align: justify;
     width: 36%;
     transform: translate(-50%, -50%);
@@ -208,15 +208,15 @@
 
 .btn-pry{
   border-color: #66FFCC !important;
-  color: black!important;
-  box-shadow: 0 8px 25px -8px #66ffcc;
-  position: absolute;
-  top: 53%;
-  left: 15.8%;
-  width: 15%;
-  background-color: #66FFCC;
-  border-radius: 0.4285rem;
-  transform: translate(-50%, -50%);
+    color: black!important;
+    box-shadow: 0 8px 25px -8px #66ffcc;
+    position: absolute;
+    top: 53%;
+    left: 14.8%;
+    width: 15%;
+    background-color: #66FFCC;
+    border-radius: 0.4285rem;
+    transform: translate(-50%, -50%);
 }
 .btn-pri{
   border-color: #66FFCC !important;
