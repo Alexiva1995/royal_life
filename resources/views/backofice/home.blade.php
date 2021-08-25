@@ -27,7 +27,7 @@
         <div class="container mt-5">
             <div class="text-center">
                 <h1 class="texto-title mb-2"><strong> Categorias de nuetros productos </strong></h1>
-                <p class="texto-simple">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tellus pharetra amet
+                <p class="texto-simple mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tellus pharetra amet
                     nunc sed etiam nibh et, morbi. Morbi commodo lorem purus non dui.</p>
             </div>
         </div>
@@ -290,15 +290,15 @@
 
         <div class="container ">
             <div class="row d-flex justify-content-center">
-                <div class="col-md-4">
-                    <div class="card text-center" style="background:#FFFFFF">
+                <div class="col-md-4 mb-1">
+                    <div class="card-body product text-center">
                         <p class="text-center"
                             style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-top: -7px;">cremas</p>
+                                <p style="margin-left: -13px;margin-top: -10px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
@@ -307,15 +307,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card text-center" style="background:#FFFFFF">
+                  <div class="col-md-4 mb-1">
+                    <div class="card-body product text-center">
                         <p class="text-center"
                             style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-top: -7px;">cremas</p>
+                                <p style="margin-left: -13px;margin-top: -10px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
@@ -324,15 +324,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card text-center" style="background:#FFFFFF">
+                  <div class="col-md-4 mb-1">
+                    <div class="card-body product text-center">
                         <p class="text-center"
                             style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-top: -7px;">cremas</p>
+                                <p style="margin-left: -13px;margin-top: -10px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
@@ -341,15 +341,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card text-center" style="background:#FFFFFF">
+                  <div class="col-md-4 mb-1">
+                    <div class="card-body product text-center">
                         <p class="text-center"
                             style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-top: -7px;">cremas</p>
+                                <p style="margin-left: -13px;margin-top: -10px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
@@ -358,15 +358,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card text-center" style="background:#FFFFFF">
+                  <div class="col-md-4 mb-1">
+                    <div class="card-body product text-center">
                         <p class="text-center"
                             style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-top: -7px;">cremas</p>
+                                <p style="margin-left: -13px;margin-top: -10px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
@@ -375,15 +375,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card text-center" style="background:#FFFFFF">
+                  <div class="col-md-4 mb-1">
+                    <div class="card-body product text-center">
                         <p class="text-center"
                             style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-top: -7px;">cremas</p>
+                                <p style="margin-left: -13px;margin-top: -10px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
@@ -392,15 +392,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card text-center" style="background:#FFFFFF">
+                  <div class="col-md-4 mb-1">
+                    <div class="card-body product text-center">
                         <p class="text-center"
                             style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-top: -7px;">cremas</p>
+                                <p style="margin-left: -13px;margin-top: -10px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
@@ -409,15 +409,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card text-center" style="background:#FFFFFF">
+                  <div class="col-md-4 mb-1">
+                    <div class="card-body product text-center">
                         <p class="text-center"
                             style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-top: -7px;">cremas</p>
+                                <p style="margin-left: -13px;margin-top: -10px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
@@ -426,15 +426,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card text-center" style="background:#FFFFFF">
+                  <div class="col-md-4 mb-1">
+                    <div class="card-body product text-center">
                         <p class="text-center"
                             style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-top: -7px;">cremas</p>
+                                <p style="margin-left: -13px;margin-top: -10px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
@@ -443,15 +443,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card text-center" style="background:#FFFFFF">
+                  <div class="col-md-4 mb-1">
+                    <div class="card-body product text-center">
                         <p class="text-center"
                             style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-top: -7px;">cremas</p>
+                                <p style="margin-left: -13px;margin-top: -10px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
@@ -460,15 +460,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card text-center" style="background:#FFFFFF">
+                  <div class="col-md-4 mb-1">
+                    <div class="card-body product text-center">
                         <p class="text-center"
                             style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-top: -7px;">cremas</p>
+                                <p style="margin-left: -13px;margin-top: -10px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
@@ -477,15 +477,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card text-center" style="background:#FFFFFF">
+                  <div class="col-md-4 mb-1">
+                    <div class="card-body product text-center">
                         <p class="text-center"
                             style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-top: -7px;">cremas</p>
+                                <p style="margin-left: -13px;margin-top: -10px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
@@ -494,15 +494,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card text-center" style="background:#FFFFFF">
+                  <div class="col-md-4 mb-1">
+                    <div class="card-body product text-center">
                         <p class="text-center"
                             style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-top: -7px;">cremas</p>
+                                <p style="margin-left: -13px;margin-top: -10px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
@@ -511,15 +511,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card text-center" style="background:#FFFFFF">
+                  <div class="col-md-4 mb-1">
+                    <div class="card-body product text-center">
                         <p class="text-center"
                             style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-top: -7px;">cremas</p>
+                                <p style="margin-left: -13px;margin-top: -10px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
@@ -528,15 +528,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card text-center" style="background:#FFFFFF">
+                  <div class="col-md-4 mb-1">
+                    <div class="card-body product text-center">
                         <p class="text-center"
                             style="background: #67FFCC;border-top-right-radius: 5px;border-top-left-radius: 5px;">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-top: -7px;">cremas</p>
+                                <p style="margin-left: -13px;margin-top: -10px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
