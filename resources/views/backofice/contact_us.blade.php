@@ -77,11 +77,11 @@ input[type=text]:hover:not([disabled]), input[type=text]:focus, input[type=texta
     color: #000000;
 }
 </style>
-<div class="" style="background: #173138">
+<div class="img-head">
     <div class="texto-con">
         <strong>Contáctanos</strong>
     </div>
-    <div class="texto-tiendaB d-flex">
+    <div class="texto-conB d-flex">
         <a class="ml-1 text-white" href="{{route('inicio')}}"><strong> Inicio </strong></a><strong class="ml-1"> > </strong><p style="color: #52CCA7" class="ml-1"><strong> Contacto </strong></p>
     </div>
     <img src="{{asset('assets/img/home/formas_fondo3.png')}}" alt="" style="width: 100%;">
