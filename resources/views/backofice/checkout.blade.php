@@ -153,9 +153,8 @@
                 </div>
             </div>
          </div>
-
-                       </div>
-                  </div>
+    </div>
+</div>
     </form>
 
 
@@ -170,7 +169,7 @@
           <th class=""><strong class="tamañofuente">Productos </strong></th>
           <th></th>
           <th></th>
-          <th class="text-right "><strong class="tamañofuente"> Subtotal </strong></th>
+          <th class="text-right "><strong class="tamañofuente">Subtotal</strong></th>
         </tr>
       <tbody>
         <tr>
