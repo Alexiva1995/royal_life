@@ -27,18 +27,14 @@
 
         </div>
 
-<div class="">
 
 
 <div class="container ml-24">
-    <div class="ml-7">
-     <div class="row">
 
          @include('backofice.ui.cardcategorias') {{-- lista de categorias  --}}
 
          @include('backofice.ui.productos') {{--Modulo de categorias--}}
-    </div>
-</div>
+
 </div>
 
 @endsection
