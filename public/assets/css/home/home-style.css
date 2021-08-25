@@ -51,13 +51,14 @@
     transform: translate(-50%, -50%);
 }
 .texto-debajo{
-    position: absolute;
-    color: white;
-    top: 60%;
-    left: 50%;
-    text-align: center;
-    width: 80%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  color: white;
+  top: 55%;
+  left: 50%;
+  text-align: center;
+  width: 60%;
+  font-size: 14px;
+  transform: translate(-50%, -50%);
 }
 .texto-tienda {
   position: absolute;
@@ -120,6 +121,41 @@
         font-size: 10px;
         transform: translate(-50%, -50%);
     }
+
+    .texto-dearriba{
+      position: absolute;
+    color: white;
+    top: 35%;
+    left: 50%;
+    text-align: center;
+    width: 60%;
+    font-size: 14px;
+    transform: translate(-50%, -50%);
+  }
+  .texto-debajo{
+    position: absolute;
+    color: white;
+    top: 65%;
+    left: 50%;
+    text-align: center;
+    width: 60%;
+    font-size: 6px;
+    transform: translate(-50%, -50%);
+    }
+    
+.btn-pri{
+  border-color: #66FFCC !important;
+    color: black!important;
+    box-shadow: 0 8px 25px -8px #66ffcc;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    width: 40%;
+    background-color: #66FFCC;
+    border-radius: 0.4285rem;
+    transform: translate(-50%, -50%);
+}
+
 }
 .centrado{
   position: absolute;
@@ -159,17 +195,18 @@
   transform: translate(-50%, -50%);
 }
 .btn-pri{
-    border-color: #66FFCC !important;
-    color: black!important;
-    box-shadow: 0 8px 25px -8px #66ffcc;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    width: 13%;
-    background-color: #66FFCC;
-    border-radius: 0.4285rem;
-    transform: translate(-50%, -50%);
+  border-color: #66FFCC !important;
+  color: black!important;
+  box-shadow: 0 8px 25px -8px #66ffcc;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  width: 15%;
+  background-color: #66FFCC;
+  border-radius: 0.4285rem;
+  transform: translate(-50%, -50%);
 }
+
 .btn-cre{
   border-color: #F2F1F3 !important;
   color: black!important;
