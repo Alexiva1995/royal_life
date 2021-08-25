@@ -8,13 +8,13 @@
     <div class="texto-aboutB">
         Semper tristique erget ornare at commodo enim
     </div>
-    <img src="{{asset('assets/img/home/formas_fondo3.png')}}" alt="" style="width: 100%;">
+    <img src="{{asset('assets/img/home/formas_fondo3.png')}}" alt="" style="height: 200px;width: 100%;">
 </div>
 
 <div class="container p-5">
     <div class="row d-flex justify-content-start">
         <div class="contenedorborder mb-2" style="background: #173138">
-            <img src="{{asset('assets/img/home/Rectangle21.png')}}" alt="">
+            <img src="{{asset('assets/img/home/Rectangle21.png')}}" alt="" style="">
         </div>
     </div>
     <p class="texto-aboutS" style="width: 109%;margin-left: -12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quae provident dolore
