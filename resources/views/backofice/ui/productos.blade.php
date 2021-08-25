@@ -18,8 +18,8 @@
                    {{--    <form action="{{route('cheking.backofice')}}" method="POST">
                            @csrf --}}
 
-                       <p class="text-right" style="color: rgb(0, 0, 0);"><a class="text-iz box"></a> <strong class="texto">${{$producto->price}}</strong></p>
-                       <p class="text-left"  style="color: #000000;"><strong class="texto2 fuente">{{$producto->name}}</strong></p>
+                       <p class="text-right" style="color: rgb(0, 0, 0);"><a class="btn-c text-center">Cremas</a><strong class="texto">${{$producto->price}}</strong></p>
+                       <p class="text-left"  style="color: #000000;"><strong class="texto2 fuente ">{{$producto->name}}</strong></p>
                        <p class="text-left"  style="color: #303030;">{{ Str::words( strip_tags($producto->description) , 15 )}}</p>
                    {{--    </form> --}}
                {{--    </p> --}}

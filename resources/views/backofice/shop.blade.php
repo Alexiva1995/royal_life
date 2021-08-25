@@ -36,7 +36,7 @@
 
          @include('backofice.ui.cardcategorias') {{-- lista de categorias  --}}
 
-         @include('backofice.ui.productos')
+         @include('backofice.ui.productos') {{--Modulo de categorias--}}
     </div>
 </div>
 </div>

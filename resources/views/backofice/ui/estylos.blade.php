@@ -113,6 +113,8 @@ box-sizing: border-box;
 }
 .texto2{
     font-size: 18px;
+    top: 10px;
+    position: relative;
 }
 
 
@@ -142,6 +144,21 @@ top: 110px;
 background: #FFFFFF;
 border: 2px solid #000000;
 box-sizing: border-box;
+}
+
+.btn-c{
+
+  border-color: #F2F1F3 !important;
+  color: black!important;
+  box-shadow: 0 8px 25px -8px #f2f1f3;
+  position: absolute;
+  top: 245px;
+  left: 17%;
+  width: 25%;
+  height: 23px;
+  background-color: #F2F1F3;
+  border-radius: 0.4285rem;
+  transform: translate(-50%, -50%);
 }
 
 </style>
