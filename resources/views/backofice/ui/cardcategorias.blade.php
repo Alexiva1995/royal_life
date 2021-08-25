@@ -1,3 +1,6 @@
+ <div class="ml-7">
+     <div class="row">
+
 <div class="ml-12 mt-3 " style="background:#ffffff">
     <div class="card-content tarjeta2">
         <div class="card-body card-group mt-12 ">
@@ -20,7 +23,7 @@
                                for="flexCheckDefault"
                                style="">
                                <a class="s " href="{{ route('categorias.show', ['Categories' => $categories->id ]) }}">
-                        <strong>  {{ ucfirst($categories->name) }} </strong>
+                        <strong>  {{ ucfirst($categories->name) }}</strong>
                              </a>
 
                         </label>
