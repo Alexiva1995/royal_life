@@ -1,8 +1,8 @@
 @extends('backofice.layouts.dashboard')
 
 @section('content')
-<div class="" style="background: #173138">
-    <div class="texto-tienda">
+<div class="img-head">
+    <div class="texto-about">
         <strong>¿Quienes sómos?</strong>
     </div>
     <div class="texto-aboutB">
@@ -12,12 +12,12 @@
 </div>
 
 <div class="container p-5">
-    <div class="row d-flex justify-content-center">
+    <div class="row d-flex justify-content-start">
         <div class="contenedorborder mb-2" style="background: #173138">
             <img src="{{asset('assets/img/home/Rectangle21.png')}}" alt="">
         </div>
     </div>
-    <p style="color: black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quae provident dolore
+    <p class="texto-aboutS" style="width: 109%;margin-left: -12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quae provident dolore
         expedita consectetur enim. Consectetur quae quas autem similique porro, accusamus quam aspernatur voluptatibus
         suscipit fugit, iste quaerat totam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic saepe,
         mollitia quia laudantium repellendus illum nesciunt, eum nostrum rerum, numquam necessitatibus ex veniam
@@ -29,8 +29,8 @@
 <div class="p-5" style="background:#F0FFFA;">
     <div class="container mb-3">
         <h1 class="texto-title mt-5"><strong>Nuestra Misión y Visión</strong></h1>
-        <p class="mb-3" style="color: #324B50;"><strong> Lorem, ipsum dolor item </strong></p>
-        <p style="color: black">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam ut laudantium
+        <p class="mb-3" style="color: #324B50;margin-left: 4px;font-size: 16px;"><strong> Lorem, ipsum dolor item </strong></p>
+        <p class="texto-aboutS">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam ut laudantium
             cumque, quae quidem, minus at distinctio unde voluptas minima beatae ipsum odio labore animi, maiores
             officiis assumenda illum nisi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut possimus quis
             delectus nam eligendi exercitationem nisi, fugit, assumenda ab velit quo! Ullam deleniti enim illum cum
@@ -53,8 +53,8 @@
 <div class="p-5">
     <div class="container mb-3">
         <h1 class="texto-title mt-5"><strong>¿Cómo Iniciamos?</strong></h1>
-        <p class="mb-3" style="color: #324B50;"><strong>Sed cursus tartar dignissim morbi. </strong></p>
-        <p style="color: black">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam ut laudantium
+        <p class="mb-3" style="color: #324B50;margin-left: 4px;font-size: 16px;"><strong>Sed cursus tartar dignissim morbi. </strong></p>
+        <p class="texto-aboutS">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam ut laudantium
             cumque, quae quidem, minus at distinctio unde voluptas minima beatae ipsum odio labore animi, maiores
             officiis assumenda illum nisi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut possimus quis
             delectus nam eligendi exercitationem nisi, fugit, assumenda ab velit quo! Ullam deleniti enim illum cum
@@ -76,35 +76,29 @@
 </div>
 <div class="mt-5 p-5" style="background:#F0FFFA;">
     <div class="text-center">
-        <p class="" style="color: #324B50;"><strong>Dap tincidunt amet neque facillisi</strong></p>
-        <h1 class="texto-title"><strong> ¿Porqué elergirnos? </strong></h1>
-        <p class="texto-simple">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab doloribus vitae
+        <p class="" style="color: #173138;font-size: 16px;"><strong>Dap tincidunt amet neque facillisi</strong></p>
+        <h1 style="font-size: 50px;"><strong> ¿Porqué elergirnos? </strong></h1>
+        <p class="texto-aboutS" style="width: 80%;margin-left: 10%;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab doloribus vitae
             provident, cumque voluptatum nemo libero quod esse repudiandae repellat distinctio at porro nisi?
             Dignissimos corrupti in ullam inventore dolor?</p>
     </div>
 </div>
-<div class="p-5" style="background:#F0FFFA;">
+<div class="pb-5 pl-5 pr-5" style="background:#F0FFFA;">
     <div class="row d-flex justify-content-center">
         <div class="card mb-1 col-md-3 ml-md-1" style="height: 400px;background: white;">
             <img class="mx-auto d-block mt-1 mb-2" src="{{asset('assets/img/home/about1.png')}}">
-            <div class="text-center text-about mb-1"><strong> Evios <br> seguros </strong></div>
-            <p class="text-center mb-1" style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Ut laboriosam, modi, nihil omnis error, et unde deleniti distinctio inventore esse porro quidem soluta
-                dignissimos odio expedita blanditiis alias enim saepe?</p>
+            <div class="text-center text-about mb-1"><strong> Evíos <br> seguros </strong></div>
+            <p class="pb-1 pr-2 pl-2 texto-aboutS text-center mb-1" style="color: black;">Lorem ipsum dolor sit amet, cosectetur adipiscing elit. Velit eleinfend cursus quisque dolor nec. eu volutpat nulla id id.</p>
         </div>
         <div class="card mb-1 col-md-3 ml-md-1" style="height: 400px;background: white;">
             <img class="mx-auto d-block mt-3 mb-2" src="{{asset('assets/img/home/about2.png')}}" alt="">
             <div class="text-center text-about mb-1"><strong> Atención <br> Personalizada</strong></div>
-            <p class="text-center mb-1" style="color: black;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Fugiat impedit in, assumenda corrupti modi voluptatum, vel voluptate accusamus ducimus quo dicta ea
-                repellat sed distinctio, facere cum! Velit, quisquam aliquid.</p>
+            <p class="pb-1 pr-2 pl-2 texto-aboutS text-center mb-1" style="color: black;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.Tellus morbi at urna sollicitudin eges eleifend ut. Fusce ac.</p>
         </div>
         <div class="card mb-1 col-md-3 ml-md-1" style="height: 400px;background: white;">
             <img class="mx-auto d-block mt-3 mb-2" src="{{asset('assets/img/home/about3.png')}}" alt="">
             <div class="text-center text-about mb-1"><strong> Productos <br> legales</strong></div>
-            <p class="text-center mb-1" style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eum dicta voluptatum doloribus expedita ab laborum odit dignissimos quidem laudantium nulla beatae ut
-                voluptas reprehenderit ducimus porro dolorem, temporibus ullam sint.</p>
+            <p class="pb-1 pr-2 pl-2 texto-aboutS text-center mb-1" style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit.A pellentesque viverra morbi lacus. Cursus tincidunt in dignissim.</p>
         </div>
     </div>
 </div>

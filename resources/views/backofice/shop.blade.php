@@ -16,7 +16,7 @@
 @section('content')
 
 
-        <div class="" style="background: #173138">
+        <div class="img-head">
             <div class="texto-tienda">
                 <strong>Tienda</strong>
              </div>
