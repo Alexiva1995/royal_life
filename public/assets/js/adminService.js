@@ -14,7 +14,7 @@ var vm_adminService = new Vue({
     methods:{
         /**
          * Permite obtener la informacion de un servicio
-         * @param {integer} id 
+         * @param {integer} id
          */
         getEditData: function (id) {
             let url = route('package.edit', id)
@@ -31,12 +31,14 @@ var vm_adminService = new Vue({
         },
         /**
          * Permite borrar un servicio
-         * @param {integer} id 
+         * @param {integer} id
+         *
+         * @param {string} name
          */
-        deleteData: function(id){
+        deleteData: function(id,name){
             Swal.fire({
                 title: "Advertencia",
-                text: "Esta seguro que quieres eliminar el servicio "+id,
+                text: "Esta seguro que quieres eliminar el producto "+name+" ?",
                 type: "warning",
                 confirmButtonClass: 'btn btn-primary',
                 buttonsStyling: false,
@@ -49,7 +51,7 @@ var vm_adminService = new Vue({
 
         /**
          * Permite obtener la informacion del servicio
-         * @param {integer} id 
+         * @param {integer} id
          */
         getDescription: function(id){
             let url = route('package.show', id)
