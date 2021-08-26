@@ -85,17 +85,17 @@
 </div>
 <div class="pb-5 pl-5 pr-5" style="background:#F0FFFA;">
     <div class="row d-flex justify-content-center">
-        <div class="card mb-1 col-md-3 ml-md-1" style="height: 400px;background: white;">
+        <div class="card mb-1 cas-md-3 col-md-3" style="height: 400px;background: white;">
             <img class="mx-auto d-block mt-1 mb-2" src="{{asset('assets/img/home/about1.png')}}">
             <div class="text-center text-about mb-1"><strong> Evíos <br> seguros </strong></div>
             <p class="pb-1 pr-2 pl-2 texto-aboutS text-center mb-1" style="color: black;">Lorem ipsum dolor sit amet, cosectetur adipiscing elit. Velit eleinfend cursus quisque dolor nec. eu volutpat nulla id id.</p>
         </div>
-        <div class="card mb-1 col-md-3 ml-md-1" style="height: 400px;background: white;">
+        <div class="card mb-1 cas-md-3 col-md-3  ml-md-3" style="height: 400px;background: white;">
             <img class="mx-auto d-block mt-3 mb-2" src="{{asset('assets/img/home/about2.png')}}" alt="">
             <div class="text-center text-about mb-1"><strong> Atención <br> Personalizada</strong></div>
             <p class="pb-1 pr-2 pl-2 texto-aboutS text-center mb-1" style="color: black;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.Tellus morbi at urna sollicitudin eges eleifend ut. Fusce ac.</p>
         </div>
-        <div class="card mb-1 col-md-3 ml-md-1" style="height: 400px;background: white;">
+        <div class="card mb-1 cas-md-3 col-md-3  ml-md-3" style="height: 400px;background: white;">
             <img class="mx-auto d-block mt-3 mb-2" src="{{asset('assets/img/home/about3.png')}}" alt="">
             <div class="text-center text-about mb-1"><strong> Productos <br> legales</strong></div>
             <p class="pb-1 pr-2 pl-2 texto-aboutS text-center mb-1" style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit.A pellentesque viverra morbi lacus. Cursus tincidunt in dignissim.</p>
