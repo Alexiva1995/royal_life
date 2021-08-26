@@ -141,7 +141,7 @@
                                                 <p class="card-text" style="color: black; width: 160px;">
                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pellentesque auctor.</p>
                                                 <a href="" class="btn btn-cre">
-                                                    <p style="margin-top: -9px; margin-left: -13px; ">Cremas</p>
+                                                    <p style="margin-top: -9px; margin-left: -13px;">Cremas</p>
                                                 </a>
                                                 <p
                                                     style="color: black;margin-left: 140px;font-size: 20px;margin-bottom: 0;margin-top: -5px;">
