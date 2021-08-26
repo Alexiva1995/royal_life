@@ -62,7 +62,7 @@
                                         <button class="btn btn-info" onclick="vm_category.getEditData('{{$category->id}}')">
                                             <i class="fa fa-edit"></i>
                                         </button>
-                                        <button class="btn btn-danger" onclick="vm_category.deleteData('{{$category->id}}')">
+                                        <button class="btn btn-danger" onclick="vm_category.deleteData('{{$category->id}}','{{$category->name}}')">
                                             <form action="{{route('group.destroy', $category->id)}}" method="post" id="delete{{$category->id}}">
                                                 @csrf
                                                 @method('DELETE')

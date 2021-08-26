@@ -95,7 +95,7 @@
                                         <button class="btn btn-info" onclick="vm_adminService.getEditData('{{$service->id}}')">
                                             <i class="fa fa-edit"></i>
                                         </button>
-                                        <button class="btn btn-danger" onclick="vm_adminService.deleteData('{{$service->id}}')">
+                                        <button class="btn btn-danger" onclick="vm_adminService.deleteData('{{$service->id}}','{{$service->name}}')">
                                             <form action="{{route('package.destroy', $service->id)}}" method="post" id="delete{{$service->id}}">
                                                 @csrf
                                                 @method('DELETE')

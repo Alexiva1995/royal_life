@@ -9,7 +9,8 @@ var vm_category = new Vue({
     methods:{
         /**
          * Permite obtener la informacion de una categoria
-         * @param {integer} id 
+
+         * @param {integer} id
          */
         getEditData: function (id) {
             let url = route('group.edit', id)
@@ -26,12 +27,13 @@ var vm_category = new Vue({
         },
         /**
          * Permite borrar una categoria
-         * @param {integer} id 
+         * @param {integer} id
+         * @param {string} name
          */
-        deleteData: function(id){
+        deleteData: function(id,name){
             Swal.fire({
                 title: "Advertencia",
-                text: "Esta seguro que quieres eliminar el grupo "+id,
+                text: "Esta seguro que quieres eliminar la categoria "+name+" ?",
                 type: "warning",
                 confirmButtonClass: 'btn btn-primary',
                 buttonsStyling: false,
