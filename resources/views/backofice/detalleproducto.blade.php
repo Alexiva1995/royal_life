@@ -13,13 +13,24 @@
 <body>
 @include('backofice.ui.estylos')
 
+<div class="img-head">
+    <div class="texto-tienda">
+        <strong>Tienda</strong>
+     </div>
+     <div class="texto-tiendaB d-flex">
+        <a class="ml-1 text-white" href="{{route('shop.backofice')}}"><strong> Tienda </strong></a><strong class="ml-1"> > </strong><p style="color: #52CCA7" class="ml-1"><strong>Producto</strong></p>
+    </div>
+    <img src="{{asset('assets/img/home/formas_fondo3.png')}}" alt=""  style="height: 200px;width: 100%;">
+
+</div>
+
     <!-- Product Detail Start -->
-    <div class="product-detail mt-5 ml-5 fuente">
+    <div class="  ml-5 fuente" >
         <div class="container-fluid">
-            <div class="row ml-2 mt-2">
+            <div class="row ml-4 ">
                 <div class="col-lg-8">
-                    <div class="product-detail-top">
-                        <div class="row align-items-center">
+                    <div class="">
+                        <div class="row align-items-center mt-2">
                             <div class="col-md-5 ">
                                 <div class="fondoProducto  product-slider-single normal-slider text-center ">
                                     <img class="o" src="{{asset('assets/img/home/producto21.png')}}" alt="Product Image">
@@ -31,7 +42,7 @@
                             </div>
                             <div class="col-md-7 mt-2">
                                 <div class="product-content card" style="background:#FFFFFF">
-                                    <div class="title ml-3  mt-1 fuente"> <h2><strong>Product Name</strong></h2></div>
+                                    <div class="title ml-3  mt-1 fuente"> <h2><strong>Crema Chocolate CBD 2ml</strong></h2></div>
                                     <div class="ratting">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -73,7 +84,7 @@
                             <div class="tab-content">
                                 <div id="description " class=" card fuente "  style="background:#FFFFFF">
                                     <h4 class="mt-2"> <strong class=" ml-3 mt-3"> Product description </strong> </h4>
-                                    <p class="text-dark mb-2 ml-3 mr-3">
+                                    <p class="text-dark mb-2 ml-3 mr-3 fuente">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                         In condimentum quam ac mi viverra dictum. In efficitur ipsum diam,
                                         at dignissim lorem tempor in. Vivamus tempor hendrerit finibus. Nulla
@@ -107,152 +118,65 @@
                         </div>
                     </div>
 
-                    <div class="product">
-                        <div class="section-header">
-                            <h1 class="ml-2 mt-2"><strong class=""> Related Products </strong></h1>
+                    <div class=" mt-3 mb-3"  style="background: white;">
+                        <div class="">
+                            <h1 class="ml-3 mt-2 "><strong class=""> Productos Relacionados </strong></h1>
                         </div>
 
-                        <div class="row align-items-center product-slider product-slider-3">
-                            <div class="col-lg-3">
-                                <div class="product-item mt-2 ml-2">
-                                    <div class="product-title">
-                                        <a href="#">Product Name</a>
-                                        <div class="ratting">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
+                        <div class="row  ">
+
+                            <div class="" >
+                                <div class="container ">
+
+                                </div>
+                                <div class="row d-flex mb-4">
+                                    <div class="card-body shadow ml-5" style="background: white;border-radius: 10px;">
+                                        <div class="d-flex">
+                                            <div class="background">
+                                                <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}"
+                                                    style="width: 90%;">
+                                            </div>
+                                            <div class="col-6">
+                                                <h5><strong>Pomada CBD</strong></h5>
+                                                <p class="card-text" style="color: black; width: 160px;">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pellentesque auctor.</p>
+                                                <a href="" class="btn btn-cre">
+                                                    <p style="margin-top: -9px; margin-left: -13px; ">Cremas</p>
+                                                </a>
+                                                <p
+                                                    style="color: black;margin-left: 140px;font-size: 20px;margin-bottom: 0;margin-top: -5px;">
+                                                    <strong>31$</strong></p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="product-image">
-                                        <a href="product-detail.html">
-                                            <img src="img/product-10.jpg" alt="Product Image">
-                                        </a>
-                                        <div class="product-action">
-                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                            <a href="#"><i class="fa fa-heart"></i></a>
-                                            <a href="#"><i class="fa fa-search"></i></a>
+
+                                    <div class="card-body  ml-1 shadow" style="background: white;border-radius: 10px;">
+                                        <div class="d-flex">
+                                            <div style="height:145px;width:100px;background:#66FFCC;border-radius: 10px;">
+                                                <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}"
+                                                    style="width: 90%;">
+                                            </div>
+                                            <div class="col-6">
+                                                <h5><strong>Pomada CBD</strong></h5>
+                                                <p class="card-text" style="color: black; width: 160px;">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pellentesque auctor.</p>
+                                                <a href="" class="btn btn-cre ">
+                                                    <p  style="margin-top: -9px; margin-left: -13px; ">Cremas</p>
+                                                </a>
+                                                <p
+                                                    style="color: black;margin-left: 140px;font-size: 20px;margin-bottom: 0;margin-top: -5px;">
+                                                    <strong>31$</strong></p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="product-price">
-                                        <h3><span>$</span>99</h3>
-                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
-                                    </div>
+
+
+
+
+
                                 </div>
                             </div>
-                            <div class="col-lg-3">
-                                <div class="product-item">
-                                    <div class="product-title">
-                                        <a href="#">Product Name</a>
-                                        <div class="ratting">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                    </div>
-                                    <div class="product-image">
-                                        <a href="product-detail.html">
-                                            <img src="img/product-8.jpg" alt="Product Image">
-                                        </a>
-                                        <div class="product-action">
-                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                            <a href="#"><i class="fa fa-heart"></i></a>
-                                            <a href="#"><i class="fa fa-search"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="product-price">
-                                        <h3><span>$</span>99</h3>
-                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="product-item">
-                                    <div class="product-title">
-                                        <a href="#">Product Name</a>
-                                        <div class="ratting">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                    </div>
-                                    <div class="product-image">
-                                        <a href="product-detail.html">
-                                            <img src="img/product-6.jpg" alt="Product Image">
-                                        </a>
-                                        <div class="product-action">
-                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                            <a href="#"><i class="fa fa-heart"></i></a>
-                                            <a href="#"><i class="fa fa-search"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="product-price">
-                                        <h3><span>$</span>99</h3>
-                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="product-item">
-                                    <div class="product-title">
-                                        <a href="#">Product Name</a>
-                                        <div class="ratting">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                    </div>
-                                    <div class="product-image">
-                                        <a href="product-detail.html">
-                                            <img src="img/product-4.jpg" alt="Product Image">
-                                        </a>
-                                        <div class="product-action">
-                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                            <a href="#"><i class="fa fa-heart"></i></a>
-                                            <a href="#"><i class="fa fa-search"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="product-price">
-                                        <h3><span>$</span>99</h3>
-                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="product-item">
-                                    <div class="product-title">
-                                        <a href="#">Product Name</a>
-                                        <div class="ratting">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                    </div>
-                                    <div class="product-image">
-                                        <a href="product-detail.html">
-                                            <img src="img/product-2.jpg" alt="Product Image">
-                                        </a>
-                                        <div class="product-action">
-                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                            <a href="#"><i class="fa fa-heart"></i></a>
-                                            <a href="#"><i class="fa fa-search"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="product-price">
-                                        <h3><span>$</span>99</h3>
-                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -264,8 +188,8 @@
                             <div class="card-body card-group  ">
 
                                <div class=" d-fex col-md-8 mr-5">
-                                <div class="row d-flex justify-content-start mt-5">
-                                    <div class="card col-12 tarjeta tarjeta3 ml-2 mt-1" style="background:#FFFFFF" >
+                                <div class="row d-flex justify-content-start mt-4">
+                                    <div class="card col-12 tarjeta tarjeta3 ml-2 mt-3" style="background:#FFFFFF" >
                                         <div class="card-body">
                                         <h6> <strong class="fuente"> Categorias </strong></h6>
                                         <hr class="hr">
@@ -287,28 +211,18 @@
                                             </label>
                                           </div>
                                           @endforeach
+                                          </div>
+                                      </div>
                                  </div>
-                                 </div>
+                            </div>
+                        </div>
                     </div>
-                <!-- Side Bar End -->
+                </div>
             </div>
-        </div>
-    </div>
     <!-- Product Detail End -->
 
     <!-- Brand Start -->
-    <div class="brand">
-        <div class="container-fluid">
-            <div class="brand-slider">
-                <div class="brand-item"><img src="img/brand-1.png" alt=""></div>
-                <div class="brand-item"><img src="img/brand-2.png" alt=""></div>
-                <div class="brand-item"><img src="img/brand-3.png" alt=""></div>
-                <div class="brand-item"><img src="img/brand-4.png" alt=""></div>
-                <div class="brand-item"><img src="img/brand-5.png" alt=""></div>
-                <div class="brand-item"><img src="img/brand-6.png" alt=""></div>
-            </div>
-        </div>
-    </div>
+
 
 </body>
 @endsection
