@@ -17,6 +17,33 @@
     -ms-transition:all 0.3s ease;
     width:100%;
 }
+.zoom2:hover {
+    -webkit-transform:scale(1.05);
+    -moz-transform:scale(1.05);
+    -ms-transform:scale(1.05);
+    -o-transform:scale(1.05);
+    transform:scale(1.05);
+
+    -webkit-transition:all 0.3s ease;
+    -moz-transition:all 0.3s ease;
+    -o-transition:all 0.3s ease;
+    -ms-transition:all 0.3s ease;
+    width:45%;
+}
+
+.zoom3:hover {
+    -webkit-transform:scale(1.05);
+    -moz-transform:scale(1.05);
+    -ms-transform:scale(1.05);
+    -o-transform:scale(1.05);
+    transform:scale(1.05);
+
+    -webkit-transition:all 0.3s ease;
+    -moz-transition:all 0.3s ease;
+    -o-transition:all 0.3s ease;
+    -ms-transition:all 0.3s ease;
+    width:75%;
+}
 .card {
         margin: 0 auto; /* Added */
         float: none; /* Added */
@@ -197,7 +224,39 @@ box-sizing: border-box;
  }
  .o{
      position: relative;
-    top: 35px;
+     top: 35px;
+ }
+
+ .backgroundfondo{
+
+    height:140px;
+    width:80px;
+    background:#66FFCC;
+    border-radius: 10px;
+ }
+
+ .mover{
+     position: relative;
+    top: -100px;
+    left: 15px;
+ }
+ .mover2{
+    position: relative;
+    top: 15px;
+    left: 1px;
+ }
+
+ .mover3{
+    position: absolute;
+    top: 697px;
+    left: 733px;
+ }
+
+
+ .rezize{
+    height:170px;
+    width: 300px;
+
  }
 </style>
 @endpush
