@@ -5,9 +5,10 @@
 }
 
 .contenedorborder{
-    position: relative;
+  position: relative;
     display: inline-block;
     text-align: center;
+    width: 93%;
     border-radius: 10px;
 }
 
@@ -15,40 +16,41 @@
   position: absolute;
   top: 30%;
   color: #303030;
-  left: 28%;
+  left: 29.8%;
   font-size: 60px;
   width: 50%;
   text-align: justify;
   transform: translate(-50%, -50%);
 }
 .texto-arriba{
-    position: absolute;
-    color: white;
-    top: 44%;
-    left: 24%;
-    text-align: initial;
-    width: 30%;
-    font-size: 36px;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  color: white;
+  top: 44%;
+  left: 26.5%;
+  text-align: initial;
+  width: 30%;
+  font-size: 36px;
+  transform: translate(-50%, -50%);
 }
 .texto-abajo{
     position: absolute;
     color: white;
     top: 68%;
-    left: 24%;
+    left: 26.5%;
+    font-size: 16px;
     text-align: initial;
     width: 30%;
     transform: translate(-50%, -50%);
 }
 .texto-dearriba{
-    position: absolute;
-    color: white;
-    top: 35%;
-    left: 50%;
-    text-align: center;
-    width: 60%;
-    font-size: 36px;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  color: white;
+  top: 35%;
+  left: 50%;
+  text-align: center;
+  width: 100%;
+  font-size: 40px;
+  transform: translate(-50%, -50%);
 }
 .texto-debajo{
   position: absolute;
@@ -56,8 +58,8 @@
   top: 55%;
   left: 50%;
   text-align: center;
-  width: 60%;
-  font-size: 14px;
+  width: 70%;
+  font-size: 15px;
   transform: translate(-50%, -50%);
 }
 .texto-tienda {
@@ -185,7 +187,7 @@
   position: absolute;
     color: #303030;
     top: 43%;
-    left: 28%;
+    left: 29.5%;
     text-align: initial;
     width: 36%;
     font-size: 15px;
@@ -209,15 +211,15 @@
 
 .btn-pry{
   border-color: #66FFCC !important;
-  color: black!important;
-  box-shadow: 0 8px 25px -8px #66ffcc;
-  position: absolute;
-  top: 53%;
-  left: 17.5%;
-  width: 15%;
-  background-color: #66FFCC;
-  border-radius: 0.4285rem;
-  transform: translate(-50%, -50%);
+    color: black!important;
+    box-shadow: 0 8px 25px -8px #66ffcc;
+    position: absolute;
+    top: 53%;
+    left: 19%;
+    width: 15%;
+    background-color: #66FFCC;
+    border-radius: 0.4285rem;
+    transform: translate(-50%, -50%);
 }
 .btn-pri{
   border-color: #66FFCC !important;
@@ -342,7 +344,7 @@
   }
 
   .testimonials-clean .people {
-    padding:50px 0 20px;
+    padding:50px 30px 20px;
   }
 
   .testimonials-clean .item {
@@ -502,18 +504,18 @@
 
   @media (min-width: 768px){
 .cus-md-3 {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 25%;
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
-    max-width: 30%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 25%;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25.5%;
+  max-width: 30%;
 }
 .cus-md-4 {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 33.33333%;
-    -ms-flex: 0 0 33.33333%;
-    flex: 0 0 33.33333%;
-    max-width: 30.33333%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 33.33333%;
+  -ms-flex: 0 0 33.33333%;
+  flex: 0 0 31%;
+  max-width: 31%;
 }
 }
 .product{
