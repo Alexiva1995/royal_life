@@ -8,9 +8,7 @@
                     <p style=" line-height: 4.5rem;">Tellus nibh <strong> mattis <br> ultricies</strong> phasellus</p>
                 </div>
                 <div class="centrado d-flex justify-content-center">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sit ipsa quod, aut quo inventore
-                        dolore? Est quisquam, doloremque odit deleniti veritatis consectetur. Dolor debitis cumque,
-                        consequuntur voluptatibus provident molestias.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat, semper ac facilisi gravida velit consequat, tempor, volutpat. Libero, diam tellus ut sed nec sed sem tortor volutpat. Cras a ornare nisi auctor tellus tortor, mattis. Nisl arcu sit massa at faucibus eros tincidunt.</p>
                 </div>
                 <a href="{{route('shop.backofice')}}" class="btn btn-pry"><strong>ir a la tienda</strong></a>
                 <img src="{{asset('assets/img/home/Polygon5.png')}}" alt="" class="debajo">
@@ -32,42 +30,42 @@
             </div>
         </div>
         <div class="carousel-inner">
-            <div class="row d-flex justify-content-center">
+            <div class="row d-flex justify-content-center pb-5">
                 <div class="card mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
                     <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
                     <div class="text-center text-card"><strong>Cremas</strong></div>
-                    <a class="text-center" style="color: black;" href="{{route('shop.backofice')}}"><strong> ver todos
-                            los productos</strong> <img src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></a>
+                    <a class="text-center" style="color: #303030;" href="{{route('shop.backofice')}}"> ver todos
+                            los productos<img src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></a>
                 </div>
                 <div class="card mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
                     <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
                     <div class="text-center text-card"><strong>Cremas</strong></div>
-                    <a class="text-center" style="color: black;" href="{{route('shop.backofice')}}"><strong> ver todos
-                            los productos</strong> <img src="{{asset('assets/img/home/Arrow1.png')}}" alt=""> </a>
+                    <a class="text-center" style="color: #303030;" href="{{route('shop.backofice')}}">ver todos
+                            los productos<img src="{{asset('assets/img/home/Arrow1.png')}}" alt=""> </a>
                 </div>
                 <div class="card mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
                     <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
                     <div class="text-center text-card"><strong>Cremas</strong></div>
-                    <a class="text-center" style="color: black;" href="{{route('shop.backofice')}}"><strong> ver todos
-                            los productos</strong> <img src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></a>
+                    <a class="text-center" style="color: #303030;" href="{{route('shop.backofice')}}"> ver todos
+                            los productos<img src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></a>
                 </div>
                 <div class="card mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
                     <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
                     <div class="text-center text-card"><strong>Cremas</strong></div>
-                    <a class="text-center" style="color: black;" href="{{route('shop.backofice')}}"><strong> ver todos
-                            los productos</strong> <img src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></a>
+                    <a class="text-center" style="color: #303030;" href="{{route('shop.backofice')}}"> ver todos
+                            los productos<img src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></a>
                 </div>
                 <div class="card mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
                     <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
                     <div class="text-center text-card"><strong>Cremas</strong></div>
-                    <a class="text-center" style="color: black;" href="{{route('shop.backofice')}}"><strong> ver todos
-                            los productos</strong> <img src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></a>
+                    <a class="text-center" style="color: #303030;" href="{{route('shop.backofice')}}"> ver todos
+                            los productos<img src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></a>
                 </div>
                 <div class="card mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
                     <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
                     <div class="text-center text-card"><strong>Cremas</strong></div>
-                    <a class="text-center" style="color: black;" href="{{route('shop.backofice')}}"><strong> ver todos
-                            los productos</strong> <img src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></a>
+                    <a class="text-center" style="color: #303030;" href="{{route('shop.backofice')}}"> ver todos
+                            los productos<img src="{{asset('assets/img/home/Arrow1.png')}}" alt=""></a>
                 </div>
             </div>
         </div>
