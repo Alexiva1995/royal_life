@@ -67,14 +67,14 @@
 
 @section('content')
 
-<div class="" style="background: #173138">
+<div class="img-head">
     <div class="texto-tienda">
         <strong>Checkout</strong>
      </div>
      <div class="texto-tiendaB d-flex">
-        <a class="ml-1 text-white" href="{{route('shop.backofice')}}"><strong> Tienda </strong></a><strong class="ml-1"> > </strong><p style="color: #52CCA7" class="ml-1"><strong> Checkout </strong></p>
+        <a class="ml-1 text-white" href="{{route('detalle.producto')}}"><strong> Producto </strong></a><strong class="ml-1"> > </strong><p style="color: #52CCA7" class="ml-1"><strong>Checkout</strong></p>
     </div>
-    <img src="{{asset('assets/img/home/formas_fondo3.png')}}" alt=""  style="width: 100%; ">
+    <img src="{{asset('assets/img/home/formas_fondo3.png')}}" alt=""  style="height: 200px;width: 100%;">
 
 </div>
 

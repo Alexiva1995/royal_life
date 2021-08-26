@@ -427,7 +427,10 @@ class TiendaController extends Controller
     }
 
     public function detalleproducto(){
-        return view('backofice.detalleproducto');
+
+        $packages = Packages::all();
+
+        return view('backofice.detalleproducto',compact('packages'));
     }
 
 }
