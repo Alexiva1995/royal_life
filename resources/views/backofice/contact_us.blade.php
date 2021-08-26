@@ -95,9 +95,9 @@ input[type=text]:hover:not([disabled]), input[type=text]:focus, input[type=texta
 
 <div class="container">
 <div class="row d-flex">
-<div class="col-md-7 mt-5 mb-5 justify-content-end" style="margin-left: 15%;">
+<div class="col-md-9 mt-5 mb-5 justify-content-end">
 
-    <div class="card p-5" style="height: 450px;background: #ffffff;">
+    <div class="card p-5" style="height:450px;background: #ffffff;">
         <form action={{route('contact')}} method="POST" class="credit-card-div">
             {{ csrf_field() }}
             <div class="panel panel-default ">
@@ -146,7 +146,7 @@ input[type=text]:hover:not([disabled]), input[type=text]:focus, input[type=texta
     </div>
     </div>
     <div class="col-3 mt-5 mb-5 d-flex">
-        <div class="row d-flex justify-content-start">
+        <div class="row d-flex justify-content-start ml-1">
             <div class="card col-md-12" style="height: 160px;background: white;">
                 <img class="mx-auto d-block mb-2 mt-2" style="width: 30%;" src="{{asset('assets/img/home/contact_us1.png')}}">
                 <div class="text-center text-about mb-1"><strong> info@royallife.com </strong></div>

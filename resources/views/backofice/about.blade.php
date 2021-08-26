@@ -11,13 +11,13 @@
     <img src="{{asset('assets/img/home/formas_fondo3.png')}}" alt="" style="height: 200px;width: 100%;">
 </div>
 
-<div class="container p-5">
-    <div class="row d-flex justify-content-start">
-        <div class="contenedorborder mb-2" style="background: #173138">
+<div class="container pt-5">
+    <div class="row">
+        <div class="contenedorborder1 mb-2" style="background: #173138">
             <img src="{{asset('assets/img/home/Rectangle21.png')}}" alt="" style="">
         </div>
     </div>
-    <p class="texto-aboutS" style="width: 109%;margin-left: -12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quae provident dolore
+    <p class="texto-aboutS text-ab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quae provident dolore
         expedita consectetur enim. Consectetur quae quas autem similique porro, accusamus quam aspernatur voluptatibus
         suscipit fugit, iste quaerat totam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic saepe,
         mollitia quia laudantium repellendus illum nesciunt, eum nostrum rerum, numquam necessitatibus ex veniam
@@ -28,9 +28,9 @@
 
 <div class="p-5" style="background:#F0FFFA;">
     <div class="container mb-3">
-        <h1 class="texto-title mt-5"><strong>Nuestra Misión y Visión</strong></h1>
-        <p class="mb-3" style="color: #324B50;margin-left: 4px;font-size: 16px;"><strong> Lorem, ipsum dolor item </strong></p>
-        <p class="texto-aboutS">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam ut laudantium
+        <h1 class="texto-title mt-5 mb-1 text-ab"><strong>Nuestra Misión y Visión</strong></h1>
+        <p class="mb-3 text-ab" style="color: #324B50;font-size: 16px;"><strong> Lorem, ipsum dolor item </strong></p>
+        <p class="texto-aboutS text-ab">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam ut laudantium
             cumque, quae quidem, minus at distinctio unde voluptas minima beatae ipsum odio labore animi, maiores
             officiis assumenda illum nisi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut possimus quis
             delectus nam eligendi exercitationem nisi, fugit, assumenda ab velit quo! Ullam deleniti enim illum cum
@@ -52,9 +52,9 @@
 </div>
 <div class="p-5">
     <div class="container mb-3">
-        <h1 class="texto-title mt-5"><strong>¿Cómo Iniciamos?</strong></h1>
-        <p class="mb-3" style="color: #324B50;margin-left: 4px;font-size: 16px;"><strong>Sed cursus tartar dignissim morbi. </strong></p>
-        <p class="texto-aboutS">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam ut laudantium
+        <h1 class="texto-title mt-5 mb-1 text-ab"><strong>¿Cómo Iniciamos?</strong></h1>
+        <p class="mb-3 text-ab" style="color: #324B50;font-size: 16px;"><strong>Sed cursus tartar dignissim morbi. </strong></p>
+        <p class="texto-aboutS text-ab">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam ut laudantium
             cumque, quae quidem, minus at distinctio unde voluptas minima beatae ipsum odio labore animi, maiores
             officiis assumenda illum nisi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut possimus quis
             delectus nam eligendi exercitationem nisi, fugit, assumenda ab velit quo! Ullam deleniti enim illum cum
@@ -76,9 +76,9 @@
 </div>
 <div class="mt-5 p-5" style="background:#F0FFFA;">
     <div class="text-center">
-        <p class="" style="color: #173138;font-size: 16px;"><strong>Dap tincidunt amet neque facillisi</strong></p>
-        <h1 style="font-size: 50px;"><strong> ¿Porqué elergirnos? </strong></h1>
-        <p class="texto-aboutS" style="width: 80%;margin-left: 10%;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab doloribus vitae
+        <p class="text-ab" style="color: #173138;font-size: 16px;"><strong>Dap tincidunt amet neque facillisi</strong></p>
+        <h1 class="texto-title text-ab mb-1"><strong> ¿Porqué elergirnos? </strong></h1>
+        <p class="texto-aboutS text-ab" style="width: 80%;margin-left: 10%;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab doloribus vitae
             provident, cumque voluptatum nemo libero quod esse repudiandae repellat distinctio at porro nisi?
             Dignissimos corrupti in ullam inventore dolor?</p>
     </div>

@@ -12,6 +12,14 @@
     border-radius: 10px;
 }
 
+.contenedorborder1{
+  position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-left: 8px;
+    border-radius: 10px;
+}
+
 .texto-encima{
   position: absolute;
   top: 30%;
@@ -91,7 +99,7 @@
   position: absolute;
     color: white;
     top: 22%;
-    left: 20%;
+    left: 21%;
     text-align: center;
     width: 60%;
     font-size: 50px;
@@ -537,4 +545,8 @@
     width:100px;
     background:#66FFCC;
     border-radius: 10px;
+}
+.text-ab{
+  width: 100%;
+  margin-left: -5px;
 }
