@@ -32,7 +32,7 @@
                     <div class="">
                         <div class="row align-items-center mt-2">
                             <div class="col-md-5 ">
-                                <div class="fondoProducto  product-slider-single normal-slider text-center ">
+                                <div class="fondoProducto shadow  product-slider-single normal-slider text-center ">
                                     <img class="o" src="{{asset('assets/img/home/producto21.png')}}" alt="Product Image">
 
                                 </div>
@@ -130,7 +130,7 @@
 
                                 </div>
                                 <div class="row d-flex mb-4">
-                                    <div class="card-body shadow ml-2 zoom2 mover4" style="background: white;border-radius: 10px; left: 700px;">
+                                    <div class="card-body shadow ml-2 zoom2 mover4" style="background: white;border-radius: 10px; left: 700px; 10px;padding: 0.8rem;">
                                         <div class="d-flex ">
                                             <div class="background ">
                                                 <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}"
@@ -150,7 +150,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="card-body  ml-3 shadow zoom2" style="background: white;border-radius: 10px;">
+                                    <div class="card-body  ml-3 shadow zoom2" style="background: white;border-radius: 10px; 10px;padding: 0.8rem;">
                                         <div class="d-flex">
                                             <div style="height:145px;width:100px;background:#66FFCC;border-radius: 10px;">
                                                 <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}"
@@ -170,7 +170,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="card-body ml-3  shadow zoom2 mover3" style="background: white;border-radius: 10px;">
+                                    <div class="card-body   shadow zoom2 mover3" style="background: white;border-radius: 10px; 10px;padding: 0.8rem;">
                                         <div class="d-flex">
                                             <div style="height:145px;width:100px;background:#66FFCC;border-radius: 10px;">
                                                 <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}"
