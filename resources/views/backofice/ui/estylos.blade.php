@@ -50,9 +50,9 @@ box-sizing: border-box;
 border-radius: 5px;
 }
 .btn-custom{
-    width: 100%;
-    height: auto;
-
+    position: relative;
+    width: 150px;
+    height: 40px;
     background: #67FFCC;
     border-radius: 7px;
 }
@@ -161,5 +161,43 @@ box-sizing: border-box;
   transform: translate(-50%, -50%);
 }
 
+.Rangoprecio{
+    height:30px;
+   width:30px;
+   background: #67FFCC;
+   -moz-border-radius:50px;
+   -webkit-border-radius:50px;
+   border-radius:50px;
+   border: 0;
+   outline: none;
+
+}
+
+.sinborde {
+   border: 0;
+   background-color: #eee;
+   outline: none;
+   height:30px;
+   width:60px;
+   border-radius:25px;
+ }
+
+ .sumador{
+    position: relative;
+    left: -10px;
+ }
+
+ .fondoProducto{
+    background: #67FFCC;
+    height:300px;
+   width:300px;
+   -moz-border-radius:50px;
+   -webkit-border-radius:50px;
+   border-radius:500px;
+ }
+ .o{
+     position: relative;
+    top: 35px;
+ }
 </style>
 @endpush
