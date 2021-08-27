@@ -100,7 +100,7 @@
   position: absolute;
     color: white;
     top: 22%;
-    left: 23%;
+    left: 22%;
     text-align: center;
     width: 60%;
     font-size: 50px;
@@ -120,7 +120,7 @@
   position: absolute;
     color: white;
     top: 30%;
-    left: 17%;
+    left: 16%;
     text-align: center;
     transform: translate(-50%, -50%);
 }
