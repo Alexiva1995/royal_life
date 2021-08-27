@@ -95,7 +95,7 @@ input[type=text]:hover:not([disabled]), input[type=text]:focus, input[type=texta
 
 <div class="pl-4 pr-4 pt-3">
 <div class="row d-flex justify-content-center">
-<div class="col-md-7 cus-md-7 mt-5 mb-5 mr-3">
+<div class="col-md-7 cus-md-7 mt-5 mb-5">
 
     <div class="card p-5" style="height:450px;background: #ffffff;">
         <form action={{route('contact')}} method="POST" class="credit-card-div">

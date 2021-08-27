@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
+
 .contenedor{
     position: relative;
     display: inline-block;
     text-align: center;
+}
+
+.fuente{
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
 }
 
 .contenedorborder{
@@ -100,7 +107,7 @@
   position: absolute;
     color: white;
     top: 22%;
-    left: 22%;
+    left: 22.5%;
     text-align: center;
     width: 60%;
     font-size: 50px;
@@ -120,7 +127,7 @@
   position: absolute;
     color: white;
     top: 30%;
-    left: 16%;
+    left: 16.5%;
     text-align: center;
     transform: translate(-50%, -50%);
 }
@@ -130,7 +137,7 @@
     color: #5CE5B9;
     font-size: 18px;
     top: 24%;
-    left: 24%;
+    left: 26%;
     text-align: center;
     transform: translate(-50%, -50%);
 }
@@ -196,7 +203,7 @@
   position: absolute;
     color: #303030;
     top: 43%;
-    left: 29.5%;
+    left: 28%;
     text-align: initial;
     width: 36%;
     font-size: 15px;
@@ -224,7 +231,7 @@
     box-shadow: 0 8px 25px -8px #66ffcc;
     position: absolute;
     top: 53%;
-    left: 19%;
+    left: 17.5%;
     width: 15%;
     background-color: #66FFCC;
     border-radius: 0.4285rem;
