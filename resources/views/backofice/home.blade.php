@@ -142,7 +142,7 @@
                     <div class="d-flex">
                         <div style="height:145px;width:100px;background:#66FFCC;border-radius: 10px;">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}"
-                                style="width: 90%;">
+                                style="width: 90%;"> 
                         </div>
                         <div class="col-6">
                             <h5><strong>Pomada CBD</strong></h5>

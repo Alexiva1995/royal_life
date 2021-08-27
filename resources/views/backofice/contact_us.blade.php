@@ -80,7 +80,7 @@ input[type=text]:hover:not([disabled]), input[type=text]:focus, input[type=texta
   color:red;
     margin-left: 1px;
     top:-1px;
-    font-size: 15px;
+    font-size: 15px; 
 }
 </style>
 <div class="img-head">
@@ -93,7 +93,7 @@ input[type=text]:hover:not([disabled]), input[type=text]:focus, input[type=texta
     <img src="{{asset('assets/img/home/formas_fondo3.png')}}" alt="" style="height: 200px;width: 100%;">
 </div>
 
-<div class="pl-4 pr-4 pt-3">
+<div class="pl-2 pr-4 pt-3">
 <div class="row d-flex justify-content-center">
 <div class="col-md-7 cus-md-7 mt-5 mb-5">
 
