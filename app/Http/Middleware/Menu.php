@@ -72,12 +72,12 @@ class Menu
                         'ruta' => route('genealogy_type', 'matriz'),
                         'complementoruta' => ''
                     ], */
-          /*          [
+                    [
                         'name' => 'Árbol unilevel',
                         'blank'=> '', // si es para una pagina diferente del sistema solo coloquen _blank
                         'ruta' => route('genealogy_type', 'tree'),
                         'complementoruta' => ''
-                    ], */
+                    ],
                     [
                         'name' => 'Referidos',
                         'blank'=> '', // si es para una pagina diferente del sistema solo coloquen _blank
