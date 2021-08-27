@@ -44,6 +44,51 @@
     -ms-transition:all 0.3s ease;
     width:75%;
 }
+.zoom4:hover {
+
+    -webkit-transform:scale(1.05);
+    -moz-transform:scale(1.05);
+    -ms-transform:scale(1.05);
+    -o-transform:scale(1.05);
+    transform:scale(1.05);
+
+    -webkit-transition:all 0.3s ease;
+    -moz-transition:all 0.3s ease;
+    -o-transition:all 0.3s ease;
+    -ms-transition:all 0.3s ease;
+    width:9.2%;
+
+    border-color: #66FFCC !important;
+    color: black!important;
+    box-shadow: 0 8px 25px -8px #66ffcc;
+    background-color: #66FFCC;
+}
+
+.zoom5:hover {
+
+    -webkit-transform:scale(1.05);
+    -moz-transform:scale(1.05);
+    -ms-transform:scale(1.05);
+    -o-transform:scale(1.05);
+    transform:scale(1.05);
+
+    -webkit-transition:all 0.3s ease;
+    -moz-transition:all 0.3s ease;
+    -o-transition:all 0.3s ease;
+    -ms-transition:all 0.3s ease;
+    width:33%;
+
+    border-color: #66FFCC !important;
+    color: black!important;
+    box-shadow: 0 8px 25px -8px #66ffcc;
+    background-color: #66FFCC;
+}
+
+.pri{
+
+
+}
+
 .card {
         margin: 0 auto; /* Added */
         float: none; /* Added */
@@ -147,8 +192,9 @@ box-sizing: border-box;
 
 
 .fuente{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     font-style: normal;
+
 }
 .tarjeta{
     position: relative;
