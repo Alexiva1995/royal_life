@@ -1,6 +1,6 @@
 <!-- BEGIN: Header-->
 <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu navbar-dark navbar-shadow text-white">
-        <img src="{{ asset('assets/img/royal_green/logos/logo.svg') }}" class="pl-5" alt="" style="margin-left: 85px;">
+        <img src="{{ asset('assets/img/royal_green/logos/logo.svg') }}" class="pl-5" alt="" style="margin-left: 80px;">
 
         <div class="collapse navbar-collapse justify-content-end" id="">
           <ul class="navbar-nav ">
