@@ -93,9 +93,9 @@ input[type=text]:hover:not([disabled]), input[type=text]:focus, input[type=texta
     <img src="{{asset('assets/img/home/formas_fondo3.png')}}" alt="" style="height: 200px;width: 100%;">
 </div>
 
-<div class="container">
-<div class="row d-flex">
-<div class="col-md-9 mt-5 mb-5 justify-content-end">
+<div class="pl-4 pr-4 pt-3">
+<div class="row d-flex justify-content-center">
+<div class="col-md-7 cus-md-7 mt-5 mb-5 mr-3">
 
     <div class="card p-5" style="height:450px;background: #ffffff;">
         <form action={{route('contact')}} method="POST" class="credit-card-div">
@@ -147,11 +147,11 @@ input[type=text]:hover:not([disabled]), input[type=text]:focus, input[type=texta
     </div>
     <div class="col-3 mt-5 mb-5 d-flex">
         <div class="row d-flex justify-content-start ml-1">
-            <div class="card col-md-12" style="height: 160px;background: white;">
+            <div class="card col-md-11" style="height: 160px;background: white;">
                 <img class="mx-auto d-block mb-2 mt-2" style="width: 30%;" src="{{asset('assets/img/home/contact_us1.png')}}">
                 <div class="text-center text-about mb-1"><strong> info@royallife.com </strong></div>
             </div>
-            <div class="card col-md-12" style="height: 160px;margin-top: -140px;background: white;">
+            <div class="card col-md-11" style="height: 160px;margin-top: -140px;background: white;">
                 <img class="mx-auto d-block mb-2 mt-2" style="width: 40%;" src="{{asset('assets/img/home/contact_us2.png')}}">
                 <div class="text-center text-about mb-1"><strong> (+57)1234567 </strong></div>
             </div>

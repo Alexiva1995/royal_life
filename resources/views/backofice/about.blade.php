@@ -14,64 +14,31 @@
 <div class="container pt-5">
     <div class="row">
         <div class="contenedorborder1 mb-2" style="background: #173138">
-            <img src="{{asset('assets/img/home/Rectangle21.png')}}" alt="" style="">
+            <img class="w-100" src="{{asset('assets/img/home/Rectangle21.png')}}" alt="" style="">
         </div>
     </div>
-    <p class="texto-aboutS text-ab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quae provident dolore
-        expedita consectetur enim. Consectetur quae quas autem similique porro, accusamus quam aspernatur voluptatibus
-        suscipit fugit, iste quaerat totam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic saepe,
-        mollitia quia laudantium repellendus illum nesciunt, eum nostrum rerum, numquam necessitatibus ex veniam
-        accusamus libero impedit exercitationem totam voluptate distinctio? Lorem, ipsum dolor sit amet consectetur
-        adipisicing elit. Vitae excepturi alias, distinctio necessitatibus in quod voluptate dolores aliquam aspernatur
-        magni, praesentium porro, ex deleniti. Tempore accusantium ipsum cupiditate amet! Voluptas.</p>
+    <p class="texto-aboutS text-ab">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id donec pellentesque purus pellentesque facilisis bibendum ac mauris, mauris. Suspendisse quis non magna ullamcorper. Ipsum tellus sodales neque, in fames suspendisse elementum. Lorem duis orci in sem morbi posuere proin. Eu mauris morbi nec ante ut magna suspendisse lacinia.
+        Semper proin vestibulum nulla sit non aliquam mauris. Penatibus gravida et consectetur fames facilisis arcu. Accumsan volutpat sit elementum amet augue ultrices. In enim ornare lacinia sed. Quis ultrices arcu lacus, id phasellus cras morbi.
+        Massa orci eros, turpis sed erat. Morbi proin hendrerit quis turpis sapien, leo massa. Turpis vestibulum facilisis sit porttitor purus. Viverra a.</p>
 </div>
 
 <div class="p-5" style="background:#F0FFFA;">
     <div class="container mb-3">
         <h1 class="texto-title mt-5 mb-1 text-ab"><strong>Nuestra Misión y Visión</strong></h1>
         <p class="mb-3 text-ab" style="color: #324B50;font-size: 16px;"><strong> Lorem, ipsum dolor item </strong></p>
-        <p class="texto-aboutS text-ab">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam ut laudantium
-            cumque, quae quidem, minus at distinctio unde voluptas minima beatae ipsum odio labore animi, maiores
-            officiis assumenda illum nisi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut possimus quis
-            delectus nam eligendi exercitationem nisi, fugit, assumenda ab velit quo! Ullam deleniti enim illum cum
-            provident asperiores soluta tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-            asperiores officia optio sapiente aperiam molestiae rem voluptatibus aliquam cupiditate. Itaque consequatur
-            eum natus, iste culpa deleniti maiores exercitationem sed dolorum. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Eos laboriosam, esse a architecto maxime, quisquam voluptates facilis velit accusamus enim
-            quidem ea! Eaque accusamus maxime nisi repellat exercitationem sed. Eaque! Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Quis fuga sapiente ullam corrupti minima deleniti ad a dolore quas? Voluptates
-            facere explicabo, aperiam impedit itaque quisquam dolores ex soluta doloribus. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Ab nobis odit velit quidem blanditiis sapiente eaque libero nam,
-            exercitationem illo tenetur quia asperiores maiores? Nemo obcaecati voluptas debitis similique pariatur.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui at necessitatibus reiciendis officia, harum,
-            mollitia ea facilis consequuntur earum tempora repellendus molestias voluptas ipsam optio odit adipisci
-            corrupti! Expedita, reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-            praesentium voluptate dolorem exercitationem doloribus est iste officia illo? Voluptas blanditiis ut beatae
-            animi eveniet non tenetur vero a facere voluptates?</p>
+        <p class="texto-aboutS text-ab">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et tortor, scelerisque convallis aliquam facilisis nulla. Gravida cursus habitant id pellentesque amet leo massa. Egestas odio orci facilisis diam ultrices lorem enim feugiat. Lobortis et orci enim nec habitasse etiam urna ullamcorper urna. Non, in mauris commodo quis. Leo, quis varius phasellus in diam. Rhoncus, orci, a, in ut id elit. Quis adipiscing et tellus ac vel. Ridiculus tincidunt feugiat sed est lacus, varius scelerisque pharetra. Suspendisse sagittis nulla eu eu interdum cursus viverra. Ullamcorper elementum aliquet ac blandit blandit placerat.
+            Rhoncus in massa, dui id dictum sem amet lorem. Massa massa nisl laoreet ornare. Non mattis enim, dignissim ut vitae viverra faucibus enim. Rhoncus duis ullamcorper nibh dui consequat id. Erat dictum convallis viverra cursus.
+            Ut urna, vitae eu a consectetur porttitor quis turpis. Mauris facilisis morbi nec velit. Elit sed diam urna placerat mauris ultrices tempor. Volutpat tempor nisi, sollicitudin mi morbi augue eget. Quis id a, mi malesuada. Aliquam maecenas eget neque in morbi et aenean in. Orci justo cursus.</p>
     </div>
 </div>
 <div class="p-5">
     <div class="container mb-3">
         <h1 class="texto-title mt-5 mb-1 text-ab"><strong>¿Cómo Iniciamos?</strong></h1>
         <p class="mb-3 text-ab" style="color: #324B50;font-size: 16px;"><strong>Sed cursus tartar dignissim morbi. </strong></p>
-        <p class="texto-aboutS text-ab">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam ut laudantium
-            cumque, quae quidem, minus at distinctio unde voluptas minima beatae ipsum odio labore animi, maiores
-            officiis assumenda illum nisi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut possimus quis
-            delectus nam eligendi exercitationem nisi, fugit, assumenda ab velit quo! Ullam deleniti enim illum cum
-            provident asperiores soluta tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-            asperiores officia optio sapiente aperiam molestiae rem voluptatibus aliquam cupiditate. Itaque consequatur
-            eum natus, iste culpa deleniti maiores exercitationem sed dolorum. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Eos laboriosam, esse a architecto maxime, quisquam voluptates facilis velit accusamus enim
-            quidem ea! Eaque accusamus maxime nisi repellat exercitationem sed. Eaque! Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Quis fuga sapiente ullam corrupti minima deleniti ad a dolore quas? Voluptates
-            facere explicabo, aperiam impedit itaque quisquam dolores ex soluta doloribus. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Ab nobis odit velit quidem blanditiis sapiente eaque libero nam,
-            exercitationem illo tenetur quia asperiores maiores? Nemo obcaecati voluptas debitis similique pariatur.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui at necessitatibus reiciendis officia, harum,
-            mollitia ea facilis consequuntur earum tempora repellendus molestias voluptas ipsam optio odit adipisci
-            corrupti! Expedita, reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-            praesentium voluptate dolorem exercitationem doloribus est iste officia illo? Voluptas blanditiis ut beatae
-            animi eveniet non tenetur vero a facere voluptates?</p>
+        <p class="texto-aboutS text-ab">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio quis commodo sit dolor libero. Massa vitae elementum sit aliquam justo amet. Risus dolor orci faucibus aliquet lorem feugiat commodo luctus vitae. Maecenas in enim volutpat faucibus. Enim justo, egestas ultrices sit tristique. Eleifend et convallis felis duis tincidunt vitae. Suspendisse non volutpat sit nisi, aliquam, vivamus ultricies habitant. Blandit ac bibendum placerat nulla non. Mauris, a eget eu convallis diam. Lacus mauris at rhoncus vulputate pellentesque enim nisi. Ornare lacus, id bibendum facilisis gravida quis.
+            Leo, amet cursus auctor aliquet ac nibh. Amet imperdiet tellus est urna enim vulputate. Sed iaculis consectetur lorem pretium tristique molestie enim. In in pellentesque lacinia id nisi, tortor, lacus. Aliquam lobortis nunc sit amet sociis egestas tincidunt. Ultricies non ipsum sollicitudin bibendum viverra dolor. Venenatis pellentesque neque pretium nunc risus, dictumst tempus gravida tristique. Amet luctus tincidunt sollicitudin venenatis tempus in.
+            Morbi morbi a tincidunt diam amet nunc scelerisque arcu. Faucibus quam volutpat feugiat neque imperdiet nisl faucibus amet. Gravida donec tempus, sit ultrices fermentum interdum dui tempor massa. Sed consequat varius egestas elementum donec quis feugiat. Libero tristique justo fermentum aliquam tortor. Erat consequat vitae mi, purus imperdiet ut. Viverra enim adipiscing condimentum pharetra nec. Ultricies et metus adipiscing tempor tristique lectus vulputate diam.
+            </p>
     </div>
 </div>
 <div class="mt-5 p-5" style="background:#F0FFFA;">

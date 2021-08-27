@@ -1,6 +1,6 @@
 <!-- BEGIN: Header-->
 <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu navbar-dark navbar-shadow text-white">
-        <img src="{{ asset('assets/img/royal_green/logos/logo.svg') }}" class="ml-5 pl-5" alt="">
+        <img src="{{ asset('assets/img/royal_green/logos/logo.svg') }}" class="pl-5" alt="" style="margin-left: 85px;">
 
         <div class="collapse navbar-collapse justify-content-end" id="">
           <ul class="navbar-nav ">
@@ -18,7 +18,7 @@
               </li>
           </ul>
         </div>
-        <div class="collapse navbar-collapse justify-content-end mr-5 pr-5">
+        <div class="collapse navbar-collapse justify-content-end  pr-5" style="margin-right: 85px;">
             <img src="{{asset('assets/img/iconnew/Vector.png')}}" alt="">
             <a class="text-white ml-1" style="font-size: 19px;" href="{{route('login')}}">Ingresar</a>
             <a class="text-white pl-1 pr-1"style="font-size: 25px;" href="">|</a>
