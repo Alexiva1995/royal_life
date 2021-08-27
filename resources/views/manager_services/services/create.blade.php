@@ -28,7 +28,7 @@
                 <div class="card-body card-dashboard">
                     <div class="col-12">
                         <button class="btn btn-primary" data-toggle="modal" data-target="#modalNewServices">
-                            <i class="fa fa-plus"> Nuevo Paquete</i>
+                            <i class="fa fa-plus"> Nuevo Producto</i>
                         </button>
                     </div>
                     {{-- <div class="col-12 mt-1">

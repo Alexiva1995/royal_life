@@ -75,14 +75,15 @@ class PackagesController extends Controller
             'categories_id' => ['required'],
             'expired' => ['required', 'date'],
             'price' => ['required', 'numeric'],
+            'precio_rebajado'=> ['required', 'numeric'],
            // 'img' => ['required', 'mimes:jpeg,png']
         ]);
-
+ //dd($request->precio_rebajado);
        // dd($request['img']);
 
         try {
             if ($validate) {
-               $paquete =  Packages::create($request->all());
+                $paquete =  Packages::create($request->all());
                 $paquete->save();
                 $route = route('package.index').'?category='.$request->categories_id;
                 return redirect($route)->with('msj-success', 'Nuevo Servicio Creado');
