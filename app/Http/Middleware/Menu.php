@@ -49,7 +49,7 @@ class Menu
             // Fin inicio
 
             // Tienda
-            'Tienda' => [
+            'Market' => [
                 'submenu' => 0,
                 'ruta' => route('shop'),
                 'blank'=> '', // si es para una pagina diferente del sistema solo coloquen _blank
