@@ -28,7 +28,7 @@
     -moz-transition:all 0.3s ease;
     -o-transition:all 0.3s ease;
     -ms-transition:all 0.3s ease;
-    width:45%;
+    width:30%;
 }
 
 .zoom3:hover {
@@ -302,7 +302,10 @@ box-sizing: border-box;
  .rezize{
     height:170px;
     width: 300px;
+ }
 
+ .ancho{
+    width: 1200px;
  }
 </style>
 @endpush
