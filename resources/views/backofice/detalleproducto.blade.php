@@ -32,7 +32,7 @@
                     <div class="">
                         <div class="row align-items-center mt-2">
                             <div class="col-md-5 ">
-                                <div class="fondoProducto  product-slider-single normal-slider text-center ">
+                                <div class="fondoProducto shadow  product-slider-single normal-slider text-center ">
                                     <img class="o" src="{{asset('assets/img/home/producto21.png')}}" alt="Product Image">
 
                                 </div>
@@ -130,13 +130,13 @@
 
                                 </div>
                                 <div class="row d-flex mb-4">
-                                    <div class="card-body shadow ml-5" style="background: white;border-radius: 10px;">
-                                        <div class="d-flex">
-                                            <div class="background">
+                                    <div class="card-body shadow ml-2 zoom2 mover4" style="background: white;border-radius: 10px; left: 700px; 10px;padding: 0.8rem;">
+                                        <div class="d-flex ">
+                                            <div class="background ">
                                                 <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}"
                                                     style="width: 90%;">
                                             </div>
-                                            <div class="col-6">
+                                            <div class="col-6 ">
                                                 <h5><strong>Pomada CBD</strong></h5>
                                                 <p class="card-text" style="color: black; width: 160px;">
                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pellentesque auctor.</p>
@@ -150,7 +150,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="card-body  ml-1 shadow" style="background: white;border-radius: 10px;">
+                                    <div class="card-body  ml-3 shadow zoom2" style="background: white;border-radius: 10px; 10px;padding: 0.8rem;">
                                         <div class="d-flex">
                                             <div style="height:145px;width:100px;background:#66FFCC;border-radius: 10px;">
                                                 <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}"
@@ -170,13 +170,28 @@
                                         </div>
                                     </div>
 
-
-
-
+                                    <div class="card-body   shadow zoom2 mover3" style="background: white;border-radius: 10px; 10px;padding: 0.8rem;">
+                                        <div class="d-flex">
+                                            <div style="height:145px;width:100px;background:#66FFCC;border-radius: 10px;">
+                                                <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}"
+                                                    style="width: 90%;">
+                                            </div>
+                                            <div class="col-6">
+                                                <h5><strong>Pomada CBD</strong></h5>
+                                                <p class="card-text" style="color: black; width: 160px;">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pellentesque auctor.</p>
+                                                <a href="" class="btn btn-cre ">
+                                                    <p  style="margin-top: -9px; margin-left: -13px; ">Cremas</p>
+                                                </a>
+                                                <p
+                                                    style="color: black;margin-left: 140px;font-size: 20px;margin-bottom: 0;margin-top: -5px;">
+                                                    <strong>31$</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
 
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -218,6 +233,10 @@
                         </div>
                     </div>
                 </div>
+
+
+
+
             </div>
     <!-- Product Detail End -->
 
