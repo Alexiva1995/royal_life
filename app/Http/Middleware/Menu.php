@@ -182,7 +182,7 @@ class Menu
 
             // Paquetes
 
-            'Paquetes' => [
+            'Productos' => [
                 'submenu' => 1,
                 'ruta' => 'javascripts:;',
                 'blank'=> '', // si es para una pagina diferente del sistema solo coloquen _blank
@@ -190,13 +190,13 @@ class Menu
                 'complementoruta' => '',
                 'submenus' => [
                     [
-                        'name' => 'Lista de paquetes',
+                        'name' => 'Lista de productos',
                         'blank'=> '', // si es para una pagina diferente del sistema solo coloquen _blank
                         'ruta' =>route('products.package-list'),
                         'complementoruta' => ''
                     ],
                     [
-                        'name' => 'Crear paquete',
+                        'name' => 'Crear producto',
                         'blank'=> '', // si es para una pagina diferente del sistema solo coloquen _blank
                         'ruta' => route('products.package-index'),
                         'complementoruta' => ''
