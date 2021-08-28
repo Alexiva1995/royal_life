@@ -29,7 +29,7 @@
                             <div class="col-12">
                                 <fieldset class="form-group">
                                     <label for="">Imagen</label>
-                                    <input type="file" name="img" class="form-control" required accept="image/png">
+                                    <input type="file" name="img" class="form-control" required accept="image/jpeg, image/png">
                                 </fieldset>
                             </div>
 

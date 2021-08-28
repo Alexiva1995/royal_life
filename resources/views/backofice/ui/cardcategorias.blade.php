@@ -32,15 +32,13 @@
                       <br>
                       <h6><strong> Precio </strong><h6>
                       <hr class="hr">
-                      <div class="progress " style="height: 3px;">
-                        <div    class="progress-bar"
-                                role="progressbar"
-                                style="width: 100%;"
-                                aria-valuenow="25"
-                                aria-valuemin="0"
-                                aria-valuemax="100"
-                                ></div>
+
+
+                      <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
                       </div>
+
+
                       <h6 class="fuente text-dark text-center "><strong> $0-$3000 </strong></h6>
                     </div>
                 </div>

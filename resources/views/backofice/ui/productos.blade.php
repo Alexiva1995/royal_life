@@ -3,7 +3,7 @@
        @foreach ($packages as $producto )
 
 
-       <div class="col-md-6">
+       <div class="col-md-6 ">
 
 
            <div class="col-md-12 ">
@@ -12,11 +12,11 @@
                  {{--     <p class=" text-center bdr bar  " style= "background: #67FFCC;      ">--}}
                        <p class="text-center bdr bar "
                        style="background: #67FFCC;">
-                       <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
-                   </p>
+                        <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
+                       </p>
                     @csrf
                    {{--    <form action="{{route('cheking.backofice')}}" method="POST">
-                           @csrf --}}
+                            @csrf --}}
 
                        <p class="text-right" style="color: rgb(0, 0, 0);"><a class="btn-c text-center">Cremas</a><strong class="texto">${{$producto->price}}</strong></p>
                        <p class="text-left"  style="color: #000000;"><strong class="texto2 fuente ">{{$producto->name}}</strong></p>

@@ -68,7 +68,8 @@ class PackagesController extends Controller
      */
     public function store(Request $request)
     {
-       // dd($request->all());
+
+
        //
         $validate = $request->validate([
             'name' => ['required'],
@@ -76,14 +77,19 @@ class PackagesController extends Controller
             'expired' => ['required', 'date'],
             'price' => ['required', 'numeric'],
             'precio_rebajado'=> ['required', 'numeric'],
-           // 'img' => ['required', 'mimes:jpeg,png']
+           'img' => ['required', 'mimes:jpeg,png']
         ]);
- //dd($request->precio_rebajado);
-       // dd($request['img']);
+
+dd($validate);
+ $path = $request->file('img');
+ dd($path);
+ $name = $path->getClientOriginalName();
+ $path->move(public_path('storage') . '/photo-profile', $name);
 
         try {
             if ($validate) {
                 $paquete =  Packages::create($request->all());
+                $paquete->img = $name;
                 $paquete->save();
                 $route = route('package.index').'?category='.$request->categories_id;
                 return redirect($route)->with('msj-success', 'Nuevo Servicio Creado');

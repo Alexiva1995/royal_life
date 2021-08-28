@@ -12,11 +12,10 @@ class Packages extends Model
         'name',
         'categories_id',
         'precio_rebajado',
-        'price',
         'img',
+        'price',
         'description',
         'status',
-        'minimum_deposit',
         'expired'
     ];
 
