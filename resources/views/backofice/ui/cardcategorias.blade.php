@@ -35,7 +35,8 @@
 
 
                       <div class="slidecontainer">
-                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                        <input type="range" min="1" max="100" value="100" class="slider" id="myRange">
+
                       </div>
 
                       <h6 class="fuente text-dark text-center "><strong> $0-$3000 </strong></h6>
