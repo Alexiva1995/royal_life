@@ -48,7 +48,7 @@ class GroupsController extends Controller
      */
     public function store(Request $request)
     {
-       
+
       //  dd($request);
         $request->validate([
             'name' => ['required', 'unique:categories'],
@@ -62,7 +62,7 @@ class GroupsController extends Controller
                 $group = Categories::create($request->all());
                 $group->img = $name;
                 $group->save();
-                return redirect()->back()->with('msj-success', 'Nuevo Grupo Creada');
+                return redirect()->back()->with('msj-success', 'Nueva Categoria Creada');
             }
         } catch (\Throwable $th) {
             Log::error('Grupos - store -> Error: '.$th);
@@ -138,7 +138,7 @@ class GroupsController extends Controller
                     $file->move(public_path('storage') . '/photo-profile', $name);
                     $category->img = $name;
                  }
-        
+
                 $category->save();
 
                 return redirect()->back()->with('msj-success', 'Grupo '.$id.' Actualizada ');

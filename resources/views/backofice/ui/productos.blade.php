@@ -12,7 +12,14 @@
                  {{--     <p class=" text-center bdr bar  " style= "background: #67FFCC;      ">--}}
                        <p class="text-center bdr bar "
                        style="background: #67FFCC;">
-                        <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}">
+                       @if($producto->img == null)
+                                        <img class="mx-auto d-block"
+                                         src="{{asset('assets/img/home/producto21.png')}}"
+                                         alt="Product Image"
+                                         >
+                                         @else
+                                         <img class="mx-auto d-block" src="{{ asset('storage/photo-producto/'.$producto->img) }}" >
+                                        @endif
                        </p>
                     @csrf
                    {{--    <form action="{{route('cheking.backofice')}}" method="POST">

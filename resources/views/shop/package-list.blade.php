@@ -25,7 +25,17 @@
                             <tbody>
                                  @foreach ($package as $item)
                                 <tr class="text-center text-white">
-                                    <td> <img class="o" src="{{asset('assets/img/home/producto21.png')}}" alt="Product Image" style=" width: 100px; height: 100px;"></td>
+
+                                    <td> @if($item->img == null)
+                                        <img class="o"
+                                         src="{{asset('assets/img/home/producto21.png')}}"
+                                         alt="Product Image"
+                                         style=" width: 100px; height: 100px;">
+                                         @else
+                                         <img src="{{ asset('storage/photo-producto/'.$item->img) }}" alt="" height="100" width="100">
+                                        @endif
+
+                                    </td>
                                     <td>{{ $item->id}}</td>
                                     <td>{{ $item->name}}</td>
                                     <td>{{ $item->price}}</td>

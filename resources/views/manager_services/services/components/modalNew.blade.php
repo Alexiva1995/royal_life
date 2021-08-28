@@ -13,7 +13,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form method="POST" class="form form-vertical" action="{{route('package.store')}}">
+                <form method="POST" class="form form-vertical" action="{{route('package.store')}}" enctype="multipart/form-data">
                     <div class="form-body">
                         @csrf
                         <div class="row">

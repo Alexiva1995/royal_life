@@ -77,14 +77,14 @@ class PackagesController extends Controller
             'expired' => ['required', 'date'],
             'price' => ['required', 'numeric'],
             'precio_rebajado'=> ['required', 'numeric'],
-           'img' => ['required', 'mimes:jpeg,png']
+            'img' => ['required', 'mimes:jpeg,png']
         ]);
 
-dd($validate);
- $path = $request->file('img');
- dd($path);
- $name = $path->getClientOriginalName();
- $path->move(public_path('storage') . '/photo-profile', $name);
+
+        $path = $request->file('img');
+
+        $name = $path->getClientOriginalName();
+        $path->move(public_path('storage') . '/photo-producto', $name);
 
         try {
             if ($validate) {
@@ -92,7 +92,7 @@ dd($validate);
                 $paquete->img = $name;
                 $paquete->save();
                 $route = route('package.index').'?category='.$request->categories_id;
-                return redirect($route)->with('msj-success', 'Nuevo Servicio Creado');
+                return redirect($route)->with('msj-success', 'Nuevo producto creado');
             }
         } catch (\Throwable $th) {
             Log::error('Packages - store -> Error: '.$th);
