@@ -307,5 +307,42 @@ box-sizing: border-box;
  .ancho{
     width: 1200px;
  }
+
+
+
+
+ .slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background:#67FFCC;
+  outline: none;
+
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  background: #FFFFFF;
+border: 2px solid #000000;
+box-sizing: border-box;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
 </style>
 @endpush
