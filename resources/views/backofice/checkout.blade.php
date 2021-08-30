@@ -208,8 +208,6 @@
                 type="submit"
                 style="background: #67FFCC"
                 ><strong style="color:#173138"> Realizar pedido </strong></button>
-
-
         </div>
     </div>
 </div>
