@@ -238,7 +238,7 @@ class HomeController extends Controller
     public function contact(){
       $message = request()->validate([
             'name'=> 'required',
-            'email'=>'required',
+            'email'=>'required|email',
             'telefono'=>'required',
             'asunto'=>'required',
             'mensaje'=>'required',
