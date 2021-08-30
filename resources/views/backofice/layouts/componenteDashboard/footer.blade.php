@@ -1,6 +1,6 @@
 <div class="footer-clean">
     <footer>
-        <div class="container">
+        <div class="carousel-inner padin-card pt-1">
             <div class="row justify-content-center">
                 <div class="col-sm-4 col-md-2 item">
                     <img src="{{ asset('assets/img/royal_green/logos/logo.svg') }}"
