@@ -8,6 +8,10 @@
                     <div class="table-responsive">
                         <h1 class="text-white">Lista de Productos</h1>
 
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#modalNewServices">
+                            <i class="fa fa-plus"> Nuevo Producto</i>
+                        </button>
+
                         <table class="table nowrap scroll-horizontal-vertical myTable table-striped">
 
                             <thead class="">
@@ -54,3 +58,4 @@
 
 {{-- permite llamar a las opciones de las tablas --}}
 @include('layouts.componenteDashboard.optionDatatable')
+@include('manager_services.services.components.modalNew')

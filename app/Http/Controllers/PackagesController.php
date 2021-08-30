@@ -91,7 +91,7 @@ class PackagesController extends Controller
                 $paquete =  Packages::create($request->all());
                 $paquete->img = $name;
                 $paquete->save();
-                $route = route('package.index').'?category='.$request->categories_id;
+                $route = route('products.package-list').'?category='.$request->categories_id;
                 return redirect($route)->with('msj-success', 'Nuevo producto creado');
             }
         } catch (\Throwable $th) {
@@ -198,8 +198,8 @@ class PackagesController extends Controller
     {
 
         $package = Packages::all();
-
-        return view('shop.package-list', compact('package'));
+        $categories = Categories::all();
+        return view('shop.package-list', compact('package', 'categories'));
     }
 
 }

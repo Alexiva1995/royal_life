@@ -1,5 +1,5 @@
 <!-- Modal -->
-@foreach ($categories as $item )
+
 
 
 <div class="modal fade" id="modalNewServices" tabindex="-1" role="dialog" aria-labelledby="modalNewServicesTitle"
@@ -19,12 +19,14 @@
                         <div class="row">
                             <div class="col-12">
 
-                                <input type="hidden" name="categories_id" value="{{$id}}" >
+                                <input type="hidden" name="categories_id" value="" >
                                 <fieldset class="form-group">
                                     <label for="">Nombre</label>
                                     <input type="text" name="name" class="form-control" required>
                                 </fieldset>
                             </div>
+
+
 
                             <div class="col-12">
                                 <fieldset class="form-group">
@@ -32,6 +34,7 @@
                                     <input type="file" name="img" class="form-control" required accept="image/jpeg, image/png">
                                 </fieldset>
                             </div>
+
 
                             {{-- <div class="col-12">
                                 <fieldset class="form-group">
@@ -53,7 +56,7 @@
                             </div> --}}
 
 
-                            <div class="col-12 col-md-6">
+                            <div class="col-12 col-md-6 ">
                                 <fieldset class="form-group">
                                     <label for="">Fecha Vencimiento</label>
                                     <input type="date" name="expired" class="form-control" required>
@@ -85,6 +88,23 @@
                                     </select>
                                 </fieldset>
                             </div>
+
+                            <div class="col-12">
+                                <fieldset class="form-group">
+                                <select name="categories_id" class="form-control custom-select">
+                                    <label for="">Categoria</label>
+                                    <option value="" disabled selected>Selecione una opcion</option>
+                                    @foreach ( $categories as $categoria )
+
+                                    <option value="{{$categoria->id}}">{{$categoria->name}}</option>
+
+                                    @endforeach
+
+                                  </select>
+                                </fieldset>
+                                </div>
+
+
                             <div class="col-12">
                                 <fieldset class="form-group">
                                     <label for="">Descripcion</label>
@@ -96,6 +116,8 @@
                                     <button type="submit" class="btn btn-primary">Agregar</button>
                                 </fieldset>
                             </div>
+
+
                         </div>
                     </div>
                 </form>
@@ -106,4 +128,4 @@
         </div>
     </div>
 </div>
-@endforeach
+
