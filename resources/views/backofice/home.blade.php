@@ -18,8 +18,7 @@
                     data-src="holder.js/900x300?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide"
                     alt="First slide [900x300]" src="{{asset('assets/img/home/formas_fondo1.png')}}"
                     data-holder-rendered="true"style="
-                    background: #F2F4F4;
-                ">
+                    background: #F2F4F4;">
 
             </div>
         </div>
