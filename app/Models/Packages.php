@@ -11,11 +11,11 @@ class Packages extends Model
     protected $fillable = [
         'name',
         'categories_id',
-        'price',
+        'precio_rebajado',
         'img',
+        'price',
         'description',
         'status',
-        'minimum_deposit',
         'expired'
     ];
 

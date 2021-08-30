@@ -118,7 +118,7 @@
                         </div>
                     </div>
 
-                    <div class=" mt-3 mb-3"  style="background: white;">
+                    <div class=" mt-3 mb-3 ancho"  style="background: rgb(255, 255, 255);">
                         <div class="">
                             <h1 class="ml-3 mt-2 "><strong class=""> Productos Relacionados </strong></h1>
                         </div>
@@ -170,7 +170,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="card-body   shadow zoom2 mover3" style="background: white;border-radius: 10px; 10px;padding: 0.8rem;">
+                                    <div class="card-body ml-3  shadow zoom2 " style="background: white;border-radius: 10px; 10px;padding: 0.8rem;">
                                         <div class="d-flex">
                                             <div style="height:145px;width:100px;background:#66FFCC;border-radius: 10px;">
                                                 <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}"
@@ -189,6 +189,8 @@
                                             </div>
                                         </div>
                                     </div>
+
+
 
                                 </div>
                             </div>

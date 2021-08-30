@@ -68,24 +68,31 @@ class PackagesController extends Controller
      */
     public function store(Request $request)
     {
-       // dd($request->all());
+
+
        //
         $validate = $request->validate([
             'name' => ['required'],
             'categories_id' => ['required'],
             'expired' => ['required', 'date'],
             'price' => ['required', 'numeric'],
-           // 'img' => ['required', 'mimes:jpeg,png']
+            'precio_rebajado'=> ['required', 'numeric'],
+            'img' => ['required', 'mimes:jpeg,png']
         ]);
 
-       // dd($request['img']);
+
+        $path = $request->file('img');
+
+        $name = $path->getClientOriginalName();
+        $path->move(public_path('storage') . '/photo-producto', $name);
 
         try {
             if ($validate) {
-               $paquete =  Packages::create($request->all());
+                $paquete =  Packages::create($request->all());
+                $paquete->img = $name;
                 $paquete->save();
                 $route = route('package.index').'?category='.$request->categories_id;
-                return redirect($route)->with('msj-success', 'Nuevo Servicio Creado');
+                return redirect($route)->with('msj-success', 'Nuevo producto creado');
             }
         } catch (\Throwable $th) {
             Log::error('Packages - store -> Error: '.$th);

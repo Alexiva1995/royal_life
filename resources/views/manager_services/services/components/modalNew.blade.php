@@ -13,7 +13,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form method="POST" class="form form-vertical" action="{{route('package.store')}}">
+                <form method="POST" class="form form-vertical" action="{{route('package.store')}}" enctype="multipart/form-data">
                     <div class="form-body">
                         @csrf
                         <div class="row">
@@ -29,9 +29,10 @@
                             <div class="col-12">
                                 <fieldset class="form-group">
                                     <label for="">Imagen</label>
-                                    <input type="file" name="img" class="form-control" required accept="image/png">
+                                    <input type="file" name="img" class="form-control" required accept="image/jpeg, image/png">
                                 </fieldset>
                             </div>
+
                             {{-- <div class="col-12">
                                 <fieldset class="form-group">
                                     <label for="">Elige una Categoria</label>
@@ -51,18 +52,29 @@
                                 </fieldset>
                             </div> --}}
 
+
                             <div class="col-12 col-md-6">
                                 <fieldset class="form-group">
                                     <label for="">Fecha Vencimiento</label>
                                     <input type="date" name="expired" class="form-control" required>
                                 </fieldset>
                             </div>
+
                             <div class="col-12 col-md-6">
                                 <fieldset class="form-group">
                                     <label for="">Precio</label>
                                     <input type="number" name="price" class="form-control" required step="any">
                                 </fieldset>
                             </div>
+
+                            <div class="col-12 col-md-6">
+                                <fieldset class="form-group">
+                                    <label for="">Precio Rebajado</label>
+                                    <input type="number" name="precio_rebajado" class="form-control" >
+                                </fieldset>
+                            </div>
+
+
                             <div class="col-12 col-md-6">
                                 <fieldset class="form-group">
                                     <label for="">Estado</label>

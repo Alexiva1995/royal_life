@@ -28,7 +28,7 @@
     -moz-transition:all 0.3s ease;
     -o-transition:all 0.3s ease;
     -ms-transition:all 0.3s ease;
-    width:45%;
+    width:30%;
 }
 
 .zoom3:hover {
@@ -302,7 +302,47 @@ box-sizing: border-box;
  .rezize{
     height:170px;
     width: 300px;
-
  }
+
+ .ancho{
+    width: 1200px;
+ }
+
+
+
+
+ .slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background:#67FFCC;
+  outline: none;
+
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  background: #FFFFFF;
+border: 2px solid #000000;
+box-sizing: border-box;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
 </style>
 @endpush
