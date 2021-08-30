@@ -28,44 +28,44 @@
                 <h1 class="texto-title mb-2"><strong> Categorias de nuetros productos </strong></h1>
                 <p class="texto-simple mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tellus pharetra amet
                     nunc sed etiam nibh et, morbi. Morbi commodo lorem purus non dui.</p>
-            </div>
+            </div> 
         </div>
         <div class="carousel-inner">
             <div class="row d-flex justify-content-center pt-5 pb-5">
                 <div class="card mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
                     <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
                     <div class="text-center text-card"><strong>Cremas</strong></div>
-                    <a class="text-center" style="color: #303030;" href="{{route('shop.backofice')}}"> ver todos
+                    <a class="text-center" style="color: #303030;font-size: 18px;" href="{{route('shop.backofice')}}"> ver todos
                             los productos<img src="{{asset('assets/img/home/Arrow1.png')}}" alt="" style="margin-left: 10px;"></a>
                 </div>
                 <div class="card mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
                     <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
                     <div class="text-center text-card"><strong>Cremas</strong></div>
-                    <a class="text-center" style="color: #303030;" href="{{route('shop.backofice')}}">ver todos
+                    <a class="text-center" style="color: #303030;font-size: 18px;" href="{{route('shop.backofice')}}">ver todos
                             los productos<img src="{{asset('assets/img/home/Arrow1.png')}}" alt="" style="margin-left: 10px;"> </a>
                 </div>
                 <div class="card mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
                     <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
                     <div class="text-center text-card"><strong>Cremas</strong></div>
-                    <a class="text-center" style="color: #303030;" href="{{route('shop.backofice')}}"> ver todos
+                    <a class="text-center" style="color: #303030;font-size: 18px;" href="{{route('shop.backofice')}}"> ver todos
                             los productos<img src="{{asset('assets/img/home/Arrow1.png')}}" alt="" style="margin-left: 10px;"></a>
                 </div>
                 <div class="card mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
                     <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
                     <div class="text-center text-card"><strong>Cremas</strong></div>
-                    <a class="text-center" style="color: #303030;" href="{{route('shop.backofice')}}"> ver todos
+                    <a class="text-center" style="color: #303030;font-size: 18px;" href="{{route('shop.backofice')}}"> ver todos
                             los productos<img src="{{asset('assets/img/home/Arrow1.png')}}" alt="" style="margin-left: 10px;"></a>
                 </div>
                 <div class="card mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
                     <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
                     <div class="text-center text-card"><strong>Cremas</strong></div>
-                    <a class="text-center" style="color: #303030;" href="{{route('shop.backofice')}}"> ver todos
+                    <a class="text-center" style="color: #303030;font-size: 18px;" href="{{route('shop.backofice')}}"> ver todos
                             los productos<img src="{{asset('assets/img/home/Arrow1.png')}}" alt="" style="margin-left: 10px;"></a>
                 </div>
                 <div class="card mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
                     <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
                     <div class="text-center text-card"><strong>Cremas</strong></div>
-                    <a class="text-center" style="color: #303030;" href="{{route('shop.backofice')}}"> ver todos
+                    <a class="text-center" style="color: #303030;font-size: 18px;" href="{{route('shop.backofice')}}"> ver todos
                             los productos<img src="{{asset('assets/img/home/Arrow1.png')}}" alt="" style="margin-left: 10px;"></a>
                 </div>
             </div>
@@ -74,189 +74,180 @@
         <div class="p-1 pb-5" style="background:#F0FFFA;">
             <div class="carousel-inner mb-3">
                 <h1 class="texto-title mt-5 mb-1 padin-lg margen"><strong>Los más vendidos</strong></h1>
-                <p style="color: #303030;font-size: 15px;" class="padin-lg margen">Lorem, ipsum dolor sit amet, consectetur
+                <p style="color: #303030;font-size: 18px;" class="padin-lg margen">Lorem, ipsum dolor sit amet, consectetur
                     adipisicing elit. Purus malesuada et.
                 </p>
             </div>
             <div class="row d-flex justify-content-center">
-                <div class="card-body cus-md-3 mb-1 ml-md-1" style="background: white;border-radius: 10px;padding: 0.8rem;">
+                <div class="card-body cus-md-3 mb-1 ml-md-3" style="background: white;border-radius: 10px;padding: 0.8rem;">
                     <div class="d-flex">
                         <div style="height:145px;width:100px;background:#66FFCC;border-radius: 10px;">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}"
                                 style="width: 90%;">
                         </div>
                         <div class="col-6">
-                            <h5><strong>Pomada CBD</strong></h5>
-                            <p class="card-text" style="color: #303030; width: 160px;">
+                            <h4><strong>Pomada CBD</strong></h4>
+                            <p class="text-tar">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pellentesque auctor.</p>
                             <a href="" class="btn btn-cre">
                                 <p style="margin-top: -9px; margin-left: -10px;">cremas</p>
                             </a>
-                            <p
-                                style="color: #303030;margin-left: 140px;font-size: 20px;margin-bottom: 0;margin-top: -5px;">
+                            <p class="dolar">
                                 <strong>31$</strong></p>
                         </div>
                     </div>
                 </div>
 
-                <div class="card-body cus-md-3 mb-1 ml-md-1" style="background: white;border-radius: 10px;padding: 0.8rem;">
+                <div class="card-body cus-md-3 mb-1 ml-md-3" style="background: white;border-radius: 10px;padding: 0.8rem;">
                     <div class="d-flex">
                         <div style="height:145px;width:100px;background:#66FFCC;border-radius: 10px;">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}"
                                 style="width: 90%;">
                         </div>
                         <div class="col-6">
-                            <h5><strong>Pomada CBD</strong></h5>
-                            <p class="card-text" style="color: #303030; width: 160px;">
+                            <h4><strong>Pomada CBD</strong></h4>
+                            <p class="text-tar">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pellentesque auctor.</p>
                             <a href="" class="btn btn-cre">
                                 <p style="margin-top: -9px; margin-left: -10px;">cremas</p>
                             </a>
-                            <p
-                                style="color: #303030;margin-left: 140px;font-size: 20px;margin-bottom: 0;margin-top: -5px;">
+                            <p class="dolar">
                                 <strong>31$</strong></p>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="card-body cus-md-3 mb-1 ml-md-1" style="background: white;border-radius: 10px;padding: 0.8rem;">
+                <div class="card-body cus-md-3 mb-1 ml-md-3" style="background: white;border-radius: 10px;padding: 0.8rem;">
                     <div class="d-flex">
                         <div style="height:145px;width:100px;background:#66FFCC;border-radius: 10px;">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}"
                                 style="width: 90%;">
                         </div>
                         <div class="col-6">
-                            <h5><strong>Pomada CBD</strong></h5>
-                            <p class="card-text" style="color: #303030; width: 160px;">
+                            <h4><strong>Pomada CBD</strong></h4>
+                            <p class="text-tar">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pellentesque auctor.</p>
                             <a href="" class="btn btn-cre">
                                 <p style="margin-top: -9px; margin-left: -10px;">cremas</p>
                             </a>
-                            <p
-                                style="color: #303030;margin-left: 140px;font-size: 20px;margin-bottom: 0;margin-top: -5px;">
+                            <p class="dolar">
                                 <strong>31$</strong></p>
                         </div>
                     </div>
                 </div>
-                <div class="card-body cus-md-3 mb-1 ml-md-1" style="background: white;border-radius: 10px;padding: 0.8rem;">
+                <div class="card-body cus-md-3 mb-1 ml-md-3" style="background: white;border-radius: 10px;padding: 0.8rem;">
                     <div class="d-flex">
                         <div style="height:145px;width:100px;background:#66FFCC;border-radius: 10px;">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}"
                                 style="width: 90%;"> 
                         </div>
                         <div class="col-6">
-                            <h5><strong>Pomada CBD</strong></h5>
-                            <p class="card-text" style="color: #303030; width: 160px;">
+                            <h4><strong>Pomada CBD</strong></h4>
+                            <p class="text-tar">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pellentesque auctor.</p>
                             <a href="" class="btn btn-cre">
                                 <p style="margin-top: -9px; margin-left: -10px;">cremas</p>
                             </a>
-                            <p
-                                style="color: #303030;margin-left: 140px;font-size: 20px;margin-bottom: 0;margin-top: -5px;">
+                            <p class="dolar">
                                 <strong>31$</strong></p>
                         </div>
                     </div>
                 </div>
 
-                <div class="card-body cus-md-3 mb-1 ml-md-1" style="background: white;border-radius: 10px;padding: 0.8rem;">
+                <div class="card-body cus-md-3 mb-1 ml-md-3" style="background: white;border-radius: 10px;padding: 0.8rem;">
                     <div class="d-flex">
                         <div style="height:145px;width:100px;background:#66FFCC;border-radius: 10px;">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}"
                                 style="width: 90%;">
                         </div>
                         <div class="col-6">
-                            <h5><strong>Pomada CBD</strong></h5>
-                            <p class="card-text" style="color: #303030; width: 160px;">
+                            <h4><strong>Pomada CBD</strong></h4>
+                            <p class="text-tar">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pellentesque auctor.</p>
                             <a href="" class="btn btn-cre">
                                 <p style="margin-top: -9px; margin-left: -10px;">cremas</p>
                             </a>
-                            <p
-                                style="color: #303030;margin-left: 140px;font-size: 20px;margin-bottom: 0;margin-top: -5px;">
+                            <p class="dolar">
                                 <strong>31$</strong></p>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="card-body cus-md-3 mb-1 ml-md-1" style="background: white;border-radius: 10px;padding: 0.8rem;">
+                <div class="card-body cus-md-3 mb-1 ml-md-3" style="background: white;border-radius: 10px;padding: 0.8rem;">
                     <div class="d-flex">
                         <div style="height:145px;width:100px;background:#66FFCC;border-radius: 10px;">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}"
                                 style="width: 90%;">
                         </div>
                         <div class="col-6">
-                            <h5><strong>Pomada CBD</strong></h5>
-                            <p class="card-text" style="color: #303030; width: 160px;">
+                            <h4><strong>Pomada CBD</strong></h4>
+                            <p class="text-tar">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pellentesque auctor.</p>
                             <a href="" class="btn btn-cre">
                                 <p style="margin-top: -9px; margin-left: -10px;">cremas</p>
                             </a>
-                            <p
-                                style="color: #303030;margin-left: 140px;font-size: 20px;margin-bottom: 0;margin-top: -5px;">
+                            <p class="dolar">
                                 <strong>31$</strong></p>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="card-body cus-md-3 mb-1 ml-md-1" style="background: white;border-radius: 10px;padding: 0.8rem;">
+                <div class="card-body cus-md-3 mb-1 ml-md-3" style="background: white;border-radius: 10px;padding: 0.8rem;">
                     <div class="d-flex">
                         <div style="height:145px;width:100px;background:#66FFCC;border-radius: 10px;">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}"
                                 style="width: 90%;">
                         </div>
                         <div class="col-6">
-                            <h5><strong>Pomada CBD</strong></h5>
-                            <p class="card-text" style="color: #303030; width: 160px;">
+                            <h4><strong>Pomada CBD</strong></h4>
+                            <p class="text-tar">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pellentesque auctor.</p>
                             <a href="" class="btn btn-cre">
                                 <p style="margin-top: -9px; margin-left: -10px;">cremas</p>
                             </a>
-                            <p
-                                style="color: #303030;margin-left: 140px;font-size: 20px;margin-bottom: 0;margin-top: -5px;">
+                            <p class="dolar">
                                 <strong>31$</strong></p>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="card-body cus-md-3 mb-1 ml-md-1" style="background: white;border-radius: 10px;padding: 0.8rem;">
+                <div class="card-body cus-md-3 mb-1 ml-md-3" style="background: white;border-radius: 10px;padding: 0.8rem;">
                     <div class="d-flex">
                         <div style="height:145px;width:100px;background:#66FFCC;border-radius: 10px;">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}"
                                 style="width: 90%;">
                         </div>
                         <div class="col-6">
-                            <h5><strong>Pomada CBD</strong></h5>
-                            <p class="card-text" style="color: #303030; width: 160px;">
+                            <h4><strong>Pomada CBD</strong></h4>
+                            <p class="text-tar">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pellentesque auctor.</p>
                             <a href="" class="btn btn-cre">
                                 <p style="margin-top: -9px; margin-left: -10px;">cremas</p>
                             </a>
-                            <p
-                                style="color: #303030;margin-left: 140px;font-size: 20px;margin-bottom: 0;margin-top: -5px;">
+                            <p class="dolar">
                                 <strong>31$</strong></p>
                         </div>
                     </div>
                 </div>
 
-                <div class="card-body cus-md-3 mb-1 ml-md-1" style="background: white;border-radius: 10px;padding: 0.8rem;">
+                <div class="card-body cus-md-3 mb-1 ml-md-3" style="background: white;border-radius: 10px;padding: 0.8rem;">
                     <div class="d-flex">
                         <div style="height:145px;width:100px;background:#66FFCC;border-radius: 10px;">
                             <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}"
                                 style="width: 90%;">
                         </div>
                         <div class="col-6">
-                            <h5><strong>Pomada CBD</strong></h5>
-                            <p class="card-text" style="color: #303030; width: 160px;">
+                            <h4><strong>Pomada CBD</strong></h4>
+                            <p class="text-tar">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pellentesque auctor.</p>
                             <a href="" class="btn btn-cre">
                                 <p style="margin-top: -9px; margin-left: -10px;">cremas</p>
                             </a>
-                            <p
-                                style="color: #303030;margin-left: 140px;font-size: 20px;margin-bottom: 0;margin-top: -5px;">
+                            <p class="dolar">
                                 <strong>31$</strong></p>
                         </div>
                     </div>
@@ -294,11 +285,11 @@
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-left: -18px;margin-top: -10px;">cremas</p>
+                                <p style="margin-left: -14px;margin-top: -10px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
-                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget porttitor.</p>
+                            <p class="text-left" style="color:#303030;font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget porttitor.</p>
                         </div>
                     </div>
                 </div>
@@ -309,11 +300,11 @@
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-left: -18px;margin-top: -10px;">cremas</p>
+                                <p style="margin-left: -14px;margin-top: -10px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
-                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget porttitor.</p>
+                            <p class="text-left" style="color:#303030;font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget porttitor.</p>
                         </div>
                     </div>
                 </div>
@@ -324,11 +315,11 @@
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-left: -18px;margin-top: -10px;">cremas</p>
+                                <p style="margin-left: -14px;margin-top: -10px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
-                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget porttitor.</p>
+                            <p class="text-left" style="color:#303030;font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget porttitor.</p>
                         </div>
                     </div>
                 </div>
@@ -339,11 +330,11 @@
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-left: -18px;margin-top: -10px;">cremas</p>
+                                <p style="margin-left: -14px;margin-top: -10px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
-                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget porttitor.</p>
+                            <p class="text-left" style="color:#303030;font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget porttitor.</p>
                         </div>
                     </div>
                 </div>
@@ -354,11 +345,11 @@
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-left: -18px;margin-top: -10px;">cremas</p>
+                                <p style="margin-left: -14px;margin-top: -10px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
-                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget porttitor.</p>
+                            <p class="text-left" style="color:#303030;font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget porttitor.</p>
                         </div>
                     </div>
                 </div>
@@ -369,11 +360,11 @@
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-left: -18px;margin-top: -10px;">cremas</p>
+                                <p style="margin-left: -14px;margin-top: -10px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
-                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget porttitor.</p>
+                            <p class="text-left" style="color:#303030;font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget porttitor.</p>
                         </div>
                     </div>
                 </div>
@@ -384,11 +375,11 @@
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-left: -18px;margin-top: -10px;">cremas</p>
+                                <p style="margin-left: -14px;margin-top: -10px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
-                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget porttitor.</p>
+                            <p class="text-left" style="color:#303030;font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget porttitor.</p>
                         </div>
                     </div>
                 </div>
@@ -399,11 +390,11 @@
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-left: -18px;margin-top: -10px;">cremas</p>
+                                <p style="margin-left: -14px;margin-top: -10px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
-                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget porttitor.</p>
+                            <p class="text-left" style="color:#303030;font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget porttitor.</p>
                         </div>
                     </div>
                 </div>
@@ -414,11 +405,11 @@
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-left: -18px;margin-top: -10px;">cremas</p>
+                                <p style="margin-left: -14px;margin-top: -10px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
-                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget porttitor.</p>
+                            <p class="text-left" style="color:#303030;font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget porttitor.</p>
                         </div>
                     </div>
                 </div>
@@ -429,11 +420,11 @@
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-left: -18px;margin-top: -10px;">cremas</p>
+                                <p style="margin-left: -14px;margin-top: -10px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
-                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget porttitor.</p>
+                            <p class="text-left" style="color:#303030;font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget porttitor.</p>
                         </div>
                     </div>
                 </div>
@@ -444,11 +435,11 @@
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-left: -18px;margin-top: -10px;">cremas</p>
+                                <p style="margin-left: -14px;margin-top: -10px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
-                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget porttitor.</p>
+                            <p class="text-left" style="color:#303030;font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget porttitor.</p>
                         </div>
                     </div>
                 </div>
@@ -459,11 +450,11 @@
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-left: -18px;margin-top: -10px;">cremas</p>
+                                <p style="margin-left: -14px;margin-top: -10px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
-                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget porttitor.</p>
+                            <p class="text-left" style="color:#303030;font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget porttitor.</p>
                         </div>
                     </div>
                 </div>
@@ -474,11 +465,11 @@
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-left: -18px;margin-top: -10px;">cremas</p>
+                                <p style="margin-left: -14px;margin-top: -10px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
-                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget porttitor.</p>
+                            <p class="text-left" style="color:#303030;font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget porttitor.</p>
                         </div>
                     </div>
                 </div>
@@ -489,11 +480,11 @@
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-left: -18px;margin-top: -10px;">cremas</p>
+                                <p style="margin-left: -14px;margin-top: -10px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
-                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget porttitor.</p>
+                            <p class="text-left" style="color:#303030;font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget porttitor.</p>
                         </div>
                     </div>
                 </div>
@@ -504,11 +495,11 @@
                         </p>
                         <div class="card-body">
                             <a href="" class="btn btn-cren">
-                                <p style="margin-left: -18px;margin-top: -10px;">cremas</p>
+                                <p style="margin-left: -14px;margin-top: -10px;">cremas</p>
                             </a>
                             <p class="text-right" style="color:black;font-size:25px;"> <strong>$31</strong></p>
                             <h3 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h3>
-                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget porttitor.</p>
+                            <p class="text-left" style="color:#303030;font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget porttitor.</p>
                         </div>
                     </div>
                 </div>
@@ -544,7 +535,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 item">
-                        <div class="box" style="width: 102%;">
+                        <div class="box">
                             <div style="margin-top: 8px;">
                                 <img src="{{ asset('assets/img/home/Vector.png') }}" alt="">
                                 <img src="{{ asset('assets/img/home/Vector.png') }}" alt="">
@@ -562,7 +553,7 @@
                     </div>
                     <div class="container">
                         <div class="row d-flex justify-content-center">
-                            <img src="{{asset('assets/img/home/Rectangle29.png')}}" alt="" style="margin-top: -215px; width: 70%;">
+                            <img src="{{asset('assets/img/home/Rectangle29.png')}}" alt="" class="trans-card">
                         </div>
                     </div>
                 </div>
