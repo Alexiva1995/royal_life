@@ -147,11 +147,11 @@ input[type=text]:hover:not([disabled]), input[type=text]:focus, input[type=texta
     </div>
     <div class="col-3 mt-5 mb-5 d-flex">
         <div class="row d-flex justify-content-start ml-1">
-            <div class="card col-md-11" style="height: 160px;background: white;">
+            <div class="card col-md-11" style="height: 180px;background: white;">
                 <img class="mx-auto d-block mb-2 mt-2" style="width: 30%;" src="{{asset('assets/img/home/contact_us1.png')}}">
                 <div class="text-center text-about mb-1"><strong> info@royallife.com </strong></div>
             </div>
-            <div class="card col-md-11" style="height: 160px;margin-top: -140px;background: white;">
+            <div class="card col-md-11" style="height: 180px;margin-top: -70px;background: white;">
                 <img class="mx-auto d-block mb-2 mt-2" style="width: 40%;" src="{{asset('assets/img/home/contact_us2.png')}}">
                 <div class="text-center text-about mb-1"><strong> (+57)1234567 </strong></div>
             </div>

@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="carousel-inner">
-            <div class="row d-flex justify-content-center pb-5">
+            <div class="row d-flex justify-content-center pt-5 pb-5">
                 <div class="card mb-1 col-md-3 ml-md-1" style="height: 350px;background: white;">
                     <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
                     <div class="text-center text-card"><strong>Cremas</strong></div>
@@ -70,10 +70,10 @@
             </div>
         </div>
 
-        <div class="p-1" style="background:#F0FFFA;">
-            <div class="container mb-3">
-                <h1 class="texto-title mt-5 mb-1" style="margin-left: 20px;"><strong>Los más vendidos</strong></h1>
-                <p style="margin-left: 20px;color: #303030;font-size: 15px;">Lorem, ipsum dolor sit amet, consectetur
+        <div class="p-1 pb-5" style="background:#F0FFFA;">
+            <div class="carousel-inner mb-3">
+                <h1 class="texto-title mt-5 mb-1 padin-lg margen"><strong>Los más vendidos</strong></h1>
+                <p style="color: #303030;font-size: 15px;" class="padin-lg margen">Lorem, ipsum dolor sit amet, consectetur
                     adipisicing elit. Purus malesuada et.
                 </p>
             </div>
@@ -284,8 +284,8 @@
             </div>
         </div>
 
-        <div class="container ">
-            <div class="row d-flex justify-content-center">
+        <div class="carousel-inner">
+            <div class="row d-flex justify-content-center padin-lg contente">
                 <div class="col-md-4 mb-1 cus-md-4 ml-1">
                     <div class="card-body product text-center">
                         <p class="text-center"
@@ -551,7 +551,7 @@
             </div>
         </div>
         <div class="testimonials-clean">
-            <div class="container">
+            <div class="carousel-inner padin-card">
                 <div class="row people">
                     <div class="col-md-6 item">
                         <div class="box">
@@ -598,7 +598,7 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="carousel-inner padin-card">
             <div class="row d-flex justify-content-center mt-3">
                 <div class="contenedorborder mb-2 ml-1 " style="background: #173138">
                     <div class="texto-dearriba">
