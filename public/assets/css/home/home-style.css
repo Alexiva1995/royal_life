@@ -268,7 +268,7 @@
   margin-top: -215px;
   width: 70%;
 }
-@media(min-width:1920px){
+@media(max-width:1920px){
   .text-tar{
     color: #303030;
     width: 280px;
