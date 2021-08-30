@@ -105,8 +105,7 @@
     top: -10px;
 	height:210px;
     width: 287px;
-    left: -23px;
-
+    left: -7px;
 }
 
 .bar2 {
@@ -344,5 +343,7 @@ box-sizing: border-box;
   background: #04AA6D;
   cursor: pointer;
 }
+
+
 </style>
 @endpush
