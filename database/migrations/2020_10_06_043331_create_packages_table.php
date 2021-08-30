@@ -17,7 +17,7 @@ class CreatePackagesTable extends Migration
             $table->bigIncrements('id')->unsigned();
             $table->string('name');
              $table->unsignedBigInteger('categories_id');
-             $table->foreign('categories_id')->references('id')->on('categories');
+             $table->foreign('categories_id')->references('id')->on('categories')->nullable();
             $table->double('price')->default(0);
             $table->double('precio_rebajado')->default(0);
             $table->text('img')->nullable();
