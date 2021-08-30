@@ -72,8 +72,7 @@ color: #303030;
     background: #67FFCC;
     border-radius: 10px;
 }
-input[type=text]:hover:not([disabled]), input[type=text]:focus, input[type=textarea]:hover:not([disabled]), input[type=textarea]:focus, input[type=search], input[type=search]:focus, input[type=search]:active, input[type=text]:read-only, input[type=password]:hover:not([disabled]), input[type=password]:focus, label:hover ~ input[type=text], label:hover ~ input[type=password] {
-    background: #11262C;
+input[type=text]:hover:not([disabled]), input[type=text]:focus, input[type=email]:focus,input[type=number]:focus, input[type=textarea]:hover:not([disabled]), input[type=textarea]:focus, input[type=search], input[type=search]:focus, input[type=search]:active, input[type=text]:read-only, input[type=password]:hover:not([disabled]), input[type=password]:focus, label:hover ~ input[type=text], label:hover ~ input[type=password] {    background: #11262C;
     color: #000000;
 }
 .requerido{
@@ -95,7 +94,7 @@ input[type=text]:hover:not([disabled]), input[type=text]:focus, input[type=texta
 
 <div class="pl-2 pr-4 pt-3">
 <div class="row d-flex justify-content-center">
-<div class="col-md-7 cus-md-7 mt-5 mb-5">
+<div class="col-md-7 mt-5 mb-5">
 
     <div class="card p-5" style="height:450px;background: #ffffff;">
         <form action={{route('contact')}} method="POST" class="credit-card-div">
@@ -111,7 +110,7 @@ input[type=text]:hover:not([disabled]), input[type=text]:focus, input[type=texta
                         </div>
                         <div class="col-md-6 col-sm-6 col-xs-3">
                             <span class="help-block text-muted textcustom">Email <sup class="requerido">*</sup></span>
-                            <input type="text" name="email" class="form-control custominput" style="background:   #F6F6F7;" />
+                            <input type="email" name="email" class="form-control custominput" style="background:   #F6F6F7;" />
                         </div>
                     </div>
 
@@ -120,7 +119,7 @@ input[type=text]:hover:not([disabled]), input[type=text]:focus, input[type=texta
                     <div class="row ">
                         <div class="col-md-6 col-sm-6 col-xs-3">
                             <span class="help-block text-muted text textcustom">Telefono </span>
-                            <input type="text" name="telefono" class="form-control custominput" style="background:  #F6F6F7;" />
+                            <input type="number" name="telefono" class="form-control custominput" style="background:  #F6F6F7;" />
                         </div>
                         <div class="col-md-6 col-sm-6 col-xs-3">
                             <span class="help-block text-muted textcustom">Asunto</span>
