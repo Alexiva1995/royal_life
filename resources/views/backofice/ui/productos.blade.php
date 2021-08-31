@@ -3,10 +3,12 @@
        @foreach ($packages as $producto )
        <div class="row col-md-6 col-xs-3 ">
            <div class="col-md-12 col-xs-3 " >
-            <a class="card-body " href="{{route('detalle.producto')}}" method="GET">
+            <a class="card-body ">
+
                <div class="card zoom" style="background:#FFFFFF;">
                        <a class="text-center bdr bar  "
-                       style="background: #67FFCC;">
+                       style="background: #67FFCC;"  href="{{route('detalle.producto')}}" method="GET">
+                       @csrf
                        @if($producto->img == null)
                              <img class="mx-auto d-block"
                               src="{{asset('assets/img/home/producto21.png')}}"
@@ -18,7 +20,7 @@
                       <p class="text-left"  style="color: #000000;"><strong class="texto2 fuente ml-1">{{$producto->name}}</strong></p>
                       <p class="text-left fuente ml-1 "  style="color: #303030;"> {{ Str::words( strip_tags($producto->description) , 15 )}}</p>
                </a>
-                        @csrf
+
 
                </div>
            </div>
