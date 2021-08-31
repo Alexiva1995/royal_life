@@ -93,6 +93,7 @@
         margin: 0 auto; /* Added */
         float: none; /* Added */
         margin-bottom: 10px; /* Added */
+        min-height: 200px
 }
 
 .bdr
@@ -102,17 +103,13 @@
 }
 .bar {
     position: relative;
-    top: -10px;
-	height:210px;
-    width: 287px;
-    left: -7px;
+    top: -30px;
+	height: 20%;
+    width: 93%;
+    left: 3.5%;
 }
 
-.bar2 {
-    position: relative;
-    height:220px;
 
-}
 
 .caja{
     background: #F5F5F5;
@@ -224,7 +221,7 @@ box-sizing: border-box;
   color: black!important;
   box-shadow: 0 8px 25px -8px #f2f1f3;
   position: absolute;
-  top: 245px;
+  top: 265px;
   left: 17%;
   width: 25%;
   height: 23px;
@@ -344,6 +341,10 @@ box-sizing: border-box;
   cursor: pointer;
 }
 
+.prize{
+    position: relative;
+    top: 20%;
+}
 
 </style>
 @endpush

@@ -13,21 +13,22 @@
 @include('backofice.ui.estylos'){{--Estilos de la tienda--}}
 
 @section('content')
-<div class="" style="background: #173138">
+
+<div class="img-head">
     <div class="texto-tienda">
-        <strong>Categorias</strong>
+        <strong>Tienda</strong>
      </div>
      <div class="texto-tiendaB d-flex">
-        <a class="ml-1 text-white" href="{{route('shop.backofice')}}"><strong>Tienda</strong></a><strong class="ml-1"> > </strong><p style="color: #52CCA7" class="ml-1"><strong>categorias</strong></p>
+        <a class="ml-auto text-white" href="{{route('inicio')}}"><strong> Inicio </strong></a><strong class="ml-1"> > </strong><p style="color: #52CCA7" class="ml-1"><strong>Tienda</strong></p>
     </div>
-    <img src="{{asset('assets/img/home/formas_fondo3.png')}}" alt=""  style="width: 100%; ">
+    <img src="{{asset('assets/img/home/formas_fondo3.png')}}" alt=""  style="height: 200px;width: 100%;">
 
 </div>
 
 
-<div class="container ">
-<h2 class="titulo-categoria text-uppercase mt-5 mb-4"></h2>
-<div class="col-md-3  mb-10">
+<div class="container  ml-auto">
+
+<div class="  d-fex col-md-3"  >
         @include('backofice.ui.cardcategorias')
         @include('backofice.ui.productos')
 </div>
