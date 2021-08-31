@@ -42,7 +42,7 @@
                                 </div>
                             </div>
                             <div class="col-md-7 mt-2">
-                                <div class="product-content card" style="background:#FFFFFF; min-height: 200px ">
+                                <div class="product-content card " style="background:#FFFFFF;  ">
                                     <div class="title ml-3  mt-1 fuente"> <h2><strong>Crema Chocolate CBD 2ml</strong></h2></div>
                                     <div class="ratting">
                                         <i class="fa fa-star"></i>

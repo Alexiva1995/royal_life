@@ -93,7 +93,11 @@
         margin: 0 auto; /* Added */
         float: none; /* Added */
         margin-bottom: 10px; /* Added */
-        min-height: 200px
+
+}
+
+.minimo{
+
 }
 
 .bdr
