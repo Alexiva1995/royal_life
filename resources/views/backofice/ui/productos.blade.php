@@ -7,7 +7,7 @@
 
                <div class="card zoom" style="background:#FFFFFF;">
                        <a class="text-center bdr bar  "
-                       style="background: #67FFCC;"  href="{{route('detalle.producto')}}" method="GET">
+                       style="background: #67FFCC;"  href="{{action('TiendaController@detalleproducto', ['producto' => $producto->id ])}}" method="GET">
                        @csrf
                        @if($producto->img == null)
                              <img class="mx-auto d-block"

@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\InversionController;
 use App\Http\Controllers\WalletController;
 use App\Models\Categories;
+use Facade\Ignition\Support\Packagist\Package;
 
 class TiendaController extends Controller
 {
@@ -416,8 +417,6 @@ class TiendaController extends Controller
     {
         $packages = Packages::all();
 
-
-
          return view('backofice.shop', compact('packages'));
 
     }
@@ -426,11 +425,11 @@ class TiendaController extends Controller
        return  view('backofice.checkout');
     }
 
-    public function detalleproducto(){
+     public function detalleproducto(Packages $producto){
 
         $packages = Packages::all();
 
-        return view('backofice.detalleproducto',compact('packages'));
+        return view('backofice.detalleproducto',compact('packages','producto'));
     }
 
 }
