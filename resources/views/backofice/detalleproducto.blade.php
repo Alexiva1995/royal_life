@@ -34,8 +34,14 @@
                         <div class="row align-items-center mt-2">
                             <div class="col-md-5 ">
                                 <div class="fondoProducto shadow  product-slider-single normal-slider text-center ">
-                                    <img class="o" src="{{asset('assets/img/home/producto21.png')}}" alt="Product Image">
 
+                                    @if($producto->img == null)
+                                    <img class="o"
+                                     src="{{asset('assets/img/home/producto21.png')}}"
+                                     alt="Product Image">
+                             @else
+                                   <img class=" o" src="{{ asset('storage/photo-producto/'.$producto->img) }}" alt="Product Image">
+                             @endif
                                 </div>
                                 <div class="product-slider-single-nav normal-slider">
 
@@ -43,7 +49,7 @@
                             </div>
                             <div class="col-md-7 mt-2">
                                 <div class="product-content card " style="background:#FFFFFF;  ">
-                                    <div class="title ml-3  mt-1 fuente"> <h2><strong>Crema Chocolate CBD 2ml</strong></h2></div>
+                                    <div class="title ml-3  mt-1 fuente"> <h2><strong>{{$producto->name}}</strong></h2></div>
                                     <div class="ratting">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -53,7 +59,7 @@
                                     </div>
                                     <div class="price ml-3">
                                         <h4>Price:</h4>
-                                        <p class="text-dark "> <span>$149</span></p>
+                                        <p class="text-dark "> <span>${{$producto->price}}</span></p>
                                     </div>
                                     <div class="quantity ml-3">
                                         <h4>Quantity:</h4>
@@ -86,16 +92,7 @@
                                 <div id="description " class=" card fuente "  style="background:#FFFFFF">
                                     <h4 class="mt-2"> <strong class=" ml-3 mt-3"> Product description </strong> </h4>
                                     <p class="text-dark mb-2 ml-3 mr-3 fuente">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        In condimentum quam ac mi viverra dictum. In efficitur ipsum diam,
-                                        at dignissim lorem tempor in. Vivamus tempor hendrerit finibus. Nulla
-                                        tristique viverra nisl, sit amet bibendum ante suscipit non. Praesent in
-                                        faucibus tellus, sed gravida lacus. Vivamus eu diam eros. Aliquam et sapien
-                                        eget arcu rhoncus scelerisque. Suspendisse sit amet neque neque. Praesent
-                                        suscipit et magna eu iaculis. Donec arcu libero, commodo ac est a, malesuada
-                                        finibus dolor. Aenean in ex eu velit semper fermentum. In leo dui, aliquet sit
-                                        amet eleifend sit amet, varius in turpis. Maecenas fermentum ut ligula at
-                                        consectetur. Nullam et tortor leo.
+                                       {{$producto->description}}
                                     </p>
                                 </div>
 
