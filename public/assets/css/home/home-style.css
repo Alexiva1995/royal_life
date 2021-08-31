@@ -1,5 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
 
+
+/* nuevas clases */
+.btn-primario{
+  box-shadow: 0 8px 25px -8px #66ffcc;
+  border-color: #66FFCC !important;
+  background-color: #66FFCC !important;
+  border-radius: 0.4285rem;
+  color: #303030;
+}
+.texto-simple{
+  color: #303030;
+  font-size: 15px;
+  width: 80%;
+  margin-left: 10%;
+
+}
+.texto-title{
+  color: #303030;
+  font-size: 40px;
+}
+
+/* fin de las nuevas clases */
+
 .contenedor{
     position: relative;
     display: inline-block;
@@ -245,13 +268,7 @@
   border-radius: 0.4285rem;
   transform: translate(-50%, -50%);
 }
-.texto-simple{
-  color: #303030;
-  font-size: 15px;
-  width: 80%;
-  margin-left: 10%;
 
-}
 .btn-pri{
   border-color: #66FFCC !important;
   color: black!important;
@@ -274,12 +291,6 @@
     width: 280px;
     font-size: 18px;
   }
-  .texto-simple{
-    color: #303030;
-    font-size: 18px;
-    width: 80%;
-    margin-left: 10%;
-}
 .trans-card{
   margin-top: -210px;
   width: 100%;
@@ -529,10 +540,7 @@
   border-radius: 0.4285rem;
   transform: translate(-50%, -50%);
 }
-.texto-title{
-  color: #303030;
-  font-size: 40px;
-}
+
 .text-card{
     color:#66FFCC;
     font-size: 20px;
