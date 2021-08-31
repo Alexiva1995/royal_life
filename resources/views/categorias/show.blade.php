@@ -25,13 +25,13 @@
 </div>
 
 
-<div class="container">
-    <h2 class="titulo-categoria text-uppercase mt-5 mb-4"></h2>
-    <div class="row">
+<div class="container ">
+<h2 class="titulo-categoria text-uppercase mt-5 mb-4"></h2>
+<div class="col-md-3  mb-10">
         @include('backofice.ui.cardcategorias')
         @include('backofice.ui.productos')
-    </div>
-    </div>
+</div>
+</div>
 
 
 @endsection
