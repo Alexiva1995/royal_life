@@ -350,5 +350,9 @@ box-sizing: border-box;
     top: 20%;
 }
 
+.link{
+    position: relative;
+    left: 83%;
+}
 </style>
 @endpush

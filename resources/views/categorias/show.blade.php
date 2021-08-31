@@ -32,6 +32,11 @@
         @include('backofice.ui.cardcategorias')
         @include('backofice.ui.productos')
 </div>
+<div class="container mt-5 ">
+    <div class="text-center link">
+    {{$packages->links('pagination::bootstrap-4') }}
+    </div>
+</div>
 </div>
 
 

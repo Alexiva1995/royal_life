@@ -27,12 +27,19 @@
 
         </div>
 
-<div class="container  ml-auto">
-<div class="  d-fex col-md-3" >
+<div class="container  ml-auto ">
+<div class="  d-fex col-md-3 mb-5" >
          @include('backofice.ui.cardcategorias') {{-- lista de categorias  --}}
          @include('backofice.ui.productos') {{--Modulo de categorias--}}
+
+</div>
+<div class="container mt-5 ">
+    <div class="text-center link">
+    {{$packages->links('pagination::bootstrap-4') }}
+    </div>
 </div>
 </div>
+
 
 
 
