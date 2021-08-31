@@ -21,14 +21,14 @@
                 <strong>Tienda</strong>
              </div>
              <div class="texto-tiendaB d-flex">
-                <a class="ml-1 text-white" href="{{route('inicio')}}"><strong> Inicio </strong></a><strong class="ml-1"> > </strong><p style="color: #52CCA7" class="ml-1"><strong>Tienda</strong></p>
+                <a class="ml-auto text-white" href="{{route('inicio')}}"><strong> Inicio </strong></a><strong class="ml-1"> > </strong><p style="color: #52CCA7" class="ml-1"><strong>Tienda</strong></p>
             </div>
             <img src="{{asset('assets/img/home/formas_fondo3.png')}}" alt=""  style="height: 200px;width: 100%;">
 
         </div>
 
-<div class="container  ml-5">
-<div class="ml-5  d-fex col-md-3" >
+<div class="container  ml-auto">
+<div class="  d-fex col-md-3" >
          @include('backofice.ui.cardcategorias') {{-- lista de categorias  --}}
          @include('backofice.ui.productos') {{--Modulo de categorias--}}
 </div>

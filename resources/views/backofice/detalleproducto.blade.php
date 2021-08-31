@@ -10,7 +10,7 @@
 @endpush
 
 @section('content')
-<body>
+<body class="ml-auto">
 @include('backofice.ui.estylos')
 
 <div class="img-head">
@@ -25,9 +25,10 @@
 </div>
 
     <!-- Product Detail Start -->
-    <div class="  ml-5 fuente" >
-        <div class="container-fluid">
-            <div class="row ml-4 ">
+    <div class="container  ml-auto">
+    <div class="  ml-auto fuente" >
+        <div class="container-fluid ">
+            <div class="row  ">
                 <div class="col-lg-8">
                     <div class="">
                         <div class="row align-items-center mt-2">
@@ -41,7 +42,7 @@
                                 </div>
                             </div>
                             <div class="col-md-7 mt-2">
-                                <div class="product-content card" style="background:#FFFFFF">
+                                <div class="product-content card" style="background:#FFFFFF; min-height: 200px ">
                                     <div class="title ml-3  mt-1 fuente"> <h2><strong>Crema Chocolate CBD 2ml</strong></h2></div>
                                     <div class="ratting">
                                         <i class="fa fa-star"></i>
@@ -226,6 +227,7 @@
 
 
             </div>
+    </div>
     <!-- Product Detail End -->
 
     <!-- Brand Start -->
