@@ -8,7 +8,7 @@
                                         <input class="form-check-input" type="checkbox" value="{{$categories->id}}"id="flexCheckDefault">
                                         <label class="form-check-label mb-2"for="flexCheckDefault" style="">
                                             <a class="s " href="{{ route('categorias.show', ['Categories' => $categories->id ]) }}">
-                                        <strong>  {{ ucfirst($categories->name) }}</strong>
+                                        <strong>  {{ ucfirst($categories->categories_name) }}</strong>
                                             </a>
 
                                         </label>

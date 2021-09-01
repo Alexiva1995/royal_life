@@ -15,9 +15,9 @@ class CreateCategoriesTable extends Migration
     {
         Schema::create('categories', function (Blueprint $table) {
             $table->bigIncrements('id')->unsigned();
-            $table->string('name')->unique();
+            $table->string('categories_name')->unique();
             $table->text('img')->nullable();
-            $table->text('description')->nullable();
+            $table->text('categories_description')->nullable();
             $table->enum('status', [0, 1])->default(1)->comment('0 - desactivado, 1 - activado');
             $table->timestamps();
         });

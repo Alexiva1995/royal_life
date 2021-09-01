@@ -16,6 +16,7 @@ class CreatePackagesTable extends Migration
         Schema::create('packages', function (Blueprint $table) {
             $table->bigIncrements('id')->unsigned();
             $table->string('name');
+            $table->string('categories_name');
              $table->unsignedBigInteger('categories_id');
              $table->foreign('categories_id')->references('id')->on('categories');
             $table->double('price')->default(0);

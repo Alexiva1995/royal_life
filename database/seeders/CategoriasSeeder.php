@@ -17,27 +17,27 @@ class CategoriasSeeder extends Seeder
         $arayCategorias = [
             [
                 "id"=>"1",
-                "name"=>"cremas"
+                "categories_name"=>"cremas"
             ],
             [
                 "id"=>"2",
-                "name"=>"Balsamos"
+                "categories_name"=>"Balsamos"
             ],
             [
                 "id"=>"3",
-                "name"=>"Pastillas"
+                "categories_name"=>"Pastillas"
             ],
             [
                 "id"=>"4",
-                "name"=>"Lociones"
+                "categories_name"=>"Lociones"
             ],
             [
                 "id"=>"5",
-                "name"=>"Dulces"
+                "categories_name"=>"Dulces"
             ],
             [
                 "id"=>"6",
-                "name"=>"Gotas"
+                "categories_name"=>"Gotas"
             ],
 
         ];
