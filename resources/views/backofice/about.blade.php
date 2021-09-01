@@ -42,15 +42,18 @@
     </div>
 </div>
 <div class="mt-5 p-5" style="background:#F0FFFA;">
+    <div class="container">
     <div class="text-center">
         <p class="text-ab" style="color: #173138;font-size: 16px;"><strong>Dap tincidunt amet neque facillisi</strong></p>
-        <h1 class="texto-title text-ab mb-1"><strong> ¿Porqué elergirnos? </strong></h1>
-        <p class="texto-aboutS text-ab" style="width: 80%;margin-left: 10%;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab doloribus vitae
+        <h1 class="texto-title mb-1"><strong> ¿Porqué elergirnos? </strong></h1>
+        <p class="texto-aboutS">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab doloribus vitae
             provident, cumque voluptatum nemo libero quod esse repudiandae repellat distinctio at porro nisi?
             Dignissimos corrupti in ullam inventore dolor?</p>
     </div>
 </div>
+</div>
 <div class="pb-5 pl-5 pr-5" style="background:#F0FFFA;">
+    <div class="container">
     <div class="row d-flex justify-content-center">
         <div class="card mb-1 cas-md-3 col-md-3" style="height: 400px;background: white;">
             <img class="mx-auto d-block mt-1 mb-2" src="{{asset('assets/img/home/about1.png')}}">
@@ -68,5 +71,6 @@
             <p class="pb-1 pr-2 pl-2 texto-aboutS text-center mb-1" style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit.A pellentesque viverra morbi lacus. Cursus tincidunt in dignissim.</p>
         </div>
     </div>
+</div>
 </div>
 @endsection

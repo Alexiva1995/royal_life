@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
 
 
-/* nuevas clases */
+/* nuevas clases para el home */
 .btn-primario{
   box-shadow: 0 8px 25px -8px #66ffcc;
   border-color: #66FFCC !important;
@@ -71,6 +71,30 @@
     border-radius: 0.4285rem;
     transform: translate(-50%, -50%);
   }
+/* fin de las nuevas clases */
+
+/* nuevas clases para contactanos */
+
+.texto-con {
+  position: absolute;
+    color: white;
+    top: 22%;
+    left: 22.5%;
+    text-align: center;
+    width: 60%;
+    font-size: 50px;
+    transform: translate(-50%, -50%);
+}
+
+.texto-conB {
+  position: absolute;
+    color: white;
+    top: 30%;
+    left: 16.5%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
 /* fin de las nuevas clases */
 
 .contenedor{
@@ -182,31 +206,12 @@
   font-size: 16px;
 }
 
-.texto-con {
-  position: absolute;
-    color: white;
-    top: 22%;
-    left: 22.5%;
-    text-align: center;
-    width: 60%;
-    font-size: 50px;
-    transform: translate(-50%, -50%);
-}
 
 .texto-tiendaB {
   position: absolute;
     color: white;
     top: 30%;
     left: 14.5%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-}
-
-.texto-conB {
-  position: absolute;
-    color: white;
-    top: 30%;
-    left: 16.5%;
     text-align: center;
     transform: translate(-50%, -50%);
 }
@@ -303,26 +308,9 @@
     margin-bottom: 0;
     margin-top: 0px;
   }
-  .texto-con {
-    position: absolute;
-    color: white;
-    top: 14%;
-    left: 19%;
-    text-align: center;
-    width: 60%;
-    font-size: 50px;
-    transform: translate(-50%, -50%);
-}
-
+  
 .heigth-con{height: 180px;}
-  .texto-conB {
-    position: absolute;
-    color: white;
-    top: 19%;
-    left: 14.5%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-}
+
   .texto-encima{
     position: absolute;
     top: 30%;
