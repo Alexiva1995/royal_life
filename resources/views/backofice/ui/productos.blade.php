@@ -4,7 +4,6 @@
        <div class="row col-md-6 col-xs-3 ">
            <div class="col-md-12 col-xs-3 " >
             <a class="card-body ">
-
                <div class="card zoom" style="background:#FFFFFF;">
                        <a class="text-center bdr bar  "
                        style="background: #67FFCC;"  href="{{action('TiendaController@detalleproducto', ['producto' => $producto->id ])}}" method="GET">

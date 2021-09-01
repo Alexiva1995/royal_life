@@ -415,7 +415,7 @@ class TiendaController extends Controller
 
     public function shop()
     {
-        $packages = Packages::all();
+        $packages = Packages::paginate(8);
 
          return view('backofice.shop', compact('packages'));
 
