@@ -43,7 +43,7 @@
                                     <td>{{ $item->id}}</td>
                                     <td>{{ $item->name}}</td>
                                     <td>{{ $item->price}}</td>
-                                    <td>{{ $item->categories_id}}</td>
+                                    <td>{{ $item->categories_name}}</td>
                                     <td>{{ $item->precio_rebajado}}</td>
                                 </tr>
                                 @endforeach

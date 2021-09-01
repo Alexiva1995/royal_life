@@ -86,7 +86,7 @@ class PackagesController extends Controller
         $name = $path->getClientOriginalName();
         $path->move(public_path('storage') . '/photo-producto', $name);
 
-        try {
+       // try {
             if ($validate) {
                 $paquete =  Packages::create($request->all());
                 $paquete->img = $name;
@@ -94,10 +94,10 @@ class PackagesController extends Controller
                 $route = route('products.package-list').'?category='.$request->categories_id;
                 return redirect($route)->with('msj-success', 'Nuevo producto creado');
             }
-        } catch (\Throwable $th) {
-            Log::error('Packages - store -> Error: '.$th);
-            abort(403, "Ocurrio un error, contacte con el administrador");
-        }
+    //    } catch (\Throwable $th) {
+      //      Log::error('Packages - store -> Error: '.$th);
+        //    abort(403, "Ocurrio un error, contacte con el administrador");
+        //}
 
     }
 

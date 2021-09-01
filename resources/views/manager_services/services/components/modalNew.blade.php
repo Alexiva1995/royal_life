@@ -96,7 +96,7 @@
                                     <option value="" disabled selected>Selecione una opcion</option>
                                     @foreach ( $categories as $categoria )
 
-                                    <option value="{{$categoria->id}}">{{$categoria->name}}</option>
+                                    <option value="{{$categoria->id}}">{{$categoria->categories_name}}</option>
 
                                     @endforeach
 
