@@ -19,11 +19,9 @@ class PackagesTableSeeder extends Seeder
 
             [
               "id"=>"1",
-              "categories_name" =>'cremas',
               "name"=>"Paquete A",
               "price"=>"50",
               "categories_id"=>'1',
-              "categories_name" =>'cremas',
               "description"=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur dolor velit, vitae aliquam urna posuere in. In lobortis porta ligula ultrices sagittis. Aenean fringilla ornare urna sit amet facilisis. Praesent aliquet erat urna, et varius lectus commodo sit amet. Duis quis diam egestas, fringilla neque nec, sagittis arcu. In elementum fermentum sem, quis viverra ex varius quis. Phasellus viverra lacinia dignissim. Proin mollis nulla at posuer'
             ],
             [
@@ -31,7 +29,6 @@ class PackagesTableSeeder extends Seeder
               "name"=>"Paquete B",
               "price"=>"100",
               "categories_id"=>'1',
-              "categories_name" =>'cremas',
               "description"=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur dolor velit, vitae aliquam urna posuere in. In lobortis porta ligula ultrices sagittis. Aenean fringilla ornare urna sit amet facilisis. Praesent aliquet erat urna, et varius lectus commodo sit amet. Duis quis diam egestas, fringilla neque nec, sagittis arcu. In elementum fermentum sem, quis viverra ex varius quis. Phasellus viverra lacinia dignissim. Proin mollis nulla at posuer'
 
             ],
@@ -40,7 +37,6 @@ class PackagesTableSeeder extends Seeder
               "name"=>"Paquete C",
               "price"=>"300",
               "categories_id"=>'1',
-              "categories_name" =>'cremas',
               "description"=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur dolor velit, vitae aliquam urna posuere in. In lobortis porta ligula ultrices sagittis. Aenean fringilla ornare urna sit amet facilisis. Praesent aliquet erat urna, et varius lectus commodo sit amet. Duis quis diam egestas, fringilla neque nec, sagittis arcu. In elementum fermentum sem, quis viverra ex varius quis. Phasellus viverra lacinia dignissim. Proin mollis nulla at posuer'
 
             ],
@@ -49,7 +45,6 @@ class PackagesTableSeeder extends Seeder
               "name"=>"Paquete D",
               "price"=>"500",
               "categories_id"=>'1',
-              "categories_name" =>'cremas',
               "description"=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur dolor velit, vitae aliquam urna posuere in. In lobortis porta ligula ultrices sagittis. Aenean fringilla ornare urna sit amet facilisis. Praesent aliquet erat urna, et varius lectus commodo sit amet. Duis quis diam egestas, fringilla neque nec, sagittis arcu. In elementum fermentum sem, quis viverra ex varius quis. Phasellus viverra lacinia dignissim. Proin mollis nulla at posuer'
 
             ],
@@ -58,7 +53,6 @@ class PackagesTableSeeder extends Seeder
               "name"=>"Paquete E",
               "price"=>"1000",
               "categories_id"=>'2',
-              "categories_name" =>'balsamos',
               "description"=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur dolor velit, vitae aliquam urna posuere in. In lobortis porta ligula ultrices sagittis. Aenean fringilla ornare urna sit amet facilisis. Praesent aliquet erat urna, et varius lectus commodo sit amet. Duis quis diam egestas, fringilla neque nec, sagittis arcu. In elementum fermentum sem, quis viverra ex varius quis. Phasellus viverra lacinia dignissim. Proin mollis nulla at posuer'
 
             ],
@@ -67,7 +61,6 @@ class PackagesTableSeeder extends Seeder
               "name"=>"Paquete F",
               "price"=>"2000",
               "categories_id"=>'2',
-              "categories_name" =>'balsamos',
               "description"=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur dolor velit, vitae aliquam urna posuere in. In lobortis porta ligula ultrices sagittis. Aenean fringilla ornare urna sit amet facilisis. Praesent aliquet erat urna, et varius lectus commodo sit amet. Duis quis diam egestas, fringilla neque nec, sagittis arcu. In elementum fermentum sem, quis viverra ex varius quis. Phasellus viverra lacinia dignissim. Proin mollis nulla at posuer'
 
             ],
@@ -76,7 +69,6 @@ class PackagesTableSeeder extends Seeder
               "name"=>"Paquete G",
               "price"=>"3000",
               "categories_id"=>'2',
-              "categories_name" =>'balsamos',
               "description"=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur dolor velit, vitae aliquam urna posuere in. In lobortis porta ligula ultrices sagittis. Aenean fringilla ornare urna sit amet facilisis. Praesent aliquet erat urna, et varius lectus commodo sit amet. Duis quis diam egestas, fringilla neque nec, sagittis arcu. In elementum fermentum sem, quis viverra ex varius quis. Phasellus viverra lacinia dignissim. Proin mollis nulla at posuer'
 
             ],
@@ -85,7 +77,6 @@ class PackagesTableSeeder extends Seeder
               "name"=>"Paquete H",
               "price"=>"5000",
               "categories_id"=>'2',
-              "categories_name" =>'balsamos',
               "description"=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur dolor velit, vitae aliquam urna posuere in. In lobortis porta ligula ultrices sagittis. Aenean fringilla ornare urna sit amet facilisis. Praesent aliquet erat urna, et varius lectus commodo sit amet. Duis quis diam egestas, fringilla neque nec, sagittis arcu. In elementum fermentum sem, quis viverra ex varius quis. Phasellus viverra lacinia dignissim. Proin mollis nulla at posuer'
 
             ],
@@ -94,7 +85,6 @@ class PackagesTableSeeder extends Seeder
               "name"=>"Paquete I",
               "price"=>"10000",
               "categories_id"=>'2',
-              "categories_name" =>'balsamos',
               "description"=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur dolor velit, vitae aliquam urna posuere in. In lobortis porta ligula ultrices sagittis. Aenean fringilla ornare urna sit amet facilisis. Praesent aliquet erat urna, et varius lectus commodo sit amet. Duis quis diam egestas, fringilla neque nec, sagittis arcu. In elementum fermentum sem, quis viverra ex varius quis. Phasellus viverra lacinia dignissim. Proin mollis nulla at posuer'
 
             ],

@@ -11,6 +11,7 @@ class Packages extends Model
     protected $fillable = [
         'name',
         'categories_id',
+        'categories_name',
         'precio_rebajado',
         'img',
         'price',
@@ -26,7 +27,7 @@ class Packages extends Model
      */
     public function getCategories()
     {
-        return $this->belongsTo('App\Models\Categories', 'categories_id', 'id');
+        return $this->belongsTo('App\Models\Categories', 'categories_id', 'id','name');
     }
 
     /**
