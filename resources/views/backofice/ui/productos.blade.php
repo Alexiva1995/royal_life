@@ -15,9 +15,9 @@
                       @else
                             <img class="mx-auto d-block" src="{{ asset('storage/photo-producto/'.$producto->img) }}" >
                       @endif
-                      <p class="text-right" style="color: rgb(0, 0, 0);"><a class="btn-c text-center ">{{ ucfirst($producto->categories_name)}}</a><strong class="texto mr-1 prize">${{$producto->price}}</strong></p>
+                      <p class="text-right" style="color: rgb(0, 0, 0);"><a class="btn-c text-center ">{{ ucfirst($producto->getCategories->categories_name)}}</a><strong class="texto mr-1 prize">${{$producto->price}}</strong></p>
                       <p class="text-left"  style="color: #000000;"><strong class="texto2 fuente ml-1">{{$producto->name}}</strong></p>
-                      <p class="text-left fuente ml-1 "  style="color: #303030;"> {{ Str::words( strip_tags($producto->description) , 15 )}}</p>
+                      <p class=" text-left mr-1 ml-1"  style="color: #303030;"> {{ Str::words( strip_tags($producto->description) , 15 )}}</p>
                </a>
 
 

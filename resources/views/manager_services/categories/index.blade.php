@@ -49,7 +49,7 @@
                                     <td>
                                         <img src="{{ asset('storage/photo-profile/'.$category->img) }}" alt="" height="100" width="100">
                                     </td>
-                                    <td>{{$category->name}}</td>
+                                    <td>{{$category->categories_name}}</td>
                                     <td>{!!$category->description!!}</td>
                                     <td>
                                         @if ($category->status == 1)
