@@ -56,12 +56,7 @@
                             </div> --}}
 
 
-                            <div class="col-12 col-md-6 ">
-                                <fieldset class="form-group">
-                                    <label for="">Fecha Vencimiento</label>
-                                    <input type="date" name="expired" class="form-control" required>
-                                </fieldset>
-                            </div>
+
 
                             <div class="col-12 col-md-6">
                                 <fieldset class="form-group">
