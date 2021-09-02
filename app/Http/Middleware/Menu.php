@@ -195,12 +195,12 @@ class Menu
                         'ruta' =>route('products.package-list'),
                         'complementoruta' => ''
                     ],
-                    [
+                 /*   [
                         'name' => 'Crear producto',
                         'blank'=> '', // si es para una pagina diferente del sistema solo coloquen _blank
                         'ruta' => route('products.package-index'),
                         'complementoruta' => ''
-                    ],
+                    ], */
                     [
                         'name' => 'Categorias',
                         'blank'=> '', // si es para una pagina diferente del sistema solo coloquen _blank

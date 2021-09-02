@@ -74,7 +74,7 @@ class PackagesController extends Controller
         $validate = $request->validate([
             'name' => ['required'],
             'categories_id' => ['required'],
-            'expired' => ['required', 'date'],
+         //   'expired' => ['required', 'date'],
             'price' => ['required', 'numeric'],
             'precio_rebajado'=> ['required', 'numeric'],
             'img' => ['required', 'mimes:jpeg,png']
@@ -196,7 +196,6 @@ class PackagesController extends Controller
 
     public function package()
     {
-
         $package = Packages::all();
         $categories = Categories::all();
         return view('shop.package-list', compact('package', 'categories'));
