@@ -27,7 +27,7 @@ class Packages extends Model
      */
     public function getCategories()
     {
-        return $this->belongsTo('App\Models\Categories', 'categories_id', 'id','name');
+        return $this->belongsTo('App\Models\Categories', 'categories_id', 'id','categories_name');
     }
 
     /**
