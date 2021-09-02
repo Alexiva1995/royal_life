@@ -23,7 +23,7 @@
             <img src="{{asset('assets/img/iconnew/Vector.png')}}" alt="">
             <a class="text-white ml-1" style="font-size: 18px;" href="{{route('login')}}">Ingresar</a>
             <a class="text-white pl-1 pr-1"style="font-size: 25px;" href="">|</a>
-      <img src="{{asset('assets/img/iconnew/Group.png')}}" alt="">
+            <a href="{{route('cart')}}"><img src="{{asset('assets/img/iconnew/Group.png')}}" alt=""></a>
     </div>
 
 </nav>
