@@ -426,11 +426,8 @@ class TiendaController extends Controller
     }
 
      public function detalleproducto(Packages $producto){
-
         $packages = Packages::all();
-
         $relacionados = Packages::where('categories_id', $producto->categories_id)->orderby('created_at','DESC')->take(3)->get();
-
         return view('backofice.detalleproducto',compact('packages','producto','relacionados'));
     }
 
