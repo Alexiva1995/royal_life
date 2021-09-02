@@ -3,7 +3,7 @@
 
 
 <div class="ml-1 row d-flex  mt-2">
-    <div class="card-body shadow ml-2 zoom2 mover4" style="background: white;border-radius: 10px; left: 700px; 10px;padding: 0.8rem;">
+    <div class="card-body shadow ml-2 zoom2 mover4" style="background: white;border-radius: 10px; left: 700px; 10px;padding: 0.8rem; height: 92%;">
         <div class="d-flex ">
             <a class="background "
                  href="{{action('TiendaController@detalleproducto', ['producto' => $item->id ])}}">
