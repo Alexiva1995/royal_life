@@ -23,8 +23,6 @@
                       <p class="text-left"  style="color: #000000;"><strong class="texto2 fuente ml-1 ">{{$producto->name}}</strong></p>
                       <p class=" text-left mr-1 ml-1"  style="color: #303030;"> {{ Str::words( strip_tags($producto->description) , 15 )}}</p>
                </a>
-
-
                </div>
            </div>
         </a>
