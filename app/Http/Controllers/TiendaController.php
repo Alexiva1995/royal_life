@@ -431,4 +431,11 @@ class TiendaController extends Controller
         return view('backofice.detalleproducto',compact('packages','producto','relacionados'));
     }
 
+    public function cart()
+    {
+        $categorias = Categories::get();
+
+        return view('backofice.cart',compact('categorias'));
+    }
+
 }

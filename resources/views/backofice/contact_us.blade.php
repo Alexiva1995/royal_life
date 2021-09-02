@@ -82,14 +82,22 @@ input[type=text]:hover:not([disabled]), input[type=text]:focus, input[type=email
     font-size: 15px; 
 }
 </style>
-<div class="img-head">
-    <div class="texto-con">
-        <strong>Contáctanos</strong>
+<div class="carousel-inner">
+    <img class="d-block w-100" src="{{asset('assets/img/home/formas_fondo3.png')}}" style="background: #173138;">
+    <div class="container carousel-caption d-flex justify-content-start" style="top:90px;left: 9%;">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="text-left">
+                    <h3 class="text-white" style="font-size: 50px;"><strong> Contactanos </strong></h3>
+                </div>
+                <div class="text-left d-flex ml-1">
+                    <a class="text-white" href="{{route('inicio')}}"><strong> Inicio </strong></a><strong class="ml-1">
+                        > </strong>
+                    <p style="color: #52CCA7" class="ml-1"><strong> Contacto </strong></p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="texto-conB d-flex">
-        <a class="ml-1 text-white" href="{{route('inicio')}}"><strong> Inicio </strong></a><strong class="ml-1"> > </strong><p style="color: #52CCA7" class="ml-1"><strong> Contacto </strong></p>
-    </div>
-    <img src="{{asset('assets/img/home/formas_fondo3.png')}}" alt="" style="height: 200px;width: 100%;">
 </div>
 
 <div class="pl-2 pr-4 pt-3">
