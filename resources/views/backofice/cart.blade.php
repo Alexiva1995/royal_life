@@ -14,14 +14,14 @@
                         > </strong>
                     <p style="color: #52CCA7" class="ml-1"><strong> Carrito </strong></p>
                 </div>
-            </div>
+            </div> 
         </div>
     </div>
 </div>
 
 <div class="container pt-5 pb-5">
     <div class="row d-flex">
-        <div class="card col-8" style="background: white">
+        <div class="card col-12" style="background: white">
             <div class="card" style="background: white">
             <div class="card-body">
                 <div class="d-flex">
@@ -36,7 +36,7 @@
                         <a href="" class="btn btn-cart">
                             <p style="margin-top: -9px; margin-left: -10px;">cremas</p>
                         </a>
-                        <p class="text-right" style="color: #303030;font-size: 20px;margin-bottom: 0;margin-top: -5px;">
+                        <p class="text-right" style="color: #303030;font-size: 20px;margin-bottom: 0;">
                             <strong>31$</strong></p>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                         <a href="" class="btn btn-cart">
                             <p style="margin-top: -9px; margin-left: -10px;">cremas</p>
                         </a>
-                        <p class="text-right" style="color: #303030;font-size: 20px;margin-bottom: 0;margin-top: -5px;">
+                        <p class="text-right" style="color: #303030;font-size: 20px;margin-bottom: 0;">
                             <strong>31$</strong></p>
                     </div>
                 </div>
@@ -74,7 +74,7 @@
                         <a href="" class="btn btn-cart">
                             <p style="margin-top: -9px; margin-left: -10px;">cremas</p>
                         </a>
-                        <p class="text-right" style="color: #303030;font-size: 20px;margin-bottom: 0;margin-top: -5px;">
+                        <p class="text-right" style="color: #303030;font-size: 20px;margin-bottom: 0;">
                             <strong>31$</strong></p>
                     </div>
                 </div>
@@ -92,35 +92,12 @@
                         <a href="" class="btn btn-cart">
                             <p style="margin-top: -9px; margin-left: -10px;">cremas</p>
                         </a>
-                        <p class="text-right" style="color: #303030;font-size: 20px;margin-bottom: 0;margin-top: -5px;">
+                        <p class="text-right" style="color: #303030;font-size: 20px;margin-bottom: 0;">
                             <strong>31$</strong></p>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="col-4">
-            <div class="row card ml-3" style="background:#ffffff;">
-                <div class="card-body" style="background:#ffffff;">
-                    <h6> <strong> Categorias </strong></h6>
-                    <hr class="hr">
-                    @foreach ( $categorias as $categories )
-                    <div class="">
-                        <input class="form-check-input" type="hidden" value="{{$categories->id}}"
-                            id="flexCheckDefault">
-                        <label class="form-check-label mb-2" for="flexCheckDefault" style="">
-                            <a class="s" href="#">
-                                <strong> {{ ucfirst($categories->categories_name) }}</strong>
-                            </a>
-                        </label>
-                    </div>
-                    @endforeach
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 <div class="container">
     <div class="row">
         <div class="card col-md-12" style="background: white">

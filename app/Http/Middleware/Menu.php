@@ -48,6 +48,17 @@ class Menu
             ],
             // Fin inicio
 
+            
+            // Ordenes
+            'Ordenes' => [
+                'submenu' => 0,
+                'ruta' => route('reports.pedidos'),
+                'blank'=> '', // si es para una pagina diferente del sistema solo coloquen _blank
+                'icon' => 'feather icon-file-text',
+                'complementoruta' => '',
+            ],
+            // Fin Ordenes
+
             // Tienda
             'Market' => [
                 'submenu' => 0,
@@ -148,6 +159,16 @@ class Menu
                 'complementoruta' => '',
             ],
             // Fin Soporte
+
+            // Inicio
+            'backofice' => [
+                'submenu' => 0,
+                'ruta' => route('inicio'),
+                'blank'=> '', // si es para una pagina diferente del sistema solo coloquen _blank
+                'icon' => 'feather icon-home',
+                'complementoruta' => '',
+            ],
+            // Fin inicio
         ];
 
     }

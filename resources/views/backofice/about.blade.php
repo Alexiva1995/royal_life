@@ -1,14 +1,21 @@
 @extends('backofice.layouts.dashboard')
 
 @section('content')
-<div class="img-head">
-    <div class="texto-about">
-        <strong>¿Quienes sómos?</strong>
+<div class="carousel-inner">
+    <img class="d-block w-100" src="{{asset('assets/img/home/formas_fondo3.png')}}" style="background: #173138;">
+    <div class="container carousel-caption d-flex justify-content-start" style="top:90px;left: 7%;">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-left d-flex ml-1">
+                    <p style="color: #52CCA7" class="ml-1"><strong> Semper tristique eget ornare at commodo enim </strong></p>
+                </div>
+                <div class="text-left">
+                    <h3 class="text-white" style="font-size: 50px;"><strong> ¿Quienes sómos? </strong></h3>
+                </div>
+                
+            </div>
+        </div>
     </div>
-    <div class="texto-aboutB">
-        Semper tristique erget ornare at commodo enim
-    </div>
-    <img src="{{asset('assets/img/home/formas_fondo3.png')}}" alt="" style="height: 200px;width: 100%;">
 </div>
 
 <div class="container pt-5">
