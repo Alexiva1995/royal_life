@@ -420,16 +420,21 @@ class TiendaController extends Controller
          return view('backofice.shop', compact('packages'));
 
     }
-    public function chekout(Packages $producto)
-    {
 
-       return  view('backofice.checkout', compact('producto'));
-    }
 
      public function detalleproducto(Packages $producto){
+
         $packages = Packages::all();
         $relacionados = Packages::where('categories_id', $producto->categories_id)->orderby('created_at','DESC')->take(3)->get();
         return view('backofice.detalleproducto',compact('packages','producto','relacionados'));
+    }
+
+
+
+    public function checkout(Packages $producto)
+    {
+
+       return  view('backofice.checkout', compact('producto'));
     }
 
     public function cart()
