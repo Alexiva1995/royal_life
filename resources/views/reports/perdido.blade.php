@@ -43,7 +43,7 @@
                                             data-target="#ModalDetail{{$orden->id}}"><i class="fa fa-eye"></i></a>
                                     </td>
                                 </tr>
-
+                              
                                 <!-- Modal -->
                                 <div class="modal fade" id="ModalDetail{{$orden->id}}" tabindex="-1"
                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -103,38 +103,43 @@
                                     </div>
                                 </div>
 
+                                @if (Auth::user()->admin == 1)
                                 <!-- Modal -->
-                                <div class="modal fade" id="ModalStatus{{$orden->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Cambiar estatus</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <form action="{{ route('cambiarStatus') }}" method="POST">
-                                        @csrf
-                                        <div class="modal-body">
+                            <div class="modal fade" id="ModalStatus{{$orden->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Cambiar estatus</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <form action="{{ route('cambiarStatus') }}" method="POST">
+                                    @csrf
+                                    <div class="modal-body">
 
-                                        <input type="hidden" name="id" value="{{$orden->id}}">
-                                        ¿Desea cambiar es estatus de la orden?
-                                        <br>
-                                        <label>Seleccione el estado</label>
-                                        <select name="status" required class="form-control">
-                                            <option value="">Seleccione un estado</option>
-                                            <option value="1">Aprobado</option>
-                                            <option value="2">Rechazado</option>
-                                        </select>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                                            <button type="submit" class="btn btn-primary">Guardar</button>
-                                        </div>
-                                        </form>
-                                        </div>
+                                    <input type="hidden" name="id" value="{{$orden->id}}">
+                                    ¿Desea cambiar es estatus de la orden?
+                                    <br>
+                                    <label>Seleccione el estado</label>
+                                    <select name="status" required class="form-control">
+                                        <option value="">Seleccione un estado</option>
+                                        <option value="1">Aprobado</option>
+                                        <option value="2">Rechazado</option>
+                                    </select>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                        <button type="submit" class="btn btn-primary">Guardar</button>
+                                    </div>
+                                    </form>
                                     </div>
                                 </div>
+                            </div>
+                            @else
+                                
+                            @endif
+                                
                                 @endforeach
                                
                             </tbody>

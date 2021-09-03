@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\OrdenPurchases;
 use App\Models\Wallet;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\View;
 
 class ReporteController extends Controller
@@ -18,7 +19,12 @@ class ReporteController extends Controller
      */
     public function indexPedidos()
     {
-        $ordenes = OrdenPurchases::orderBy('id', 'desc')->get();
+        if (Auth::user()->admin == 1) {
+            $ordenes = OrdenPurchases::all();
+        
+        }else{
+            $ordenes = OrdenPurchases::where('iduser', '=',Auth::id())->orderBy('status')->get();
+        }
     
         foreach ($ordenes as $orden) {
             $orden->name = $orden->getOrdenUser->fullname;
