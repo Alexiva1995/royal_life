@@ -166,7 +166,7 @@ Route::prefix('dashboard')->middleware('menu', 'auth')->group(function ()
     Route::post('/detailOrden', 'ReporteController@detailOrden')->name('orden.detail');
     Route::get('commission', 'ReporteController@indexComision')->name('reports.comision');
 });
-       
+
 
         Route::get('pagarUtilidad', 'WalletController@pagarUtilidad')->name('pagarUtilidad');
 
@@ -187,7 +187,7 @@ Route::prefix('dashboard')->middleware('menu', 'auth')->group(function ()
     Route::post('/contactar', 'HomeController@contact')->name('contact');
     Route::get('/shopBackofice', 'TiendaController@shop')->name('shop.backofice');
     Route::get('/cart', 'TiendaController@cart')->name('cart');
-    Route::get('/shopBackofice/checking', 'TiendaController@cheking')->name('cheking.backofice');
+    Route::get('/shopBackofice/checking/{producto}', 'TiendaController@chekout')->name('cheking.backofice');
 
     Route::get('/shopBackofice/detalleproducto/{producto}', 'TiendaController@detalleproducto')->name('detalle.producto');
 

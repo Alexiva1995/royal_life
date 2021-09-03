@@ -82,7 +82,7 @@
 
 
                                     <div class="action">
-                                        <a class="btn text-dark btn-custom mt-2 ml-3 mb-2 zoom5 " href="{{route('cheking.backofice')}}"><i class="fa fa-shopping-cart text-dark"></i> Comprar</a>
+                                        <a class="btn text-dark btn-custom mt-2 ml-3 mb-2 zoom5 " href="{{action('TiendaController@chekout',['producto' => $producto->id ] )}}"><i class="fa fa-shopping-cart text-dark"></i> Comprar</a>
                                     </div>
                                 </div>
                             </div>

@@ -420,9 +420,10 @@ class TiendaController extends Controller
          return view('backofice.shop', compact('packages'));
 
     }
-    public function cheking()
+    public function chekout(Packages $producto)
     {
-       return  view('backofice.checkout');
+
+       return  view('backofice.checkout', compact('producto'));
     }
 
      public function detalleproducto(Packages $producto){
