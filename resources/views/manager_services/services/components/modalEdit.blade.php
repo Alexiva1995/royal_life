@@ -10,7 +10,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form method="POST" class="form form-vertical" :action="Route">
+                <form method="POST" class="form form-vertical" :action="Route" enctype="multipart/form-data">
                     <div class="form-body">
                         @method('PUT')
                         @csrf
@@ -21,35 +21,45 @@
                                     <input type="text" name="name" class="form-control" required v-model="Service.name">
                                 </fieldset>
                             </div>
+
+                            <div class="col-12">
+                                <fieldset class="form-group" v-model="Service.img">
+                                    <label for="">Imagen</label>
+                                    <input type="file" name="img" class="form-control" required accept="image/jpeg, image/png">
+                                </fieldset>
+                            </div>
+
                             <div class="col-12">
                                 <fieldset class="form-group">
-                                    <label for="">Elige una Categoria</label>
-                                    <select name="group_id" id="" class="form-control" required v-model="Service.group_id">
-                                        <option value="" disabled selected>Elige una opcion</option>
-                                        @foreach ($categories as $category)
-                                            <option value="{{$category->id}}">{{$category->name}}</option>
-                                        @endforeach
-                                    </select>
+                                <select name="categories_id" class="form-control custom-select"  v-model="Service.categories_id">
+                                    <label for="">Categoria</label>
+                                    <option value="" disabled selected>Selecione una opcion</option>
+                                    @foreach ( $categories as $categoria )
+
+                                    <option value="{{$categoria->id}}">{{$categoria->categories_name}}</option>
+
+                                    @endforeach
+
+                                  </select>
                                 </fieldset>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <fieldset class="form-group">
-                                    <label for="">Deposito Minimo</label>
-                                    <input type="number" name="minimum_deposit" class="form-control" required v-model="Service.minimum_deposit">
-                                </fieldset>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <fieldset class="form-group">
-                                    <label for="">Fecha Vencimiento</label>
-                                    <input type="date" name="expired" class="form-control" required v-model="Service.expired">
-                                </fieldset>
-                            </div>
+                                </div>
+
+
+
                             <div class="col-12 col-md-6">
                                 <fieldset class="form-group">
                                     <label for="">Precio</label>
                                     <input type="number" name="price" class="form-control" required v-model="Service.price" step="any">
                                 </fieldset>
                             </div>
+
+                            <div class="col-12 col-md-6">
+                                <fieldset class="form-group">
+                                    <label for="">Precio Rebajado</label>
+                                    <input type="number" name="precio_rebajado" class="form-control" required v-model="Service.precio_rebajado" step="any">
+                                </fieldset>
+                            </div>
+
                             <div class="col-12 col-md-6">
                                 <fieldset class="form-group">
                                     <label for="">Estado</label>

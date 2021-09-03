@@ -113,7 +113,7 @@ class PackagesController extends Controller
             $service = Packages::find($id);
             $category = $service->categories_id;
             $service->delete();
-            $route = route('package.index').'?category='.$category;
+            $route = route('products.package-list').'?category='.$category;
             return redirect($route)->with('msj-success', 'Servicio '.$id.' Eliminado');
         } catch (\Throwable $th) {
             Log::error('Packages - destroy -> Error: '.$th);
@@ -162,24 +162,27 @@ class PackagesController extends Controller
              $validate = $request->validate([
                 'name' => ['required'],
                 'categories_id' => ['required'],
-           //     'minimum_deposit' => ['required', 'numeric'],
-                'expired' => ['required', 'date'],
                 'price' => ['required', 'numeric'],
+                'precio_rebajado'=> ['required', 'numeric'],
+                'img' => ['required', 'mimes:jpeg,png']
              ]);
+             $path = $request->file('img');
+
+             $name = $path->getClientOriginalName();
+             $path->move(public_path('storage') . '/photo-producto', $name);
 
          try {
              if ($validate) {
                  $service = Packages::find($id);
                  $service->name = $request->name;
-                dd($service->categories_id = $request->categories_id);
-
-//                 $service->minimum_deposit = $request->minimum_deposit;
-                 $service->expired = $request->expired;
+                $service->categories_id = $request->categories_id;
+                 $service->img = $name;
                  $service->price = $request->price;
+                 $service->precio_rebajado = $request->precio_rebajado;
                  $service->status = $request->status;
                  $service->description = $request->description;
                  $service->update();
-                 $route = route('package.index').'?category='.$request->group_id;
+                 $route = route('products.package-list').'?category='.$request->group_id;
                  return redirect($route)->with('msj-success', 'Servicio '.$id.' Actualizado ');
              }
          } catch (\Throwable $th) {
