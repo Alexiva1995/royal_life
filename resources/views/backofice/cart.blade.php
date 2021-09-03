@@ -14,7 +14,7 @@
                         > </strong>
                     <p style="color: #52CCA7" class="ml-1"><strong> Carrito </strong></p>
                 </div>
-            </div>
+            </div> 
         </div>
     </div>
 </div>
@@ -36,7 +36,7 @@
                         <a href="" class="btn btn-cart">
                             <p style="margin-top: -9px; margin-left: -10px;">cremas</p>
                         </a>
-                        <p class="text-right" style="color: #303030;font-size: 20px;margin-bottom: 0;margin-top: -5px;">
+                        <p class="text-right" style="color: #303030;font-size: 20px;margin-bottom: 0;">
                             <strong>31$</strong></p>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                         <a href="" class="btn btn-cart">
                             <p style="margin-top: -9px; margin-left: -10px;">cremas</p>
                         </a>
-                        <p class="text-right" style="color: #303030;font-size: 20px;margin-bottom: 0;margin-top: -5px;">
+                        <p class="text-right" style="color: #303030;font-size: 20px;margin-bottom: 0;">
                             <strong>31$</strong></p>
                     </div>
                 </div>
@@ -74,7 +74,7 @@
                         <a href="" class="btn btn-cart">
                             <p style="margin-top: -9px; margin-left: -10px;">cremas</p>
                         </a>
-                        <p class="text-right" style="color: #303030;font-size: 20px;margin-bottom: 0;margin-top: -5px;">
+                        <p class="text-right" style="color: #303030;font-size: 20px;margin-bottom: 0;">
                             <strong>31$</strong></p>
                     </div>
                 </div>
@@ -92,7 +92,7 @@
                         <a href="" class="btn btn-cart">
                             <p style="margin-top: -9px; margin-left: -10px;">cremas</p>
                         </a>
-                        <p class="text-right" style="color: #303030;font-size: 20px;margin-bottom: 0;margin-top: -5px;">
+                        <p class="text-right" style="color: #303030;font-size: 20px;margin-bottom: 0;">
                             <strong>31$</strong></p>
                     </div>
                 </div>
