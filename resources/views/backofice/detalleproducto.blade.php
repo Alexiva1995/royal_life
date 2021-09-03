@@ -13,15 +13,22 @@
 <body class="ml-auto">
 @include('backofice.ui.estylos')
 
-<div class="img-head">
-    <div class="texto-tienda">
-        <strong>Tienda</strong>
-     </div>
-     <div class="texto-tiendaB d-flex">
-        <a class="ml-1 text-white" href="{{route('shop.backofice')}}"><strong> Tienda </strong></a><strong class="ml-1"> > </strong><p style="color: #52CCA7" class="ml-1"><strong>Producto</strong></p>
+<div class="carousel-inner">
+    <img class="d-block w-100" src="{{asset('assets/img/home/formas_fondo3.png')}}" style="background: #173138;">
+    <div class="container carousel-caption d-flex justify-content-start" style="top:90px;left: 9%;">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="text-left">
+                    <h3 class="text-white" style="font-size: 50px;"><strong> Producto </strong></h3>
+                </div>
+                <div class="text-left d-flex ml-1">
+                    <a class="text-white" href="{{route('inicio')}}"><strong> Inicio </strong></a><strong class="ml-1">
+                        > </strong>
+                    <p style="color: #52CCA7" class="ml-1"><strong> Producto </strong></p>
+                </div>
+            </div>
+        </div>
     </div>
-    <img src="{{asset('assets/img/home/formas_fondo3.png')}}" alt=""  style="height: 200px;width: 100%;">
-
 </div>
 
     <!-- Product Detail Start -->
@@ -40,7 +47,10 @@
                                      src="{{asset('assets/img/home/producto21.png')}}"
                                      alt="Product Image">
                              @else
-                                   <img class=" o" src="{{ asset('storage/photo-producto/'.$producto->img) }}" alt="Product Image">
+                                   <img class=" o"
+                                        src="{{ asset('storage/photo-producto/'.$producto->img) }}"
+                                        alt="Product Image"
+                                        style="top: 15%;">
                              @endif
                                 </div>
                                 <div class="product-slider-single-nav normal-slider">

@@ -354,5 +354,44 @@ box-sizing: border-box;
     position: relative;
     left: 83%;
 }
+
+.btn-cr {
+    border-color: #F2F1F3 !important;
+color: black!important;
+box-shadow: 0 8px 25px -8px #f2f1f3;
+position: absolute;
+top: 130px;
+left: 27%;
+width: 25%;
+height: 23px;
+background-color: #F2F1F3;
+border-radius: 0.4285rem;
+transform: translate(-50%, -50%);
+  }
+
+  .btn-cu{
+
+border-color: #F2F1F3 !important;
+color: black!important;
+box-shadow: 0 8px 25px -8px #f2f1f3;
+position: absolute;
+top: 130px;
+left: 33%;
+width: 55%;
+height: 23px;
+background-color: #F2F1F3;
+border-radius: 0.4285rem;
+transform: translate(-50%, -50%);
+}
+.prize2{
+    position: relative;
+
+}
+.texto3{
+    font-size: 20px;
+    position: relative;
+    top: -5px;
+    left: 50%;
+}
 </style>
 @endpush
