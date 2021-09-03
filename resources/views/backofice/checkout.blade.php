@@ -72,7 +72,7 @@
         <strong>Checkout</strong>
      </div>
      <div class="texto-tiendaB d-flex">
-        <a class="ml-1 text-white" href="{{route('detalle.producto')}}"><strong> Producto </strong></a><strong class="ml-1"> > </strong><p style="color: #52CCA7" class="ml-1"><strong>Checkout</strong></p>
+        <a class="ml-1 text-white" href="{{route('detalle.producto',['producto' => $producto->id ])}}"><strong> Producto </strong></a><strong class="ml-1"> > </strong><p style="color: #52CCA7" class="ml-1"><strong>Checkout</strong></p>
     </div>
     <img src="{{asset('assets/img/home/formas_fondo3.png')}}" alt=""  style="height: 200px;width: 100%;">
 
@@ -90,7 +90,7 @@
 <br>
          <div class="row ">
                   <div class="col-md-6 col-sm-6 col-xs-3 form-group">
-                      <span class="help-block text-muted text textcustom  control-span">Nombres  <sup class="requerido">*</sup>
+                      <span class="help-block text-muted text textcustom  control-span">Nombres<sup class="requerido">*</sup>
                       </span>
                       <input type="text" class="form-control custominput text-dark mt-1" style="background:  #F6F6F7;" />
                   </div>
@@ -175,17 +175,17 @@
         <tr>
         </tr>
         <tr>
-          <td><h6>Crema chocolate </h6></td>
+          <td><h6>{{$producto->name}}</h6></td>
           <td></td>
           <td></td>
-          <td class="text-right">$31</td>
+          <td class="text-right">${{$producto->price}}</td>
         </tr>
       </tbody>
         <tr>
           <th><strong class="tamañofuente"> Subtotal </strong></th>
           <th></th>
           <th></th>
-          <th class="text-right"> <strong class="tamañofuente">$31</strong></th>
+          <th class="text-right"> <strong class="tamañofuente">${{$producto->price}}</strong></th>
         </tr>
         <tfoot>
         <tr>
@@ -193,7 +193,7 @@
           <th class="text-left"><h6><strong>Total </strong></h6></th>
           <th></th>
           <th></th>
-          <th class="text-right "><h6><strong>$31<strong></h6></th>
+          <th class="text-right "><h6><strong>${{$producto->price}}<strong></h6></th>
         </tr>
       </tfoot>
 

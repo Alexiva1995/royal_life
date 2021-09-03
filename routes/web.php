@@ -187,7 +187,8 @@ Route::prefix('dashboard')->middleware('menu', 'auth')->group(function ()
     Route::post('/contactar', 'HomeController@contact')->name('contact');
     Route::get('/shopBackofice', 'TiendaController@shop')->name('shop.backofice');
     Route::get('/cart', 'TiendaController@cart')->name('cart');
-    Route::get('/shopBackofice/checking/{producto}', 'TiendaController@chekout')->name('cheking.backofice');
+
+    Route::get('/shopBackofice/checkout/{producto}', 'TiendaController@checkout')->name('checkout.backofice');
 
     Route::get('/shopBackofice/detalleproducto/{producto}', 'TiendaController@detalleproducto')->name('detalle.producto');
 

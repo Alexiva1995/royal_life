@@ -79,10 +79,11 @@
                                             <button class="Rangoprecio mr-3 shadow zoom4"><i class="fa fa-plus"></i></button>
                                         </div>
                                     </div>
-
-
                                     <div class="action">
-                                        <a class="btn text-dark btn-custom mt-2 ml-3 mb-2 zoom5 " href="{{action('TiendaController@chekout',['producto' => $producto->id ] )}}"><i class="fa fa-shopping-cart text-dark"></i> Comprar</a>
+                                        <a class="btn text-dark btn-custom mt-2 ml-3 mb-2 zoom5 "
+                                        href="{{action('TiendaController@checkout', ['producto' => $producto->id ])}}" method="GET">
+                                        @csrf
+                                        <i class="fa fa-shopping-cart text-dark"></i> Comprar</a>
                                     </div>
                                 </div>
                             </div>
