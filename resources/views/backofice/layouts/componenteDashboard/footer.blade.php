@@ -39,6 +39,10 @@
                     <h3 class="white">Nosotros</h3>
                     <ul>
                         <li><a href="{{route('about')}}">¿Quienes Sómos?</a></li>
+                        <br>
+                        <li><a href="{{route('terms')}}">Terminos y Condiciones</a></li>
+                        <br>
+                        <li><a href="{{route('policity')}}">Politicas y privacidad</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-4 col-md-3 item">

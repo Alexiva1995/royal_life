@@ -60,7 +60,7 @@ class HomeController extends Controller
     {
         try {
             $data = $this->dataDashboard(Auth::id());
-            
+
             return view('dashboard.index', compact('data'));
         } catch (\Throwable $th) {
             Log::error('Home - index -> Error: '.$th);
@@ -96,7 +96,7 @@ class HomeController extends Controller
             'tickets' => 0,
             'ordenes' => 0,
             'usuario' => Auth::user()->fullname,
-            'rangos' => $this->getDataRangos() 
+            'rangos' => $this->getDataRangos()
         ];
 
         return $data;
@@ -166,7 +166,7 @@ class HomeController extends Controller
                 'saldo' => [],
                 'ordenes' => []
             ];
-            
+
             return json_encode($data);
         } catch (\Throwable $th) {
             Log::error('Home - getDataGraphic -> Error: '.$th);
@@ -192,7 +192,7 @@ class HomeController extends Controller
 
         $ordenes = OrdenPurchases::where('iduser', Auth::id())->where('status', '1')
                     ->select(
-                        
+
                         DB::raw('date_format(created_at,"%m/%Y") as created'),
                         DB::raw('SUM(monto) as montos'),
                     )
@@ -201,13 +201,13 @@ class HomeController extends Controller
                     ->get()
                     ->toArray();
         $valores = [];
-      
+
         for ( $date = $fecha_ini->copy(); $date->lt( $fecha_fin) ; $date->addMonth(1) ) {
 
             $valores[$date->format('m/Y')] = 0;
-     
+
         }
-        
+
         foreach($ordenes as $key => $orden){
             $valores[$orden['created']] = $orden['montos'];
         }
@@ -216,7 +216,7 @@ class HomeController extends Controller
         foreach($valores as $valor){
             $data[] = floatVal($valor);
         }
-     
+
         return response()->json(['valores' => $data]);
     }
 
@@ -231,9 +231,16 @@ class HomeController extends Controller
     }
 
     public function contact_us(){
-       
+
         return view('backofice.contact_us');
     }
+
+    public function terms(){
+        return view('backofice.terms');
+   }
+   public function policity(){
+    return view('backofice.politicas');
+}
 
     public function contact(){
       $message = request()->validate([
@@ -246,7 +253,7 @@ class HomeController extends Controller
         ]);
         if($message){
         Mail::to(env('MAIL_FROM_ADDRESS'),env('MAIL_FROM_NAME'))->send(new contactEmail($message));
-    
+
         return back()->with('msj-success','Mensaje enviado');
     }else{
         return back()->with('msj-danger','No se pudo enviar este mensaje');
