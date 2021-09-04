@@ -192,6 +192,9 @@ Route::prefix('dashboard')->middleware('menu', 'auth')->group(function ()
 
     Route::get('/shopBackofice/detalleproducto/{producto}', 'TiendaController@detalleproducto')->name('detalle.producto');
 
+    Route::get('Terms', 'HomeController@terms')->name('terms');
+    Route::get('policity', 'HomeController@policity')->name('policity');
+
     });
     Route::get('/categoria/{Categories}', 'CategoriasController@show')->name('categorias.show');
 });
