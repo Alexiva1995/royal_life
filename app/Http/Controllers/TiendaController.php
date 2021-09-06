@@ -445,7 +445,7 @@ class TiendaController extends Controller
     }
 
     public function orden(){
-
+        return view('backofice.home');
     }
 
 }
