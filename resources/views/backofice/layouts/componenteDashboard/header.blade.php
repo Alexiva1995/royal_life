@@ -102,7 +102,7 @@
                     </li>
                 </ul>
                 @endif
-              <a class="text-white"style="font-size: 25px;" href="">|</a>
+              <a class="text-white pl-1 pr-1"style="font-size: 25px;" href="">|</a>
             <a href="{{route('cart')}}"><img src="{{asset('assets/img/iconnew/Group.png')}}" alt=""></a>
     </div>
 

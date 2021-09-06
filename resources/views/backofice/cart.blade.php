@@ -85,7 +85,7 @@
                         <img class="mx-auto d-block" src="{{asset('assets/img/home/producto24.png')}}"
                             style="height: 125px;">
                     </div>
-                    <div class="col-md-11">
+                    <div class="col-md-11"> 
                         <h5><strong>Pomada CBD</strong></h5>
                         <p class="card-text" style="color: #303030;font-size: 13px;">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pellentesque auctor.</p>
