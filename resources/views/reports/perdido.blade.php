@@ -10,14 +10,14 @@
                       <h1 class="text-white">Lista de Ordenes</h1>
                         <table class="table nowrap scroll-horizontal-vertical myTable table-striped">
                             <thead class="">
-                                <tr class="text-center text-white bg-purple-alt2">                                
+                                <tr class="text-center text-white bg-purple-alt2">
                                     <th>ID</th>
                                     <th>Usuario</th>
-                                    <th>Paquete</th>
+                                    <th>Producto</th>
                                     <th>Fecha de Creación</th>
                                     <th>Monto</th>
-                                    <th>Estado</th>  
-                                    <th>Accion</th>      
+                                    <th>Estado</th>
+                                    <th>Accion</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -43,7 +43,7 @@
                                             data-target="#ModalDetail{{$orden->id}}"><i class="fa fa-eye"></i></a>
                                     </td>
                                 </tr>
-                              
+
                                 <!-- Modal -->
                                 <div class="modal fade" id="ModalDetail{{$orden->id}}" tabindex="-1"
                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -66,25 +66,25 @@
                                                     <br>
                                                     <p>Usuario</p>
                                                     <input id="monto_bruto" name="monto_bruto" type="text"
-                                                        class="inputransparente text-white form-control" 
+                                                        class="inputransparente text-white form-control"
                                                         value="{{$orden->name}}" disabled>
                                                     <input type="hidden"  name="total" value="">
                                                     <br>
                                                     <p>Paquete</p>
                                                     <input id="monto_bruto" name="monto_bruto" type="text"
-                                                        class="inputransparente text-white form-control" 
+                                                        class="inputransparente text-white form-control"
                                                         value="{{$orden->monto}}" disabled>
                                                     <input type="hidden"  name="total" value="">
                                                     <br>
                                                     <p>Fecha de Creacion</p>
                                                     <input id="monto_bruto" name="monto_bruto" type="text"
-                                                        class="inputransparente text-white form-control" 
+                                                        class="inputransparente text-white form-control"
                                                         value="{{date('Y-m-d', strtotime($orden->created_at))}}" disabled>
                                                     <input type="hidden"  name="total" value="">
                                                     <br>
                                                     <p>Monto</p>
                                                     <input id="monto_bruto" name="monto_bruto" type="text"
-                                                        class="inputransparente text-white form-control" 
+                                                        class="inputransparente text-white form-control"
                                                         value="{{$orden->total}}" disabled>
                                                     <input type="hidden"  name="total" value="">
                                                     <br>
@@ -96,7 +96,7 @@
                                                     @elseif($orden->status >= '2')
                                                     <a class=" btn btn-danger text-white text-bold-600 d-flex justify-content-center">Cancelado</a>
                                                     @endif
-                                                    <br>                        
+                                                    <br>
                                                 </div>
                                             </form>
                                         </div>
@@ -137,11 +137,11 @@
                                 </div>
                             </div>
                             @else
-                                
+
                             @endif
-                                
+
                                 @endforeach
-                               
+
                             </tbody>
                         </table>
                     </div>
