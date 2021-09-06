@@ -444,4 +444,8 @@ class TiendaController extends Controller
         return view('backofice.cart',compact('categorias'));
     }
 
+    public function orden(){
+
+    }
+
 }

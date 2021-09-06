@@ -155,7 +155,7 @@
          </div>
     </div>
 </div>
-    </form>
+
 
 
 
@@ -201,7 +201,7 @@
             <input
                 type="hidden"
                 name="idproduct"
-                value="{{}}">
+                value="">
 
             <button
                 class="btn btn-custom text-dark "
@@ -214,7 +214,7 @@
 
 
 
-
+</form>
 
 
 @endsection
