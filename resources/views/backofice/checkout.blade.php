@@ -172,7 +172,7 @@
           <th class="text-right "><strong class="tamañofuente">Subtotal</strong></th>
         </tr>
       <tbody>
-        <tr>
+        <tr> 
         </tr>
         <tr>
           <td><h6>{{$producto->name}}</h6></td>
