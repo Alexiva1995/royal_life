@@ -14,90 +14,136 @@
                         > </strong>
                     <p style="color: #52CCA7" class="ml-1"><strong> Carrito </strong></p>
                 </div>
-            </div> 
+            </div>
         </div>
     </div>
-</div> 
+</div>
 
 <div class="container pt-5 pb-5">
     <div class="row d-flex">
         <div class="card col-12" style="background: white">
-            <div class="card" style="background: white">
-            <div class="card-body">
-                <div class="d-flex">
-                    <div style="background:#66FFCC;border-radius: 10px;width: 100px;">
-                        <img class="mx-auto d-block" src="{{asset('assets/img/home/producto24.png')}}"
-                            style="height: 125px;">
-                    </div>
-                    <div class="col-md-11">
-                        <h5><strong>Pomada CBD</strong></h5>
-                        <p class="card-text" style="color: #303030;font-size: 13px;">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pellentesque auctor.</p>
-                        <a href="" class="btn btn-cart">
-                            <p style="margin-top: -9px; margin-left: -10px;">cremas</p>
-                        </a>
-                        <p class="text-right" style="color: #303030;font-size: 20px;margin-bottom: 0;">
-                            <strong>31$</strong></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <div class="table-responsive mt-2">
+                <table class="table nowrap scroll-horizontal-vertical myTable table-striped">
+                    <thead class="">
+                        <tr class="text-center text-white bg-purple-alt2">
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Categoria</th>
+                            <th>Cantidad</th>
+                            <th>Precio Unitario</th>
+                            <th>Precio Total</th>
+                        </tr>
+                    <tbody>
+                        <tr class="text-center text-dark">
+                            <td><img src="{{asset('assets/img/home/producto21.png')}}" alt="Product Image"
+                                    style=" width: 100px; height: 100px;"></td>
+                            <td>Pomada CBD</td>
+                            <td>Cremas</td>
+                            <td>
+                                <div class="sumador">
+                                    <button class="Rangoprecio shadow zoom4"><i class="fa fa-minus"></i></button>
+                                    <input class="sinborde shadow text-center" type="" value="1">
+                                    <button class="Rangoprecio mr-3 shadow zoom4"><i class="fa fa-plus"></i></button>
+                                    <button class="Rangoprecio mr-3 shadow zoom4"
+                                        style="position: relative;left: -42px;"><i class="fa fa-trash"></i></button>
+                                </div>
+                            </td>
+                            <td>$31</td>
+                            <td>31$</td>
+                        </tr>
 
-            <div class="card-body">
-                <div class="d-flex">
-                    <div style="background:#66FFCC;border-radius: 10px;width: 100px;">
-                        <img class="mx-auto d-block" src="{{asset('assets/img/home/producto24.png')}}"
-                            style="height: 125px;">
-                    </div>
-                    <div class="col-md-11">
-                        <h5><strong>Pomada CBD</strong></h5>
-                        <p class="card-text" style="color: #303030;font-size: 13px;">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pellentesque auctor.</p>
-                        <a href="" class="btn btn-cart">
-                            <p style="margin-top: -9px; margin-left: -10px;">cremas</p>
-                        </a>
-                        <p class="text-right" style="color: #303030;font-size: 20px;margin-bottom: 0;">
-                            <strong>31$</strong></p>
-                    </div>
-                </div>
-            </div>
-            <div class="card-body">
-                <div class="d-flex">
-                    <div style="background:#66FFCC;border-radius: 10px;width: 100px;">
-                        <img class="mx-auto d-block" src="{{asset('assets/img/home/producto24.png')}}"
-                            style="height: 125px;">
-                    </div>
-                    <div class="col-md-11">
-                        <h5><strong>Pomada CBD</strong></h5>
-                        <p class="card-text" style="color: #303030;font-size: 13px;">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pellentesque auctor.</p>
-                        <a href="" class="btn btn-cart">
-                            <p style="margin-top: -9px; margin-left: -10px;">cremas</p>
-                        </a>
-                        <p class="text-right" style="color: #303030;font-size: 20px;margin-bottom: 0;">
-                            <strong>31$</strong></p>
-                    </div>
-                </div>
-            </div>
-            <div class="card-body">
-                <div class="d-flex">
-                    <div style="background:#66FFCC;border-radius: 10px;width: 100px;">
-                        <img class="mx-auto d-block" src="{{asset('assets/img/home/producto24.png')}}"
-                            style="height: 125px;">
-                    </div>
-                    <div class="col-md-11"> 
-                        <h5><strong>Pomada CBD</strong></h5>
-                        <p class="card-text" style="color: #303030;font-size: 13px;">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pellentesque auctor.</p>
-                        <a href="" class="btn btn-cart">
-                            <p style="margin-top: -9px; margin-left: -10px;">cremas</p>
-                        </a>
-                        <p class="text-right" style="color: #303030;font-size: 20px;margin-bottom: 0;">
-                            <strong>31$</strong></p>
+                        <tr class="text-center text-dark">
+                            <td><img src="{{asset('assets/img/home/producto21.png')}}" alt="Product Image"
+                                    style=" width: 100px; height: 100px;"></td>
+                            <td>Pomada CBD</td>
+                            <td>Cremas</td>
+                            <td>
+                                <div class="sumador">
+                                    <button class="Rangoprecio shadow zoom4"><i class="fa fa-minus"></i></button>
+                                    <input class="sinborde shadow text-center" type="" value="1">
+                                    <button class="Rangoprecio mr-3 shadow zoom4"><i class="fa fa-plus"></i></button>
+                                    <button class="Rangoprecio mr-3 shadow zoom4"
+                                        style="position: relative;left: -42px;"><i class="fa fa-trash"></i></button>
+                                </div>
+                            </td>
+                            <td>$31</td>
+                            <td>31$</td>
+                        </tr>
+
+                        <tr class="text-center text-dark">
+                            <td><img src="{{asset('assets/img/home/producto21.png')}}" alt="Product Image"
+                                    style=" width: 100px; height: 100px;"></td>
+                            <td>Pomada CBD</td>
+                            <td>Cremas</td>
+                            <td>
+                                <div class="sumador">
+                                    <button class="Rangoprecio shadow zoom4"><i class="fa fa-minus"></i></button>
+                                    <input class="sinborde shadow text-center" type="" value="1">
+                                    <button class="Rangoprecio mr-3 shadow zoom4"><i class="fa fa-plus"></i></button>
+                                    <button class="Rangoprecio mr-3 shadow zoom4"
+                                        style="position: relative;left: -42px;"><i class="fa fa-trash"></i></button>
+                                </div>
+                            </td>
+                            <td>$31</td>
+                            <td>31$</td>
+                        </tr>
+
+                        <tr class="text-center text-dark">
+                            <td><img src="{{asset('assets/img/home/producto21.png')}}" alt="Product Image"
+                                    style=" width: 100px; height: 100px;"></td>
+                            <td>Pomada CBD</td>
+                            <td>Cremas</td>
+                            <td>
+                                <div class="sumador">
+                                    <button class="Rangoprecio shadow zoom4"><i class="fa fa-minus"></i></button>
+                                    <input class="sinborde shadow text-center" type="" value="1">
+                                    <button class="Rangoprecio mr-3 shadow zoom4"><i class="fa fa-plus"></i></button>
+                                    <button class="Rangoprecio mr-3 shadow zoom4"
+                                        style="position: relative;left: -42px;"><i class="fa fa-trash"></i></button>
+                                </div>
+                            </td>
+                            <td>$31</td>
+                            <td>31$</td>
+                        </tr>
+
+                        <tr class="text-center text-dark">
+                            <td><img src="{{asset('assets/img/home/producto21.png')}}" alt="Product Image"
+                                    style=" width: 100px; height: 100px;"></td>
+                            <td>Pomada CBD</td>
+                            <td>Cremas</td>
+                            <td>
+                                <div class="sumador">
+                                    <button class="Rangoprecio shadow zoom4"><i class="fa fa-minus"></i></button>
+                                    <input class="sinborde shadow text-center" type="" value="1">
+                                    <button class="Rangoprecio mr-3 shadow zoom4"><i class="fa fa-plus"></i></button>
+                                    <button class="Rangoprecio mr-3 shadow zoom4"
+                                        style="position: relative;left: -42px;"><i class="fa fa-trash"></i></button>
+                                </div>
+                            </td>
+                            <td>$31</td>
+                            <td>31$</td>
+                        </tr>
+                    </tbody>
+                    </thead>
+                </table>
+                <div class="container mb-1">
+                    <div class="row d-flex">
+                         <div class="col-3 d-flex justify-content-start">
+                            <a href="{{route('shop.backofice')}}" class="btn btn-custom text-dark " type="submit" style="background: #67FFCC"><strong
+                                    style="color:#173138">continuar comprado</strong></a>
+                        </div>
+                        <div class="col-9 d-flex justify-content-end">
+                            <button class="btn btn-custom text-dark " type="submit" style="background: #67FFCC"><strong
+                                    style="color:#173138">Pagar</strong></button>
+                        </div>
+                       
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
 <div class="container">
     <div class="row">
         <div class="card col-md-12" style="background: white">
