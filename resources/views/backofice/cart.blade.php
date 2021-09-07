@@ -32,17 +32,28 @@
                             <th>Cantidad</th>
                             <th>Precio Unitario</th>
                             <th>Precio Total</th>
+                            <th>Eliminar</th>
                         </tr>
                     <tbody>
                         @foreach ($products as $item)
                         <tr class="text-center text-dark">
-                            <td><img src="{{asset('assets/img/home/producto21.png')}}" alt="Product Image"
-                                    style=" width: 100px; height: 100px;"></td>
+                            <td>
+                            @if($item->img == null)
+                                    <img src="{{asset('assets/img/home/producto21.png')}}" alt="Product Image"
+                                        style=" width: 100px; height: 100px;">
+                             @else
+                                   <img class=" o"
+                                        src="{{ asset('storage/photo-producto/'.$item->getPackage->img) }}"
+                                        alt="Product Image"
+                                        style="top: 15%;">
+                             @endif
+                            </td>
                             <td>{{$item->getPackage->name}}</td>
                             <td>{{$item->getCategories->categories_name}}</td>
                             <td>{{$item->cantidad}}</td>
                             <td>${{$item->monto}}</td>
                             <td>${{($item->cantidad * $item->monto)}}</td>
+                            <td></td>
                         </tr>    
                         @endforeach                        
                     </tbody>
