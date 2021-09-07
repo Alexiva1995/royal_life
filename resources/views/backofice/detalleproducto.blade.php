@@ -54,10 +54,10 @@
                                      src="{{asset('assets/img/home/producto21.png')}}"
                                      alt="Product Image">
                              @else
-                                   <img class=" o"
+                                   <img class=" o text-center w-75"
                                         src="{{ asset('storage/photo-producto/'.$producto->img) }}"
                                         alt="Product Image"
-                                        style="top: 15%;">
+                                        style="top: 23%; ">
                              @endif
                                 </div>
                                 <div class="product-slider-single-nav normal-slider">
