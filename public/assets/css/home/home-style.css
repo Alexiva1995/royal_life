@@ -109,6 +109,48 @@
   border-radius: 0.4285rem;
   transform: translate(-50%, -50%);
 }
+.Rangoprecio{
+  height:30px;
+ width:30px;
+ background: #67FFCC;
+ -moz-border-radius:50px;
+ -webkit-border-radius:50px;
+ border-radius:50px;
+ border: 0;
+ outline: none;
+
+}
+.zoom4:hover {
+
+  -webkit-transform:scale(1.05);
+  -moz-transform:scale(1.05);
+  -ms-transform:scale(1.05);
+  -o-transform:scale(1.05);
+  transform:scale(1.05);
+
+  -webkit-transition:all 0.3s ease;
+  -moz-transition:all 0.3s ease;
+  -o-transition:all 0.3s ease;
+  -ms-transition:all 0.3s ease;
+  width:9.2%;
+
+  border-color: #66FFCC !important;
+  color: black!important;
+  box-shadow: 0 8px 25px -8px #66ffcc;
+  background-color: #66FFCC;
+}
+.sinborde {
+  border: 0;
+  background-color: #eee;
+  outline: none;
+  height:30px;
+  width:60px;
+  border-radius:25px;
+}
+.sumador{
+  position: relative;
+  left: 62px;
+}
 .btn-rel {
   border-color: #F2F1F3 !important;
   color: #616061!important;
