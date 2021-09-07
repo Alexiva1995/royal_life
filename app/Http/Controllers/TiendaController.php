@@ -446,10 +446,10 @@ class TiendaController extends Controller
     public function cart()
     {
         if (Auth::user()->admin == 1) {
-            $products = Cart::all();
+            $products = Cart::paginate(10);
         
         }else{
-            $products = OrdenPurchases::where('iduser', '=',Auth::id())->orderBy('status')->get();
+            $products = cart::where('iduser', '=',Auth::id())->paginate(10);
         }
         return view('backofice.cart',compact('products'));
     }
@@ -487,7 +487,7 @@ class TiendaController extends Controller
         $cart->package_id=$request->package_id;
         $cart->cantidad=$request->cantidad;
         $cart->monto=$request->monto;
-        dd($cart);
+        // dd($cart);
         $cart->save();
 
         return redirect()->route('cart')->with('msj-success', 'Orden actualizada exitosamente');

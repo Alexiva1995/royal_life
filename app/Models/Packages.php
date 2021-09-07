@@ -39,7 +39,10 @@ class Packages extends Model
     {
         return $this->hasMany('App\Models\OrdenPurchases', 'package_id');
     }
-
+    public function getCart()
+    {
+        return $this->hasMany('App\Models\Cart', 'package_id');
+    }
     public function img()
     {
         $imagen = '';
