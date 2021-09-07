@@ -41,8 +41,14 @@
                     <div class="">
                         <div class="row align-items-center mt-2">
                             <div class="col-md-5 ">
+                             <form action="{{route('cart.post')}}" method="POST">
+                                @csrf
                                 <div class="fondoProducto shadow  product-slider-single normal-slider text-center ">
-
+                                    <input type="hidden" name="package_id" value="{{$producto->id}}">
+                                    <input type="hidden" name="categories_id" value="{{$producto->categories_id}}">
+                                    <input type="hidden" name="monto" value="{{$producto->price}}">
+                                    
+                                    
                                     @if($producto->img == null)
                                     <img class="o"
                                      src="{{asset('assets/img/home/producto21.png')}}"
@@ -75,20 +81,19 @@
                                     <div class="quantity ml-3">
                                         <h4>Quantity:</h4>
                                         <div class="sumador ml-2">
-                                            <button class="Rangoprecio shadow zoom4 custominput " value="{{$sumar}}"><i class="fa fa-minus"></i></button>
-                                            <input class="sinborde shadow  text-center text-dark" type="" value="{{$valor}}">
+                                            <button class="Rangoprecio shadow zoom4 custominput " value=""><i class="fa fa-minus"></i></button>
+                                            <input class="sinborde shadow  text-center text-dark" type="" name="cantidad" value="1">
                                             <button class="Rangoprecio mr-3 shadow zoom4 custominput"><i class="fa fa-plus"></i></button>
                                         </div>
                                     </div>
                                     <div class="action">
-                                        <a class="btn text-dark btn-custom mt-2 ml-3 mb-2 zoom5 "
-                                        href="{{action('TiendaController@checkout', ['producto' => $producto->id ])}}" method="GET">
-                                        @csrf
-                                        <i class="fa fa-shopping-cart text-dark"></i> Comprar</a>
+                                        <button class="btn text-dark btn-custom mt-2 ml-3 mb-2 zoom5" type="submit">
+                                        <i class="fa fa-shopping-cart text-dark"></i> Comprar</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </form>
                     </div>
 
                     <div class="row product-detail-bottom">

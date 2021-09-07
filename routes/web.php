@@ -187,6 +187,7 @@ Route::prefix('dashboard')->middleware('menu', 'auth')->group(function ()
     Route::post('/contactar', 'HomeController@contact')->name('contact');
     Route::get('/shopBackofice', 'TiendaController@shop')->name('shop.backofice');
     Route::get('/cart', 'TiendaController@cart')->name('cart');
+    Route::post('/cart-post', 'TiendaController@cart_save')->name('cart.post');
 
     Route::get('/shopBackofice/checkout/{producto}', 'TiendaController@checkout')->name('checkout.backofice');
 
@@ -196,6 +197,7 @@ Route::prefix('dashboard')->middleware('menu', 'auth')->group(function ()
     Route::get('policity', 'HomeController@policity')->name('policity');
     Route::get('/categoria/{Categories}', 'CategoriasController@show')->name('categorias.show');
     Route::post('orden', 'TiendaController@orden')->name('orden');
+    
     });
 
 });
