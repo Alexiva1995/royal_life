@@ -52,7 +52,7 @@
                             <td>{{$item->getCategories->categories_name}}</td>
                             <td>{{$item->cantidad}}</td>
                             <td>${{$item->monto}}</td>
-                            <td>${{($item->cantidad * $item->monto)}}</td>
+                            <td>${{($item->total)}}</td>
                             <td></td>
                         </tr>    
                         @endforeach                        

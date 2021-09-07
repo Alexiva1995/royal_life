@@ -16,6 +16,7 @@ class Cart extends Model
         'package_id',
         'cantidad',
         'monto',
+        'total',
     ];
 
     

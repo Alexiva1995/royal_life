@@ -23,6 +23,7 @@ class CreateCartTable extends Migration
             $table->foreign('package_id')->references('id')->on('packages')->onUpdate('cascade')->onDelete('cascade');
             $table->integer('cantidad');
             $table->integer('monto');
+            $table->integer('total');
             $table->timestamps();
         });
     }
