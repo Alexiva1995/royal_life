@@ -445,9 +445,13 @@ class TiendaController extends Controller
 
     public function cart()
     {
-        $categorias = Categories::get();
-
-        return view('backofice.cart',compact('categorias'));
+        if (Auth::user()->admin == 1) {
+            $products = Cart::all();
+        
+        }else{
+            $products = OrdenPurchases::where('iduser', '=',Auth::id())->orderBy('status')->get();
+        }
+        return view('backofice.cart',compact('products'));
     }
 
     public function orden(Request $request){
