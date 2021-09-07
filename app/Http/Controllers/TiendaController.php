@@ -447,11 +447,13 @@ class TiendaController extends Controller
     {
         if (Auth::user()->admin == 1) {
             $products = Cart::paginate(10);
+            $suma = Cart::all()->sum('total');
         
         }else{
             $products = Cart::where('iduser', '=',Auth::id())->paginate(10);
+            $suma = Cart::where('iduser', '=',Auth::id())->sum('total');
         }
-        $suma = Cart::all()->sum('monto');
+        
         
         return view('backofice.cart',compact('products','suma'));
     }
@@ -489,8 +491,8 @@ class TiendaController extends Controller
         $cart->package_id=$request->package_id;
         $cart->cantidad=$request->cantidad;
         $cart->monto=$request->monto;
-        $cart->total=$request->total;
-        dd($cart);
+        $suma =$request->cantidad * $request->monto;
+        $cart->total=$suma;
         $cart->save();
 
         return redirect()->route('cart')->with('msj-success', 'Orden actualizada exitosamente');
