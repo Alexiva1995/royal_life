@@ -12,6 +12,7 @@
 @section('content')
 <body class="ml-auto">
 @include('backofice.ui.estylos')
+@include('backofice.ui.script')
 
 <div class="carousel-inner">
     <img class="d-block w-100" src="{{asset('assets/img/home/formas_fondo3.png')}}" style="background: #173138;">
@@ -74,8 +75,8 @@
                                     <div class="quantity ml-3">
                                         <h4>Quantity:</h4>
                                         <div class="sumador ml-2">
-                                            <button class="Rangoprecio shadow zoom4 custominput "><i class="fa fa-minus"></i></button>
-                                            <input class="sinborde shadow  text-center text-dark" type="" value="1">
+                                            <button class="Rangoprecio shadow zoom4 custominput " value="{{$sumar}}"><i class="fa fa-minus"></i></button>
+                                            <input class="sinborde shadow  text-center text-dark" type="" value="{{$valor}}">
                                             <button class="Rangoprecio mr-3 shadow zoom4 custominput"><i class="fa fa-plus"></i></button>
                                         </div>
                                     </div>
