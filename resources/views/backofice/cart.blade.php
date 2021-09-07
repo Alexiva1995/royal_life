@@ -64,6 +64,15 @@
                     {{$products->links('pagination::bootstrap-4') }}
                     </div>
                 </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card bg-white text-dark">
+                                <p>total:{{$suma}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="container mb-1">
                     <div class="row d-flex">
                          <div class="col-3 d-flex justify-content-start">
