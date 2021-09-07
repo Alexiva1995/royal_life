@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\InversionController;
 use App\Http\Controllers\WalletController;
+use App\Models\Cart;
 use App\Models\Categories;
 use App\Models\DataOrdenUser;
 use Facade\Ignition\Support\Packagist\Package;
@@ -427,9 +428,10 @@ class TiendaController extends Controller
         $valor = 1;
         $sumar = $valor + 1;
 
-        $packages = Packages::all();
+        $packages = Packages::get();
         $relacionados = Packages::where('categories_id', $producto->categories_id)->orderby('created_at','DESC')->take(3)->get();
-        return view('backofice.detalleproducto',compact('packages','producto','relacionados','sumar','valor'));
+        $categorias = Categories::get();
+        return view('backofice.detalleproducto',compact('packages','producto','relacionados','sumar','valor','categorias'));
     }
 
 
@@ -470,6 +472,21 @@ class TiendaController extends Controller
         $orden = DataOrdenUser::create($data);
         $orden->save();
 
+    }
+
+    public function cart_save(Request $request){
+
+        $cart = new Cart;
+        $user = Auth::user()->id;
+        $cart->iduser =$user;
+        $cart->categories_id=$request->categories_id;
+        $cart->package_id=$request->package_id;
+        $cart->cantidad=$request->cantidad;
+        $cart->monto=$request->monto;
+        dd($cart);
+        $cart->save();
+
+        return redirect()->route('cart')->with('msj-success', 'Orden actualizada exitosamente');
     }
 
 }
