@@ -13,7 +13,7 @@
 <body class="ml-auto">
 @include('backofice.ui.estylos')
 @include('backofice.ui.script')
-
+@include('backofice.ui.script')
 <div class="carousel-inner">
     <img class="d-block w-100" src="{{asset('assets/img/home/formas_fondo3.png')}}" style="background: #173138;">
     <div class="container carousel-caption d-flex justify-content-start" style="top:90px;left: 9%;">
@@ -47,8 +47,8 @@
                                     <input type="hidden" name="package_id" value="{{$producto->id}}">
                                     <input type="hidden" name="categories_id" value="{{$producto->categories_id}}">
                                     <input type="hidden" name="monto" value="{{$producto->price}}">
-                                    
-                                    
+
+
                                     @if($producto->img == null)
                                     <img class="o"
                                      src="{{asset('assets/img/home/producto21.png')}}"
@@ -81,9 +81,9 @@
                                     <div class="quantity ml-3">
                                         <h4>Quantity:</h4>
                                         <div class="sumador ml-2">
-                                            <button class="Rangoprecio shadow zoom4 custominput " value=""><i class="fa fa-minus"></i></button>
-                                            <input class="sinborde shadow  text-center text-dark" type="" name="cantidad" value="1">
-                                            <button class="Rangoprecio mr-3 shadow zoom4 custominput"><i class="fa fa-plus"></i></button>
+                                            <button class="Rangoprecio shadow zoom4 custominput "  onclick="handleClickResta()"><i class="fa fa-minus"></i></button>
+                                            <input class="sinborde shadow  text-center text-dark" type="number" id="cantidad" name="cantidad" value="1">
+                                            <button class="Rangoprecio shadow zoom4 custominput" onclick="handleClickSuma()"><i class="fa fa-plus"></i></button>
                                         </div>
                                     </div>
                                     <div class="action">
