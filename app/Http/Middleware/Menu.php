@@ -200,7 +200,13 @@ class Menu
                 'complementoruta' => '',
             ],
             // Fin Ordenes
-
+            'Market' => [
+                'submenu' => 0,
+                'ruta' => route('shop.backofice'),
+                'blank'=> '', // si es para una pagina diferente del sistema solo coloquen _blank
+                'icon' => 'feather icon-shopping-cart',
+                'complementoruta' => '',
+            ],
             // Paquetes
 
             'Productos' => [
