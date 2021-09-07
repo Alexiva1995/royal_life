@@ -464,5 +464,7 @@ transform: translate(-50%, -50%);
     top: -5px;
     left: 50%;
 }
+
+
 </style>
 @endpush
