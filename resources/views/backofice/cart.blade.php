@@ -34,98 +34,25 @@
                             <th>Precio Total</th>
                         </tr>
                     <tbody>
+                        @foreach ($products as $item)
                         <tr class="text-center text-dark">
                             <td><img src="{{asset('assets/img/home/producto21.png')}}" alt="Product Image"
                                     style=" width: 100px; height: 100px;"></td>
-                            <td>Pomada CBD</td>
-                            <td>Cremas</td>
-                            <td>
-                                <div class="sumador">
-                                    <button class="Rangoprecio shadow zoom4"><i class="fa fa-minus"></i></button>
-                                    <input class="sinborde shadow text-center" type="" value="1">
-                                    <button class="Rangoprecio mr-3 shadow zoom4"><i class="fa fa-plus"></i></button>
-                                    <button class="Rangoprecio mr-3 shadow zoom4"
-                                        style="position: relative;left: -42px;"><i class="fa fa-trash"></i></button>
-                                </div>
-                            </td>
-                            <td>$31</td>
-                            <td>31$</td>
-                        </tr>
-
-                        <tr class="text-center text-dark">
-                            <td><img src="{{asset('assets/img/home/producto21.png')}}" alt="Product Image"
-                                    style=" width: 100px; height: 100px;"></td>
-                            <td>Pomada CBD</td>
-                            <td>Cremas</td>
-                            <td>
-                                <div class="sumador">
-                                    <button class="Rangoprecio shadow zoom4"><i class="fa fa-minus"></i></button>
-                                    <input class="sinborde shadow text-center" type="" value="1">
-                                    <button class="Rangoprecio mr-3 shadow zoom4"><i class="fa fa-plus"></i></button>
-                                    <button class="Rangoprecio mr-3 shadow zoom4"
-                                        style="position: relative;left: -42px;"><i class="fa fa-trash"></i></button>
-                                </div>
-                            </td>
-                            <td>$31</td>
-                            <td>31$</td>
-                        </tr>
-
-                        <tr class="text-center text-dark">
-                            <td><img src="{{asset('assets/img/home/producto21.png')}}" alt="Product Image"
-                                    style=" width: 100px; height: 100px;"></td>
-                            <td>Pomada CBD</td>
-                            <td>Cremas</td>
-                            <td>
-                                <div class="sumador">
-                                    <button class="Rangoprecio shadow zoom4"><i class="fa fa-minus"></i></button>
-                                    <input class="sinborde shadow text-center" type="" value="1">
-                                    <button class="Rangoprecio mr-3 shadow zoom4"><i class="fa fa-plus"></i></button>
-                                    <button class="Rangoprecio mr-3 shadow zoom4"
-                                        style="position: relative;left: -42px;"><i class="fa fa-trash"></i></button>
-                                </div>
-                            </td>
-                            <td>$31</td>
-                            <td>31$</td>
-                        </tr>
-
-                        <tr class="text-center text-dark">
-                            <td><img src="{{asset('assets/img/home/producto21.png')}}" alt="Product Image"
-                                    style=" width: 100px; height: 100px;"></td>
-                            <td>Pomada CBD</td>
-                            <td>Cremas</td>
-                            <td>
-                                <div class="sumador">
-                                    <button class="Rangoprecio shadow zoom4"><i class="fa fa-minus"></i></button>
-                                    <input class="sinborde shadow text-center" type="" value="1">
-                                    <button class="Rangoprecio mr-3 shadow zoom4"><i class="fa fa-plus"></i></button>
-                                    <button class="Rangoprecio mr-3 shadow zoom4"
-                                        style="position: relative;left: -42px;"><i class="fa fa-trash"></i></button>
-                                </div>
-                            </td>
-                            <td>$31</td>
-                            <td>31$</td>
-                        </tr>
-
-                        <tr class="text-center text-dark">
-                            <td><img src="{{asset('assets/img/home/producto21.png')}}" alt="Product Image"
-                                    style=" width: 100px; height: 100px;"></td>
-                            <td>Pomada CBD</td>
-                            <td>Cremas</td>
-                            <td>
-                                <div class="sumador">
-                                    <button class="Rangoprecio shadow zoom4"><i class="fa fa-minus"></i></button>
-                                    <input class="sinborde shadow text-center" type="" value="1">
-                                    <button class="Rangoprecio mr-3 shadow zoom4"><i class="fa fa-plus"></i></button>
-                                    <button class="Rangoprecio mr-3 shadow zoom4"
-                                        style="position: relative;left: -42px;"><i class="fa fa-trash"></i></button>
-                                </div>
-                            </td>
-                            <td>$31</td>
-                            <td>31$</td>
-                        </tr>
+                            <td>{{$item->getPackage->name}}</td>
+                            <td>{{$item->getCategories->categories_name}}</td>
+                            <td>{{$item->cantidad}}</td>
+                            <td>${{$item->monto}}</td>
+                            <td>${{($item->cantidad * $item->monto)}}</td>
+                        </tr>    
+                        @endforeach                        
                     </tbody>
                     </thead>
                 </table>
+                <div class="container mt-5 ">
+                    <div class="text-center link">
+                    {{$products->links('pagination::bootstrap-4') }}
+                    </div>
+                </div>
                 <div class="container mb-1">
                     <div class="row d-flex">
                          <div class="col-3 d-flex justify-content-start">

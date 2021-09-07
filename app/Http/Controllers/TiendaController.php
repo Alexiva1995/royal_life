@@ -445,9 +445,13 @@ class TiendaController extends Controller
 
     public function cart()
     {
-        $categorias = Categories::get();
-
-        return view('backofice.cart',compact('categorias'));
+        if (Auth::user()->admin == 1) {
+            $products = Cart::paginate(10);
+        
+        }else{
+            $products = cart::where('iduser', '=',Auth::id())->paginate(10);
+        }
+        return view('backofice.cart',compact('products'));
     }
 
     public function orden(Request $request){
@@ -483,7 +487,7 @@ class TiendaController extends Controller
         $cart->package_id=$request->package_id;
         $cart->cantidad=$request->cantidad;
         $cart->monto=$request->monto;
-        dd($cart);
+        // dd($cart);
         $cart->save();
 
         return redirect()->route('cart')->with('msj-success', 'Orden actualizada exitosamente');

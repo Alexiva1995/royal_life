@@ -26,7 +26,7 @@ class Cart extends Model
      */
     public function getPackage()
     {
-        return $this->belongsTo('App\Models\Packages', 'pakage_id', 'id', 'name', 'img');
+        return $this->belongsTo('App\Models\Packages', 'package_id', 'id', 'name', 'img');
     }
     
      /**
@@ -36,7 +36,7 @@ class Cart extends Model
      */
     public function getCategories()
     {
-        return $this->belongsTo('App\Models\Packages', 'categories_id', 'id', 'name');
+        return $this->belongsTo('App\Models\Packages', 'categories_id', 'id', 'categories_name');
     }
      /**
      * Permite obtener al usuario
