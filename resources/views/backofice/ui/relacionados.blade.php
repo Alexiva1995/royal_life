@@ -7,7 +7,7 @@
         <div class="d-flex ">
             <a class="background "
                  href="{{action('TiendaController@detalleproducto', ['producto' => $item->id ])}}">
-                @if($producto->img == null)
+                @if($item->img == null)
                              <img class="mx-auto d-block  img-fluid"
                               src="{{asset('assets/img/home/producto21.png')}}"
                               alt="Product Image"
@@ -22,9 +22,9 @@
             <div class="col-6 ">
                 <h5><strong>{{$item->name}}</strong></h5>
                 <p class="card-text" style="color: black; width: 160px;">
-                    {{ Str::words( strip_tags($producto->description) , 9 )}}</p>
+                    {{ Str::words( strip_tags($item->description) , 9 )}}</p>
 
-                <p class="text-right" style="color: rgb(0, 0, 0);"><a class="btn-cu text-center ">{{ ucfirst($producto->getCategories->categories_name)}}</a><strong class="texto3  prize2">${{$producto->price}}</strong></p>
+                <p class="text-right" style="color: rgb(0, 0, 0);"><a class="btn-cu text-center ">{{ ucfirst($producto->getCategories->categories_name)}}</a><strong class="texto3  prize2">${{$item->price}}</strong></p>
 
             </div>
         </div>
