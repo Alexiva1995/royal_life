@@ -3,7 +3,10 @@
 @push('custom_css')
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
-
+.custominput{
+    border: 0;
+    outline: 0 !important;
+}
 .zoom:hover {
     -webkit-transform:scale(1.05);
     -moz-transform:scale(1.05);
@@ -17,12 +20,41 @@
     -ms-transition:all 0.3s ease;
     width:100%;
 }
+
+.zoom:active {
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    -ms-transform:scale(1);
+    -o-transform:scale(1);
+    transform:scale(1);
+
+    -webkit-transition:all 0.3s ease;
+    -moz-transition:all 0.3s ease;
+    -o-transition:all 0.3s ease;
+    -ms-transition:all 0.3s ease;
+    width:100%;
+}
+
 .zoom2:hover {
     -webkit-transform:scale(1.05);
     -moz-transform:scale(1.05);
     -ms-transform:scale(1.05);
     -o-transform:scale(1.05);
     transform:scale(1.05);
+
+    -webkit-transition:all 0.3s ease;
+    -moz-transition:all 0.3s ease;
+    -o-transition:all 0.3s ease;
+    -ms-transition:all 0.3s ease;
+    width:30%;
+}
+
+.zoom2:active {
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    -ms-transform:scale(1);
+    -o-transform:scale(1);
+    transform:scale(1);
 
     -webkit-transition:all 0.3s ease;
     -moz-transition:all 0.3s ease;
@@ -64,6 +96,26 @@
     background-color: #66FFCC;
 }
 
+.zoom4:active {
+
+-webkit-transform:scale(0.9);
+-moz-transform:scale(0.9);
+-ms-transform:scale(0.9);
+-o-transform:scale(0.9);
+transform:scale(0.9);
+
+-webkit-transition:all 0.3s ease;
+-moz-transition:all 0.3s ease;
+-o-transition:all 0.3s ease;
+-ms-transition:all 0.3s ease;
+width:9.2%;
+
+border-color: #66FFCC !important;
+color: black!important;
+box-shadow: 0 8px 25px -8px #66ffcc;
+background-color: #66FFCC;
+}
+
 .zoom5:hover {
 
     -webkit-transform:scale(1.05);
@@ -82,6 +134,25 @@
     color: black!important;
     box-shadow: 0 8px 25px -8px #66ffcc;
     background-color: #66FFCC;
+}
+.zoom5:active {
+
+-webkit-transform:scale(1);
+-moz-transform:scale(1);
+-ms-transform:scale(1);
+-o-transform:scale(1);
+transform:scale(1);
+
+-webkit-transition:all 0.3s ease;
+-moz-transition:all 0.3s ease;
+-o-transition:all 0.3s ease;
+-ms-transition:all 0.3s ease;
+width:33%;
+
+border-color: #66FFCC !important;
+color: black!important;
+box-shadow: 0 8px 25px -8px #66ffcc;
+background-color: #66FFCC;
 }
 
 .pri{

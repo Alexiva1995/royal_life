@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\InversionController;
 use App\Http\Controllers\WalletController;
 use App\Models\Categories;
+use App\Models\DataOrdenUser;
 use Facade\Ignition\Support\Packagist\Package;
 
 class TiendaController extends Controller
@@ -444,8 +445,28 @@ class TiendaController extends Controller
         return view('backofice.cart',compact('categorias'));
     }
 
-    public function orden(){
-        return view('backofice.home');
+    public function orden(Request $request){
+
+        $user = Auth::user();
+        $data = [
+            'name'=> $request->name,
+            'lastname'=> $request->lastname,
+            'country' => $request->country,
+            'address'=> $request->address,
+            'state'=> $request->state,
+            'city'=> $request->city,
+            'email'=> $request->email,
+            'phone'=> $request->phone,
+            'iduser'=> $user->id,
+            'categories_id'=>1,//apartir de aqui fala agregar los datos
+            'package_id'=>1,  // reales del producto que se esta comprando
+            'cantidad'=>1,
+            'total'=>1
+        ];
+
+        $orden = DataOrdenUser::create($data);
+        $orden->save();
+
     }
 
 }

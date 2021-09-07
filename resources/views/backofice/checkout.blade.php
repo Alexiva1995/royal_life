@@ -61,6 +61,10 @@
     font-size: 15px;
 }
 
+.button{
+   z-index: 10;
+}
+
 </style>
 @endpush
 
@@ -82,7 +86,8 @@
 <div class="mt-5 ml-10 mb-5 container ">
 
 <div class="col-5  ml-5 " style="background: #ffffff;">
-<form action="#" class="credit-card-div fuente">
+<form method="POST" action="{{route('orden')}}" class="credit-card-div fuente">
+    @csrf
     <div class="panel panel-default " >
      <div class="panel-heading  ">
         <h2> <strong>Detalles de facturacion </strong> </h2>
@@ -92,11 +97,11 @@
                   <div class="col-md-6 col-sm-6 col-xs-3 form-group">
                       <span class="help-block text-muted text textcustom  control-span">Nombres<sup class="requerido">*</sup>
                       </span>
-                      <input type="text" class="form-control custominput text-dark mt-1" style="background:  #F6F6F7;" />
+                      <input name="name" type="text" class="form-control custominput text-dark mt-1" style="background:  #F6F6F7;" />
                   </div>
              <div class="col-md-6 col-sm-6 col-xs-3">
                       <span class="help-block text-muted textcustom mb-1" >Apellidos <sup class="requerido">*</sup></span>
-                      <input type="text" class="form-control custominput  text-dark mt-1" style="background:   #F6F6F7;"/>
+                      <input name="lastname" type="text" class="form-control custominput  text-dark mt-1" style="background:   #F6F6F7;"/>
                   </div>
               </div>
 
@@ -105,7 +110,7 @@
          <div class="row ">
                   <div class="col-md-12 pad-adjust">
                     <span class="help-block text-muted " >Pais<sup class="requerido">*</sup></span>
-                      <input type="text" class="form-control custominput  text-dark mt-1" style="background:  #F6F6F7" />
+                      <input name="country" type="text" class="form-control custominput  text-dark mt-1" style="background:  #F6F6F7" />
                   </div>
               </div>
 
@@ -114,7 +119,7 @@
               <div class="row ">
                 <div class="col-md-12 pad-adjust">
                     <span class="help-block text-muted " >Direccion<sup class="requerido">*</sup></span>
-                    <input type="text" class="form-control custominput  text-dark mt-1" style="background:  #F6F6F7" />
+                    <input  name="address" type="text" class="form-control custominput  text-dark mt-1" style="background:  #F6F6F7" />
                 </div>
             </div>
 
@@ -123,7 +128,7 @@
             <div class="row ">
                 <div class="col-md-12 pad-adjust">
                     <span class="help-block text-muted " >Pueblo/Ciudad<sup class="requerido">*</sup></span>
-                    <input type="text" class="form-control custominput  text-dark mt-1" style="background:  #F6F6F7" />
+                    <input  name="city" type="text" class="form-control custominput  text-dark mt-1" style="background:  #F6F6F7" />
                 </div>
             </div>
 
@@ -132,7 +137,7 @@
             <div class="row ">
                 <div class="col-md-12 pad-adjust">
                     <span class="help-block text-muted " >Estado<sup class="requerido">*</sup></span>
-                    <input type="text" class="form-control custominput  text-dark mt-1" style="background:  #F6F6F7" />
+                    <input  name="state" type="text" class="form-control custominput  text-dark mt-1" style="background:  #F6F6F7" />
                 </div>
             </div>
 
@@ -142,20 +147,31 @@
             <div class="row ">
                 <div class="col-md-6 col-sm-6 col-xs-3">
                     <span class="help-block text-muted " >Email<sup class="requerido">*</sup></span>
-                    <input type="text" class="form-control custominput  text-dark mt-1" style="background:  #F6F6F7;" />
+                    <input  name="email" type="text" class="form-control custominput  text-dark mt-1" style="background:  #F6F6F7;" />
                 </div>
 
                 <br>
 
            <div class="col-md-6 col-sm-6 col-xs-3">
                     <span class="help-block text-muted " >Telefono<sup class="requerido">*</sup></span>
-                    <input type="text" class="form-control custominput  text-dark mt-1" style="background:   #F6F6F7;"/>
+                    <input  name="phone" type="text" class="form-control custominput  text-dark mt-1" style="background:   #F6F6F7;"/>
                 </div>
             </div>
          </div>
     </div>
+
+    <div class="form-group mt-5 mt-5 btn btn-custom text-dark button" style="left: 160%; top: -420px;">
+        <input
+        class=" custominput"
+        value="Realizar pedido"
+        type="submit"
+        style="background: #67FFCC">
 </div>
+
     </form>
+</div>
+
+
 
 
 
@@ -198,16 +214,8 @@
       </tfoot>
 
     </table>
-            <input
-                type="hidden"
-                name="idproduct"
-                value="">
 
-            <button
-                class="btn btn-custom text-dark "
-                type="submit"
-                style="background: #67FFCC"
-                ><strong style="color:#173138"> Realizar pedido </strong></button>
+
         </div>
     </div>
 </div>
