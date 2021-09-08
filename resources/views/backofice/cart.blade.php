@@ -50,7 +50,12 @@
                             </td>
                             <td>{{$item->getPackage->name}}</td>
                             <td>{{$item->getCategories->categories_name}}</td>
-                            <td>{{$item->cantidad}}</td>
+                            <form method="POST" class="form form-vertical" action="{{route('cart.update',$item->id)}}" enctype="multipart/form-data">
+                                    @method('PATCH')
+                                    @csrf
+                            <td><input type="number" name="cantidad" class="col-2 mr-1" value="{{$item->cantidad}}">
+                                <input type="hidden" name="monto" value="{{$item->monto}}"><button type="submit" class="btn btn-info"><i class="fa fa-edit"></i></button></td>
+                                </form>
                             <td>${{$item->monto}}</td>
                             <td>${{($item->total)}}</td>
                             <td>

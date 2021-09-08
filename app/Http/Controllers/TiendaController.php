@@ -516,6 +516,17 @@ class TiendaController extends Controller
                 }
                 return redirect()->route('cart')->with('msj-success', 'Orden actualizada exitosamente');
             }
+
+            public function updateCart(Request $request, $id){
+                $cart = Cart::find($id);
+                $cart->monto = $request->monto;
+                $cart->cantidad = $request->cantidad;
+                $suma =$request->cantidad * $request->monto;
+                $cart->total=$suma;
+                $cart->update();
+
+                return redirect()->back()->with('msj-success', 'producto actualizado exitosamente');
+            }
             
     public function destroy(Cart $producto){
     $this->authorize('delete', $producto);
