@@ -93,7 +93,7 @@
         @csrf
     <div class="row d-flex">
     <div class="col-5  ml-5 " style="background: #ffffff;">
-        
+
             <div class="panel panel-default ">
                 <div class="panel-heading  ">
                     <h2> <strong>Detalles de facturacion </strong> </h2>
@@ -176,7 +176,7 @@
                 </div>
             </div>
     </div>
-    
+
 
     <div class="mt-2 ml-5 mb-5 cheking fuente col-5">
         <div class="col-10  ml-5 text-dark ">
@@ -223,12 +223,12 @@
                     </tr>
                     <tfoot>
                         <tr>
-                            <th class="text-left">
+                            <th class="text-left" >
                                 <h6><strong>Total + Iva </strong></h6>
                             </th>
                             <th></th>
                             <th></th>
-                            <th class="text-right ">
+                            <th class="text-right" name="cantidad">
                                 <h6><strong>${{($suma+(15/100)*$suma)}}<strong></h6>
                             </th>
                         </tr>

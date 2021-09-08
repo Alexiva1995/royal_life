@@ -467,8 +467,10 @@ class TiendaController extends Controller
     }
 
     public function orden(Request $request){
-
         $user = Auth::user();
+        $carrito = Cart::all();
+
+        foreach($carrito as $cart){
         $data = [
             'name'=> $request->name,
             'lastname'=> $request->lastname,
@@ -479,14 +481,22 @@ class TiendaController extends Controller
             'email'=> $request->email,
             'phone'=> $request->phone,
             'iduser'=> $user->id,
-            'categories_id'=>1,//apartir de aqui fala agregar los datos
-            'package_id'=>1,  // reales del producto que se esta comprando
-            'cantidad'=>1,
-            'total'=>1
+            'categories_id'=>$cart->categories_id,
+            'package_id'=>$cart->package_id,
+            'cantidad'=>$cart->cantidad,
+            'monto'=>$cart->monto,
+            'total'=>$cart->total
         ];
 
+
         $orden = DataOrdenUser::create($data);
-        $orden->save();
+        Cart::where('iduser',$user->id)->delete();
+
+    }
+
+    $packages = Packages::paginate(8);
+
+    return view('backofice.shop', compact('packages'));
 
     }
 
@@ -527,12 +537,13 @@ class TiendaController extends Controller
 
                 return redirect()->back()->with('msj-success', 'producto actualizado exitosamente');
             }
-            
-    public function destroy(Cart $producto){
-    $this->authorize('delete', $producto);
-        $producto->delete();
 
-        return redirect()->route('cart')->with('msj-success', 'producto eliminada exitosamente');
+
+     public function destroy(Cart $producto){
+               $this->authorize('delete', $producto);
+               $producto->delete();
+
+               return redirect()->route('cart')->with('msj-success', 'producto eliminada exitosamente');
 
     }
 
