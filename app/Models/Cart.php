@@ -39,13 +39,4 @@ class Cart extends Model
     {
         return $this->belongsTo('App\Models\Categories', 'categories_id', 'id', 'categories_name');
     }
-     /**
-     * Permite obtener al usuario
-     *
-     * @return void
-     */
-    public function getUser()
-    {
-        return $this->belongsTo('App\Models\User', 'iduser', 'id');
-    }
 }

@@ -436,11 +436,19 @@ class TiendaController extends Controller
 
 
 
-    public function checkout(Packages $producto)
+    public function checkout()
     {
+        if (Auth::user()->admin == 1) {
+            $products = Cart::paginate(10);
+            $suma = Cart::all()->sum('total');
+        
+        }else{
+            $products = Cart::where('iduser', '=',Auth::id())->paginate(10);
+            $suma = Cart::where('iduser', '=',Auth::id())->sum('total');
+        }
+        $user=auth::user();
 
-
-       return  view('backofice.checkout', compact('producto'));
+       return  view('backofice.checkout',compact('products','suma','user'));
     }
 
     public function cart()
