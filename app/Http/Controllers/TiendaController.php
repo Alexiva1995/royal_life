@@ -501,13 +501,13 @@ class TiendaController extends Controller
         $cart->monto=$request->monto;
         $suma =$request->cantidad * $request->monto;
         $cart->total=$suma;
-        $cart->save();
+      
 
-        return redirect()->route('cart')->with('msj-success', 'Orden actualizada exitosamente');
+        return redirect()->route('cart')->with('msj-success', 'se a guardado en el carrito de compras exitosamente');
     }
 
     public function destroy(Cart $producto){
-$this->authorize('delete', $producto);
+    $this->authorize('delete', $producto);
         $producto->delete();
 
         return redirect()->route('cart')->with('msj-success', 'producto eliminada exitosamente');
