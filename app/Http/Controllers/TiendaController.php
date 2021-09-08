@@ -491,21 +491,32 @@ class TiendaController extends Controller
     }
 
     public function cart_save(Request $request){
-
-        $cart = new Cart;
-        $user = Auth::user()->id;
-        $cart->iduser =$user;
-        $cart->categories_id=$request->categories_id;
-        $cart->package_id=$request->package_id;
-        $cart->cantidad=$request->cantidad;
-        $cart->monto=$request->monto;
-        $suma =$request->cantidad * $request->monto;
-        $cart->total=$suma;
-      
-
-        return redirect()->route('cart')->with('msj-success', 'se a guardado en el carrito de compras exitosamente');
-    }
-
+        // dd($request);
+                $products = Cart::where('iduser', auth::id())->get();
+                $switch = false;
+                foreach($products as $p){
+                    if($p->package_id == $request->package_id ){
+                        $p->cantidad += $request->cantidad;
+                        $p->total += $request->monto * $request->cantidad;
+                        $p->save();
+                        $switch = true;
+                    }
+                }
+                if(!$switch){
+                    $cart = new Cart;
+                    $user = Auth::user()->id;
+                    $cart->iduser =$user;
+                    $cart->categories_id=$request->categories_id;
+                    $cart->package_id=$request->package_id;
+                    $cart->cantidad=$request->cantidad;
+                    $cart->monto=$request->monto;
+                    $suma =$request->cantidad * $request->monto;
+                    $cart->total=$suma;
+                    $cart->save();
+                }
+                return redirect()->route('cart')->with('msj-success', 'Orden actualizada exitosamente');
+            }
+            
     public function destroy(Cart $producto){
     $this->authorize('delete', $producto);
         $producto->delete();
