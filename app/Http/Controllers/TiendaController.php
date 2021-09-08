@@ -527,12 +527,23 @@ class TiendaController extends Controller
                 return redirect()->route('cart')->with('msj-success', 'Orden actualizada exitosamente');
             }
 
+            public function updateCart(Request $request, $id){
+                $cart = Cart::find($id);
+                $cart->monto = $request->monto;
+                $cart->cantidad = $request->cantidad;
+                $suma =$request->cantidad * $request->monto;
+                $cart->total=$suma;
+                $cart->update();
 
-    public function destroy(Cart $producto){
-    $this->authorize('delete', $producto);
-        $producto->delete();
+                return redirect()->back()->with('msj-success', 'producto actualizado exitosamente');
+            }
 
-        return redirect()->route('cart')->with('msj-success', 'producto eliminada exitosamente');
+
+     public function destroy(Cart $producto){
+               $this->authorize('delete', $producto);
+               $producto->delete();
+
+               return redirect()->route('cart')->with('msj-success', 'producto eliminada exitosamente');
 
     }
 
