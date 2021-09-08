@@ -88,11 +88,12 @@
 </div>
 
 
-<div class="mt-5 ml-10 mb-5 container ">
-
+<div class="mt-5 ml-10 pb-5 container ">
+    <form method="POST" action="{{route('orden')}}" class="credit-card-div fuente">
+        @csrf
+    <div class="row d-flex">
     <div class="col-5  ml-5 " style="background: #ffffff;">
-        <form method="POST" action="{{route('orden')}}" class="credit-card-div fuente">
-            @csrf
+        
             <div class="panel panel-default ">
                 <div class="panel-heading  ">
                     <h2> <strong>Detalles de facturacion </strong> </h2>
@@ -174,9 +175,10 @@
                     </div>
                 </div>
             </div>
+    </div>
+    
 
-
-    <div class="mt-2 ml-5 mb-5 cheking fuente">
+    <div class="mt-2 ml-5 mb-5 cheking fuente col-5">
         <div class="col-10  ml-5 text-dark ">
             <div class="row orden">
                 <table class="table table-borderless factura">
@@ -242,9 +244,11 @@
         </div>
     </div>
 
-
+</div>
 </form>
 </div>
+
+
 
 
 
