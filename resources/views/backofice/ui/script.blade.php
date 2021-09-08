@@ -19,7 +19,8 @@ function  operacion(a,number) {
    {
        number--;
    }
-   if(number < 1){
+
+   if(number < 1 || number === null){
     return number === 1;
    }
 
