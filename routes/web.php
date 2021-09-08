@@ -189,7 +189,7 @@ Route::prefix('dashboard')->middleware('menu', 'auth')->group(function ()
     Route::get('/cart', 'TiendaController@cart')->name('cart');
     Route::post('/cart-post', 'TiendaController@cart_save')->name('cart.post');
 
-    Route::get('/shopBackofice/checkout/{producto}', 'TiendaController@checkout')->name('checkout.backofice');
+    Route::get('/shopBackofice/checkout', 'TiendaController@checkout')->name('checkout.backofice');
 
     Route::get('/shopBackofice/detalleproducto/{producto}', 'TiendaController@detalleproducto')->name('detalle.producto');
 
