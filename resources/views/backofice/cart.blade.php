@@ -66,9 +66,11 @@
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-6">
-                            <div class="card bg-white text-dark">
-                                <p>total:{{$suma}}</p>
+                        <div class="col-12 d-flex d-flex justify-content-end">
+                            <div class="card bg-white text-dark ">
+                                <p><strong>Sub Total:</strong> {{$suma}}$</p>
+                                <p><strong>Iva: </strong>15%</p>
+                                <p><strong>Total + Iva:</strong> {{($suma+(15/100)*$suma)}}$</p>
                             </div>
                         </div>
                     </div>
