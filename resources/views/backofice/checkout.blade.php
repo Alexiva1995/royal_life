@@ -176,8 +176,7 @@
             </div>
 
 
-        </form>
-    </div>
+
 
 
 
@@ -238,7 +237,7 @@
                                 <h6><strong>${{($suma+(15/100)*$suma)}}<strong></h6>
                             </th>
                         </tr>
-                        
+
                     </tfoot>
 
                 </table>
@@ -253,7 +252,8 @@
     </div>
 
 
-
+</form>
+</div>
 
 
 
