@@ -82,7 +82,7 @@
                                         <h4>Quantity:</h4>
                                         <div class="sumador ml-2">
                                             <button class="Rangoprecio shadow zoom4 custominput "  onclick="handleClickResta()" type="button"><i class="fa fa-minus"></i></button>
-                                            <input class="sinborde shadow  text-center text-dark" type="number" id="cantidad" name="cantidad" value="1">
+                                            <input class="sinborde shadow  text-center text-dark" type="number" id="cantidad" name="cantidad" value="1" min="1" required>
                                             <button class="Rangoprecio shadow zoom4 custominput" onclick="handleClickSuma()"  type="button"><i class="fa fa-plus"></i></button>
                                         </div>
                                     </div>
