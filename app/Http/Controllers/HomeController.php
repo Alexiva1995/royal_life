@@ -259,5 +259,9 @@ class HomeController extends Controller
         return back()->with('msj-danger','No se pudo enviar este mensaje');
     }
     }
+    public function faq()
+    {
+        return view('backofice.faq');
+    }
 }
 
