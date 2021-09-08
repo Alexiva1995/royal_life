@@ -496,7 +496,7 @@ class TiendaController extends Controller
 
     $packages = Packages::paginate(8);
 
-    return view('backofice.shop', compact('packages'));
+    return view('backofice.shop', compact('packages')); //genera un bug arreglar
 
     }
 
@@ -539,11 +539,11 @@ class TiendaController extends Controller
             }
 
 
-     public function destroy(Cart $producto){
-               $this->authorize('delete', $producto);
-               $producto->delete();
+    public function destroy(Cart $producto){
+    $this->authorize('delete', $producto);
+        $producto->delete();
 
-               return redirect()->route('cart')->with('msj-success', 'producto eliminada exitosamente');
+        return redirect()->route('cart')->with('msj-success', 'producto eliminada exitosamente');
 
     }
 
