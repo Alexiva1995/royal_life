@@ -36,7 +36,7 @@
                         </tr>
                     <tbody>
                         @foreach ($products as $item)
-                        <tr class="text-center text-dark"> 
+                        <tr class="text-center text-dark">
                             <td>
                             @if($item->img == null)
                                     <img src="{{asset('assets/img/home/producto21.png')}}" alt="Product Image"
@@ -53,9 +53,15 @@
                             <td>{{$item->cantidad}}</td>
                             <td>${{$item->monto}}</td>
                             <td>${{($item->total)}}</td>
-                            <td></td>
-                        </tr>    
-                        @endforeach                        
+                            <td>
+                                <form action="{{route('destroy',['producto'=>$item->id])}}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <input type="submit" class="btn btn-danger d-block w-100 text-white" value="Eliminar &times;">
+                                </form>
+                            </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                     </thead>
                 </table>
@@ -75,21 +81,21 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="container mb-1">
                     <div class="row d-flex">
                          <div class="col-3 d-flex justify-content-start">
                             <a href="{{route('shop.backofice')}}" class="btn btn-custom text-dark " type="submit" style="background: #67FFCC"><strong
                                     style="color:#173138">continuar comprado</strong></a>
                         </div>
-                       
+
                         <div class="col-9 d-flex justify-content-end">
                             <form action="{{route('checkout.backofice')}}">
                             <button class="btn btn-custom text-dark " type="submit" style="background: #67FFCC"><strong
                                     style="color:#173138">Pagar</strong></button>
                                 </form>
                         </div>
-                    
+
                     </div>
                 </div>
             </div>

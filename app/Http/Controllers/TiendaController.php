@@ -441,7 +441,7 @@ class TiendaController extends Controller
         if (Auth::user()->admin == 1) {
             $products = Cart::paginate(10);
             $suma = Cart::all()->sum('total');
-        
+
         }else{
             $products = Cart::where('iduser', '=',Auth::id())->paginate(10);
             $suma = Cart::where('iduser', '=',Auth::id())->sum('total');
@@ -456,13 +456,13 @@ class TiendaController extends Controller
         if (Auth::user()->admin == 1) {
             $products = Cart::paginate(10);
             $suma = Cart::all()->sum('total');
-        
+
         }else{
             $products = Cart::where('iduser', '=',Auth::id())->paginate(10);
             $suma = Cart::where('iduser', '=',Auth::id())->sum('total');
         }
-        
-        
+
+
         return view('backofice.cart',compact('products','suma'));
     }
 
@@ -504,6 +504,14 @@ class TiendaController extends Controller
         $cart->save();
 
         return redirect()->route('cart')->with('msj-success', 'Orden actualizada exitosamente');
+    }
+
+    public function destroy(Cart $producto){
+$this->authorize('delete', $producto);
+        $producto->delete();
+
+        return redirect()->route('cart')->with('msj-success', 'producto eliminada exitosamente');
+
     }
 
 }

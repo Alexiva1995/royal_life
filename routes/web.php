@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TiendaController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -197,7 +198,8 @@ Route::prefix('dashboard')->middleware('menu', 'auth')->group(function ()
     Route::get('policity', 'HomeController@policity')->name('policity');
     Route::get('/categoria/{Categories}', 'CategoriasController@show')->name('categorias.show');
     Route::post('orden', 'TiendaController@orden')->name('orden');
-    
+    Route::delete('cart-eliminar/{producto}', 'TiendaController@destroy')->name('destroy');
+
     });
 
 });
