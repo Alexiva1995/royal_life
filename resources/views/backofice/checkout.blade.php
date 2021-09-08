@@ -176,17 +176,10 @@
             </div>
 
 
-
-
-
-
-
-
     <div class="mt-2 ml-5 mb-5 cheking fuente">
         <div class="col-10  ml-5 text-dark ">
             <div class="row orden">
                 <table class="table table-borderless factura">
-
                     <tr>
                         <h2 class="ml-1 "><strong>Tu orden <strong></h2>
                         <th class=""><strong class="tamañofuente">Productos </strong></th>
@@ -245,8 +238,6 @@
                 <div class="form-group mt-5 mt-5 btn btn-custom text-dark button">
                     <input class=" custominput" value="Realizar pedido" type="submit" style="background: #67FFCC">
                 </div>
-
-
             </div>
         </div>
     </div>
