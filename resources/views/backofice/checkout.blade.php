@@ -38,7 +38,7 @@
     .btn-custom {
         width: 220px;
         height: 45px;
-        left: 215px;
+        left: 153px;
         background: #67FFCC;
         border-radius: 7px;
     }
@@ -278,7 +278,9 @@
 
                 </table>
                 <hr class="hr">
+
                 <div class="form-group mt-5 mt-5 btn btn-custom text-dark button" style="left: 150px;">
+
                     <input class=" custominput" value="Realizar pedido" type="submit" style="background: #67FFCC">
                 </div>
             </div>
