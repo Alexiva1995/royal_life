@@ -2,7 +2,7 @@
 @section('content')
 <div class="carousel-inner" role="listbox">
     <img class="d-block w-100" src="{{asset('assets/img/home/formas_fondo1.png')}}" style="background: #F2F4F4;">
-    <div class="container carousel-caption d-flex justify-content-start" style="top: 250px;">
+    <div class="container carousel-caption d-flex justify-content-start" style="top: 250px;left: 100px;">
         <div class="row">
             <div class="col-md-6">
                 <div class="text-left">
