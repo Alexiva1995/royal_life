@@ -105,7 +105,7 @@
                                     class="requerido">*</sup>
                             </span>
                             <input name="name" type="text" class="custominput text-dark mt-1 form-control"
-                                style="background:  #F6F6F7;" value="{{old('name')}}" />
+                                style="background:  #F6F6F7;" value="{{$user->name}}" />
                                 @error('name')
                                     <span class="invalid-feedback d-block" role="alert">
                                         <strong>{{$message}}</strong>

@@ -35,7 +35,7 @@
                                     <td> <a class=" btn btn-info text-white text-bold-600" data-toggle="modal" data-target="#ModalStatus{{$orden->id}}">Esperando</a></td>
                                     @elseif($orden->status == '1')
                                     <td> <a class=" btn btn-success text-white text-bold-600">Aprobado</a></td>
-                                    @elseif($orden->status >= '2')
+                                    @elseif($orden->status == '2')
                                     <td> <a class=" btn btn-danger text-white text-bold-600">Cancelado</a></td>
                                     @endif
                                     <td>
