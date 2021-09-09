@@ -18,7 +18,7 @@ class DataOrdenUser extends Model
         'country',
         'address',
         'city',
-        'sate',
+        'state',
         'email',
         'phone',
         'categories_id',
