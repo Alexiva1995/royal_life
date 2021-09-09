@@ -496,7 +496,7 @@ class TiendaController extends Controller
             'package_id'=>$cart->package_id,
             'cantidad'=>$cart->cantidad,
             'monto'=>$cart->monto,
-            'status'=>0,
+            'status'=>1,
             'total'=>$cart->total
         ];
 
