@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\DataOrdenUser;
 use App\Models\OrdenPurchases;
 use App\Models\Wallet;
 use Illuminate\Http\Request;
@@ -20,16 +21,10 @@ class ReporteController extends Controller
     public function indexPedidos()
     {
         if (Auth::user()->admin == 1) {
-            $ordenes = OrdenPurchases::all();
+            $ordenes = DataOrdenUser::all();
         
         }else{
-            $ordenes = OrdenPurchases::where('iduser', '=',Auth::id())->orderBy('status')->get();
-        }
-    
-        foreach ($ordenes as $orden) {
-            $orden->name = $orden->getOrdenUser->fullname;
-            // $orden->grupo = $orden->getGroupOrden->name;
-            $orden->paquete = $orden->getPackageOrden->name;
+            $ordenes = DataOrdenUser::where('iduser', '=',Auth::id())->orderBy('status')->get();
         }
 
         return view('reports.perdido', compact('ordenes'));

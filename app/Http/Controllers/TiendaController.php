@@ -275,44 +275,44 @@ class TiendaController extends Controller
 
     public function cambiar_status(Request $request)
     {
-        $orden = OrdenPurchases::findOrFail($request->id);
+        $orden = DataOrdenUser::findOrFail($request->id);
         $orden->status = $request->status;
         $orden->save();
-        $user = User::findOrFail($orden->iduser);
+        // $user = User::findOrFail($orden->iduser);
 
-        $this->walletController->payAll();
+        // $this->walletController->payAll();
 
-        if(isset($user->inversionMasAlta()->invertido)){
+        // if(isset($user->inversionMasAlta()->invertido)){
 
-            $inversion = $user->inversionMasAlta();
-            $pagado = $inversion->invertido;
+        //     $inversion = $user->inversionMasAlta();
+        //     $pagado = $inversion->invertido;
 
-            $nuevoInvertido = ($orden->getPackageOrden->price - $pagado);
-            $porcentaje = ($nuevoInvertido * 0.03);
+        //     $nuevoInvertido = ($orden->getPackageOrden->price - $pagado);
+        //     $porcentaje = ($nuevoInvertido * 0.03);
 
-            $total = ($nuevoInvertido + $porcentaje);
-            //ACTUALIZAMOS LA INVERSION
-            $inversion->invertido += $nuevoInvertido;
-            $inversion->capital += $nuevoInvertido;
-            if(isset($inversion->max_ganancia) && isset($inversion->invertido)){
-                $inversion->max_ganancia = $inversion->invertido * 2;
-                $inversion->restante += $nuevoInvertido * 2;
-            }
-            $inversion->package_id = $orden->package_id;
-            $inversion->save();
-            $inversion = $inversion->id;
+        //     $total = ($nuevoInvertido + $porcentaje);
+        //     //ACTUALIZAMOS LA INVERSION
+        //     $inversion->invertido += $nuevoInvertido;
+        //     $inversion->capital += $nuevoInvertido;
+        //     if(isset($inversion->max_ganancia) && isset($inversion->invertido)){
+        //         $inversion->max_ganancia = $inversion->invertido * 2;
+        //         $inversion->restante += $nuevoInvertido * 2;
+        //     }
+        //     $inversion->package_id = $orden->package_id;
+        //     $inversion->save();
+        //     $inversion = $inversion->id;
 
-        }else{
+        // }else{
 
-            $inversion = $this->registeInversion($request->id);
-        }
+        //     $inversion = $this->registeInversion($request->id);
+        // }
 
-        $orden->inversion_id = $inversion;
-        $orden->save();
+        // $orden->inversion_id = $inversion;
+        // $orden->save();
 
-        $user = User::findOrFail($orden->iduser);
-        $user->status = '1';
-        $user->save();
+        // $user = User::findOrFail($orden->iduser);
+        // $user->status = '1';
+        // $user->save();
 
         return redirect()->back()->with('msj-success', 'Orden actualizada exitosamente');
     }
