@@ -95,23 +95,34 @@
     <div class="col-5  ml-5 " style="background: #ffffff;">
 
             <div class="panel panel-default ">
-                <div class="panel-heading  ">
+                <div class="panel-heading">
                     <h2> <strong>Detalles de facturacion </strong> </h2>
 
                     <br>
                     <div class="row ">
-                        <div class="col-md-6 col-sm-6 col-xs-3 form-group">
+                        <div class="col-md-6 col-sm-6 col-xs-3 form-group ">
                             <span class="help-block text-muted text textcustom  control-span">Nombres<sup
                                     class="requerido">*</sup>
                             </span>
-                            <input name="name" type="text" class="form-control custominput text-dark mt-1"
-                                style="background:  #F6F6F7;" value="{{$user->name}}" />
+                            <input name="name" type="text" class="custominput text-dark mt-1 form-control"
+                                style="background:  #F6F6F7;" value="{{old('name')}}" />
+                                @error('name')
+                                    <span class="invalid-feedback d-block" role="alert">
+                                        <strong>{{$message}}</strong>
+                                    </span>
+                                @enderror
                         </div>
                         <div class="col-md-6 col-sm-6 col-xs-3">
                             <span class="help-block text-muted textcustom mb-1">Apellidos <sup
                                     class="requerido">*</sup></span>
                             <input name="lastname" type="text" class="form-control custominput  text-dark mt-1"
                                 style="background:   #F6F6F7;" value="{{$user->last_name}}" />
+
+                                @error('lastname')
+                                <span class="invalid-feedback d-block" role="alert">
+                                    <strong>{{$message}}</strong>
+                                </span>
+                            @enderror
                         </div>
                     </div>
 
@@ -122,6 +133,11 @@
                             <span class="help-block text-muted ">Pais<sup class="requerido">*</sup></span>
                             <input name="country" type="text" class="form-control custominput  text-dark mt-1"
                                 style="background:  #F6F6F7" />
+                                @error('country')
+                                <span class="invalid-feedback d-block" role="alert">
+                                    <strong>{{$message}}</strong>
+                                </span>
+                            @enderror
                         </div>
                     </div>
 
@@ -132,6 +148,11 @@
                             <span class="help-block text-muted ">Direccion<sup class="requerido">*</sup></span>
                             <input name="address" type="text" class="form-control custominput  text-dark mt-1"
                                 style="background:  #F6F6F7" />
+                                @error('address')
+                                <span class="invalid-feedback d-block" role="alert">
+                                    <strong>{{$message}}</strong>
+                                </span>
+                            @enderror
                         </div>
                     </div>
 
@@ -142,6 +163,11 @@
                             <span class="help-block text-muted ">Pueblo/Ciudad<sup class="requerido">*</sup></span>
                             <input name="city" type="text" class="form-control custominput  text-dark mt-1"
                                 style="background:  #F6F6F7" />
+                                @error('city')
+                                <span class="invalid-feedback d-block" role="alert">
+                                    <strong>{{$message}}</strong>
+                                </span>
+                            @enderror
                         </div>
                     </div>
 
@@ -152,6 +178,11 @@
                             <span class="help-block text-muted ">Estado<sup class="requerido">*</sup></span>
                             <input name="state" type="text" class="form-control custominput  text-dark mt-1"
                                 style="background:  #F6F6F7" />
+                                @error('state')
+                                <span class="invalid-feedback d-block" role="alert">
+                                    <strong>{{$message}}</strong>
+                                </span>
+                            @enderror
                         </div>
                     </div>
 
@@ -163,6 +194,11 @@
                             <span class="help-block text-muted ">Email<sup class="requerido">*</sup></span>
                             <input name="email" type="text" class="form-control custominput  text-dark mt-1"
                                 style="background:  #F6F6F7;" value="{{$user->email}}"/>
+                                @error('email')
+                                <span class="invalid-feedback d-block" role="alert">
+                                    <strong>{{$message}}</strong>
+                                </span>
+                            @enderror
                         </div>
 
                         <br>
@@ -171,6 +207,11 @@
                             <span class="help-block text-muted ">Telefono<sup class="requerido">*</sup></span>
                             <input name="phone" type="text" class="form-control custominput  text-dark mt-1"
                                 style="background:   #F6F6F7;" value="{{$user->whatsapp}}" />
+                                @error('phone')
+                                <span class="invalid-feedback d-block" role="alert">
+                                    <strong>{{$message}}</strong>
+                                </span>
+                            @enderror
                         </div>
                     </div>
                 </div>
@@ -237,7 +278,9 @@
 
                 </table>
                 <hr class="hr">
-                <div class="form-group mt-5 mt-5 mr-5 btn btn-custom text-dark button">
+
+                <div class="form-group mt-5 mt-5 btn btn-custom text-dark button" style="left: 150px;">
+
                     <input class=" custominput" value="Realizar pedido" type="submit" style="background: #67FFCC">
                 </div>
             </div>

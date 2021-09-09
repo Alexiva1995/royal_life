@@ -13,10 +13,10 @@
                               alt="Product Image"
                              >
                       @else
-                            <img class="mt-2 mx-auto d-block  img-fluid"
+                            <img class="mt-2 mx-auto d-block  img-fluid w-100 mt-3"
                                  src="{{ asset('storage/photo-producto/'.$item->img) }}"
                                  alt="Product Image"
-                                 style="min-width:90%; ">
+                                 style=" ">
                       @endif
         </a>
             <div class="col-6 ">

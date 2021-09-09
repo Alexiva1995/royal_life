@@ -54,7 +54,7 @@
                                      src="{{asset('assets/img/home/producto21.png')}}"
                                      alt="Product Image">
                              @else
-                                   <img class=" o text-center w-75 mt-2"
+                                   <img class=" o text-center w-75 mt-3"
                                         src="{{ asset('storage/photo-producto/'.$producto->img) }}"
                                         alt="Product Image"
                                         style="">
@@ -109,7 +109,7 @@
                                 <div id="description " class=" card fuente "  style="background:#FFFFFF">
                                     <h4 class="mt-2"> <strong class=" ml-3 mt-3"> Product description </strong> </h4>
                                     <p class="text-dark mb-2 ml-3 mr-3 fuente">
-                                       {{$producto->description}}
+                                      <div class="ml-3 mr-3 text-dark mb-2 fuente"> {!! $producto->description !!} </div>
                                     </p>
                                 </div>
 

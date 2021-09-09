@@ -471,6 +471,17 @@ class TiendaController extends Controller
         $carrito = Cart::all();
 
         foreach($carrito as $cart){
+        $data = $request->validate([
+           'name'=> 'required|min:4',
+           'lastname'=>'required|min:4',
+           'country' => 'required|min:5',
+           'address'=>'required|min:8',
+           'state'=> 'required|min:5',
+           'city'=> 'required|min:6',
+           'email'=> 'required|min:7',
+           'phone'=> 'required|min:9',
+        ]);
+
         $data = [
             'name'=> $request->name,
             'lastname'=> $request->lastname,
