@@ -496,12 +496,22 @@ class TiendaController extends Controller
             'package_id'=>$cart->package_id,
             'cantidad'=>$cart->cantidad,
             'monto'=>$cart->monto,
+            'status'=>0,
             'total'=>$cart->total
         ];
 
+    /*    $data2 =[
+            'iduser' => $data['iduser'],
+            'package_id' => $data['package_id'],
+            'cantidad' => $data['cantidad'],
+            'total' => $data['total'],
+            'monto'=>$data['monto'],
 
-        $orden = DataOrdenUser::create($data);
-        Cart::where('iduser',$user->id)->delete();
+        ]; */
+
+         $orden = DataOrdenUser::create($data);
+        //OrdenPurchases::create($data);
+         Cart::where('iduser',$user->id)->delete();
 
     }
 
