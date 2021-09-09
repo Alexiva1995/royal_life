@@ -60,15 +60,17 @@
                                 <span class="user-name text-bold-600 text-white">{{Auth::user()->fullname}} <span class="text-primary">ADMIN</span></span>
                               </div>
                               <div style="margin-top: 10px;">
-                                {{-- <span class="user-name text-bold-600 text-primary p">Administrador</span> --}}
                                 <span class="user-name headerBalance">Saldo Disponible: {{Auth::user()->wallet}} $</span>
                               </div>
                                 @else
+                                <div style="margin-top: 10px;">
                                 <span class="user-name text-bold-600 text-white">
-                                    {{Auth::user()->fullname}} -
-                                    <span class="text-primary">{{Auth::user()->getStatus()}}</span>
+                                    {{Auth::user()->fullname}} -<span class="text-primary">{{Auth::user()->getStatus()}}</span>
                                 </span>
-                                <span class="user-name text-white">Saldo Disponible: {{Auth::user()->saldoDisponible()}} $</span>
+                                </div>
+                                <div style="margin-top: 10px;">
+                                <span class="user-name headerBalance">Saldo Disponible: {{Auth::user()->saldoDisponible()}} $</span>
+                                </div>
                                 @endif
                               </div>
                             </div>
