@@ -43,6 +43,8 @@
                         <li><a href="{{route('terms')}}">Terminos y Condiciones</a></li>
                         <br>
                         <li><a href="{{route('policity')}}">Politicas y privacidad</a></li>
+                        <br>
+                        <li><a href="{{route('faq')}}">Preguntas Frecuentes</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-4 col-md-3 item">

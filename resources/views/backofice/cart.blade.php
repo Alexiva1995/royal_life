@@ -1,6 +1,11 @@
 @extends('backofice.layouts.dashboard')
+@push('page_vendor_js')
+<script src="{{asset('assets/app-assets/vendors/js/extensions/sweetalert2.all.min.js')}}"></script>
+<script src="{{asset('assets/app-assets/vendors/js/extensions/polyfill.min.js')}}"></script>
+@endpush
 @section('content')
-
+@include('backofice.ui.script')
+@include('backofice.ui.script')
 <div class="carousel-inner">
     <img class="d-block w-100" src="{{asset('assets/img/home/formas_fondo3.png')}}" style="background: #173138;">
     <div class="container carousel-caption d-flex justify-content-start" style="top:90px;left: 7%;">
@@ -38,23 +43,28 @@
                         @foreach ($products as $item)
                         <tr class="text-center text-dark">
                             <td>
-                            @if($item->img == null)
+                            @if($item->getPackage->img == null)
                                     <img src="{{asset('assets/img/home/producto21.png')}}" alt="Product Image"
                                         style=" width: 100px; height: 100px;">
                              @else
                                    <img class=" o"
                                         src="{{ asset('storage/photo-producto/'.$item->getPackage->img) }}"
                                         alt="Product Image"
-                                        style="top: 15%;">
+                                        style=" width: 100px; height: 100px;">
                              @endif
                             </td>
                             <td>{{$item->getPackage->name}}</td>
                             <td>{{$item->getCategories->categories_name}}</td>
                             <form method="POST" class="form form-vertical" action="{{route('cart.update',$item->id)}}" enctype="multipart/form-data">
-                                    @method('PATCH')
-                                    @csrf
-                            <td><input type="number" name="cantidad" class="col-2 mr-1" value="{{$item->cantidad}}">
-                                <input type="hidden" name="monto" value="{{$item->monto}}"><button type="submit" class="btn btn-info"><i class="fa fa-edit"></i></button></td>
+                                @method('PATCH')
+                                @csrf
+                            <td>
+                                <div style="position: relative;left: 10px;">
+                                    <input type="hidden" name="monto" value="{{$item->monto}}">
+                                    <input class="sinborde shadow  text-center text-dark" type="number" id="cantidad" name="cantidad" value="{{$item->cantidad}}" min="1" required>
+                                    <button class="Rangoprecio shadow custominput" type="submit"><i class="fa fa-edit"></i></button>
+                                </div>
+                            </td>
                                 </form>
                             <td>${{$item->monto}}</td>
                             <td>${{($item->total)}}</td>
