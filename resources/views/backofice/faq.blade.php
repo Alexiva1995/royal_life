@@ -19,7 +19,7 @@
     <div class="row">
         <div class="col-4 bg-white mr-1">
             <div class="card bg-white">
-                <div class="card-body">
+                <div class="card-body text-dark">
                     <h2 class="">Lista de preguntas</h2>
                     <li><a href="#1" class="text-dark">¿QUIENES SOMOS?</a></li>
                     <li><a href="#2" class="text-dark">ROYAL LIFE EL EQUILIBRIO PERFECTO.</a></li>
@@ -150,7 +150,7 @@
             <li>Artritis reumatoide
             </li>
             <p class="texto-aboutS pt-1">Entre muchas otras, en algunos países más allá de sus usos terapéuticos también es recomendable usar CBD
-                como suplemento alimentario.</p>
+                como suplemento alimentario.</p> 
             </div>
         </div>
 
