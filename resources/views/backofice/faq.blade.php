@@ -30,7 +30,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-7 bg-white">
+        <div class="col-7 bg-white pb-3">
             <h1 class="texto-title mb-1" id="1"><strong>¿QUIENES SOMOS?</strong></h1>
             <p class="texto-aboutS">Una vida en abundancia económica es importante, pero una vida saludable es el
                 equilibrio perfecto, y entendiendo esto nace Royal Life, después de muchos análisis estamos seguros que

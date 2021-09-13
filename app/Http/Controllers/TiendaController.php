@@ -456,14 +456,16 @@ class TiendaController extends Controller
         if (Auth::user()->admin == 1) {
             $products = Cart::paginate(10);
             $suma = Cart::all()->sum('total');
+            $packages = Packages::take(4)->get();
 
         }else{
             $products = Cart::where('iduser', '=',Auth::id())->paginate(10);
             $suma = Cart::where('iduser', '=',Auth::id())->sum('total');
+            $packages = Packages::take(4)->get();
         }
 
 
-        return view('backofice.cart',compact('products','suma'));
+        return view('backofice.cart',compact('products','suma','packages'));
     }
 
     public function orden(Request $request){

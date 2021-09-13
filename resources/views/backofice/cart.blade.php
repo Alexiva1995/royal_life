@@ -43,36 +43,38 @@
                         @foreach ($products as $item)
                         <tr class="text-center text-dark">
                             <td>
-                            @if($item->getPackage->img == null)
-                                    <img src="{{asset('assets/img/home/producto21.png')}}" alt="Product Image"
-                                        style=" width: 100px; height: 100px;">
-                             @else
-                                   <img class=" o"
-                                        src="{{ asset('storage/photo-producto/'.$item->getPackage->img) }}"
-                                        alt="Product Image"
-                                        style=" width: 100px; height: 100px;">
-                             @endif
+                                @if($item->getPackage->img == null)
+                                <img src="{{asset('assets/img/home/producto21.png')}}" alt="Product Image"
+                                    style=" width: 100px; height: 100px;">
+                                @else
+                                <img class=" o" src="{{ asset('storage/photo-producto/'.$item->getPackage->img) }}"
+                                    alt="Product Image" style=" width: 100px; height: 100px;">
+                                @endif
                             </td>
                             <td>{{$item->getPackage->name}}</td>
                             <td>{{$item->getCategories->categories_name}}</td>
-                            <form method="POST" class="form form-vertical" action="{{route('cart.update',$item->id)}}" enctype="multipart/form-data">
+                            <form method="POST" class="form form-vertical" action="{{route('cart.update',$item->id)}}"
+                                enctype="multipart/form-data">
                                 @method('PATCH')
                                 @csrf
-                            <td>
-                                <div style="position: relative;left: 10px;">
-                                    <input type="hidden" name="monto" value="{{$item->monto}}">
-                                    <input class="sinborde shadow  text-center text-dark" type="number" id="cantidad" name="cantidad" value="{{$item->cantidad}}" min="1" required>
-                                    <button class="Rangoprecio shadow custominput" type="submit"><i class="fa fa-edit"></i></button>
-                                </div>
-                            </td>
-                                </form>
+                                <td>
+                                    <div style="position: relative;left: 10px;">
+                                        <input type="hidden" name="monto" value="{{$item->monto}}">
+                                        <input class="sinborde shadow  text-center text-dark" type="number"
+                                            id="cantidad" name="cantidad" value="{{$item->cantidad}}" min="1" required>
+                                        <button class="Rangoprecio shadow custominput" type="submit"><i
+                                                class="fa fa-edit"></i></button>
+                                    </div>
+                                </td>
+                            </form>
                             <td>${{$item->monto}}</td>
                             <td>${{($item->total)}}</td>
                             <td>
                                 <form action="{{route('destroy',['producto'=>$item->id])}}" method="POST">
                                     @csrf
                                     @method('DELETE')
-                                    <input type="submit" class="btn btn-danger d-block w-100 text-white" value="Eliminar &times;">
+                                    <input type="submit" class="btn btn-danger d-block w-100 text-white"
+                                        value="Eliminar &times;">
                                 </form>
                             </td>
                         </tr>
@@ -82,7 +84,7 @@
                 </table>
                 <div class="container mt-5 ">
                     <div class="text-center link">
-                    {{$products->links('pagination::bootstrap-4') }}
+                        {{$products->links('pagination::bootstrap-4') }}
                     </div>
                 </div>
                 <div class="container">
@@ -99,16 +101,17 @@
 
                 <div class="container mb-1">
                     <div class="row d-flex">
-                         <div class="col-3 d-flex justify-content-start">
-                            <a href="{{route('shop.backofice')}}" class="btn btn-custom text-dark " type="submit" style="background: #67FFCC"><strong
-                                    style="color:#173138">continuar comprado</strong></a>
+                        <div class="col-3 d-flex justify-content-start">
+                            <a href="{{route('shop.backofice')}}" class="btn btn-custom text-dark " type="submit"
+                                style="background: #67FFCC"><strong style="color:#173138">continuar
+                                    comprado</strong></a>
                         </div>
 
                         <div class="col-9 d-flex justify-content-end">
                             <form action="{{route('checkout.backofice')}}">
-                            <button class="btn btn-custom text-dark " type="submit" style="background: #67FFCC"><strong
-                                    style="color:#173138">Pagar</strong></button>
-                                </form>
+                                <button class="btn btn-custom text-dark " type="submit"
+                                    style="background: #67FFCC"><strong style="color:#173138">Pagar</strong></button>
+                            </form>
                         </div>
 
                     </div>
@@ -122,82 +125,42 @@
     <div class="row">
         <div class="card col-md-12" style="background: white">
             <div class="pt-3">
-                <a href="">
                     <h2 style="color:#303030"><strong>Productos relacionados</strong></h2>
-                </a>
             </div>
             <hr>
 
             <div class="row">
-
+                @foreach ($packages as $item)
                 <div class="card col-md-3" style="background: white">
+                    <a href="{{route('shop.backofice')}}">
                     <div class="product text-center">
+                        @if($item->img == null)
                         <p class="text-center card-h">
-                            <img class="mx-auto d-block img-ho" src="{{asset('assets/img/home/producto21.png')}}">
+                            <img class="mx-auto d-block img-ho" src="{{asset('assets/img/home/producto21.png')}}"
+                                alt="Product Image">
                         </p>
+                        @else
+                        <p class="text-center card-h">
+                            <img class="mx-auto d-block img-ho" src="{{ asset('storage/photo-producto/'.$item->img) }}"
+                                alt="Product Image" style="">
+                        </p>
+                        @endif
                         <div class="card-body">
-                            <a href="" class="btn btn-rel">
-                                <p style="margin-left: -5px;margin-top: -10px;">cremas</p>
+                            <a href="{{route('shop.backofice')}}" class="btn btn-rel">
+                                <p style="margin-left: -5px;margin-top: -10px;">
+                                    {{$item->getCategories->categories_name}}</p>
                             </a>
-                            <p class="text-right" style="color:black;font-size:20px;"> <strong>$31</strong></p>
-                            <h4 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h4>
+                            <p class="text-right" style="color:black;font-size:20px;">
+                                <strong>${{$item->price}}</strong></p>
+                            <h4 class="text-left" style="color:black;"><strong>{{$item->name}}</strong></h4>
                             <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget
                                 porttitor.</p>
                         </div>
                     </div>
+                </a>
                 </div>
-                <div class="card col-md-3" style="background: white">
-                    <div class="product text-center">
-                        <p class="text-center card-h">
-                            <img class="mx-auto d-block img-ho" src="{{asset('assets/img/home/producto21.png')}}">
-                        </p>
-                        <div class="card-body">
-                            <a href="" class="btn btn-rel">
-                                <p style="margin-left: -5px;margin-top: -10px;">cremas</p>
-                            </a>
-                            <p class="text-right" style="color:black;font-size:20px;"> <strong>$31</strong></p>
-                            <h4 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h4>
-                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget
-                                porttitor.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-md-3" style="background: white">
-                    <div class="product text-center">
-                        <p class="text-center card-h">
-                            <img class="mx-auto d-block img-ho" src="{{asset('assets/img/home/producto21.png')}}">
-                        </p>
-                        <div class="card-body">
-                            <a href="" class="btn btn-rel">
-                                <p style="margin-left: -5px;margin-top: -10px;">cremas</p>
-                            </a>
-                            <p class="text-right" style="color:black;font-size:20px;"> <strong>$31</strong></p>
-                            <h4 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h4>
-                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget
-                                porttitor.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-md-3" style="background: white">
-                    <div class="product text-center">
-                        <p class="text-center card-h">
-                            <img class="mx-auto d-block img-ho" src="{{asset('assets/img/home/producto21.png')}}">
-                        </p>
-                        <div class="card-body">
-                            <a href="" class="btn btn-rel">
-                                <p style="margin-left: -5px;margin-top: -10px;">cremas</p>
-                            </a>
-                            <p class="text-right" style="color:black;font-size:20px;"> <strong>$31</strong></p>
-                            <h4 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h4>
-                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget
-                                porttitor.</p>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
 
             </div>
 

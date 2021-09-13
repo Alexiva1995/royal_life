@@ -200,6 +200,15 @@ class Menu
                 'complementoruta' => '',
             ],
             // Fin Ordenes
+            //Contabilidad
+            'Contabilidad' => [
+                'submenu' => 0,
+                'ruta' => route('home'),
+                'blank'=> '', // si es para una pagina diferente del sistema solo coloquen _blank
+                'icon' => 'feather icon-user',
+                'complementoruta' => '',
+            ],
+            //fin Contabilidad
             'Market' => [
                 'submenu' => 0,
                 'ruta' => route('shop.backofice'),
