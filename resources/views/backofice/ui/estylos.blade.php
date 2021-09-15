@@ -19,6 +19,7 @@
     -o-transition:all 0.3s ease;
     -ms-transition:all 0.3s ease;
     width:100%;
+    box-shadow: 0 9px 9px 0 rgba(0, 0, 0, 0.16), 0 9px 9px 0 rgba(0, 0, 0, 0.12) !important;
 }
 
 .zoom:active {
