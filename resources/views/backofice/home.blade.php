@@ -3,7 +3,7 @@
 @section('content')
 
 
-<div class="">
+<div class="mx-auto" style="">
 <div class="row fondo fondo2 ">
 
      <div class="container ">
@@ -95,7 +95,7 @@
   <div class="row fondo fondo4 ">
 
     <div class="container ">
-       <div class="row ml-1">
+       <div class="row ml-2">
          <div class="col-6 top2  frente" >
             <strong class="frente" style="font-size: 45px ">Royal life el equilibrio perfecto.</strong>
 
