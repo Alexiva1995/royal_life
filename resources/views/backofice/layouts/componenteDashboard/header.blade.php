@@ -6,16 +6,16 @@
         <div class="collapse navbar-collapse justify-content-end" id="">
           <ul class="navbar-nav ">
             <li class="nav-item active">
-              <a class="nav-link ml-3 h5" href="{{route('inicio')}}" style="font-size: 18px; color: #5ce5ba;">inicio <span class="sr-only">(current)</span></a>
+              <a class="nav-link ml-3 h5 text-white" href="{{route('inicio')}}" style="font-size: 18px; ">inicio <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link ml-3 h5" href="{{route('shop.backofice')}}" style="font-size: 18px;">Tienda</a>
+              <a class="nav-link ml-3 h5 text-white" href="{{route('shop.backofice')}}" style="font-size: 18px;">Tienda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link  ml-3 h5" href="{{route('about')}}" style="font-size: 18px;">Nosotros</a>
+              <a class="nav-link  ml-3 h5 text-white" href="{{route('about')}}" style="font-size: 18px;">Nosotros</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link ml-3 h5" href="{{route('contact_us')}}" style="font-size: 18px;">Contacto</a>
+                <a class="nav-link ml-3 h5 text-white" href="{{route('contact_us')}}" style="font-size: 18px;">Contacto</a>
               </li>
           </ul>
         </div>
@@ -26,9 +26,9 @@
             @else
                            <ul class="nav navbar-nav float-right">
                     <li class="nav-item mr-auto">
-                        
+
                             {{-- <i class="ficon feather icon-maximize"></i> --}}
-                            
+
                     </li>
                     {{-- Notificaciones --}}
                     {{-- @include('layouts.componenteDashboard.notificaciones') --}}
@@ -49,8 +49,7 @@
                               </span>
                               @else
                               <span>
-                                  <img class="round" src="{{asset('assets/img/royal_green/logos/logo.svg')}}"
-                                      alt="{{ Auth::user()->fullname }}" height="50" width="50">
+
                               </span>
                               @endif
                             </div>
@@ -85,7 +84,7 @@
                             @if (session('impersonated_by'))
                             <a class="dropdown-item text-white" href="{{ route('impersonate.stop') }}">
                                 <i class="feather icon-log-in"></i> Volver a mi Usuario
-                            </a>    
+                            </a>
                             @endif
                             {{-- <a class="dropdown-item" href="app-email.html">
                                 <i class="feather icon-mail"></i> My Inbox
@@ -99,7 +98,7 @@
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item text-white" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
                                 <i class="feather icon-log-out"></i> Logout
-                            </a>            
+                            </a>
                         </div>
                     </li>
                 </ul>
