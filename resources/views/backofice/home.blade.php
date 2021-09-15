@@ -119,7 +119,7 @@
         @foreach ($productos as $producto )
       <div class="col-4 ">
 
-        <div class="card zoom2" style="width: 24rem;  background:#FFFFFF;">
+        <div class="card zoom2" style="width: 23rem;  background:#FFFFFF;">
             <div class="card-body">
 
                 <div class="text-center bg " style="">
