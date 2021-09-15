@@ -3,12 +3,12 @@
 @section('content')
 
 
-<div class="mx-auto ">
+<div class="">
 <div class="row fondo fondo2 ">
 
      <div class="container ">
-        <div class="row top1 mx-auto">
-          <div class="col-6 head mx-auto">
+        <div class="row top1 ml-1">
+          <div class="col-6 head ">
             <h1 class="fs-1  mt-5 font estilo-x">Linea completa de<strong> Royal life </strong> </h1>
 
                 <p class="text-dark mt-2 mb-3 font2">Gracias a nuestro amplio portafolio de productos, podrás encontrar la combinación perfecta, para ello
@@ -27,7 +27,7 @@
 
 <div class="container w-100">
     <h1 class="text-center mt-5 mb-3" style="font-size: 35px;"> <strong> Categorias de nuestros productos </strong></h1>
-    <div class="row mb-5">
+    <div class="row mb-5 ml-1">
         @foreach ($categorias as $item )
       <div class="col-4 mb-2">
         <div class="card mb-1 col-md-11 ml-md-1 zoom2" style="height: 350px;background: white;">
@@ -45,9 +45,9 @@
     </div>
   </div>
 
-  <div class="row   fondo1 mx-auto" >
+  <div class="row   fondo1 " >
     <div class=" mx-auto ">
-  <div class="container " >
+  <div class="container ml-5" >
       <h1 class=" mt-5 mb-2 "><strong style="font-size: 35px; color: #303030;">Los mas vendidos </strong></h1>
     <div class="row mb-5 " >
         @foreach ($productos as $producto )
@@ -95,7 +95,7 @@
   <div class="row fondo fondo4 ">
 
     <div class="container ">
-       <div class="row mx-auto">
+       <div class="row ml-1">
          <div class="col-6 top2  frente" >
             <strong class="frente" style="font-size: 45px ">Royal life el equilibrio perfecto.</strong>
 
@@ -114,12 +114,12 @@
 
 
 <div class="container">
-    <h1 class="text-center mt-5 mb-3">Productos</h1>
-    <div class="row">
+    <h1 class="text-center mt-5 mb-3" style="font-size: 35px;"> <strong> Productos </strong> </h1>
+    <div class="row ml-1">
         @foreach ($productos as $producto )
       <div class="col-4 ">
 
-        <div class="card zoom2" style="width: 24rem;  background:#FFFFFF;">
+        <div class="card zoom2" style="width: 23rem;  background:#FFFFFF;">
             <div class="card-body">
 
                 <div class="text-center bg " style="">
@@ -151,6 +151,22 @@
 
       </div>
       @endforeach
+    </div>
+  </div>
+
+
+  <div class="container">
+    <h1 class="text-center mt-5 mb-3" style="font-size: 35px;"> <strong> Clientes satisfechos  </strong> </h1>
+    <div class="row">
+      <div class="col-4">
+        Primera de tres columnas
+      </div>
+      <div class="col-4">
+        Segunda de tres columnas
+      </div>
+      <div class="col-4">
+        Tercera de tres columnas
+      </div>
     </div>
   </div>
 
