@@ -2,19 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use Carbon\Carbon;
 use App\Models\Ranks;
+use App\Models\Packages;
+use App\Mail\contactEmail;
+use App\Models\Categories;
+use Illuminate\Support\Str;
+use App\Models\OrdenPurchases;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Http\Client\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\View;
 use App\Http\Controllers\TreeController;
 use App\Http\Controllers\WalletController;
-use App\Mail\contactEmail;
-use App\Models\OrdenPurchases;
-use Carbon\Carbon;
-use Illuminate\Http\Client\Request;
-use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Str;
+use Facade\Ignition\Support\Packagist\Package;
 
 class HomeController extends Controller
 {
@@ -223,6 +226,12 @@ class HomeController extends Controller
     public function inicio()
     {
         return view('backofice.home');
+    }
+    public function inicio2()
+    {
+        $categorias = Categories::all();
+        $productos = Packages::take(9)->get();
+        return view('backofice.home2', compact('categorias','productos'));
     }
 
     public function about()

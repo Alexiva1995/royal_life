@@ -183,6 +183,8 @@ Route::prefix('dashboard')->middleware('menu', 'auth')->group(function ()
 
     Route::prefix('backofice')->group(function(){
     Route::get('/inicio', 'HomeController@inicio')->name('inicio');
+    Route::get('/inicio2', 'HomeController@inicio2')->name('inicio2');
+
     Route::get('/about', 'HomeController@about')->name('about');
     Route::get('/contact_us', 'HomeController@contact_us')->name('contact_us');
     Route::post('/contactar', 'HomeController@contact')->name('contact');
@@ -191,8 +193,8 @@ Route::prefix('dashboard')->middleware('menu', 'auth')->group(function ()
     Route::get('/cart', 'TiendaController@cart')->name('cart');
     Route::post('/cart-post', 'TiendaController@cart_save')->name('cart.post');
     Route::patch('cart-update/{id}', 'TiendaController@updateCart')->name('cart.update');
-    
-    
+
+
 
     Route::get('/shopBackofice/checkout', 'TiendaController@checkout')->name('checkout.backofice');
 

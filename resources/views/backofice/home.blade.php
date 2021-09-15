@@ -6,11 +6,10 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="text-left">
-                    <h1 style="font-size: 55px;">Tellus nibh <strong> mattis <br> ultricies</strong> phasellus</h1>
-                    <p class="text-dark mt-2 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat,
-                        semper ac facilisi gravida velit consequat, tempor, volutpat. Libero, diam tellus ut sed nec sed
-                        sem tortor volutpat. Cras a ornare nisi auctor tellus tortor, mattis. Nisl arcu sit massa at
-                        faucibus eros tincidunt.</p>
+                    <h1 style="font-size: 45px;  color: #303030;">Linea completa de<strong> Royal life </strong> </h1>
+                    <p class="text-dark mt-2 mb-3">Gracias a nuestro amplio portafolio de productos, podrás encontrar la combinación perfecta, para ello
+                        nos hemos aliado con los mejores laboratorios en los Estados Unidos que gracias a sus investigaciones Hoy te entregamos la mejor
+                        del mercado, productos excepcionales, los mejores procesos y la mas alta pureza.</p>
                     <a href="{{route('shop.backofice')}}" class="btn btn-primario"><strong>ir a la tienda</strong></a>
                 </div>
             </div>
@@ -18,7 +17,7 @@
                 <img src="{{asset('assets/img/home/Polygon5.png')}}" alt=""
                     class="carousel-caption d-flex justify-content-center" style="top:-240px;left: -45px;">
                 <img src="{{asset('assets/img/home/producto1.png')}}" alt=""
-                    class="carousel-caption d-flex justify-content-center" style="top:-180px;left: -110px;">
+                    class="carousel-caption d-flex justify-content-center" style="top:-180px;left: -50px;">
             </div>
         </div>
     </div>
@@ -35,9 +34,7 @@
     <div class="contaniner">
         <div class="row d-flex justify-content-center">
             <div class="col-7">
-                <p class="text-center text-dark mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tellus
-                    pharetra amet
-                    nunc sed etiam nibh et, morbi. Morbi commodo lorem purus non dui.</p>
+
             </div>
         </div>
     </div>
@@ -275,17 +272,17 @@
     <div class="container carousel-caption" style="font-size: 40px;top: 100px;text-align: left;">
         <div class="row">
             <div class="col-md-6">
-                <strong>Productos CBD con los mas altos estandares de calidad</strong>
+                <strong>Royal life el equilibrio perfecto.</strong>
             </div>
         </div>
     </div>
-    <div class="container carousel-caption" style="top: 300px;text-align: left;font-size:18px;">
+    <div class="container carousel-caption" style="top: 250px;text-align: left;font-size:18px;">
         <div class="row">
             <div class="col-md-6">
                 <div class="">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet pellentesque massa sollicitudin
-                    scelerisque morbi. Tempus sed euismod cursus non porttitor velit. Volutpat facilisi mauris, et nunc
-                    risus justo, netus.
+                    Cada proceso de nuestros productos son cuidadosamente vigilados por expertos,
+                    nuestros laboratorios aliados garantizan el CBD mas puro del mercado y nuestra
+                    linea de productos lo demuestra.
                 </div>
             </div>
         </div>
@@ -296,8 +293,7 @@
 <div class="container mt-5">
     <div class="text-center">
         <h1 class="texto-title pb-3"><strong> Productos </strong></h1>
-        <p class="text-center text-dark pb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ligula facilisi
-            quis <br> lectus morbi phasellus arcu. Mus viverra feugiat mattis sollicitudin consequat</p>
+
     </div>
 </div>
 
@@ -489,7 +485,6 @@
 <div class="container mt-5">
     <div class="text-center">
         <h1 class="texto-title"><strong> Clientes satisfechos </strong></h1>
-        <p class="texto-simple">curabitur lacus arcu, sodales in quam sed, commodo efficitur liguia</p>
     </div>
 </div>
 <div class="testimonials-clean">
