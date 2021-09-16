@@ -101,7 +101,8 @@
 
                <p class=" mt-2 mb-3 frente font2 frente" > Cada proceso de nuestros productos son cuidadosamente vigilados por expertos,
                 nuestros laboratorios aliados garantizan el CBD mas puro del mercado y nuestra
-                linea <br> de productos lo demuestra.</p>
+                linea <br> de productos lo demuestra.<br>Nuestra principal misión es mejorar tu calidad de vida, por eso queremos
+                sorprenderte no una sola ves, si no todos los días!!"</p>
          </div>
          <div class="col-6  left1 ">
            <img src="{{asset('assets/img/home/cbd1.png')}}" class=""  >
@@ -220,22 +221,27 @@ i
   </div>
 
   <div class="container">
-    <div class="row " style="left: 50px; top: -160px; position: relative;">
-        <div class=" col-12 " style="position: relative; top: 190px; z-index: 8; ">
-            <h1 class=" mr-5 text-center">
-                <strong class="text-white text-center mr-3" style="font-size: 35px;">Faucibus pulvinar euismod tincidunt</strong>
-            </h1> <br>
-            <p class="text-white text-center ml-5" style="width: 900px;">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.Quam blandit ac
-                commodo turpis turpis.Ipsum adipiscing lacus, quis aliquam magna leo.
-                Quam convallis pellentesque sed ipsum sit malesuada libero fermentum. Volutpat
-                 dolor vitae adipiscing mi. ut nec felis dolor a eu viverra sed adipiscing. </p>
-                 <a href="{{route('contact_us')}}" class="btn btn-prim mr-1" style="top: 200px;"><strong>Contáctanos</strong></a>
-            </div>
-            <div class="col-11  text-dark mb-5 bg3" style="">
+    <div class="row" >
 
-        <img class="w-100 " src="{{asset('assets/img/home/formas_fondo22.png')}}" alt="">
-      </div>
+        <div class=" col-12 for bg3 mb-5" style="">
+            <h1 class="ml-2 mr-2  text-center mt-5 " style="">
+                <strong class="text-white text-center " style="font-size: 35px;">El CBD se encuentra en todos los tipos de cannabis sativa, pero el Cañamo es el que tiene las concentraciones mas altas.</strong>
+            </h1>
+            <p class="text-white text-center ml-2 mr-2 " style="">
+                La relación entre la Humanidad y el cannabis comenzó hace miles de años. Esta larga historia nació en el Neolítico, cuando
+                los humanos empezaron a practicar la agricultura y asentarse en poblados donde cultivaban esta planta por sus propiedades
+                terapéuticas. Siendo originario de Asia central, el cannabis fue expandiéndose, primero, hacia China, donde la evidencia
+                arqueológica muestra la quema de cogollos hace 2.500 años; para después viajar hacia Europa, hoy en dia se sigue cultivando
+                esta planta de forma selectiva con propiedad comerciales, convirtiéndose en una fuente natural y rica en CBD.
+                como Lo dijimos anteriormente, el CBD es parte de una amplia familia de cannabionoides. Aunque la mayoría de estos compuestos
+                (incluyendo el CBD) no son psicoactivos, todas las familias tienen un miembro no deseado.
+                La familia de los cannabinoides también incluye el THC, el compuesto ilegal que está presente en las plantaciones de marihuana.
+            </p>
+             <div class="text-center mb-1">
+                 <a href="{{route('contact_us')}}" class="btn btn-prim text-center" style=""><strong class="text-center">Contáctanos</strong></a>
+             </div>
+            </div>
+
 
 
     </div>
