@@ -19,7 +19,7 @@
 
 .left1{
     position: relative;
-   left: -43px;
+   left: -60px;
 
 
 }
