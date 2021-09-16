@@ -500,10 +500,14 @@
                         <img src="{{ asset('assets/img/home/Vector.png') }}" alt="">
                     </div>
                     <div>
-                        <p class="description" style="margin-top: 30px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel habitant elementum volutpat neque viverra. Risus felis metus, enim amet suspendisse elit in. Egestas turpis vitae et, et nibh porttitor. Accumsan eget.</p>
+                        <p class="description" style="margin-top: 30px;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Vel habitant elementum volutpat neque viverra. Risus felis
+                            metus, enim amet suspendisse elit in. Egestas turpis vitae
+                            et, et nibh porttitor. Accumsan eget.</p>
                     </div>
                 </div>
-                <div class="author"><img class="rounded-circle" src="{{asset('assets/img/home/Ellipse.png')}}"
+                <div class="author"><img class="rounded-circle " src="{{asset('assets/img/home/Ellipse.png')}}"
                         style="margin-top: 5px;">
                     <h5 class="name" style="margin-top: 5px;">Antonio Medina</h5>
                     <p class="title"><strong>Cliente</strong></p>
@@ -542,7 +546,9 @@
                 <strong>Faucibus pulvinar euismod tincidunt</strong>
             </div>
             <div class="carousel-caption" style="top: 140px;font-size: 16px;">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.Quam blandit ac commodo turpis turpis. Ipsum adipiscing lacus, quis aliquam magna leo. Quam convallis pellentesque sed ipsum sit malesuada libero fermentum. Volutpat dolor vitae adipiscing mi. ut nec felis dolor a eu viverra sed adipiscing.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.Quam blandit ac commodo turpis turpis. Ipsum adipiscing lacus
+                , quis aliquam magna leo. Quam convallis pellentesque sed ipsum sit malesuada libero fermentum. Volutpat
+                 dolor vitae adipiscing mi. ut nec felis dolor a eu viverra sed adipiscing.
             </div>
             <a href="{{route('contact_us')}}" class="btn btn-pri"><strong>Contáctanos</strong></a>
             <img class="w-100" src="{{asset('assets/img/home/formas_fondo22.png')}}" alt="">
