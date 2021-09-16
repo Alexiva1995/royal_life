@@ -156,9 +156,8 @@ position: relative;
     box-shadow: 0 9px 9px 0 rgba(0, 0, 0, 0.16), 0 9px 9px 0 rgba(0, 0, 0, 0.12);
 }
 .btn-prim{
-    position: absolute;
-    top: -100px;
-    left: 447px;
+
+
     width: 150px;
     height: 40px;
     background: #67FFCC;

@@ -870,3 +870,7 @@ cursor: pointer;
 .atras{
     z-index: -1;
 }
+
+.for{
+    background-image: url('../img/formas_fondo22.png');
+}
