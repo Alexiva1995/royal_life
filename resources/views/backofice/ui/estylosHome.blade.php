@@ -126,5 +126,20 @@ transform: translate(-50%, -50%);
     left: -3.6%;
 
 }
+.forma{
+position: absolute;
+    background: #ebfff8;
+    border-radius: 20px;
+    background-size: 10px 10px;
+    width: 700px;
+    height: 300px;
+    left: 300px;
+}
+
+.bg1{
+    background: white; width: 50%;
+    height: 80px;
+
+}
     </style>
 @endpush

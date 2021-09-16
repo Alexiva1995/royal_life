@@ -3,7 +3,7 @@
 @section('content')
 
 
-<div class="mx-auto" style="">
+<div class="mx-auto" >
 <div class="row fondo fondo2 ">
 
      <div class="container ">
@@ -157,16 +157,65 @@
 
   <div class="container">
     <h1 class="text-center mt-5 mb-3" style="font-size: 35px;"> <strong> Clientes satisfechos  </strong> </h1>
-    <div class="row">
-      <div class="col-4">
-        Primera de tres columnas
+    <div class="row ml-1">
+        <i class="forma">
+i
+        </i>
+      <div class="col-6">
+        <div class="col-md-11 item " style="background: #f7f7f7; ">
+            <div class="mt-1 ml-1 bg1 " style="top: -30px; position: relative;"> <img class="rounded-circle mr-1 ml-1 mt-1" src="{{asset('assets/img/home/Ellipse.png')}}"
+                style="float: left">
+            <h5 class="mt-1 text-dark"> <strong style="top: 20px; position: relative;"> Antonio Medina </strong></h5>
+            <p class="mt-2"><strong class="text-dark ">Cliente</strong></p>
+        </div>
+            <div class="ml-1 ">
+
+                <div style="">
+                    <img src="{{ asset('assets/img/home/Vector.png') }}" alt="">
+                    <img src="{{ asset('assets/img/home/Vector.png') }}" alt="">
+                    <img src="{{ asset('assets/img/home/Vector.png') }}" alt="">
+                    <img src="{{ asset('assets/img/home/Vector.png') }}" alt="">
+                    <img src="{{ asset('assets/img/home/Vector.png') }}" alt="">
+                </div>
+                <div>
+                    <p class=" text-dark mt-1 mb-1" >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Vel habitant elementum volutpat neque viverra. Risus felis
+                        metus, enim amet suspendisse elit in. Egestas turpis vitae
+                        et, et nibh porttitor. Accumsan eget.</p>
+                </div>
+            </div>
+
+        </div>
       </div>
-      <div class="col-4">
-        Segunda de tres columnas
+
+      <div class="col-6">
+        <div class="col-md-11 item" style="background:#f7f7f7;">
+            <div class="author ml-1 bg1" style="top: -30px; position: relative;"><img class="rounded-circle mr-1 ml-1 mt-1" src="{{asset('assets/img/home/Ellipse1.png')}}"
+                style=" float: left;">
+                <h5 class="mt-1 text-dark"> <strong style="top: 20px; position: relative;">Felipe Minaya </strong> </h5>
+            <p class="mt-2"><strong class="text-dark">Cliente</strong></p>
+        </div>
+            <div class="ml-1">
+                <div style="margin-top: 8px;">
+                    <img src="{{ asset('assets/img/home/Vector.png') }}" alt="">
+                    <img src="{{ asset('assets/img/home/Vector.png') }}" alt="">
+                    <img src="{{ asset('assets/img/home/Vector.png') }}" alt="">
+                    <img src="{{ asset('assets/img/home/Vector.png') }}" alt="">
+                    <img src="{{ asset('assets/img/home/Vector.png') }}" alt="">
+                </div>
+                <div>
+                    <p class=" text-dark  mt-1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Vel habitant elementum volutpat neque viverra. Risus felis
+                        metus, enim amet suspendisse elit in. Egestas turpis vitae
+                        et, et nibh porttitor. Accumsan eget.</p>
+                </div>
+            </div>
+
+        </div>
       </div>
-      <div class="col-4">
-        Tercera de tres columnas
-      </div>
+
     </div>
   </div>
 
