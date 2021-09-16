@@ -15,7 +15,7 @@
                     nos hemos aliado con los mejores laboratorios en los Estados Unidos que gracias a sus investigaciones Hoy te entregamos la mejor
                     del mercado, productos excepcionales, los mejores procesos y la mas alta pureza.</p>
 
-                <a href="{{route('shop.backofice')}}" class="btn btn-primario"><strong>ir a la tienda</strong></a>
+                <a href="{{route('shop.backofice')}}" class="btn btn-prima"><strong>ir a la tienda</strong></a>
           </div>
           <div class="col-6 ">
             <img src="{{asset('assets/img/home/Polygon5Forma.png')}}" class=" img-fluid img-responsive"  style="max-width: 100%">
@@ -157,18 +157,18 @@
 
   <div class="container">
     <h1 class="text-center mt-5 mb-3" style="font-size: 35px;"> <strong> Clientes satisfechos  </strong> </h1>
-    <div class="row ml-1">
+    <div class="row ml-1 ">
         <i class="forma">
 i
         </i>
-      <div class="col-6">
-        <div class="col-md-11 item " style="background: #f7f7f7; ">
+      <div class="col-6 bg2">
+        <div class="col-md-11 item bgcomen" style="">
             <div class="mt-1 ml-1 bg1 " style="top: -30px; position: relative;"> <img class="rounded-circle mr-1 ml-1 mt-1" src="{{asset('assets/img/home/Ellipse.png')}}"
                 style="float: left">
             <h5 class="mt-1 text-dark"> <strong style="top: 20px; position: relative;"> Antonio Medina </strong></h5>
             <p class="mt-2"><strong class="text-dark ">Cliente</strong></p>
         </div>
-            <div class="ml-1 ">
+            <div class="ml-1 mr-1">
 
                 <div style="">
                     <img src="{{ asset('assets/img/home/Vector.png') }}" alt="">
@@ -189,14 +189,14 @@ i
         </div>
       </div>
 
-      <div class="col-6">
-        <div class="col-md-11 item" style="background:#f7f7f7;">
+      <div class="col-6 bg2">
+        <div class="col-md-11 item bgcomen ml-2" >
             <div class="author ml-1 bg1" style="top: -30px; position: relative;"><img class="rounded-circle mr-1 ml-1 mt-1" src="{{asset('assets/img/home/Ellipse1.png')}}"
                 style=" float: left;">
                 <h5 class="mt-1 text-dark"> <strong style="top: 20px; position: relative;">Felipe Minaya </strong> </h5>
             <p class="mt-2"><strong class="text-dark">Cliente</strong></p>
         </div>
-            <div class="ml-1">
+            <div class="ml-1 mr-1">
                 <div style="margin-top: 8px;">
                     <img src="{{ asset('assets/img/home/Vector.png') }}" alt="">
                     <img src="{{ asset('assets/img/home/Vector.png') }}" alt="">
@@ -218,6 +218,29 @@ i
 
     </div>
   </div>
+
+  <div class="container">
+    <div class="row " style="left: 50px; top: -160px; position: relative;">
+        <div class=" col-12 " style="position: relative; top: 190px; z-index: 8; ">
+            <h1 class=" mr-5 text-center">
+                <strong class="text-white text-center mr-3" style="font-size: 35px;">Faucibus pulvinar euismod tincidunt</strong>
+            </h1> <br>
+            <p class="text-white text-center ml-5" style="width: 900px;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.Quam blandit ac
+                commodo turpis turpis.Ipsum adipiscing lacus, quis aliquam magna leo.
+                Quam convallis pellentesque sed ipsum sit malesuada libero fermentum. Volutpat
+                 dolor vitae adipiscing mi. ut nec felis dolor a eu viverra sed adipiscing. </p>
+                 <a href="{{route('contact_us')}}" class="btn btn-prim mr-1" style="top: 200px;"><strong>Contáctanos</strong></a>
+            </div>
+            <div class="col-11  text-dark mb-5 bg3" style="">
+
+        <img class="w-100 " src="{{asset('assets/img/home/formas_fondo22.png')}}" alt="">
+      </div>
+
+
+    </div>
+  </div>
+
 
 </div>
 @endsection

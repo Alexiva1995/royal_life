@@ -127,19 +127,135 @@ transform: translate(-50%, -50%);
 
 }
 .forma{
-position: absolute;
+position: relative;
     background: #ebfff8;
     border-radius: 20px;
     background-size: 10px 10px;
-    width: 700px;
-    height: 300px;
-    left: 300px;
-}
+    width: 800px;
+    height: 370px;
+    left: 150px;
+    top: 50px;
 
+}
 .bg1{
     background: white; width: 50%;
     height: 80px;
-
+    z-index: 8;
 }
+.bg2{
+    position: relative;
+    top: -310px;
+}
+.bgcomen{
+    background: #f7f7f7;
+    height: 240px;
+    box-shadow: 0 27px 27px 0 rgba(154, 255, 208, 0.16), 0 9px 9px 0 rgba(159, 255, 191, 0.12);
+}
+
+.sombra{
+    box-shadow: 0 9px 9px 0 rgba(0, 0, 0, 0.16), 0 9px 9px 0 rgba(0, 0, 0, 0.12);
+}
+.btn-prim{
+    position: absolute;
+    top: -100px;
+    left: 447px;
+    width: 150px;
+    height: 40px;
+    background: #67FFCC;
+    border-radius: 7px;
+    color: black!important;
+  }
+  .btn-prim:hover{
+    -webkit-transform:scale(1.05);
+    -moz-transform:scale(1.05);
+    -ms-transform:scale(1.05);
+    -o-transform:scale(1.05);
+    transform:scale(1.05);
+
+    -webkit-transition:all 0.3s ease;
+    -moz-transition:all 0.3s ease;
+    -o-transition:all 0.3s ease;
+    -ms-transition:all 0.3s ease;
+
+
+    border-color: #66FFCC !important;
+    color: rgb(255, 255, 255)!important;
+    box-shadow: 0 8px 25px -8px #66ffcc;
+    background-color: #66FFCC;
+  }
+
+  .btn-prim:active{
+
+-webkit-transform:scale(1);
+-moz-transform:scale(1);
+-ms-transform:scale(1);
+-o-transform:scale(1);
+transform:scale(1);
+
+-webkit-transition:all 0.3s ease;
+-moz-transition:all 0.3s ease;
+-o-transition:all 0.3s ease;
+-ms-transition:all 0.3s ease;
+
+
+border-color: #66FFCC !important;
+color: black!important;
+box-shadow: 0 8px 25px -8px #66ffcc;
+background-color: #66FFCC;
+
+  }
+
+  .btn-prima{
+    width: 190px;
+    height: 40px;
+    background: #67FFCC;
+    border-radius: 7px;
+    color: black!important;
+  }
+  .btn-prima:hover{
+    -webkit-transform:scale(1.05);
+    -moz-transform:scale(1.05);
+    -ms-transform:scale(1.05);
+    -o-transform:scale(1.05);
+    transform:scale(1.05);
+
+    -webkit-transition:all 0.3s ease;
+    -moz-transition:all 0.3s ease;
+    -o-transition:all 0.3s ease;
+    -ms-transition:all 0.3s ease;
+
+
+    border-color: #66FFCC !important;
+    color: rgb(255, 255, 255)!important;
+    box-shadow: 0 8px 25px -8px #66ffcc;
+    background-color: #66FFCC;
+  }
+
+  .btn-prima:active{
+
+-webkit-transform:scale(1);
+-moz-transform:scale(1);
+-ms-transform:scale(1);
+-o-transform:scale(1);
+transform:scale(1);
+
+-webkit-transition:all 0.3s ease;
+-moz-transition:all 0.3s ease;
+-o-transition:all 0.3s ease;
+-ms-transition:all 0.3s ease;
+
+
+border-color: #66FFCC !important;
+color: black!important;
+box-shadow: 0 8px 25px -8px #66ffcc;
+background-color: #66FFCC;
+  }
+
+  .bg3{
+    background-color: #173138;
+    border-radius: 1rem;
+    width: 10%;
+    height: 1%;
+  }
     </style>
 @endpush
