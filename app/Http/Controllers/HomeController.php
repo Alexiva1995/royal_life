@@ -226,8 +226,9 @@ class HomeController extends Controller
     public function inicio()
     {
         $categorias = Categories::all();
-        $productos = Packages::take(9)->get();
-        return view('backofice.home', compact('categorias','productos'));
+        $productosMasVendidos = Packages::take(9)->get();
+        $productos = Packages::take(8)->get();
+        return view('backofice.home', compact('categorias','productos','productosMasVendidos'));
     }
     public function inicio2()
     {

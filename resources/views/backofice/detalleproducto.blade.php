@@ -76,7 +76,7 @@
                                     </div>
                                     <div class="price ml-3">
                                         <h4>Price:</h4>
-                                        <p class="text-dark "> <span>${{$producto->price}}</span></p>
+                                        <p class="text-dark "> <span> <strong> ${{$producto->price}} </strong> </span></p>
                                     </div>
                                     <div class="quantity ml-3">
                                         <h4>Quantity:</h4>

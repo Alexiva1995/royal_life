@@ -6,7 +6,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="">
           <ul class="navbar-nav ">
             <li class="nav-item active">
-              <a class="nav-link ml-3 h5 text-white" href="{{route('inicio')}}" style="font-size: 18px; ">inicio <span class="sr-only">(current)</span></a>
+              <a class="nav-link ml-3 h5 text-white side" href="{{route('inicio')}}" style="font-size: 18px; ">inicio <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link ml-3 h5 text-white" href="{{route('shop.backofice')}}" style="font-size: 18px;">Tienda</a>
@@ -62,14 +62,14 @@
                                 <span class="user-name headerBalance">Saldo Disponible: {{Auth::user()->wallet}} $</span>
                               </div>
                                 @else
-                                <div style="margin-top: 10px;">
-                                <span class="user-name text-bold-600 text-white">
-                                    {{Auth::user()->fullname}} -<span class="text-primary">{{Auth::user()->getStatus()}}</span>
+                                <div style="margin-top: 20px; ">
+                                <span class="user-name text-bold-600 text-white mr-1" >
+                                    {{Auth::user()->fullname}} - <span class="text-primary">{{Auth::user()->getStatus()}}</span>
                                 </span>
                                 </div>
-                                <div style="margin-top: 10px;">
-                                <span class="user-name headerBalance">Saldo Disponible: {{Auth::user()->saldoDisponible()}} $</span>
-                                </div>
+                                  {{--    <div style="margin-top: 10px;">
+                          <span class="user-name headerBalance">Saldo Disponible: {{Auth::user()->saldoDisponible()}} $</span>
+                                </div>  --}}
                                 @endif
                               </div>
                             </div>
