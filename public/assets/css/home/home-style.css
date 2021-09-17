@@ -819,6 +819,7 @@ cursor: pointer;
     background:#66FFCC;
     border-radius: 10px;
 }
+
 .text-ab{
   width: 100%;
   margin-left: -5px;
@@ -835,7 +836,7 @@ cursor: pointer;
 }
 
 .fondo1{
-    background:#F0FFFA;
+    background:#F0FFFA !important ;
     height: 60rem;
     max-width: 101%;
     min-width: 20em;

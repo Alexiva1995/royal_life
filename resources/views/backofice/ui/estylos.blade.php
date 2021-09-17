@@ -48,6 +48,8 @@
     -o-transition:all 0.3s ease;
     -ms-transition:all 0.3s ease;
     width:30%;
+    box-shadow: 0 9px 9px 0 rgba(0, 0, 0, 0.16), 0 9px 9px 0 rgba(0, 0, 0, 0.12) !important;
+
 }
 
 .zoom2:active {
@@ -93,8 +95,9 @@
 
     border-color: #66FFCC !important;
     color: black!important;
-    box-shadow: 0 8px 25px -8px #66ffcc;
+    box-shadow: 0 8px 25px -8px #66ffcc !important;
     background-color: #66FFCC;
+
 }
 
 .zoom4:active {

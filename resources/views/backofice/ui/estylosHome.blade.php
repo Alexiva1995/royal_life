@@ -1,5 +1,9 @@
 @push('custom_css')
     <style>
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@300&family=Montserrat:wght@300&display=swap');
+.Custom-font{
+    font-family: 'Montserrat', sans-serif;
+}
 .estilo-x {
     font-size: calc(1em + 1vw)
 }
@@ -149,12 +153,17 @@ position: relative;
 .bgcomen{
     background: #f7f7f7;
     height: 240px;
-    box-shadow: 0 27px 27px 0 rgba(154, 255, 208, 0.16), 0 9px 9px 0 rgba(159, 255, 191, 0.12);
+    box-shadow: 0px 27px 70px 27px rgba(154, 255, 208, 0.16), 0 9px 9px 0 rgba(159, 255, 191, 0.12);
 }
 
 .sombra{
     box-shadow: 0 9px 9px 0 rgba(0, 0, 0, 0.16), 0 9px 9px 0 rgba(0, 0, 0, 0.12);
 }
+
+.sombra1{
+    box-shadow: 0px 9px 70px 50px rgba(27, 27, 27, 0.16), 0 9px 9px 0 rgba(29, 29, 29, 0.12);
+}
+
 .btn-prim{
 
 
@@ -255,6 +264,11 @@ background-color: #66FFCC;
     border-radius: 1rem;
     width: 10%;
     height: 1%;
+  }
+
+  .side:hover{
+
+
   }
     </style>
 @endpush

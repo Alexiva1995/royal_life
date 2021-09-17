@@ -3,11 +3,11 @@
 @section('content')
 
 
-<div class="mx-auto" >
+<div class="Custom-font">
 <div class="row fondo fondo2 ">
 
      <div class="container ">
-        <div class="row top1 ml-1">
+        <div class="row top1 ">
           <div class="col-6 head ">
             <h1 class="fs-1  mt-5 font estilo-x">Linea completa de<strong> Royal life </strong> </h1>
 
@@ -27,10 +27,10 @@
 
 <div class="container w-100">
     <h1 class="text-center mt-5 mb-3" style="font-size: 35px;"> <strong> Categorias de nuestros productos </strong></h1>
-    <div class="row mb-5 ml-1">
+    <div class="row mb-5 ">
         @foreach ($categorias as $item )
-      <div class="col-4 mb-2">
-        <div class="card mb-1 col-md-11 ml-md-1 zoom2" style="height: 350px;background: white;">
+      <div class="col-3 mb-2 col-md-3">
+        <div class="card mb-1 col-md-12 zoom2" style="height: 350px; background: white; width: 18rem;">
                 <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
                 <div class="text-center text-card"><strong>{{$item->categories_name}}</strong></div>
                 <a  class="text-center"
@@ -46,16 +46,18 @@
   </div>
 
   <div class="row   fondo1 " >
+
     <div class=" mx-auto ">
-  <div class="container ml-5" >
+  <div class="container  " >
+      <div class="mb-5">
       <h1 class=" mt-5 mb-2 "><strong style="font-size: 35px; color: #303030;">Los mas vendidos </strong></h1>
     <div class="row mb-5 " >
-        @foreach ($productos as $producto )
+        @foreach ($productosMasVendidos as $producto )
 
 
-      <div class="col-4 col-xs">
+      <div class="col-4 col-xs ">
         <div class="card-body col-md-12 mb-2  zoom3 shadow-sm "
-        style="background: white;border-radius: 10px;padding: 0.8rem;max-width: 95%;">
+        style="background: white;border-radius: 10px;padding: 0.8rem; width: 26rem;">
         <div class="d-flex ">
             <div style="background:#66FFCC;border-radius: 10px;width: 100px;">
                 <a class="background "
@@ -66,10 +68,10 @@
                              alt="Product Image"
                             >
                      @else
-                           <img class="mt-2 mx-auto d-block  img-fluid w-100 mt-3"
+                           <img class="  d-block  img-fluid  mt-2"
                                 src="{{ asset('storage/photo-producto/'.$producto->img) }}"
                                 alt="Product Image"
-                                style=" ">
+                                style="width: 10rem;">
                      @endif
        </a>
             </div>
@@ -89,17 +91,18 @@
     @endforeach
   </div>
 </div>
+</div>
     </div>
   </div>
 
   <div class="row fondo fondo4 ">
 
     <div class="container ">
-       <div class="row ml-2">
-         <div class="col-6 top2  frente" >
-            <strong class="frente" style="font-size: 45px ">Royal life el equilibrio perfecto.</strong>
+       <div class="row ">
+         <div class="col-6 top2  " >
+            <strong class="" style="font-size: 45px ">Royal life el equilibrio perfecto.</strong>
 
-               <p class=" mt-2 mb-3 frente font2 frente" > Cada proceso de nuestros productos son cuidadosamente vigilados por expertos,
+               <p class=" mt-2 mb-3  font2 "> Cada proceso de nuestros productos son cuidadosamente vigilados por expertos,
                 nuestros laboratorios aliados garantizan el CBD mas puro del mercado y nuestra
                 linea <br> de productos lo demuestra.<br>Nuestra principal misión es mejorar tu calidad de vida, por eso queremos
                 sorprenderte no una sola ves, si no todos los días!!"</p>
@@ -110,24 +113,25 @@
 
        </div>
      </div>
+
 </div>
 
 
 
 <div class="container">
     <h1 class="text-center mt-5 mb-3" style="font-size: 35px;"> <strong> Productos </strong> </h1>
-    <div class="row ml-1">
+    <div class="row ">
         @foreach ($productos as $producto )
-      <div class="col-4 ">
+      <div class="col-3 ">
 
-        <div class="card zoom2" style="width: 23rem;  background:#FFFFFF;">
+        <div class="card zoom2" style="width: 18rem;  background:#FFFFFF;">
             <div class="card-body">
 
                 <div class="text-center bg " style="">
                     <a  href="{{action('TiendaController@detalleproducto', ['producto' => $producto->id ])}}" method="GET">
                 @csrf
                 @if($producto->img == null)
-                      <img class="mx-auto d-block  img-fluid"
+                      <img class="mx-auto d-block  img-fluid "
                        src="{{asset('assets/img/home/producto21.png')}}"
                        alt="Product Image"
                       >
@@ -135,7 +139,7 @@
                      <img class="mx-auto d-block  img-fluid w-100"
                           src="{{ asset('storage/photo-producto/'.$producto->img) }}"
                           alt="Product Image"
-                          style="">
+                          style="height: 15.3rem;">
                @endif
                     </a>
             </div>
@@ -145,7 +149,7 @@
                     <strong class="texto mr-1 prize text-right">${{$producto->price}}</strong></p>
 
               <h5 class="card-title"><strong> {{$producto->name}} </strong> </h5>
-              <p class="card-text text-dark mb-1">{{ Str::words( strip_tags($producto->description) , 25 )}}</p>
+              <p class="card-text text-dark mb-1">{{ Str::words( strip_tags($producto->description) , 10 )}}</p>
 
             </div>
           </div>
@@ -160,10 +164,10 @@
     <h1 class="text-center mt-5 mb-3" style="font-size: 35px;"> <strong> Clientes satisfechos  </strong> </h1>
     <div class="row ml-1 ">
         <i class="forma">
-i
+
         </i>
       <div class="col-6 bg2">
-        <div class="col-md-11 item bgcomen" style="">
+        <div class="col-md-11 item bgcomen mr-5" style="left: -25px;">
             <div class="mt-1 ml-1 bg1 " style="top: -30px; position: relative;"> <img class="rounded-circle mr-1 ml-1 mt-1" src="{{asset('assets/img/home/Ellipse.png')}}"
                 style="float: left">
             <h5 class="mt-1 text-dark"> <strong style="top: 20px; position: relative;"> Antonio Medina </strong></h5>
@@ -191,7 +195,7 @@ i
       </div>
 
       <div class="col-6 bg2">
-        <div class="col-md-11 item bgcomen ml-2" >
+        <div class="col-md-11 item bgcomen ml-3">
             <div class="author ml-1 bg1" style="top: -30px; position: relative;"><img class="rounded-circle mr-1 ml-1 mt-1" src="{{asset('assets/img/home/Ellipse1.png')}}"
                 style=" float: left;">
                 <h5 class="mt-1 text-dark"> <strong style="top: 20px; position: relative;">Felipe Minaya </strong> </h5>
@@ -221,10 +225,10 @@ i
   </div>
 
   <div class="container">
-    <div class="row" >
+    <div class="row " >
 
-        <div class=" col-12 for bg3 mb-5" style="">
-            <h1 class="ml-2 mr-2  text-center mt-5 " style="">
+        <div class=" col-12 for bg3 mb-5 sombra1" style="">
+            <h1 class="ml-2 mr-2  text-center mt-2 " style="">
                 <strong class="text-white text-center " style="font-size: 35px;">El CBD se encuentra en todos los tipos de cannabis sativa, pero el Cañamo es el que tiene las concentraciones mas altas.</strong>
             </h1>
             <p class="text-white text-center ml-2 mr-2 " style="">
@@ -237,7 +241,7 @@ i
                 (incluyendo el CBD) no son psicoactivos, todas las familias tienen un miembro no deseado.
                 La familia de los cannabinoides también incluye el THC, el compuesto ilegal que está presente en las plantaciones de marihuana.
             </p>
-             <div class="text-center mb-1">
+             <div class="text-center mb-2">
                  <a href="{{route('contact_us')}}" class="btn btn-prim text-center" style=""><strong class="text-center">Contáctanos</strong></a>
              </div>
             </div>
