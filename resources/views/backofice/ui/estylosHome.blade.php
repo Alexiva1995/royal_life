@@ -267,8 +267,7 @@ background-color: #66FFCC;
   }
 
   .side:hover{
-
-
+  color: #66FFCC !important;
   }
     </style>
 @endpush
