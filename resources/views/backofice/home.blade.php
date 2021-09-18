@@ -3,12 +3,12 @@
 @section('content')
 
 
-<div class="Custom-font">
+<div class="Custom-font ">
 <div class="row fondo fondo2 ">
 
      <div class="container ">
-        <div class="row top1 ">
-          <div class="col-6 head ">
+        <div class="row top1 wi ml-1 mr-1" >
+          <div class="col-sm-6 head ">
             <h1 class="fs-1  mt-5 font estilo-x">Linea completa de<strong> Royal life </strong> </h1>
 
                 <p class="text-dark mt-2 mb-3 font2">Gracias a nuestro amplio portafolio de productos, podrás encontrar la combinación perfecta, para ello
@@ -27,9 +27,9 @@
 
 <div class="container w-100">
     <h1 class="text-center mt-5 mb-3" style="font-size: 35px;"> <strong> Categorias de nuestros productos </strong></h1>
-    <div class="row mb-5 ">
+    <div class="row mb-5 ml-1 mr-1 ">
         @foreach ($categorias as $item )
-      <div class="col-3 mb-2 col-md-3">
+      <div class="col-sm-3 mb-2 ">
         <div class="card mb-1 col-md-12 zoom2" style="height: 350px; background: white; width: 18rem;">
                 <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
                 <div class="text-center text-card"><strong>{{$item->categories_name}}</strong></div>
@@ -49,13 +49,13 @@
 
     <div class=" mx-auto ">
   <div class="container  " >
-      <div class="mb-5">
+      <div class="mb-5 ml-1 mr-1">
       <h1 class=" mt-5 mb-2 "><strong style="font-size: 35px; color: #303030;">Los mas vendidos </strong></h1>
     <div class="row mb-5 " >
         @foreach ($productosMasVendidos as $producto )
 
 
-      <div class="col-4 col-xs ">
+      <div class="col-sm-4  ">
         <div class="card-body col-md-12 mb-2  zoom3 shadow-sm "
         style="background: white;border-radius: 10px;padding: 0.8rem; width: 26rem;">
         <div class="d-flex ">
@@ -98,17 +98,17 @@
   <div class="row fondo fondo4 ">
 
     <div class="container ">
-       <div class="row ">
+       <div class="row ml-1 mr-1">
          <div class="col-6 top2  " >
             <strong class="" style="font-size: 45px ">Royal life el equilibrio perfecto.</strong>
 
-               <p class=" mt-2 mb-3  font2 "> Cada proceso de nuestros productos son cuidadosamente vigilados por expertos,
+               <p class=" mt-2 mb-3  font2 " style=""> Cada proceso de nuestros productos son cuidadosamente vigilados por expertos,
                 nuestros laboratorios aliados garantizan el CBD mas puro del mercado y nuestra
                 linea <br> de productos lo demuestra.<br>Nuestra principal misión es mejorar tu calidad de vida, por eso queremos
                 sorprenderte no una sola ves, si no todos los días!!"</p>
          </div>
          <div class="col-6  left1 ">
-           <img src="{{asset('assets/img/home/cbd1.png')}}" class=""  >
+           <img src="{{asset('assets/img/home/cbd1.png')}}" class="" style=""  >
          </div>
 
        </div>
@@ -120,9 +120,9 @@
 
 <div class="container">
     <h1 class="text-center mt-5 mb-3" style="font-size: 35px;"> <strong> Productos </strong> </h1>
-    <div class="row ">
+    <div class="row ml-1 mr-1">
         @foreach ($productos as $producto )
-      <div class="col-3 ">
+      <div class="col-sm-3">
 
         <div class="card zoom2" style="width: 18rem;  background:#FFFFFF;">
             <div class="card-body">
@@ -160,14 +160,14 @@
   </div>
 
 
-  <div class="container">
+  <div class="container ">
     <h1 class="text-center mt-5 mb-3" style="font-size: 35px;"> <strong> Clientes satisfechos  </strong> </h1>
-    <div class="row ml-1 ">
-        <i class="forma">
+    <div class=" row ml-1 ">
+        <i class="  forma">
 
         </i>
-      <div class="col-6 bg2">
-        <div class="col-md-11 item bgcomen mr-5" style="left: -25px;">
+      <div class="col-sm-6 bg2 ">
+        <div class="col-md-11 item bgcomen " style="">
             <div class="mt-1 ml-1 bg1 " style="top: -30px; position: relative;"> <img class="rounded-circle mr-1 ml-1 mt-1" src="{{asset('assets/img/home/Ellipse.png')}}"
                 style="float: left">
             <h5 class="mt-1 text-dark"> <strong style="top: 20px; position: relative;"> Antonio Medina </strong></h5>
@@ -194,8 +194,8 @@
         </div>
       </div>
 
-      <div class="col-6 bg2">
-        <div class="col-md-11 item bgcomen ml-3">
+      <div class="col-sm-6 bg2 ">
+        <div class="col-md-11 item bgcomen ">
             <div class="author ml-1 bg1" style="top: -30px; position: relative;"><img class="rounded-circle mr-1 ml-1 mt-1" src="{{asset('assets/img/home/Ellipse1.png')}}"
                 style=" float: left;">
                 <h5 class="mt-1 text-dark"> <strong style="top: 20px; position: relative;">Felipe Minaya </strong> </h5>

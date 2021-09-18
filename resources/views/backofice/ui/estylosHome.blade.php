@@ -5,7 +5,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 .estilo-x {
-    font-size: calc(1em + 1vw)
+    font-size: calc(1em + 1vw) !important
 }
 
 .head{
@@ -33,6 +33,7 @@
 }
 .font2{
     font-size: 17px;
+    z-index: 8 !important;
 }
 
 .zoom2:hover {
@@ -266,8 +267,6 @@ background-color: #66FFCC;
     height: 1%;
   }
 
-  .side:hover{
-  color: #66FFCC !important;
-  }
+
     </style>
 @endpush
