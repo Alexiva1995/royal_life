@@ -34,7 +34,7 @@
 </div>
 
 <div class="container  ml-auto ">
-<div class="  d-fex col-md-3 mb-5" >
+<div class="  d-fex col-sm-3 mb-5" >
          @include('backofice.ui.cardcategorias') {{-- lista de categorias  --}}
          @include('backofice.ui.productos') {{--Modulo de categorias--}}
 

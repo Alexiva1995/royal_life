@@ -1,111 +1,122 @@
+<nav class=" navbar1  mx-auto navbar navbar-expand-lg navbar-light bg-light" style="font-size: 18px; ">
+    <a class="navbar-brand ml-2" href="#">
+        <img src="{{ asset('assets/img/royal_green/logos/logo.svg') }}" class=" ml-5 margen-h"   >
+     </a>
+    <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class=" navbar-toggler-icon"></span>
+    </button>
 
-<!-- BEGIN: Header-->
-<nav class="header-navbar navbar-expand-lg navbar navbar-with-menu navbar-dark navbar-shadow text-white">
-        <img src="{{ asset('assets/img/royal_green/logos/logo.svg') }}" class="pl-5 margen-h" alt="">
+    <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+        @if (Auth::user()->photoDB != NULL)
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active">
+          <a class="nav-link ml-3  mt-1 text-white side" href="{{route('inicio')}}">inicio<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ml-3 mt-1 text-white side" href="{{route('shop.backofice')}}">tienda</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link ml-3 mt-1 text-white side" href="{{route('about')}}">nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ml-3 mt-1 text-white side" href="{{route('contact_us')}}">contacto</a>
+          </li>
 
-        <div class="collapse navbar-collapse justify-content-end" id="">
-          <ul class="navbar-nav ">
+          @else
+
+          <ul class="navbar-nav mx-auto">
             <li class="nav-item active">
-              <a class="nav-link ml-3 h5 text-white side" href="{{route('inicio')}}" style="font-size: 18px; ">inicio <span class="sr-only">(current)</span></a>
+              <a class="nav-link ml-3 text-white side" href="{{route('inicio')}}">inicio<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link ml-3 h5 text-white  side" href="{{route('shop.backofice')}}" style="font-size: 18px;">Tienda</a>
+              <a class="nav-link ml-3 text-white side" href="{{route('shop.backofice')}}">tienda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link  ml-3 h5 text-white side" href="{{route('about')}}" style="font-size: 18px;">Nosotros</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link ml-3 h5 text-white side" href="{{route('contact_us')}}" style="font-size: 18px;">Contacto</a>
+                <a class="nav-link ml-3 text-white side" href="{{route('about')}}">nosotros</a>
               </li>
-          </ul>
-        </div>
-        <div class="collapse navbar-collapse justify-content-end  pr-5" style="margin-right: 130px;">
-            @if (!!!Auth()->user())
-            <img src="{{asset('assets/img/iconnew/Vector.png')}}" alt="">
-            <a class="text-white ml-1 side" style="font-size: 18px;" href="{{route('login')}}">Ingresar</a>
-            @else
-                           <ul class="nav navbar-nav float-right">
-                    <li class="nav-item mr-auto">
+              <li class="nav-item">
+                <a class="nav-link ml-3 text-white side" href="{{route('contact_us')}}">contacto</a>
+              </li>
 
-                            {{-- <i class="ficon feather icon-maximize"></i> --}}
+          @endif
 
-                    </li>
-                    {{-- Notificaciones --}}
-                    {{-- @include('layouts.componenteDashboard.notificaciones') --}}
-                    {{-- Fin Notificaciones --}}
-                    {{-- <li class="dropdown dropdown-user nav-item pt-2">
-                        <div class="user-nav d-sm-flex d-none">
-                            <span class="user-status headerBalance">Saldo Disponible: {{Auth::user()->balance}} $</span>
-                        </div>
-                    </li> --}}
-                        <li class="dropdown dropdown-user nav-item" >
-                        <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown" style="margin-right: -30px;margin-top: -20px;">
-                            <div class="user-nav d-flex justify-content-end ml-2">
-                              <div class="col-3">
-                              @if (Auth::user()->photoDB != NULL)
-                              <span>
-                                  <img class="round mt-2" src="{{asset('storage/photo/'.Auth::user()->photoDB)}}"
-                                      alt="{{ Auth::user()->fullname }}" height="50" width="50">
-                              </span>
-                              @else
-                              <span>
+          <li class="nav-item">
+            <a class="nav-link ml-3" href="#">
 
-                              </span>
-                              @endif
-                            </div>
-                              <div class="col-9 mr-1">
-                                @if (Auth()->user()->admin == '1')
-                                <div style="margin-top: 30px; left: ">
-                                <span class="ml-3 user-name text-bold-600 text-white mt-2">{{Auth::user()->fullname}} <span class="text-primary">ADMIN</span></span>
-                              </div>
-                              <div  class="ml-1" style="margin-top: 15px;">
-                                <span class="user-name headerBalance">Saldo Disponible: {{Auth::user()->wallet}} $</span>
-                              </div>
-                                @else
-                                <div class="ml-1" style="margin-top: 35px; ">
-                                <span class="user-name text-bold-600 text-white mr-1 mt-2" >
-                                    {{Auth::user()->fullname}} - <span class="text-primary">{{Auth::user()->getStatus()}}</span>
-                                </span>
-                                </div>
-                                  {{--    <div style="margin-top: 10px;">
-                          <span class="user-name headerBalance">Saldo Disponible: {{Auth::user()->saldoDisponible()}} $</span>
-                                </div>  --}}
-                                @endif
-                              </div>
-                            </div>
+                @if (Auth::user()->photoDB != NULL)
+                <span>
+                    <img class="round " style="" src="{{asset('storage/photo/'.Auth::user()->photoDB)}}"
+                        alt="{{ Auth::user()->fullname }}" height="50" width="50">
+                </span>
+                @else
+                <span>
 
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" style="background: #11262C;">
-                            <a class="dropdown-item text-white" href="{{ route('profile') }}" >
-                                <i class="feather icon-user"></i> Editar Perfil
-                            </a>
-                            <a class="dropdown-item text-white" href="{{ route('home') }}" >
-                              <i class="feather icon-home"></i>Inversiones</a>
-                            @if (session('impersonated_by'))
-                            <a class="dropdown-item text-white" href="{{ route('impersonate.stop') }}">
-                                <i class="feather icon-log-in"></i> Volver a mi Usuario
-                            </a>
-                            @endif
-                            {{-- <a class="dropdown-item" href="app-email.html">
-                                <i class="feather icon-mail"></i> My Inbox
-                            </a>
-                            <a class="dropdown-item" href="app-todo.html">
-                                <i class="feather icon-check-square"></i> Task
-                            </a>
-                            <a class="dropdown-item" href="app-chat.html">
-                                <i class="feather icon-message-square"></i> Chats
-                            </a> --}}
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item text-white" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
-                                <i class="feather icon-log-out"></i> Logout
-                            </a>
-                        </div>
-                    </li>
-                </ul>
+                </span>
                 @endif
-              <a class="text-white pl-1 pr-1"style="font-size: 25px;" href="">|</a>
-            <a href="{{route('cart')}}"><img src="{{asset('assets/img/iconnew/Group.png')}}" alt=""></a>
-    </div>
 
-</nav>
-<!-- END: Header-->
+
+            </a>
+          </li>
+          @if (Auth::user()->photoDB != NULL)
+        <li class="nav-item dropdown text-white" >
+          <a class="mt-1 ml-3 nav-link dropdown-toggle text-white side"
+          href="#" id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false">
+
+           {{Auth::user()->fullname}}
+          </a>
+          <div class="ml-3 dropdown-menu" aria-labelledby="navbarDropdown" style="background: #11262C; top: 40px;">
+            <a class="dropdown-item text-white side" href="{{ route('profile') }}">
+                <i class="feather icon-user"></i>Editar Perfil</a>
+
+            <a class="dropdown-item text-white side" href="{{ route('home') }}">
+                <i class="feather icon-home "></i>Inversiones</a>
+
+            <div class="dropdown-divider"  href="#"></div>
+
+            <a class="dropdown-item text-white side" href="{{ route('logout') }}"onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+                <i class="feather icon-log-out"></i>Logout</a>
+          </div>
+        </li>
+
+        <li class="nav-item mt-1" >
+            <a class="ml-2 nav-link text-white " style="font-size: 25px; position: relative; top: -5px;"
+            href="{{route('cart')}}">|<i class="side ml-1 feather icon-shopping-cart"></i></a>
+          </li>
+
+           @else
+           <li class="ml-3 nav-item dropdown text-white">
+            <a  class="  nav-link dropdown text-white side"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+
+             {{Auth::user()->fullname}}
+            </a>
+            <div class=" dropdown-menu " aria-labelledby="navbarDropdown">
+              <a class="dropdown-item text-white side" href="{{ route('profile') }}">
+                <i class="feather icon-user"></i>Editar Perfil</a>
+
+              <a class="dropdown-item text-white side" href="{{ route('home') }}">
+                <i class="feather icon-home"></i>Inversiones</a>
+
+              <div class="dropdown-divider"  href="#"></div>
+
+              <a class="dropdown-item text-white side" href="{{ route('logout') }}"onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+                <i class="feather icon-log-out"></i>Logout</a>
+            </div>
+          </li>
+
+          <li class="ml-5 nav-item">
+              <a class="ml-2 nav-link text-white " style="font-size: 25px; position: relative; top: -5px;" href="{{route('cart')}}">|<i class="side ml-1 feather icon-shopping-cart"></i></a>
+            </li>
+            @endif
+      </ul>
+
+    </div>
+  </nav>

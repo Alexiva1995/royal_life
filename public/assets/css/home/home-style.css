@@ -875,3 +875,57 @@ cursor: pointer;
 .for{
     background-image: url('../img/formas_fondo22.png');
 }
+
+.side:hover{
+    color: #66FFCC !important;
+    -webkit-transform:scale(1.07);
+    -moz-transform:scale(1.07);
+    -ms-transform:scale(1.07);
+    -o-transform:scale(1.07);
+    transform:scale(1.07);
+
+    -webkit-transition:all 0.3s ease;
+    -moz-transition:all 0.3s ease;
+    -o-transition:all 0.3s ease;
+    -ms-transition:all 0.3s ease;
+    border-color: #66FFCC !important;
+
+  }
+  .side:active{
+    color: #66FFCC !important;
+    -webkit-transform:scale(0.9);
+    -moz-transform:scale(0.9);
+    -ms-transform:scale(0.9);
+    -o-transform:scale(0.9);
+    transform:scale(0.9);
+
+    -webkit-transition:all 0.3s ease;
+    -moz-transition:all 0.3s ease;
+    -o-transition:all 0.3s ease;
+    -ms-transition:all 0.3s ease;
+    border-color: #66FFCC !important;
+
+  }
+
+  .dropdown-item{
+    background: #11262C !important;
+  }
+  .dropdown-menu{
+    background: #11262C !important;
+  }
+
+  .navbar1 {
+    background-color:#173138 !important;
+}
+.navbar-toggler-icon{
+    background-color:#66FFCC !important;
+}
+.navbar-toggler{
+    background-color:#66FFCC !important;
+}
+
+.card{
+    width: auto !important;
+
+}
+
