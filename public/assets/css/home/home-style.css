@@ -25,19 +25,18 @@
   font-size: 40px;
 }
 .btn-cre {
-  border-color: #F2F1F3 !important;
+  border-color: #c3c3c4 !important;
   color: black!important;
-  box-shadow: 0 8px 25px -8px #f2f1f3;
-  position: absolute;
-  top: 90%;
-  left: 52px;
-  width: 78px;
-  font-size: 12px;
-  height: 20px;
-  background-color: #F2F1F3;
+  font-size: 14px;
+  background: #F2F1F3;
   border-radius: 0.4285rem;
-  transform: translate(-50%, -50%);
+  height: 20px !important;
+  width:50%;
   }
+  .blok{
+    display: inline-block !important;
+  }
+
   .img-ho{
     height: 150px;
   }
@@ -853,15 +852,18 @@ cursor: pointer;
 .fondo4{
     background: #173138;
     background-image: url('../img/formas_fondo2.png');
-    width: 100%;
-    height: 70%;
+    height: 30rem;
+    min-width: 20em;
+    max-width: 100em;
+
 }
 .fondo3{
     background-image: url('../img/cbd1.png');
     background-size: cover;
     background-position: top center;
-    height: 60rem;
+    height: 30rem;
     min-width: 20em;
+    max-width: 50em;
 
 }
 
@@ -928,4 +930,8 @@ cursor: pointer;
     width: auto !important;
 
 }
-
+.forma{
+    background-image:url('../img/Rectangle29.png');
+    max-width: 1600px;
+    min-width: 300px;
+}

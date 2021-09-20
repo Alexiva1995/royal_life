@@ -271,14 +271,14 @@
 <div class="carousel-inner d-flex" style="background: #173138">
     <div class="container carousel-caption" style="font-size: 40px;top: 100px;text-align: left;">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-6">
                 <strong>Royal life el equilibrio perfecto.</strong>
             </div>
         </div>
     </div>
     <div class="container carousel-caption" style="top: 250px;text-align: left;font-size:18px;">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-sm-6">
                 <div class="">
                     Cada proceso de nuestros productos son cuidadosamente vigilados por expertos,
                     nuestros laboratorios aliados garantizan el CBD mas puro del mercado y nuestra
