@@ -45,70 +45,78 @@
     </div>
   </div>
 
-  <div class="row   fondo1 " >
 
-    <div class=" mx-auto ">
-  <div class="container  " >
-      <div class="mb-5 ml-1 mr-1">
-      <h1 class=" mt-5 mb-2 "><strong style="font-size: 35px; color: #303030;">Los mas vendidos </strong></h1>
-    <div class="row mb-5 " >
+<div style=" background:#F0FFFA  ;">
+  <div class="container " >
+      <div class="ml-1 row mb-5 mt-5">
+    <h1 class=" col-sm-4"><strong class="mb-5"  style="position: relative; top: 20px; font-size: 35px; color: #303030;">Los mas vendidos </strong></h1>
+      </div>
+    <div class="row ml-1 mr-1">
+
         @foreach ($productosMasVendidos as $producto )
 
 
-      <div class="col-sm-4  ">
-        <div class="card-body col-md-12 mb-2  zoom3 shadow-sm "
-        style="background: white;border-radius: 10px;padding: 0.8rem; width: 26rem;">
-        <div class="d-flex ">
-            <div style="background:#66FFCC;border-radius: 10px;width: 100px;">
-                <a class="background "
-                href="{{action('TiendaController@detalleproducto', ['producto' => $producto->id ])}}">
-               @if($producto->img == null)
-                            <img class="mx-auto d-block  img-fluid"
-                             src="{{asset('assets/img/home/producto21.png')}}"
-                             alt="Product Image"
-                            >
-                     @else
-                           <img class="  d-block  img-fluid  mt-2"
-                                src="{{ asset('storage/photo-producto/'.$producto->img) }}"
-                                alt="Product Image"
-                                style="width: 10rem;">
-                     @endif
-       </a>
+      <div class="col-sm-4 ">
+
+        <div class="card zoom3 shadow-sm " style="width: 18rem; background: white;">
+            <div class=" row ">
+            <div class="col-sm-4 ">
+
+                <div style="background:#66FFCC; width: 100px; left: 15px; border-radius: 10px; position: relative;">
+                    <a class="background "
+                    href="{{action('TiendaController@detalleproducto', ['producto' => $producto->id ])}}">
+
+        @if($producto->img == null)
+                <img class="mt-2 mx-auto d-block  img-fluid"
+                 src="{{asset('assets/img/home/producto21.png')}}"
+                 alt="Product Image"
+                 style=""
+                >
+         @else
+               <img class=" mt-3 mx-auto  d-block  img-fluid  "
+                    src="{{ asset('storage/photo-producto/'.$producto->img) }}"
+                    alt="Product Image"
+                    style="width: 10rem; ">
+         @endif
+                    </a>
+                </div>
             </div>
-            <div class="col-md-7 ">
+            <div class="col-sm-8">
+            <div class="card-body" >
                 <h5><strong>{{$producto->name}}</strong></h5>
-                <p class="card-text " style="color: #303030; ">
+                <p class="blok card-text " style="color: #303030; ">
                     {{ Str::words( strip_tags($producto->description) , 9 )}}</p>
-                <a href="" class="btn btn-cre">
-                    <p style="margin-top: -9px; margin-left: -20px;">{{ ucfirst($producto->getCategories->categories_name)}}</p>
-                </a>
-                <p style="color: #303030;margin-left: 140px;font-size: 20px;margin-bottom: 0;margin-top: -5px;">
+                    <a href="" class="btn btn-cre">
+                        <p class="text-center" style="margin-top: -9px; margin-left: -38px; width: 100px;">{{ ucfirst($producto->getCategories->categories_name)}}</p>
+                    </a>
+                <p class=" blok text-right" style="color: #303030; font-size: 20px; float: right;">
                     <strong>${{$producto->price}}</strong></p>
             </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    @endforeach
-  </div>
-</div>
-</div>
+      @endforeach
     </div>
   </div>
+</div>
 
-  <div class="row fondo fondo4 ">
+  <div class="" style=" ">
 
     <div class="container ">
        <div class="row ml-1 mr-1">
-         <div class="col-6 top2  " >
+         <div class="col-6 fondo4" >
             <strong class="" style="font-size: 45px ">Royal life el equilibrio perfecto.</strong>
 
-               <p class=" mt-2 mb-3  font2 " style=""> Cada proceso de nuestros productos son cuidadosamente vigilados por expertos,
+               <p class=" mt-2 mb-3  " style=""> Cada proceso de nuestros productos son cuidadosamente vigilados por expertos,
                 nuestros laboratorios aliados garantizan el CBD mas puro del mercado y nuestra
                 linea <br> de productos lo demuestra.<br>Nuestra principal misión es mejorar tu calidad de vida, por eso queremos
                 sorprenderte no una sola ves, si no todos los días!!"</p>
          </div>
-         <div class="col-6  left1 ">
-           <img src="{{asset('assets/img/home/cbd1.png')}}" class="" style=""  >
+         <div class="col-6 fondo3 " >
+                <i class="">
+                    ‎      ‏‏‎
+                </i>
          </div>
 
        </div>
@@ -160,13 +168,11 @@
   </div>
 
 
-  <div class="container ">
+  <div class="container mb-5">
     <h1 class="text-center mt-5 mb-3" style="font-size: 35px;"> <strong> Clientes satisfechos  </strong> </h1>
-    <div class=" row ml-1 ">
-        <i class="  forma">
+    <div class="row ml-1 mr-1">
 
-        </i>
-      <div class="col-sm-6 bg2 ">
+      <div class="col-sm-6  ">
         <div class="col-md-11 item bgcomen " style="">
             <div class="mt-1 ml-1 bg1 " style="top: -30px; position: relative;"> <img class="rounded-circle mr-1 ml-1 mt-1" src="{{asset('assets/img/home/Ellipse.png')}}"
                 style="float: left">
@@ -194,7 +200,7 @@
         </div>
       </div>
 
-      <div class="col-sm-6 bg2 ">
+      <div class="col-sm-6  ">
         <div class="col-md-11 item bgcomen ">
             <div class="author ml-1 bg1" style="top: -30px; position: relative;"><img class="rounded-circle mr-1 ml-1 mt-1" src="{{asset('assets/img/home/Ellipse1.png')}}"
                 style=" float: left;">
@@ -220,6 +226,12 @@
 
         </div>
       </div>
+
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+            <img src="{{asset('assets/img/home/Rectangle29.png')}}" alt="" style="margin-top: -255px; width: 70%;">
+        </div>
+    </div>
 
     </div>
   </div>

@@ -17,12 +17,12 @@
     top: 130px;
 }
 .top2{
-    position: relative;
+
     top: 250px;
 }
 
 .left1{
-    position: relative;
+
    left: -60px;
 
 
@@ -132,25 +132,15 @@ transform: translate(-50%, -50%);
 
 }
 .forma{
-position: relative;
-    background: #ebfff8;
-    border-radius: 20px;
-    background-size: 10px 10px;
-    width: 800px;
-    height: 370px;
-    left: 150px;
-    top: 50px;
 
 }
+
 .bg1{
     background: white; width: 50%;
     height: 80px;
     z-index: 8;
 }
-.bg2{
-    position: relative;
-    top: -310px;
-}
+
 .bgcomen{
     background: #f7f7f7;
     height: 240px;
