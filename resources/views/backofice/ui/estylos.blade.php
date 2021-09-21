@@ -321,6 +321,7 @@ box-sizing: border-box;
 
 }
 
+
 .sinborde {
    border: 0;
    background-color: #eee;

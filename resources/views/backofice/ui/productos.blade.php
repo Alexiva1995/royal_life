@@ -1,4 +1,4 @@
-<div class="ml-3  d-fex col-md-8 " >
+<div class="mr-4  d-fex col-sm-8 " >
     <div class="row d-flex justify-content-end mt-5">
        @foreach ($packages as $producto )
        <div class="row col-md-6 col-xs-3 ">
