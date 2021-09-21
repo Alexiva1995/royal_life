@@ -5,7 +5,82 @@
 @endpush
 @section('content')
 @include('backofice.ui.script')
-@include('backofice.ui.script')
+<style>
+    .zoomM:active {
+
+-webkit-transform:scale(0.9);
+-moz-transform:scale(0.9);
+-ms-transform:scale(0.9);
+-o-transform:scale(0.9);
+transform:scale(0.9);
+
+-webkit-transition:all 0.3s ease;
+-moz-transition:all 0.3s ease;
+-o-transition:all 0.3s ease;
+-ms-transition:all 0.3s ease;
+
+
+border-color: #66FFCC !important;
+color: black!important;
+box-shadow: 0 8px 25px -8px #66ffcc;
+background-color: #66FFCC;
+}
+
+.zoomD:hover {
+
+-webkit-transform:scale(1.05);
+-moz-transform:scale(1.05);
+-ms-transform:scale(1.05);
+-o-transform:scale(1.05);
+transform:scale(1.05);
+
+-webkit-transition:all 0.3s ease;
+-moz-transition:all 0.3s ease;
+-o-transition:all 0.3s ease;
+-ms-transition:all 0.3s ease;
+
+border-color: #ff556c !important;
+box-shadow: 0 8px 25px -8px #e00d29 !important;
+background-color: #ff0000 ;
+}
+
+.zoomD:active {
+
+-webkit-transform:scale(0.9);
+-moz-transform:scale(0.9);
+-ms-transform:scale(0.9);
+-o-transform:scale(0.9);
+transform:scale(0.9);
+
+-webkit-transition:all 0.3s ease;
+-moz-transition:all 0.3s ease;
+-o-transition:all 0.3s ease;
+-ms-transition:all 0.3s ease;
+
+
+border-color: #ff556c !important;
+color: black!important;
+box-shadow: 0 8px 25px -8px #e00d29 !important;
+background-color: #fd5d73 ;
+}
+.custominput{
+    border: 0;
+    outline: 0 !important;
+}
+.Rangoprecio2{
+    height:40px;
+   width:80px;
+   background: #fd3232;
+   -moz-border-radius:50px;
+   -webkit-border-radius:50px;
+   border-radius:50px;
+   border: 0;
+   outline: none;
+   border: 0;
+    outline: 0 !important;
+
+}
+</style>
 <div class="carousel-inner">
     <img class="d-block w-100" src="{{asset('assets/img/home/formas_fondo3.png')}}" style="background: #173138;">
     <div class="container carousel-caption d-flex justify-content-start" style="top:90px;left: 7%;">
@@ -40,7 +115,7 @@
                             <th>Eliminar</th>
                         </tr>
                     <tbody>
-                        @foreach ($products as $item)
+                        @foreach ($products as $key => $item)
                         <tr class="text-center text-dark">
                             <td>
                             @if($item->getPackage->img == null)
@@ -55,24 +130,35 @@
                             </td>
                             <td>{{$item->getPackage->name}}</td>
                             <td>{{$item->getCategories->categories_name}}</td>
-                            <form method="POST" class="form form-vertical" action="{{route('cart.update',$item->id)}}" enctype="multipart/form-data">
-                                @method('PATCH')
-                                @csrf
+
                             <td>
-                                <div style="position: relative;left: 10px;">
-                                    <input type="hidden" name="monto" value="{{$item->monto}}">
-                                    <input class="sinborde shadow  text-center text-dark" type="number" id="cantidad" name="cantidad" value="{{$item->cantidad}}" min="1" required>
-                                    <button class="Rangoprecio shadow custominput" type="submit"><i class="fa fa-edit"></i></button>
-                                </div>
+                                <form method="POST" class="form form-vertical" action="{{route('cart.update',$item->id)}}" enctype="multipart/form-data">
+                                    @method('PATCH')
+                                    @csrf
+
+                                    <input type="hidden" name="monto"  value="{{$item->monto}}">
+                                    <button class="Rangoprecio shadow zoomM custominput "  onclick="handleClickResta1('cantidad{{$key}}')" type="submit"><i class="fa fa-minus"></i></button>
+
+                                    <input  class="sinborde shadow  text-center text-dark"
+                                            type="number"
+                                            id="cantidad{{$key}}"
+                                            name="cantidad"
+                                            value="{{$item->cantidad}}"
+                                            min="1" required >
+
+                                    <button class="Rangoprecio shadow zoomM custominput" onclick="handleClickSuma1('cantidad{{$key}}')"  type="submit"><i class="fa fa-plus"></i></button>
+
+
+                            </form>
                             </td>
-                                </form>
+
                             <td>${{$item->monto}}</td>
                             <td>${{($item->total)}}</td>
                             <td>
                                 <form action="{{route('destroy',['producto'=>$item->id])}}" method="POST">
                                     @csrf
                                     @method('DELETE')
-                                    <input type="submit" class="btn btn-danger d-block w-100 text-white" value="Eliminar &times;">
+                                    <button type="submit" class="shadow Rangoprecio2 text-white zoomD" value=""><i class="fa fa-trash"></i></button>
                                 </form>
                             </td>
                         </tr>
@@ -106,7 +192,7 @@
 
                         <div class="col-9 d-flex justify-content-end">
                             <form action="{{route('checkout.backofice')}}">
-                            <button class="btn btn-custom text-dark " type="submit" style="background: #67FFCC"><strong
+                            <button class="btn btn-custom text-dark zoomM" type="submit" style="background: #67FFCC"><strong
                                     style="color:#173138">Pagar</strong></button>
                                 </form>
                         </div>

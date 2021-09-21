@@ -15,10 +15,10 @@
                     nos hemos aliado con los mejores laboratorios en los Estados Unidos que gracias a sus investigaciones Hoy te entregamos la mejor
                     del mercado, productos excepcionales, los mejores procesos y la mas alta pureza.</p>
 
-                <a href="{{route('shop.backofice')}}" class="btn btn-prima"><strong>ir a la tienda</strong></a>
+                <a href="{{route('shop.backofice')}}" class="btn btn-prima "><strong class="">ir a la tienda</strong></a>
           </div>
-          <div class="col-6 ">
-            <img src="{{asset('assets/img/home/Polygon5Forma.png')}}" class=" img-fluid img-responsive"  style="max-width: 100%">
+          <div class="col-sm-6 ">
+            <img src="{{asset('assets/img/home/Polygon5Forma.png')}}" class=" img-fluid "  style="max-width: 100%;  min-width: 20%;">
           </div>
 
         </div>

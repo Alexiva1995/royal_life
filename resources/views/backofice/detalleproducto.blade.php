@@ -37,10 +37,10 @@
     <div class="  ml-auto fuente" >
         <div class="container-fluid ">
             <div class="row  ">
-                <div class="col-lg-8">
+                <div class="col-sm-8">
                     <div class="">
                         <div class="row align-items-center mt-2">
-                            <div class="col-md-5 ">
+                            <div class="col-sm-5 ">
                              <form action="{{route('cart.post')}}" method="POST">
                                 @csrf
                                 <div class="fondoProducto shadow  product-slider-single normal-slider text-center ">
@@ -54,7 +54,7 @@
                                      src="{{asset('assets/img/home/producto21.png')}}"
                                      alt="Product Image">
                              @else
-                                   <img class=" o text-center w-75 mt-3"
+                                   <img class=" o text-center w-75 "
                                         src="{{ asset('storage/photo-producto/'.$producto->img) }}"
                                         alt="Product Image"
                                         style="">
@@ -64,7 +64,7 @@
 
                                 </div>
                             </div>
-                            <div class="col-md-7 mt-2">
+                            <div class="col-sm-7 mt-2">
                                 <div class="product-content card " style="background:#FFFFFF;  ">
                                     <div class="title ml-3  mt-1 fuente"> <h2><strong>{{$producto->name}}</strong></h2></div>
                                     <div class="ratting">
@@ -97,13 +97,7 @@
                     </div>
 
                     <div class="row product-detail-bottom">
-                        <div class="col-lg-12">
-                            <ul class="nav nav-pills nav-justified">
-                                <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="pill" href="#description">Description</a>
-                                </li>
-
-                            </ul>
+                        <div class=" col-sm-12 mt-5">
 
                             <div class="tab-content">
                                 <div id="description " class=" card fuente "  style="background:#FFFFFF">

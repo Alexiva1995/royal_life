@@ -1,6 +1,6 @@
 
- <div class="row card   ml-3 mt-5 col-xs-3" style="background:#ffffff; top: 20px; width: 310px;" >
-        <div class="row card mt-2 col-13" style="background:#ffffff; width: 240px;">
+ <div class="row card   ml-3 mt-5 col-xs-3" style="background:#ffffff; top: 20px; width: 40rem; " >
+        <div class="row card mt-2 col-6" style="background:#ffffff; width: 40rem;;">
              <h6> <strong class="fuente "> Categorias </strong></h6>
                                     <hr class="hr">
                                     @foreach ( $categorias as $categories )

@@ -132,7 +132,15 @@ transform: translate(-50%, -50%);
 
 }
 .forma{
+    position: relative;
+    background: #ebfff8;
+    border-radius: 20px;
+    background-size: 10px 10px;
+    height: 370px;
 
+    top: 50px;
+    max-width: 800px;
+    min-width: 300px;
 }
 
 .bg1{
