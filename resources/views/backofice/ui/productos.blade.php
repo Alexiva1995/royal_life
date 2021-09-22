@@ -1,33 +1,42 @@
-<div class="mr-4  d-fex col-sm-8 " >
-    <div class="row d-flex justify-content-end mt-5">
-       @foreach ($packages as $producto )
-       <div class="row col-md-6 col-xs-3 ">
-           <div class="col-md-12 col-xs-3 " >
-            <a class="card-body ">
-               <div class="card zoom" style="background:#FFFFFF;">
-                       <a class="text-center bdr bar  "
-                       style="background: #67FFCC;"  href="{{action('TiendaController@detalleproducto', ['producto' => $producto->id ])}}" method="GET">
-                       @csrf
-                       @if($producto->img == null)
-                             <img class="mx-auto d-block  img-fluid"
-                              src="{{asset('assets/img/home/producto21.png')}}"
-                              alt="Product Image"
-                             >
-                      @else
-                            <img class="mx-auto d-block  img-fluid w-100"
-                                 src="{{ asset('storage/photo-producto/'.$producto->img) }}"
-                                 alt="Product Image"
-                                 style="height: 15.5rem;">
-                      @endif
-                      <p class="text-right" style="color: rgb(0, 0, 0);"><a class="btn-c text-center ">{{ ucfirst($producto->getCategories->categories_name)}}</a><strong class="texto mr-1 prize">${{$producto->price}}</strong></p>
-                      <p class="text-left"  style="color: #000000;"><strong class="texto2 fuente ml-1 ">{{$producto->name}}</strong></p>
-                      <p class=" text-left mr-1 ml-1"  style="color: #303030;"> {{ Str::words( strip_tags($producto->description) , 15 )}}</p>
-               </a>
-               </div>
-           </div>
-        </a>
-       </div>
-       @endforeach
-   </div>
-</div>
 
+
+<div class="container">
+
+    <div class="row   mt-3">
+        @foreach ($packages as $producto )
+      <div class="col-sm-6">
+
+        <div class="card zoom2 mt-1" style="width: 23rem;  background:#FFFFFF;">
+            <div class="card-body">
+
+                <div class="text-center bg " style="">
+                    <a  href="{{action('TiendaController@detalleproducto', ['producto' => $producto->id ])}}" method="GET">
+                @csrf
+                @if($producto->img == null)
+                      <img class="mx-auto d-block  img-fluid "
+                       src="{{asset('assets/img/home/producto21.png')}}"
+                       alt="Product Image"
+                      >
+               @else
+                     <img class="mx-auto d-block  img-fluid w-100"
+                          src="{{ asset('storage/photo-producto/'.$producto->img) }}"
+                          alt="Product Image"
+                          style="height: 15.3rem;  ">
+               @endif
+                    </a>
+            </div>
+                <p class="text-right" style="color: rgb(0, 0, 0);">
+                    <a class="btn-c text-center ">{{ ucfirst($producto->getCategories->categories_name)}}</a>
+
+                    <strong class="texto mr-1 prize text-right ">${{$producto->price}}</strong></p>
+
+              <h5 class="card-title "><strong> {{$producto->name}} </strong> </h5>
+              <p class="card-text text-dark mb-1">{{ Str::words( strip_tags($producto->description) , 25 )}}</p>
+
+            </div>
+          </div>
+
+      </div>
+      @endforeach
+    </div>
+  </div>

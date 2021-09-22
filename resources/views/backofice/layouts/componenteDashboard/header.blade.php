@@ -82,7 +82,7 @@
           </div>
         </li>
 
-        <li class="nav-item mt-1" >
+        <li class="nav-item mt-1 mr-5" >
             <a class="ml-2 nav-link text-white " style="font-size: 25px; position: relative; top: -5px;"
             href="{{route('cart')}}">|<i class="side ml-1 feather icon-shopping-cart"></i></a>
           </li>
