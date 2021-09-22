@@ -6,7 +6,26 @@
 @section('content')
 @include('backofice.ui.script')
 <style>
-    .zoomM:active {
+.zoomM:hover {
+
+-webkit-transform:scale(1.2);
+-moz-transform:scale(1.2);
+-ms-transform:scale(1.2);
+-o-transform:scale(1.2);
+transform:scale(1.2);
+
+-webkit-transition:all 0.3s ease;
+-moz-transition:all 0.3s ease;
+-o-transition:all 0.3s ease;
+-ms-transition:all 0.3s ease;
+
+
+border-color: #66FFCC !important;
+box-shadow: 0 8px 25px -8px #66ffcc;
+background-color: #66FFCC;
+}
+
+.zoomM:active {
 
 -webkit-transform:scale(0.9);
 -moz-transform:scale(0.9);
@@ -28,11 +47,11 @@ background-color: #66FFCC;
 
 .zoomD:hover {
 
--webkit-transform:scale(1.05);
--moz-transform:scale(1.05);
--ms-transform:scale(1.05);
--o-transform:scale(1.05);
-transform:scale(1.05);
+-webkit-transform:scale(1.2);
+-moz-transform:scale(1.2);
+-ms-transform:scale(1.2);
+-o-transform:scale(1.2);
+transform:scale(1.2);
 
 -webkit-transition:all 0.3s ease;
 -moz-transition:all 0.3s ease;
@@ -137,7 +156,7 @@ background-color: #fd5d73 ;
                                     @csrf
 
                                     <input type="hidden" name="monto"  value="{{$item->monto}}">
-                                    <button class="Rangoprecio shadow zoomM custominput "  onclick="handleClickResta1('cantidad{{$key}}')" type="submit"><i class="fa fa-minus"></i></button>
+                                    <button class="Rangoprecio shadow zoomM custominput text-white"  onclick="handleClickResta1('cantidad{{$key}}')" type="submit"><i class="fa fa-minus"></i></button>
 
                                     <input  class="sinborde shadow  text-center text-dark"
                                             type="number"
@@ -146,7 +165,7 @@ background-color: #fd5d73 ;
                                             value="{{$item->cantidad}}"
                                             min="1" required >
 
-                                    <button class="Rangoprecio shadow zoomM custominput" onclick="handleClickSuma1('cantidad{{$key}}')"  type="submit"><i class="fa fa-plus"></i></button>
+                                    <button class="Rangoprecio shadow zoomM custominput text-white" onclick="handleClickSuma1('cantidad{{$key}}')"  type="submit"><i class="fa fa-plus"></i></button>
 
 
                             </form>

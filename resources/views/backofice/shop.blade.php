@@ -33,20 +33,30 @@
     </div>
 </div>
 
-<div class="container   ">
-<div class="  d-fex col-md-4 mb-5 " >
-         @include('backofice.ui.cardcategorias') {{-- lista de categorias  --}}
-         @include('backofice.ui.productos') {{--Modulo de categorias--}}
 
-</div>
-<div class="container mt-5 ">
-    <div class="text-center link">
-    {{$packages->links('pagination::bootstrap-4') }}
+
+<div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+       @include('backofice.ui.cardcategorias')
+      </div>
+
+<div class="col-sm-8">
+       @include('backofice.ui.productos')
+
+<div class="container mt-5  ">
+    <div class="ml-5 row">
+      <div class="link ml-5 mb-2 pg">
+        <div class="ml-1">
+      {{$packages->links('pagination::bootstrap-4') }}
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 </div>
 
-
+    </div>
+  </div>
 
 
 

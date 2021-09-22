@@ -296,17 +296,17 @@ box-sizing: border-box;
 
 .btn-c{
 
-  border-color: #F2F1F3 !important;
-  color: black!important;
-  box-shadow: 0 8px 25px -8px #f2f1f3;
-  position: absolute;
-  top: 265px;
-  left: 17%;
-  width: 25%;
-  height: 23px;
-  background-color: #F2F1F3;
-  border-radius: 0.4285rem;
-  transform: translate(-50%, -50%);
+border-color: #F2F1F3 !important;
+color: black!important;
+box-shadow: 0 8px 25px -8px #f2f1f3;
+position: absolute;
+top: 255px;
+left: 17%;
+width: 25%;
+height: 23px;
+background-color: #F2F1F3;
+border-radius: 0.4285rem;
+transform: translate(-50%, -50%);
 }
 
 .Rangoprecio{
@@ -423,7 +423,7 @@ box-sizing: border-box;
 
 .prize{
     position: relative;
-    top: 20%;
+    top: 10px;
 }
 
 .link{
@@ -469,6 +469,19 @@ transform: translate(-50%, -50%);
     top: -5px;
     left: 50%;
 }
+
+.bg{
+    background: #67FFCC;
+    border-radius: 6px;overflow:hidden;
+    position: relative;
+    top: -10px;
+
+    width: 107%;
+    left: -3.6%;
+
+}
+
+
 
 
 </style>
