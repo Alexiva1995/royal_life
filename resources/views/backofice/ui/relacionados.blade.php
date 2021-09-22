@@ -1,37 +1,44 @@
-@foreach ($relacionados as $item )
+@foreach ($relacionados as $producto )
+<div class="col-sm-4 mb-5">
 
+    <div class="card zoom3 shadow-sm " style="width: 18rem; background: rgb(255, 255, 255);">
+        <div class="row">
+        <div class="col-sm-4 ">
 
+            <div style="background:#66FFCC; top: -10px; width: 100px; left: 10px; border-radius: 10px; position: relative;">
+                <a class="background "
+                href="{{action('TiendaController@detalleproducto', ['producto' => $producto->id ])}}">
 
-<div class="ml-1 row d-flex  mt-2">
-    <div class="card-body shadow ml-2 zoom2 mover4" style="background: white;border-radius: 10px; left: 700px; 10px;padding: 0.8rem; height: 92%;">
-        <div class="d-flex ">
-            <a class="background "
-                 href="{{action('TiendaController@detalleproducto', ['producto' => $item->id ])}}">
-                @if($item->img == null)
-                             <img class="mx-auto d-block  img-fluid"
-                              src="{{asset('assets/img/home/producto21.png')}}"
-                              alt="Product Image"
-                             >
-                      @else
-                            <img class="mt-2 mx-auto d-block  img-fluid w-100 mt-3"
-                                 src="{{ asset('storage/photo-producto/'.$item->img) }}"
-                                 alt="Product Image"
-                                 style=" ">
-                      @endif
-        </a>
-            <div class="col-6 ">
-                <h5><strong>{{$item->name}}</strong></h5>
-                <p class="card-text" style="color: black; width: 160px;">
-                    {{ Str::words( strip_tags($item->description) , 9 )}}</p>
-
-                <p class="text-right" style="color: rgb(0, 0, 0);"><a class="btn-cu text-center ">{{ ucfirst($producto->getCategories->categories_name)}}</a><strong class="texto3  prize2">${{$item->price}}</strong></p>
-
+    @if($producto->img == null)
+            <img class="mt-2 mx-auto d-block  img-fluid"
+             src="{{asset('assets/img/home/producto21.png')}}"
+             alt="Product Image"
+             style=""
+            >
+     @else
+           <img class=" mt-3 mx-auto  d-block  img-fluid  "
+                src="{{ asset('storage/photo-producto/'.$producto->img) }}"
+                alt="Product Image"
+                style="width: 10rem; ">
+     @endif
+                </a>
             </div>
         </div>
+        <div class="col-sm-8">
+        <div class="card-body" >
+            <h5><strong>{{$producto->name}}</strong></h5>
+            <p class="blok card-text " style="color: #303030; ">
+                {{ Str::words( strip_tags($producto->description) , 9 )}}</p>
+                <a href="" class="btn btn-cre">
+                    <p class="text-center" style="margin-top: -9px; margin-left: -38px; width: 100px;">{{ ucfirst($producto->getCategories->categories_name)}}</p>
+                </a>
+            <p class=" blok text-right" style="color: #303030; font-size: 20px; float: right;">
+                <strong>${{$producto->price}}</strong></p>
+        </div>
+        </div>
+      </div>
     </div>
-</div>
-
-
+  </div>
 
     @endforeach
 
