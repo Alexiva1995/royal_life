@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
 
 
+@media screen and (max-width: 980px) {
+.no{
+display: none;
+    }
+}
+
+
 /* nuevas clases para el home */
 .btn-primario{
   box-shadow: 0 8px 25px -8px #66ffcc;
@@ -131,10 +138,9 @@
   -moz-transition:all 0.3s ease;
   -o-transition:all 0.3s ease;
   -ms-transition:all 0.3s ease;
-  width:9.2%;
 
   border-color: #66FFCC !important;
-  color: black!important;
+
   box-shadow: 0 8px 25px -8px #66ffcc;
   background-color: #66FFCC;
 }
@@ -850,20 +856,12 @@ cursor: pointer;
 
 
 .fondo4{
-    background: #173138;
+    z-index: 8;
     background-image: url('../img/formas_fondo2.png');
-    height: 30rem;
-    min-width: 20em;
-    max-width: 100em;
-
+    background-repeat: no-repeat;
 }
 .fondo3{
-    background-image: url('../img/cbd1.png');
-    background-size: cover;
-    background-position: top center;
-    height: 30rem;
-    min-width: 20em;
-    max-width: 50em;
+    background-color: #173138;
 
 }
 

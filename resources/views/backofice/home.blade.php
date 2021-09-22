@@ -18,7 +18,7 @@
                 <a href="{{route('shop.backofice')}}" class="btn btn-prima "><strong class="">ir a la tienda</strong></a>
           </div>
           <div class="col-sm-6 ">
-            <img src="{{asset('assets/img/home/Polygon5Forma.png')}}" class=" img-fluid "  style="max-width: 100%;  min-width: 20%;">
+            <img src="{{asset('assets/img/home/Polygon5Forma.png')}}" class=" img-fluid no"  style="max-width: 100%;  min-width: 20%;">
           </div>
 
         </div>
@@ -101,28 +101,30 @@
   </div>
 </div>
 
-  <div class="" style=" ">
+<div class=" fondo4 fondo3 ">
 
     <div class="container ">
-       <div class="row ml-1 mr-1">
-         <div class="col-6 fondo4" >
-            <strong class="" style="font-size: 45px ">Royal life el equilibrio perfecto.</strong>
+       <div class="row   ml-1 mr-1" >
+         <div class="col-sm-6 mt-5">
+           <h1 class="fs-1  mt-5  text-white"><strong style="font-size: 35px;"> Royal life el equilibrio perfecto. </strong> </h1>
 
-               <p class=" mt-2 mb-3  " style=""> Cada proceso de nuestros productos son cuidadosamente vigilados por expertos,
-                nuestros laboratorios aliados garantizan el CBD mas puro del mercado y nuestra
-                linea <br> de productos lo demuestra.<br>Nuestra principal misión es mejorar tu calidad de vida, por eso queremos
-                sorprenderte no una sola ves, si no todos los días!!"</p>
+           <p class=" mt-2 mb-3 text-white " style=""> Cada proceso de nuestros productos son cuidadosamente vigilados por expertos,
+            nuestros laboratorios aliados garantizan el CBD mas puro del mercado y nuestra
+            linea <br> de productos lo demuestra.<br>Nuestra principal misión es mejorar tu calidad de vida, por eso queremos
+            sorprenderte no una sola ves, si no todos los días!!"</p>
+
+
          </div>
-         <div class="col-6 fondo3 " >
-                <i class="">
-                    ‎      ‏‏‎
-                </i>
+         <div class="col-sm-6 ">
+           <img src="{{asset('assets/img/home/cbd1.png')}}" class=" img-fluid no "
+           style="  min-width: 20%; position: relative; left: 149px; ">
          </div>
 
        </div>
      </div>
-
 </div>
+
+
 
 
 

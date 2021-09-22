@@ -100,7 +100,7 @@
 
                     <br>
                     <div class="row ">
-                        <div class="col-md-6 col-sm-6 col-xs-3 form-group ">
+                        <div class="col-sm-6 col-sm-6 col-xs-3 form-group ">
                             <span class="help-block text-muted text textcustom  control-span">Nombres<sup
                                     class="requerido">*</sup>
                             </span>

@@ -77,30 +77,30 @@
     -moz-transition:all 0.3s ease;
     -o-transition:all 0.3s ease;
     -ms-transition:all 0.3s ease;
-    width:75%;
+    box-shadow: 0 9px 9px 0 rgba(0, 0, 0, 0.16), 0 9px 9px 0 rgba(0, 0, 0, 0.12) !important;
 }
-.zoom4:hover {
+.zoomj:hover {
 
-    -webkit-transform:scale(1.05);
-    -moz-transform:scale(1.05);
-    -ms-transform:scale(1.05);
-    -o-transform:scale(1.05);
-    transform:scale(1.05);
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    transform:scale(1.1);
 
     -webkit-transition:all 0.3s ease;
     -moz-transition:all 0.3s ease;
     -o-transition:all 0.3s ease;
     -ms-transition:all 0.3s ease;
-    width:9.2%;
+
 
     border-color: #66FFCC !important;
-    color: black!important;
+
     box-shadow: 0 8px 25px -8px #66ffcc !important;
     background-color: #66FFCC;
 
 }
 
-.zoom4:active {
+.zoomj:active {
 
 -webkit-transform:scale(0.9);
 -moz-transform:scale(0.9);
@@ -112,7 +112,7 @@ transform:scale(0.9);
 -moz-transition:all 0.3s ease;
 -o-transition:all 0.3s ease;
 -ms-transition:all 0.3s ease;
-width:9.2%;
+
 
 border-color: #66FFCC !important;
 color: black!important;
@@ -132,7 +132,6 @@ background-color: #66FFCC;
     -moz-transition:all 0.3s ease;
     -o-transition:all 0.3s ease;
     -ms-transition:all 0.3s ease;
-    width:33%;
 
     border-color: #66FFCC !important;
     color: black!important;
@@ -151,12 +150,14 @@ transform:scale(1);
 -moz-transition:all 0.3s ease;
 -o-transition:all 0.3s ease;
 -ms-transition:all 0.3s ease;
-width:33%;
 
 border-color: #66FFCC !important;
-color: black!important;
+color: rgb(255, 255, 255)!important;
 box-shadow: 0 8px 25px -8px #66ffcc;
 background-color: #66FFCC;
+}
+#i:active{
+    color: rgb(255, 255, 255)!important;
 }
 
 .pri{
@@ -197,7 +198,7 @@ box-sizing: border-box;
 border-radius: 5px;
 }
 .btn-custom{
-    position: relative;
+
     width: 150px;
     height: 40px;
     background: #67FFCC;
@@ -267,8 +268,8 @@ box-sizing: border-box;
 
 
 .fuente{
-    font-family: 'Montserrat';
-    font-style: normal;
+    font-family: 'Montserrat' ;
+    font-style: normal ;
 
 }
 .tarjeta{
