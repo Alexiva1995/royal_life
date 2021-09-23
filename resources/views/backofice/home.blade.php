@@ -7,18 +7,18 @@
 <div class="row fondo fondo2 ">
 
      <div class="container ">
-        <div class="row top1 wi ml-1 mr-1" >
-          <div class="col-sm-6 head ">
+        <div class="row  wi ml-1 mr-1 mb-5" >
+          <div class="col-sm-6 head mb-5">
             <h1 class="fs-1  mt-5 font estilo-x">Linea completa de<strong> Royal life </strong> </h1>
 
                 <p class="text-dark mt-2 mb-3 font2">Gracias a nuestro amplio portafolio de productos, podrás encontrar la combinación perfecta, para ello
                     nos hemos aliado con los mejores laboratorios en los Estados Unidos que gracias a sus investigaciones Hoy te entregamos la mejor
                     del mercado, productos excepcionales, los mejores procesos y la mas alta pureza.</p>
 
-                <a href="{{route('shop.backofice')}}" class="btn btn-prima "><strong class="">ir a la tienda</strong></a>
+                <a href="{{route('shop.backofice')}}" class="btn btn-prima mb-5"><strong class="">ir a la tienda</strong></a>
           </div>
           <div class="col-sm-6 ">
-            <img src="{{asset('assets/img/home/Polygon5Forma.png')}}" class=" img-fluid no"  style="max-width: 100%;  min-width: 20%;">
+            <img src="{{asset('assets/img/home/Polygon5Forma.png')}}" class=" img-fluid no mt-5 mb-5"  style="max-width: 100%;  min-width: 20%;">
           </div>
 
         </div>

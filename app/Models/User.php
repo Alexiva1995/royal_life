@@ -46,7 +46,7 @@ class User extends Authenticatable
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
-    ]; 
+    ];
 
 
 
@@ -73,7 +73,7 @@ class User extends Authenticatable
     /**
      * Permite obtener las ordenes de servicio asociada a una categoria
      *
-     * @return void 
+     * @return void
      */
     public function getUserOrden()
     {
@@ -113,13 +113,13 @@ class User extends Authenticatable
     }
 
     public function gananciaActual()
-    {   
+    {
         if(isset($this->inversionMasAlta()->ganacia) && $this->inversionMasAlta()->ganacia != null){
             return number_format($this->inversionMasAlta()->ganacia, 2);
         }else{
             return number_format(0, 2);
         }
-        
+
     }
 
     public function progreso()
@@ -171,7 +171,7 @@ class User extends Authenticatable
     public function getFeeWithdraw(): float
     {
         $result = 0;
-        $disponible = $this->saldoDisponibleNumber();        
+        $disponible = $this->saldoDisponibleNumber();
         if ($disponible > 0) {
             $result = ($disponible * 0.06);
         }
@@ -186,7 +186,7 @@ class User extends Authenticatable
     public function totalARetirar(): float
     {
         $result = 0;
-        $disponible = $this->saldoDisponibleNumber();        
+        $disponible = $this->saldoDisponibleNumber();
         if ($disponible > 0) {
             $result = ($disponible - $this->getFeeWithdraw());
         }

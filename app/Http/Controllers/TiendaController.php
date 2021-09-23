@@ -553,7 +553,8 @@ class TiendaController extends Controller
 
 
     public function destroy(Cart $producto){
-    $this->authorize('delete', $producto);
+
+        $this->authorize('delete', $producto);
         $producto->delete();
 
         return redirect()->route('cart')->with('msj-success', 'producto eliminada exitosamente');

@@ -1,5 +1,6 @@
-<nav class=" navbar1  mx-auto navbar navbar-expand-lg navbar-light bg-light" style="font-size: 18px; ">
-    <a class="navbar-brand ml-2" href="#">
+
+<nav class="navbar1  mx-auto navbar navbar-expand-lg navbar-light bg-light" style="font-size: 18px; ">
+    <a class="navbar-brand ml-5" href="#">
         <img src="{{ asset('assets/img/royal_green/logos/logo.svg') }}" class=" ml-5 margen-h"   >
      </a>
     <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,7 +85,7 @@
 
         <li class="nav-item mt-1 mr-5" >
             <a class="ml-2 nav-link text-white " style="font-size: 25px; position: relative; top: -5px;"
-            href="{{route('cart')}}">|<i class="side ml-1 feather icon-shopping-cart"></i></a>
+            href="{{route('cart')}}"><i class="side ml-1 feather icon-shopping-cart">1</i></a>
           </li>
 
            @else
@@ -113,8 +114,15 @@
           </li>
 
           <li class="ml-5 nav-item">
-              <a class="ml-2 nav-link text-white " style="font-size: 25px; position: relative; top: -5px;" href="{{route('cart')}}">|<i class="side ml-1 feather icon-shopping-cart"></i></a>
+              <a class="ml-2 nav-link text-white "
+              style="font-size: 25px; "
+              href="{{route('cart')}}"><i class="side ml-1 feather icon-shopping-cart">
+              </i>
+            </a>
             </li>
+            <a class="notificacioncarritoColor"  href="{{route('cart')}}">
+            <strong  class="notificacioncarrito  text-dark" >1</strong>
+            </a>
             @endif
       </ul>
 
