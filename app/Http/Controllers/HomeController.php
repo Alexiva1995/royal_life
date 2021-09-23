@@ -12,11 +12,13 @@ use App\Models\OrdenPurchases;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Client\Request;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Foundation\Auth\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\View;
 use App\Http\Controllers\TreeController;
 use App\Http\Controllers\WalletController;
+use App\Models\Cart;
 use Facade\Ignition\Support\Packagist\Package;
 
 class HomeController extends Controller
@@ -228,8 +230,18 @@ class HomeController extends Controller
         $categorias = Categories::all();
         $productosMasVendidos = Packages::take(9)->get();
         $productos = Packages::take(8)->get();
-        return view('backofice.home', compact('categorias','productos','productosMasVendidos'));
+
+        $user = Auth::id();
+        $ProductosEnCarrito = Cart::where( 'iduser', $user)->count();
+
+
+
+
+        return view('backofice.home', compact('categorias','productos','productosMasVendidos', 'ProductosEnCarrito'));
     }
+
+
+
     public function inicio2()
     {
         $categorias = Categories::all();

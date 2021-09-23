@@ -265,6 +265,23 @@ background-color: #66FFCC;
     height: 1%;
   }
 
+.notificacioncarrito{
+    font-size: 15px;
+    position: relative !important;
+    left: 8px;
+    top: -2px
+}
+.notificacioncarritoColor{
+    position: relative;
+    background-color:#66FFCC;
+    width: 25px;
+    height: 25px;
+    top: -5px;
+    left: -2px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
 
     </style>
 @endpush
