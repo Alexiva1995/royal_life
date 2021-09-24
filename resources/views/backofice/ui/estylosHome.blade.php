@@ -152,7 +152,6 @@ transform: translate(-50%, -50%);
 .bgcomen{
     background: #f7f7f7;
     height: 240px;
-    box-shadow: 0px 27px 70px 27px rgba(154, 255, 208, 0.16), 0 9px 9px 0 rgba(159, 255, 191, 0.12);
 }
 
 .sombra{
@@ -281,6 +280,11 @@ background-color: #66FFCC;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
+}
+
+input::placeholder{
+    background: white !important;
+    color:#000000 !important;
 }
 
     </style>

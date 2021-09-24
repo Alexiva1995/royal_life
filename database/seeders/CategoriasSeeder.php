@@ -17,27 +17,15 @@ class CategoriasSeeder extends Seeder
         $arayCategorias = [
             [
                 "id"=>"1",
-                "categories_name"=>"cremas"
+                "categories_name"=>"Aceites CBD"
             ],
             [
                 "id"=>"2",
-                "categories_name"=>"Balsamos"
+                "categories_name"=>"Comestibles"
             ],
             [
                 "id"=>"3",
-                "categories_name"=>"Pastillas"
-            ],
-            [
-                "id"=>"4",
-                "categories_name"=>"Lociones"
-            ],
-            [
-                "id"=>"5",
-                "categories_name"=>"Dulces"
-            ],
-            [
-                "id"=>"6",
-                "categories_name"=>"Gotas"
+                "categories_name"=>"Capsulas"
             ],
 
         ];

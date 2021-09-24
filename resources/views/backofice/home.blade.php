@@ -29,7 +29,7 @@
     <h1 class="text-center mt-5 mb-3" style="font-size: 35px;"> <strong> Categorias de nuestros productos </strong></h1>
     <div class="row mb-5 ml-1 mr-1 ">
         @foreach ($categorias as $item )
-      <div class="col-sm-3 mb-2 ">
+      <div class="col-sm-4 mb-2 ">
         <div class="card mb-1 col-md-12 zoom2" style="height: 350px; background: white; width: 18rem;">
                 <img class="mx-auto d-block" src="{{asset('assets/img/home/producto21.png')}}" alt="" height="70%">
                 <div class="text-center text-card"><strong>{{$item->categories_name}}</strong></div>
@@ -170,9 +170,10 @@
   </div>
 
 
+  <div class="fondo4 fondo3">
   <div class="container mb-5">
     <h1 class="text-center mt-5 mb-3" style="font-size: 35px;"> <strong> Clientes satisfechos  </strong> </h1>
-    <div class="row ml-1 mr-1">
+    <div class="row ml-1 mr-1" style="top: -50px; position: relative;">
 
       <div class="col-sm-6  ">
         <div class="col-md-11 item bgcomen " style="">
@@ -230,13 +231,12 @@
       </div>
 
       <div class="container">
-        <div class="row d-flex justify-content-center">
-            <img src="{{asset('assets/img/home/Rectangle29.png')}}" alt="" style="margin-top: -255px; width: 70%;">
-        </div>
+
     </div>
 
     </div>
   </div>
+</div>
 
   <div class="container">
     <div class="row " >

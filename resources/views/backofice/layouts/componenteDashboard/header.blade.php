@@ -85,16 +85,17 @@
 
         <li class="nav-item mt-1 mr-5" >
             <a class="ml-2 nav-link text-white " style="font-size: 25px; position: relative; top: -5px;"
-            href="{{route('cart')}}"><i class="side ml-1 feather icon-shopping-cart">1</i></a>
+            href="{{route('cart')}}"><i class="side ml-1 feather icon-shopping-cart"></i></a>
           </li>
 
            @else
            <li class="ml-3 nav-item dropdown text-white">
-            <a  class="  nav-link dropdown text-white side"
+            <a  class="  nav-link dropdown-toggle text-white side"
                 href="#"
                 id="navbarDropdown"
                 role="button"
-                data-toggle="dropdown" aria-haspopup="true"
+                data-toggle="dropdown"
+                aria-haspopup="true"
                 aria-expanded="false">
 
              {{Auth::user()->fullname}}

@@ -49,11 +49,21 @@ class HomeController extends Controller
      */
     public function home()
     {
-        if (Auth::user()->admin == 1) {
+        if(Auth::user() == true)
+        {
+        $categorias = Categories::all();
+        $productosMasVendidos = Packages::take(9)->get();
+        $productos = Packages::take(8)->get();
+
+        $user = Auth::id();
+        $ProductosEnCarrito = Cart::where( 'iduser', $user)->count();
+        return view('backofice.home', compact('categorias','productos','productosMasVendidos', 'ProductosEnCarrito'));
+        }
+      /*  if (Auth::user()->admin == 1) {
         return redirect()->route('home');
         } else {
         return redirect()->route('home.user');
-        }
+        } */
     }
 
     /**
@@ -233,10 +243,6 @@ class HomeController extends Controller
 
         $user = Auth::id();
         $ProductosEnCarrito = Cart::where( 'iduser', $user)->count();
-
-
-
-
         return view('backofice.home', compact('categorias','productos','productosMasVendidos', 'ProductosEnCarrito'));
     }
 
