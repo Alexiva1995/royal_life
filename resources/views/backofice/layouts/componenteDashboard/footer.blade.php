@@ -9,21 +9,14 @@
                     <div class="d-flex">
                         <img src="{{ asset('assets/img/home/facebook1.png') }}"
                             style="margin-left: -22px; margin-top: -20px;" alt="">
-                        <img src="{{ asset('assets/img/home/instagram1.png') }}"
+
+                            <a href="https://instagram.com/royal_lifeoficial">
+                        <img  src="{{ asset('assets/img/home/instagram1.png') }}"
                             style="margin-left: 30px; margin-top: -20px;" alt="">
+                            </a>
                     </div>
                 </div>
-                <div class="col-sm-4 col-md-2 item">
-                    <h3 class="white">Productos</h3>
-                    <ul>
-                        <li><a href="#">Producto1</a></li><br>
-                        <li><a href="#">Producto2</a></li><br>
-                        <li><a href="#">Producto3</a></li><br>
-                        <li><a href="#">Producto4</a></li><br>
-                        <li><a href="#">Producto5</a></li><br>
-                        <li><a href="#">Producto6</a></li><br>
-                    </ul>
-                </div>
+
                 <div class="col-sm-4 col-md-2 item">
                     <h3 class="white">Encuentranos</h3>
                     <ul>
@@ -51,7 +44,11 @@
                     <h3 class="white">Recibe nuestras <br> NewLetters</h3>
                     <p>¡Subcribete y recibe un correo con las últimas promociones de nuestros productos!</p>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Ingresa tu email"
+                        <input type="text"
+                               class="form-control text-dark"
+                               style="background: white;"
+                               placeholder="Ingresa tu email"
+
                             aria-label="Recipient's username" aria-describedby="basic-addon2">
                         <div class="input-group-append">
                             <span class="btn-sub">Subcribete</span>
