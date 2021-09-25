@@ -8,10 +8,10 @@
     </button>
 
     <div class=" collapse navbar-collapse" id="navbarSupportedContent">
-        @if (Auth::user()->photoDB != NULL)
+        @if (Auth::user() == false)
       <ul class="navbar-nav mx-auto">
         <li class="nav-item active">
-          <a class="nav-link ml-3  mt-1 text-white side" href="{{route('inicio')}}">inicio<span class="sr-only">(current)</span></a>
+          <a class="nav-link ml-3  mt-1 text-white side" href="{{route('inicio.index')}}">inicio<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link ml-3 mt-1 text-white side" href="{{route('shop.backofice')}}">tienda</a>
@@ -22,29 +22,32 @@
           <li class="nav-item">
             <a class="nav-link ml-3 mt-1 text-white side" href="{{route('contact_us')}}">contacto</a>
           </li>
-
+          <li class="nav-item">
+            <a class="nav-link ml-3 mt-1 text-white side" href="{{route('inicio')}}">Ingresar</a>
+          </li>
           @else
 
           <ul class="navbar-nav mx-auto">
             <li class="nav-item active">
-              <a class="nav-link ml-3 text-white side" href="{{route('inicio')}}">inicio<span class="sr-only">(current)</span></a>
+              <a class="nav-link mt-1 ml-3 text-white side" href="{{route('inicio')}}">inicio<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link ml-3 text-white side" href="{{route('shop.backofice')}}">tienda</a>
+              <a class="nav-link mt-1 ml-3 text-white side" href="{{route('shop.backofice')}}">tienda</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link ml-3 text-white side" href="{{route('about')}}">nosotros</a>
+                <a class="nav-link mt-1 ml-3 text-white side" href="{{route('about')}}">nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link ml-3 text-white side" href="{{route('contact_us')}}">contacto</a>
+                <a class="nav-link mt-1 ml-3 text-white side" href="{{route('contact_us')}}">contacto</a>
               </li>
+
 
           @endif
 
           <li class="nav-item">
             <a class="nav-link ml-3" href="#">
 
-                @if (Auth::user()->photoDB != NULL)
+                @if (Auth::user() == true)
                 <span>
                     <img class="round " style="" src="{{asset('storage/photo/'.Auth::user()->photoDB)}}"
                         alt="{{ Auth::user()->fullname }}" height="50" width="50">
@@ -58,7 +61,7 @@
 
             </a>
           </li>
-          @if (Auth::user()->photoDB != NULL)
+          @if (Auth::user() == true)
         <li class="nav-item dropdown text-white" >
           <a class="mt-1 ml-3 nav-link dropdown-toggle text-white side"
           href="#" id="navbarDropdown"
@@ -74,7 +77,7 @@
                 <i class="feather icon-user"></i>Editar Perfil</a>
 
             <a class="dropdown-item text-white side" href="{{ route('home') }}">
-                <i class="feather icon-home "></i>Inversiones</a>
+                <i class="feather icon-home "></i>Backoffice</a>
 
             <div class="dropdown-divider"  href="#"></div>
 
@@ -89,41 +92,7 @@
           </li>
 
            @else
-           <li class="ml-3 nav-item dropdown text-white">
-            <a  class="  nav-link dropdown-toggle text-white side"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false">
 
-             {{Auth::user()->fullname}}
-            </a>
-            <div class=" dropdown-menu " aria-labelledby="navbarDropdown">
-              <a class="dropdown-item text-white side" href="{{ route('profile') }}">
-                <i class="feather icon-user"></i>Editar Perfil</a>
-
-              <a class="dropdown-item text-white side" href="{{ route('home') }}">
-                <i class="feather icon-home"></i>Inversiones</a>
-
-              <div class="dropdown-divider"  href="#"></div>
-
-              <a class="dropdown-item text-white side" href="{{ route('logout') }}"onclick="event.preventDefault();document.getElementById('logout-form').submit();">
-                <i class="feather icon-log-out"></i>Logout</a>
-            </div>
-          </li>
-
-          <li class="ml-5 nav-item">
-              <a class="ml-2 nav-link text-white "
-              style="font-size: 25px; "
-              href="{{route('cart')}}"><i class="side ml-1 feather icon-shopping-cart">
-              </i>
-            </a>
-            </li>
-            <a class="notificacioncarritoColor"  href="{{route('cart')}}">
-            <strong  class="notificacioncarrito  text-dark" >1</strong>
-            </a>
             @endif
       </ul>
 

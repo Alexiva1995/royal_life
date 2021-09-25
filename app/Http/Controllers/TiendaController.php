@@ -28,6 +28,7 @@ class TiendaController extends Controller
 
     public function __construct()
     {
+
         $this->walletController = new WalletController;
         $this->inversionController = new InversionController();
         //$this->apis_key_nowpayments = '56ZHMKJ-3E1MC2ZK5NK025-XSTRFHY';

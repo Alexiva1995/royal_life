@@ -161,7 +161,7 @@ class Menu
             // Fin Soporte
 
             // Inicio
-            'backofice' => [
+            'Royal life' => [
                 'submenu' => 0,
                 'ruta' => route('inicio'),
                 'blank'=> '', // si es para una pagina diferente del sistema solo coloquen _blank
@@ -349,7 +349,7 @@ class Menu
                 ]
             ],
             // Inicio
-            'backofice' => [
+            'Royal life' => [
                 'submenu' => 0,
                 'ruta' => route('inicio'),
                 'blank'=> '', // si es para una pagina diferente del sistema solo coloquen _blank
