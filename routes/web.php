@@ -16,10 +16,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 
+
+
+Route::get('/', 'InicioController@home')->name('inicio.index');
+
 Auth::routes();
-
-Route::get('/', 'HomeController@home')->middleware('auth');
-
 Route::prefix('dashboard')->middleware('menu', 'auth')->group(function ()
 {
     // Inicio
@@ -182,7 +183,7 @@ Route::prefix('dashboard')->middleware('menu', 'auth')->group(function ()
     Route::get('testRank', 'RankController@testRank')->name('testRank');
 
     Route::prefix('backofice')->group(function(){
-    Route::get('/inicio', 'HomeController@inicio')->name('inicio');
+    Route::get('/inicio', 'HomeController@home')->name('inicio');
     Route::get('/inicio2', 'HomeController@inicio2')->name('inicio2');
 
     Route::get('/about', 'HomeController@about')->name('about');
