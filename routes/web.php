@@ -197,7 +197,7 @@ Route::prefix('dashboard')->middleware('menu', 'auth')->group(function ()
 
 
 
-    Route::get('/shopBackofice/checkout', 'TiendaController@checkout')->name('checkout.backofice');
+    Route::get('/shopBackofice/checkout', 'TiendaController@checkout')->name('checkout.backofice')->withoutMiddleware(['auth']);
 
     Route::get('/shopBackofice/detalleproducto/{producto}', 'TiendaController@detalleproducto')->name('detalle.producto')->withoutMiddleware(['auth']);
 
