@@ -34,4 +34,12 @@ class InicioController extends Controller
         return redirect()->route('home.user');
         } */
     }
+
+    public function shop()
+    {
+        $packages = Packages::paginate(8);
+
+         return view('backofice.shop', compact('packages'));
+
+    }
 }
