@@ -28,6 +28,7 @@ class TiendaController extends Controller
 
     public function __construct()
     {
+        $this->middleware('auth')->except('shop');
 
         $this->walletController = new WalletController;
         $this->inversionController = new InversionController();

@@ -168,8 +168,6 @@
       @endforeach
     </div>
   </div>
-
-
   <div class="fondo4 fondo3">
   <div class="container mb-5">
     <h1 class="text-center mt-5 mb-3" style="font-size: 35px;"> <strong> Clientes satisfechos  </strong> </h1>

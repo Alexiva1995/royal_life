@@ -186,24 +186,24 @@ Route::prefix('dashboard')->middleware('menu', 'auth')->group(function ()
     Route::get('/inicio', 'HomeController@home')->name('inicio');
     Route::get('/inicio2', 'HomeController@inicio2')->name('inicio2');
 
-    Route::get('/about', 'HomeController@about')->name('about');
-    Route::get('/contact_us', 'HomeController@contact_us')->name('contact_us');
-    Route::post('/contactar', 'HomeController@contact')->name('contact');
-    Route::get('/faq', 'HomeController@faq')->name('faq');
-    Route::get('/shopBackofice', 'TiendaController@shop')->name('shop.backofice');
+    Route::get('/about', 'HomeController@about')->name('about')->withoutMiddleware(['auth']);
+    Route::get('/contact_us', 'HomeController@contact_us')->name('contact_us')->withoutMiddleware(['auth']);
+    Route::post('/contactar', 'HomeController@contact')->name('contact')->withoutMiddleware(['auth']);
+    Route::get('/faq', 'HomeController@faq')->name('faq')->withoutMiddleware(['auth']);;
+    Route::get('/shopBackofice', 'TiendaController@shop')->name('shop.backofice')->withoutMiddleware(['auth']);
     Route::get('/cart', 'TiendaController@cart')->name('cart');
     Route::post('/cart-post', 'TiendaController@cart_save')->name('cart.post');
     Route::patch('cart-update/{id}', 'TiendaController@updateCart')->name('cart.update');
 
 
 
-    Route::get('/shopBackofice/checkout', 'TiendaController@checkout')->name('checkout.backofice');
+    Route::get('/shopBackofice/checkout', 'TiendaController@checkout')->name('checkout.backofice')->withoutMiddleware(['auth']);
 
-    Route::get('/shopBackofice/detalleproducto/{producto}', 'TiendaController@detalleproducto')->name('detalle.producto');
+    Route::get('/shopBackofice/detalleproducto/{producto}', 'TiendaController@detalleproducto')->name('detalle.producto')->withoutMiddleware(['auth']);
 
-    Route::get('Terms', 'HomeController@terms')->name('terms');
-    Route::get('policity', 'HomeController@policity')->name('policity');
-    Route::get('/categoria/{Categories}', 'CategoriasController@show')->name('categorias.show');
+    Route::get('Terms', 'HomeController@terms')->name('terms')->withoutMiddleware(['auth']);
+    Route::get('policity', 'HomeController@policity')->name('policity')->withoutMiddleware(['auth']);
+    Route::get('/categoria/{Categories}', 'CategoriasController@show')->name('categorias.show')->withoutMiddleware(['auth']);
     Route::post('orden', 'TiendaController@orden')->name('orden');
     Route::delete('cart-eliminar/{producto}', 'TiendaController@destroy')->name('destroy');
 
