@@ -101,17 +101,18 @@
 
     .btn-c{
 
-border-color: #F2F1F3 !important;
-color: black!important;
-box-shadow: 0 8px 25px -8px #f2f1f3;
-position: absolute;
-top: 255px;
-left: 17%;
-width: 25%;
-height: 23px;
-background-color: #F2F1F3;
-border-radius: 0.4285rem;
-transform: translate(-50%, -50%);
+        border-color: #F2F1F3 !important;
+        color: black!important;
+        box-shadow: 0 8px 25px -8px #f2f1f3;
+        position: absolute;
+        top: 255px;
+        left: 27%;
+        width: 39%;
+        height: 23px;
+        background-color: #F2F1F3;
+        border-radius: 0.4285rem;
+        transform: translate(-50%, -50%);
+
 }
 .texto{
     font-size: 20px;

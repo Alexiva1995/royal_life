@@ -29,6 +29,7 @@
 
 <div class="container">
     <div class="row">
+
       <div class="col-sm-4">
        @include('backofice.ui.cardcategorias')
       </div>
@@ -36,6 +37,7 @@
       <div class="col-sm-8">
        @include('backofice.ui.productos')
       </div>
+
       <div class="container mt-5  ">
         <div class="ml-5 row">
           <div class="link ml-5 mb-2 pg">
