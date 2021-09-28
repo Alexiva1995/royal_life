@@ -47,10 +47,14 @@
           <li class="nav-item">
             <a class="nav-link ml-3" href="#">
 
-                @if (Auth::user() == true)
+                    @if (Auth::user() == true)
                 <span>
-                    <img class="round " style="" src="{{asset('storage/photo/'.Auth::user()->photoDB)}}"
-                        alt="{{ Auth::user()->fullname }}" height="50" width="50">
+                    @if(Auth::user()->photoDB == null)
+
+                    @else
+                        <img class="round " style="" src="{{asset('storage/photo/'.Auth::user()->photoDB)}}"
+                        alt="" height="50" width="50">
+                    @endif
                 </span>
                 @else
                 <span>
