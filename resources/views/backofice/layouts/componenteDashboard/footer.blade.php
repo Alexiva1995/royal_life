@@ -17,7 +17,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-4 col-md-2 item">
+                <div class="col-sm-4 col-md-2 item ml-3">
                     <h3 class="white">Encuentranos</h3>
                     <ul>
                         <li><a href="#">Bogotá-Colombia</a></li>
@@ -28,16 +28,16 @@
                         <li><a href="">info@royallife.com</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-4 col-md-2 item">
-                    <h3 class="white">Nosotros</h3>
+                <div class="col-sm-4 item ml-3">
+                    <h3 class="white ">Nosotros</h3>
                     <ul>
-                        <li><a href="{{route('about')}}">¿Quienes Sómos?</a></li>
+                        <li class=""><a href="{{route('about')}}">¿Quienes Sómos?</a></li>
                         <br>
-                        <li><a href="{{route('terms')}}">Terminos y Condiciones</a></li>
+                        <li class=""><a href="{{route('terms')}}">Terminos y Condiciones</a></li>
                         <br>
-                        <li><a href="{{route('policity')}}">Politicas y privacidad</a></li>
+                        <li class=""><a href="{{route('policity')}}">Politicas y privacidad</a></li>
                         <br>
-                        <li><a href="{{route('faq')}}">Preguntas Frecuentes</a></li>
+                        <li class=""><a href="{{route('faq')}}">Preguntas Frecuentes</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-4 col-md-3 item">
