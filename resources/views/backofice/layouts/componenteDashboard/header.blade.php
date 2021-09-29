@@ -1,6 +1,6 @@
 
 <nav class="navbar1  mx-auto navbar navbar-expand-lg navbar-light bg-light" style="font-size: 18px; ">
-    <a class="navbar-brand ml-5" href="#">
+    <a class="navbar-brand ml-5" href="{{route('inicio.index')}}">
         <img src="{{ asset('assets/img/royal_green/logos/logo.svg') }}" class=" ml-5 margen-h"   >
      </a>
     <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,7 +9,7 @@
 
     <div class=" collapse navbar-collapse" id="navbarSupportedContent">
         @if (Auth::user() == false)
-      <ul class="navbar-nav mx-auto">
+      <ul class="navbar-nav mx-auto ">
         <li class="nav-item active">
           <a class="nav-link ml-3  mt-1 text-white side" href="{{route('inicio.index')}}">inicio<span class="sr-only">(current)</span></a>
         </li>
@@ -24,6 +24,15 @@
           </li>
           <li class="nav-item">
             <a class="nav-link ml-3 mt-1 text-white side" href="{{route('inicio')}}">Ingresar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ml-3 mt-1 text-white side" href="#"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ml-3 mt-1 text-white side" href="#"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ml-3 mt-1 text-white side" href="#"></a>
           </li>
           @else
 

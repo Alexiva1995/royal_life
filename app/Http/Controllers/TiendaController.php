@@ -2,22 +2,24 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Groups;
-use App\Models\OrdenPurchases;
-use App\Models\Packages;
-use App\Models\User;
 use Carbon\Carbon;
-use Illuminate\Support\Facades\View;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\DB;
-use App\Http\Controllers\InversionController;
-use App\Http\Controllers\WalletController;
 use App\Models\Cart;
+use App\Models\User;
+use App\Models\Groups;
+use App\Models\Packages;
 use App\Models\Categories;
+use Illuminate\Http\Request;
 use App\Models\DataOrdenUser;
+use App\Models\OrdenPurchases;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\View;
+use Shakurov\Coinbase\Facades\Coinbase;
+use App\Http\Controllers\WalletController;
+use App\Http\Controllers\InversionController;
 use Facade\Ignition\Support\Packagist\Package;
+use Shakurov\Coinbase\Models\CoinbaseWebhookCall;
 
 class TiendaController extends Controller
 {
@@ -472,7 +474,7 @@ class TiendaController extends Controller
         $user = Auth::user();
         $carrito = Cart::all();
 
-        foreach($carrito as $cart){
+     //   foreach($carrito as $cart){
         $data = $request->validate([
            'name'=> 'required|min:4',
            'lastname'=>'required|min:4',
@@ -494,24 +496,43 @@ class TiendaController extends Controller
             'email'=> $request->email,
             'phone'=> $request->phone,
             'iduser'=> $user->id,
-            'categories_id'=>$cart->categories_id,
+      /*      'categories_id'=>$cart->categories_id,
             'package_id'=>$cart->package_id,
             'cantidad'=>$cart->cantidad,
             'monto'=>$cart->monto,
             'status'=>1,
-            'total'=>$cart->total
+            'total'=>$cart->total */
         ];
 
+        $charge = Coinbase::createCharge([
+            'name' => 'Producto '.$data['name'],
+            'description' => ['descripcion'],
+            'local_price' => [
+                'amount' => ['total'],
+                'currency' => 'USD',
+            ],
+            'pricing_type' => 'fixed_price',
+        ]);
+
+        dd($charge);
+   /*     OrdenPurchases::where('id', $data['idorden'])->update([
+            'id_coinbase' => $charge['data']['id'],
+            'code_coinbase' => $charge['data']['code'],
+        ]);
+        return $charge['data']['hosted_url'];
 
 
          $orden = DataOrdenUser::create($data);
-         Cart::where('iduser',$user->id)->delete();
+         Cart::where('iduser',$user->id)->delete(); */
 
-    }
+  //  }
+
+
 
     $packages = Packages::paginate(8);
 
-    return view('backofice.shop', compact('packages')); //genera un bug arreglar
+
+   // return view('backofice.shop', compact('packages')); //genera un bug arreglar
 
     }
 

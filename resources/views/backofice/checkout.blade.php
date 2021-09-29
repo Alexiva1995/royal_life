@@ -283,6 +283,7 @@
 
                     <input class=" custominput" value="Realizar pedido" type="submit" style="background: #67FFCC">
                 </div>
+
             </div>
         </div>
     </div>
