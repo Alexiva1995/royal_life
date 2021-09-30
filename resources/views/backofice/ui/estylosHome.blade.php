@@ -283,10 +283,7 @@ background-color: #66FFCC;
     border-radius: 50%;
 }
 
-input::placeholder{
-    background: white !important;
-    color:#000000 !important;
-}
+
 
     </style>
 @endpush

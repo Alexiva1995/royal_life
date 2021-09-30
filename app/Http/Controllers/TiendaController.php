@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\View;
-use Shakurov\Coinbase\Facades\Coinbase;
+use Coinbase;
 use App\Http\Controllers\WalletController;
 use App\Http\Controllers\InversionController;
 use Facade\Ignition\Support\Packagist\Package;
@@ -474,7 +474,7 @@ class TiendaController extends Controller
         $user = Auth::user();
         $carrito = Cart::all();
 
-     //   foreach($carrito as $cart){
+        foreach($carrito as $cart){
         $data = $request->validate([
            'name'=> 'required|min:4',
            'lastname'=>'required|min:4',
@@ -496,45 +496,48 @@ class TiendaController extends Controller
             'email'=> $request->email,
             'phone'=> $request->phone,
             'iduser'=> $user->id,
-      /*      'categories_id'=>$cart->categories_id,
+            'categories_id'=>$cart->categories_id,
             'package_id'=>$cart->package_id,
             'cantidad'=>$cart->cantidad,
             'monto'=>$cart->monto,
             'status'=>1,
-            'total'=>$cart->total */
+            'total'=>$cart->total,
+            'descripcion'=>'prueba',
+            'idorden'=>1
         ];
-
-        $charge = Coinbase::createCharge([
-            'name' => 'Producto '.$data['name'],
-            'description' => ['descripcion'],
-            'local_price' => [
-                'amount' => ['total'],
-                'currency' => 'USD',
-            ],
-            'pricing_type' => 'fixed_price',
-        ]);
-
-        dd($charge);
-   /*     OrdenPurchases::where('id', $data['idorden'])->update([
-            'id_coinbase' => $charge['data']['id'],
-            'code_coinbase' => $charge['data']['code'],
-        ]);
-        return $charge['data']['hosted_url'];
-
-
+        $url = $this->url($data);
          $orden = DataOrdenUser::create($data);
-         Cart::where('iduser',$user->id)->delete(); */
+         Cart::where('iduser',$user->id)->delete();
 
-  //  }
-
+   }
 
 
     $packages = Packages::paginate(8);
-
-
    // return view('backofice.shop', compact('packages')); //genera un bug arreglar
 
     }
+
+private function url($data):string
+{
+    $charge = Coinbase::createCharge([
+        'name' => 'Producto '.$data['name'],
+        'description' => $data['descripcion'],
+        'local_price' => [
+            'amount' => $data['total'],
+            'currency' => 'USD',
+        ],
+        'pricing_type' => 'fixed_price',
+    ]);
+
+    dd($charge);
+
+  //  DataOrdenUser::where('id', $data['idorden'])->update([
+    //    'id_coinbase' => $charge['data']['id'],
+      //  'code_coinbase' => $charge['data']['code'],
+    //]);
+    return $charge['data']['hosted_url'];
+}
+
 
     public function cart_save(Request $request){
         // dd($request);

@@ -19,7 +19,7 @@
 
 <div class="row">
     <div class="mb-5">
-    <h1 class="ml-3 mr-3 text-dark mt-1 fuente"> <strong> ¿QUIENES SOMOS?</strong> </h1>
+    <h1 class="ml-3 mr-3 text-dark mt-1 fuente"> <strong style="color:#66FFCC; "> ¿QUIENES SOMOS?</strong> </h1>
     <p class="ml-3 mr-3 text-dark mt-1 fuente">
         Una vida en abundancia económica es importante, pero una vida saludable es el
                 equilibrio perfecto, y entendiendo esto nace Royal Life, después de muchos análisis estamos seguros que
@@ -35,7 +35,7 @@
                 De una manera practica y duplicable estamos seguros que contribuiremos a mejorar tu calidad de vida,
                 toma nuestra mano y disfruta el proceso.
     </p>
-    <h4 class="ml-3 mr-3 text-dark mt-1 fuente"> <strong  style="color:#66FFCC; "> ROYAL LIFE EL EQUILIBRIO PERFECTO.</strong> </h4>
+    <h2 class="ml-3 mr-3 text-dark mt-1 fuente"> <strong  style="color:#66FFCC; "> ROYAL LIFE EL EQUILIBRIO PERFECTO.</strong> </h2>
     <p class="ml-3 mr-3 text-dark mt-1 fuente">
         Cada proceso de nuestros productos son cuidadosamente vigilados por expertos,
                 nuestros laboratorios aliados garantizan el CBD mas puro del mercado y nuestra linea de productos lo
@@ -44,7 +44,7 @@
                 si no todos los días!!
                 LO QUE NECESITAS SABER PARA INICIAR CON NOSOTROS.
     </p>
-    <h4 class="ml-3 mr-3 text-dark mt-1 fuente"> <strong  style="color:#66FFCC; ">Entonces, ¿QUE ES EL CBD?</strong> </h4>
+    <h2 class="ml-3 mr-3 text-dark mt-1 fuente"> <strong  style="color:#66FFCC; ">Entonces, ¿QUE ES EL CBD?</strong> </h2>
     <p class="ml-3 mr-3 text-dark mt-1 fuente">
         El CBD (cannabidiol) pertenece a una familia de compuestos llamados cannabinoides.
                 Son únicos porque existen fuera del cuerpo y, cuando se consumen, pueden influir sobre una amplia red de
@@ -58,7 +58,7 @@
                 Afortunadamente, el CBD no solo interactúa con nuestro cuerpo de diversas formas, sino que además se
                 tolera bien y no es tóxico. Esta combinación beneficiosa ha despertado mucho interés.
     </p>
-    <h4 class="ml-3 mr-3 text-dark mt-1 fuente"> <strong  style="color:#66FFCC; ">¿DE DONDE VIENE EL CBD?</strong> </h4>
+    <h2 class="ml-3 mr-3 text-dark mt-1 fuente"> <strong  style="color:#66FFCC; ">¿DE DONDE VIENE EL CBD?</strong> </h2>
     <p class="ml-3 mr-3 text-dark mt-1 fuente">
         El CBD se encuentra en todos los tipos de cannabis sativa, pero el Cañamo es el que
         tiene las concentraciones mas altas.
@@ -74,7 +74,7 @@
         La familia de los cannabinoides también incluye el THC, el compuesto ilegal que está presente en las
         plantaciones de marihuana.
     </p>
-    <h4 class="ml-3 mr-3 text-dark mt-1 fuente"> <strong  style="color:#66FFCC; ">¿EL CBD ES LO MISMO QUE EL THC?</strong> </h4>
+    <h2 class="ml-3 mr-3 text-dark mt-1 fuente"> <strong  style="color:#66FFCC; ">¿EL CBD ES LO MISMO QUE EL THC?</strong> </h2>
     <p class="ml-3 mr-3 text-dark mt-1 fuente">
         Quizás sientas algún temor por que escuchaste primero el THC que el CBD, Y
         usualmente solemos pensar que es lo mismo.
@@ -97,7 +97,7 @@
         Tómate tu tiempo, acostúmbrate a sus efectos positivos, y deja que este cannabinoide natural contribuya
         a tu bienestar cuando más lo requieras.
     </p>
-    <h3 class="ml-3 mr-3 text-dark mt-1 fuente"> <strong style="color:#66FFCC; ">¿EN QUE ME AYUDA EL CBD?</strong> </h3>
+    <h2 class="ml-3 mr-3 text-dark mt-1 fuente"> <strong style="color:#66FFCC; ">¿EN QUE ME AYUDA EL CBD?</strong> </h2>
     <p class="ml-3 mr-3 text-dark  fuente" >
                 El cannabidiol (CBD) se ha convertido en el compuesto cannabinoide no
                 psicotrópico más prometedor de los últimos años debido a su diverso potencial en la medicina y en lo
@@ -117,8 +117,8 @@
                 • reductor de la apetencia por heroína, cocaína y alcohol<br>
                 • inmuno-modulador<br>
     </p>
-    <h5 class="ml-3 mr-3 text-dark  fuente"> <strong style="color:#66FFCC; ">Estas propiedades hacen que el CBD se utilice en el tratamiento de múltiples enfermedades, algunas de las
-        cuales son:</strong> </h5>
+    <h2 class="ml-3 mr-3 text-dark  fuente"> <strong style="color:#66FFCC; ">Estas propiedades hacen que el CBD se utilice en el tratamiento de múltiples enfermedades, algunas de las
+        cuales son:</strong> </h2>
         <p class="ml-3 mr-3 text-dark  fuente">
             • epilepsia<br>
             • enfermedades neurodegenerativas (por ejemplo, Alzheimer, Parkinson y Esclerosis Múltiple)<br>
@@ -135,14 +135,14 @@
             • Diabetes <br>
             • Artritis reumatoide<br>
             <br>
-             <strong style="color:#66FFCC; ">Ademas enfermedades inflamatorias crónicas como:</strong>  <br>
+             <strong >Ademas enfermedades inflamatorias crónicas como:</strong>  <br>
                 • poliartritis crónica <br>
                 • enfermedad de Crohn<br>
                 • enfermedadinflamatoria intestinal<br>
 
             </p>
-            <h5 class="ml-3 mr-3 text-dark  fuente mb-5"> <strong >Entre muchas otras, en algunos países más allá de sus usos terapéuticos también es recomendable usar CBD
-                como suplemento alimentario.</strong></h5>
+            <h2 class="ml-3 mr-3 text-dark  fuente mb-5"> <strong style="color:#66FFCC; ">Entre muchas otras, en algunos países más allá de sus usos terapéuticos también es recomendable usar CBD
+                como suplemento alimentario.</strong></h2>
 </div>
 </div>
 <div
