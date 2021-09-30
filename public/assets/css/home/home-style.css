@@ -835,21 +835,21 @@ cursor: pointer;
     background-image:url('../img/formas_fondo1.png');
     background-size: cover;
     background-position: top center;
-    max-width: 101%;
+    max-width: 100.79%;
     min-width: 20em;
 }
+
+.fondo2{
+    background-color: #F2F4F4;
+
+}
+
 
 .fondo1{
     background:#F0FFFA !important ;
     height: 60rem;
     max-width: 101%;
     min-width: 20em;
-}
-
-
-.fondo2{
-    background-color: #F2F4F4;
-
 }
 
 

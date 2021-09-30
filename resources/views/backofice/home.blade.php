@@ -9,7 +9,7 @@
      <div class="container ">
         <div class="row  wi ml-1 mr-1 mb-5" >
           <div class="col-sm-6 head mb-5">
-            <h1 class="fs-1  mt-5 font estilo-x">Linea completa de<strong> Royal life </strong> </h1>
+            <h1 class="fs-1  mt-5 font ">Linea completa de<strong> Royal life </strong> </h1>
 
                 <p class="text-dark mt-2 mb-3 font2">Gracias a nuestro amplio portafolio de productos, podrás encontrar la combinación perfecta, para ello
                     nos hemos aliado con los mejores laboratorios en los Estados Unidos que gracias a sus investigaciones Hoy te entregamos la mejor
