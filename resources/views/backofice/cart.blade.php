@@ -99,6 +99,32 @@ background-color: #fd5d73 ;
     outline: 0 !important;
 
 }
+.Rangoprecio3{
+    height:40px;
+   width:100px;
+
+   -moz-border-radius:50px;
+   -webkit-border-radius:50px;
+   border-radius:50px;
+   border: 0;
+   outline: none;
+   border: 0;
+    outline: 0 !important;
+
+}
+.Rangoprecio4{
+    height:40px;
+    width:206px;
+
+   -moz-border-radius:50px;
+   -webkit-border-radius:50px;
+   border-radius:7px;
+   border: 0;
+   outline: none;
+   border: 0;
+    outline: 0 !important;
+
+}
 </style>
 <div class="carousel-inner">
     <img class="d-block w-100" src="{{asset('assets/img/home/formas_fondo3.png')}}" style="background: #173138;">
@@ -205,13 +231,13 @@ background-color: #fd5d73 ;
                 <div class="container mb-1">
                     <div class="row d-flex">
                          <div class="col-3 d-flex justify-content-start">
-                            <a href="{{route('shop.backofice')}}" class="btn btn-custom text-dark " type="submit" style="background: #67FFCC"><strong
+                            <a href="{{route('shop.backofice')}}" class="btn btn-custom text-dark Rangoprecio4 " type="submit" style="background: #67FFCC"><strong
                                     style="color:#173138">continuar comprado</strong></a>
                         </div>
 
                         <div class="col-9 d-flex justify-content-end">
                             <form action="{{route('checkout.backofice')}}">
-                            <button class="btn btn-custom text-dark zoomM" type="submit" style="background: #67FFCC"><strong
+                            <button class="btn btn-custom text-dark Rangoprecio3 zoomM" type="submit" style="background: #67FFCC"><strong
                                     style="color:#173138">Pagar</strong></button>
                                 </form>
                         </div>

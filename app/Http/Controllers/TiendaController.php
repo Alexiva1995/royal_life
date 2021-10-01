@@ -175,17 +175,7 @@ class TiendaController extends Controller
         }*/
     }
 
-    /**
-     * Guarda la informacion de las ordenes nuevas
-     *
-     * @param array $data
-     * @return integer
-     */
-    public function saveOrden($data)
-    {
-        $orden = OrdenPurchases::create($data);
-        return $orden->id;
-    }
+
 
     /**
      * Notifica el estado de la compra una vez realizada
@@ -328,8 +318,8 @@ class TiendaController extends Controller
             $paquete = $orden->getPackageOrden;
             $total = $orden->cantidad * $paquete->price;
 
-            //dd([$paquete->id, $orden->id, $orden->cantidad, $paquete->expired, $orden->iduser]);
-            return $this->inversionController->saveInversion($paquete->id, $total, $paquete->expired, $orden->iduser);
+         //dd([$paquete->id, $orden->id, $orden->cantidad, $paquete->expired, $orden->iduser]);
+        return $this->inversionController->saveInversion($paquete->id, $total, $paquete->expired, $orden->iduser);
         }
     }
 
@@ -466,13 +456,13 @@ class TiendaController extends Controller
             $suma = Cart::where('iduser', '=',Auth::id())->sum('total');
         }
 
-
         return view('backofice.cart',compact('products','suma'));
     }
 
     public function orden(Request $request){
-        $user = Auth::user();
+        $user = Auth::user()->id;
         $carrito = Cart::all();
+        $suma= Cart::where('iduser',$user)->sum('total');
 
         foreach($carrito as $cart){
         $data = $request->validate([
@@ -495,30 +485,42 @@ class TiendaController extends Controller
             'city'=> $request->city,
             'email'=> $request->email,
             'phone'=> $request->phone,
-            'iduser'=> $user->id,
-            'categories_id'=>$cart->categories_id,
+            'iduser'=> $user,
+         // 'categories_id'=>$cart->categories_id,
             'package_id'=>$cart->package_id,
             'cantidad'=>$cart->cantidad,
             'monto'=>$cart->monto,
             'status'=>1,
-            'total'=>$cart->total,
+            'total'=>$suma,
             'descripcion'=>'prueba',
-            'idorden'=>1
-        ];
-        $url = $this->url($data);
-         $orden = DataOrdenUser::create($data);
-         Cart::where('iduser',$user->id)->delete();
 
+        ];
+        $data['idorden'] = $this->saveOrden($data);
    }
 
-
+   $url = $this->url($data);
+   if (!empty($url)) {
+       return redirect($url);
+   }
+    $orden = DataOrdenUser::create($data);
+    Cart::where('iduser',$user->id)->delete();
     $packages = Packages::paginate(8);
-   // return view('backofice.shop', compact('packages')); //genera un bug arreglar
-
     }
 
-private function url($data):string
-{
+    /**
+     * Guarda la informacion de las ordenes nuevas
+     *
+     * @param array $data
+     * @return integer
+     */
+    public function saveOrden($data)
+    {
+        $orden = OrdenPurchases::create($data);
+        return $orden->id;
+    }
+
+    private function url($data):string
+    {
     $charge = Coinbase::createCharge([
         'name' => 'Producto '.$data['name'],
         'description' => $data['descripcion'],
@@ -528,15 +530,17 @@ private function url($data):string
         ],
         'pricing_type' => 'fixed_price',
     ]);
+   OrdenPurchases::where('id', $data['idorden'])->update([
+        'id_coinbase' => $charge['data']['id'],
+        'code_coinbase' => $charge['data']['code'],
+    ]);
 
-    dd($charge);
-
-  //  DataOrdenUser::where('id', $data['idorden'])->update([
-    //    'id_coinbase' => $charge['data']['id'],
-      //  'code_coinbase' => $charge['data']['code'],
-    //]);
     return $charge['data']['hosted_url'];
 }
+
+
+
+
 
 
     public function cart_save(Request $request){
