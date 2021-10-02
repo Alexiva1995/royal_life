@@ -15,6 +15,7 @@
                                     <th>Usuario</th>
                                     <th>Producto</th>
                                     <th>Fecha de Creación</th>
+                                    <th>Cantidad</th>
                                     <th>Monto</th>
                                     <th>Estado</th>
                                     <th>Accion</th>
@@ -27,10 +28,11 @@
                                     <td>{{$orden->id}}</td>
                                     <td>{{$orden->name}}</td>
                                     {{-- <td>{{$orden->grupo}}</td> --}}
-                                    <td>{{$orden->monto}}
+                                    <td>{{$orden->getPackageOrden->name}}
                                     <td>{{date('Y-m-d', strtotime($orden->created_at))}}</td>
                                     {{-- <td>{{$orden->idtransacion}}</td> --}}
-                                    <td>{{$orden->total}}</td>
+                                    <td>{{$orden->cantidad}}</td>
+                                    <td>{{$orden->monto}}</td>
                                     @if ($orden->status == '0')
                                     <td> <a class=" btn btn-info text-white text-bold-600" data-toggle="modal" data-target="#ModalStatus{{$orden->id}}">Esperando</a></td>
                                     @elseif($orden->status == '1')

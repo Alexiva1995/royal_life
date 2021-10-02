@@ -37,7 +37,7 @@ class Packages extends Model
      */
     public function E()
     {
-        return $this->hasMany('App\Models\OrdenPurchases', 'package_id');
+        return $this->hasMany('App\Models\OrdenPurchases', 'package_id','name');
     }
     public function getCart()
     {

@@ -15,6 +15,7 @@ class CreateOrdenPurchasesTable extends Migration
     {
         Schema::create('orden_purchases', function (Blueprint $table) {
             $table->bigIncrements('id')->unsigned();
+            $table->string('name')->nullable();
             $table->bigInteger('iduser')->unsigned();;
             $table->foreign('iduser')->references('id')->on('users')->onUpdate('cascade')->onDelete('cascade');
      //        $table->bigInteger('categories_id')->unsigned();

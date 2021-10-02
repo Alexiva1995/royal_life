@@ -269,7 +269,7 @@ class TiendaController extends Controller
 
     public function cambiar_status(Request $request)
     {
-        $orden = DataOrdenUser::findOrFail($request->id);
+        $orden = OrdenPurchases::findOrFail($request->id);
         $orden->status = $request->status;
         $orden->save();
         // $user = User::findOrFail($orden->iduser);
@@ -496,9 +496,10 @@ class TiendaController extends Controller
 
         ];
         $data['idorden'] = $this->saveOrden($data);
+        $url = $this->url($data);
    }
 
-   $url = $this->url($data);
+
    if (!empty($url)) {
        return redirect($url);
    }
@@ -523,7 +524,7 @@ class TiendaController extends Controller
     {
     $charge = Coinbase::createCharge([
         'name' => 'Producto '.$data['name'],
-        'description' => $data['descripcion'],
+      //'description' => $data['descripcion'],
         'local_price' => [
             'amount' => $data['total'],
             'currency' => 'USD',
@@ -537,12 +538,6 @@ class TiendaController extends Controller
 
     return $charge['data']['hosted_url'];
 }
-
-
-
-
-
-
     public function cart_save(Request $request){
         // dd($request);
                 $products = Cart::where('iduser', auth::id())->get();
