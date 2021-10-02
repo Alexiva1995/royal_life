@@ -14,6 +14,7 @@ class OrdenPurchases extends Model
 
     protected $fillable = [
         'iduser',
+        'name',
         'categories_id',
         'package_id',
         'cantidad',
@@ -30,7 +31,7 @@ class OrdenPurchases extends Model
      */
     public function getOrdenUser()
     {
-        return $this->belongsTo('App\Models\User', 'iduser', 'id');
+        return $this->belongsTo('App\Models\User', 'iduser', 'id',);
     }
 
     /**
@@ -50,7 +51,7 @@ class OrdenPurchases extends Model
      */
     public function getPackageOrden()
     {
-        return $this->belongsTo('App\Models\Packages', 'package_id');
+        return $this->belongsTo('App\Models\Packages', 'package_id','id','name');
     }
 
     public function getInversionOrden()

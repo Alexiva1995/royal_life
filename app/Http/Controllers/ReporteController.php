@@ -21,10 +21,10 @@ class ReporteController extends Controller
     public function indexPedidos()
     {
         if (Auth::user()->admin == 1) {
-            $ordenes = DataOrdenUser::all();
-        
+            $ordenes = OrdenPurchases::all();
+
         }else{
-            $ordenes = DataOrdenUser::where('iduser', '=',Auth::id())->orderBy('status')->get();
+            $ordenes = OrdenPurchases::where('iduser', '=',Auth::id())->orderBy('status')->get();
         }
 
         return view('reports.perdido', compact('ordenes'));
@@ -53,7 +53,7 @@ class ReporteController extends Controller
 
     public function graphisDashboard()
     {
-        
+
     }
 
     public function detailOrden()

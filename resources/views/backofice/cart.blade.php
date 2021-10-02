@@ -8,11 +8,11 @@
 <style>
 .zoomM:hover {
 
--webkit-transform:scale(1.2);
--moz-transform:scale(1.2);
--ms-transform:scale(1.2);
--o-transform:scale(1.2);
-transform:scale(1.2);
+-webkit-transform:scale(1.07);
+-moz-transform:scale(1.07);
+-ms-transform:scale(1.07);
+-o-transform:scale(1.07);
+transform:scale(1.07);
 
 -webkit-transition:all 0.3s ease;
 -moz-transition:all 0.3s ease;
