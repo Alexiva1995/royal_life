@@ -23,7 +23,7 @@
             <a class="nav-link ml-3 mt-1 text-white side" href="{{route('contact_us')}}">contacto</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link ml-3 mt-1 text-white side" href="{{route('inicio')}}">Ingresar</a>
+            <a class="nav-link ml-3 mt-1 text-white side" href="{{route('login')}}">Ingresar</a>
           </li>
           <li class="nav-item">
             <a class="nav-link ml-3 mt-1 text-white side" href="#"></a>

@@ -68,6 +68,42 @@
     .button {
         z-index: 10;
     }
+    .zoomc:hover {
+
+-webkit-transform:scale(1.05);
+-moz-transform:scale(1.05);
+-ms-transform:scale(1.05);
+-o-transform:scale(1.05);
+transform:scale(1.05);
+
+-webkit-transition:all 0.3s ease;
+-moz-transition:all 0.3s ease;
+-o-transition:all 0.3s ease;
+-ms-transition:all 0.3s ease;
+
+border-color: #66FFCC !important;
+color: black!important;
+box-shadow: 0 8px 25px -8px #66ffcc;
+background-color: #66FFCC;
+}
+.zoomc:active {
+
+-webkit-transform:scale(1);
+-moz-transform:scale(1);
+-ms-transform:scale(1);
+-o-transform:scale(1);
+transform:scale(1);
+
+-webkit-transition:all 0.3s ease;
+-moz-transition:all 0.3s ease;
+-o-transition:all 0.3s ease;
+-ms-transition:all 0.3s ease;
+
+border-color: #66FFCC !important;
+color: rgb(255, 255, 255)!important;
+box-shadow: 0 8px 25px -8px #66ffcc;
+background-color: #66FFCC;
+}
 
 </style>
 @endpush
@@ -279,10 +315,11 @@
                 </table>
                 <hr class="hr">
 
-                <div class="form-group mt-5 mt-5 btn btn-custom text-dark button" style="left: 150px;">
+                <button class=" zoomc form-group mt-5 mt-5 btn btn-custom text-dark button" style="left: 150px;">
 
-                    <input class=" custominput" value="Realizar pedido" type="submit" style="background: #67FFCC">
-                </div>
+                    <input class="  custominput" value="Realizar pedido" type="submit" style="background: #67FFCC">
+                    </button>
+
 
             </div>
         </div>
