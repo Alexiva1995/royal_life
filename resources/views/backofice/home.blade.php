@@ -62,7 +62,7 @@
             <div class=" row ">
             <div class="col-sm-4 ">
 
-                <div style="background:#66FFCC; width: 100px; left: 15px; border-radius: 10px; position: relative;">
+                <div style="background:#66FFCC; width: 120px; left: 10px; border-radius: 10px; position: relative; top: -10px;  height: 170px;">
                     <a class="background "
                     href="{{action('TiendaController@detalleproducto', ['producto' => $producto->id ])}}">
 
@@ -76,7 +76,7 @@
                <img class=" mt-3 mx-auto  d-block  img-fluid  "
                     src="{{ asset('storage/photo-producto/'.$producto->img) }}"
                     alt="Product Image"
-                    style="width: 10rem; ">
+                    style="width: 10rem;">
          @endif
                     </a>
                 </div>
