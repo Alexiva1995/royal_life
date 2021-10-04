@@ -486,7 +486,7 @@ class TiendaController extends Controller
             'email'=> $request->email,
             'phone'=> $request->phone,
             'iduser'=> $user,
-         // 'categories_id'=>$cart->categories_id,
+          'categories_id'=>$cart->categories_id,
             'package_id'=>$cart->package_id,
             'cantidad'=>$cart->cantidad,
             'monto'=>$cart->monto,
@@ -503,9 +503,9 @@ class TiendaController extends Controller
    if (!empty($url)) {
        return redirect($url);
    }
-    $orden = DataOrdenUser::create($data);
-    Cart::where('iduser',$user->id)->delete();
-    $packages = Packages::paginate(8);
+   // $orden = DataOrdenUser::create($data);
+   // Cart::where('iduser',$user->id)->delete();
+    //$packages = Packages::paginate(8);
     }
 
     /**
@@ -531,10 +531,29 @@ class TiendaController extends Controller
         ],
         'pricing_type' => 'fixed_price',
     ]);
+
    OrdenPurchases::where('id', $data['idorden'])->update([
         'id_coinbase' => $charge['data']['id'],
         'code_coinbase' => $charge['data']['code'],
+        'name'=>$data['name'],
+        'lastname'=> $data['lastname'],
+        'country' => $data['country'],
+        'address'=> $data['address'],
+        'state'=> $data['state'],
+        'city'=> $data['city'],
+        'email'=> $data['email'],
+        'phone'=> $data['phone'],
+        'iduser'=> $data['iduser'],
+      'categories_id'=>$data['categories_id'],
+        'package_id'=>$data['package_id'],
+        'cantidad'=>$data['cantidad'],
+        'monto'=>$data['monto'],
+        'status'=>$data['status'],
+        'total'=>$data['total'],
+       // 'descripcion'=>'prueba',
     ]);
+
+
 
     return $charge['data']['hosted_url'];
 }

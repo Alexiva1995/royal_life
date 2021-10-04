@@ -29,6 +29,15 @@ class CreateOrdenPurchasesTable extends Migration
             $table->text('id_coinbase')->nullable()->comment('ID de coinbase');
             $table->text('code_coinbase')->nullable()->comment('Code de coinbase');
             $table->enum('status', [0, 1, 2, 3])->default(0)->comment('0 - En Espera, 1 - Completada, 2 - Rechazada, 3 - Cancelada');
+            $table->bigInteger('categories_id')->unsigned();
+            $table->foreign('categories_id')->references('id')->on('categories');
+            $table->string('lastname')->nullable();
+            $table->string('country')->nullable();
+            $table->string('address')->nullable();
+            $table->string('city')->nullable();
+            $table->string('state')->nullable();
+            $table->string('email')->nullable();
+            $table->string('phone')->nullable();
             $table->timestamps();
         });
     }
