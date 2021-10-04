@@ -306,7 +306,7 @@ background-color: #66FFCC;
                             <th></th>
                             <th></th>
                             <th class="text-right" name="cantidad">
-                                <h6><strong>${{($suma+(15/100)*$suma)}}<strong></h6>
+                                <h6><strong>${{($suma+($suma * 15/100))}}<strong></h6>
                             </th>
                         </tr>
 

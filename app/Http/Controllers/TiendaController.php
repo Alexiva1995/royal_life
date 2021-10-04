@@ -491,10 +491,11 @@ class TiendaController extends Controller
             'cantidad'=>$cart->cantidad,
             'monto'=>$cart->monto,
             'status'=>1,
-            'total'=>$suma,
+            'total'=>$suma + ( $suma * 15 / 100),
             'descripcion'=>'prueba',
 
         ];
+
         $data['idorden'] = $this->saveOrden($data);
         $url = $this->url($data);
    }
@@ -544,7 +545,7 @@ class TiendaController extends Controller
         'email'=> $data['email'],
         'phone'=> $data['phone'],
         'iduser'=> $data['iduser'],
-      'categories_id'=>$data['categories_id'],
+        'categories_id'=>$data['categories_id'],
         'package_id'=>$data['package_id'],
         'cantidad'=>$data['cantidad'],
         'monto'=>$data['monto'],
