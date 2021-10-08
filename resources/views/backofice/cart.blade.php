@@ -5,6 +5,7 @@
 @endpush
 @section('content')
 @include('backofice.ui.script')
+@include('backofice.ui.carritoScript')
 <style>
 .zoomM:hover {
 
@@ -126,6 +127,9 @@ background-color: #fd5d73 ;
 
 }
 </style>
+
+
+
 <div class="carousel-inner">
     <img class="d-block w-100" src="{{asset('assets/img/home/formas_fondo3.png')}}" style="background: #173138;">
     <div class="container carousel-caption d-flex justify-content-start" style="top:90px;left: 7%;">
@@ -148,6 +152,9 @@ background-color: #fd5d73 ;
     <div class="row d-flex">
         <div class="card col-12" style="background: white">
             <div class="table-responsive mt-2">
+                @if(Auth::user() == true)
+
+
                 <table class="table nowrap scroll-horizontal-vertical myTable table-striped">
                     <thead class="">
                         <tr class="text-center text-white bg-purple-alt2">
@@ -155,7 +162,7 @@ background-color: #fd5d73 ;
                             <th>Nombre</th>
                             <th>Categoria</th>
                             <th>Cantidad</th>
-                            <th>Precio Unitario</th>
+                            <th>Precio Por Unidad</th>
                             <th>Precio Total</th>
                             <th>Eliminar</th>
                         </tr>
@@ -244,6 +251,27 @@ background-color: #fd5d73 ;
 
                     </div>
                 </div>
+                @else
+                <table class="table nowrap scroll-horizontal-vertical myTable table-striped">
+                    <button class="Rangoprecio shadow zoomM custominput text-white"
+                     type="submit"><i class="fa fa-minus"></i></button>
+
+                    <thead class="">
+                        <tr class="text-center text-white bg-purple-alt2">
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Categoria</th>
+                            <th>Cantidad</th>
+                            <th>Precio Por Unidad</th>
+                            <th>Precio Total</th>
+                            <th>Eliminar</th>
+                        </tr>
+                        <tbody>
+                            <tr id="datos" class="text-dark">
+                            </tr>
+                        </tbody>
+                    </table>
+                @endif
             </div>
         </div>
     </div>

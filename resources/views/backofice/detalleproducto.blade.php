@@ -15,25 +15,24 @@
 @include('backofice.ui.script')
 
 
-<div class="carousel-inner">
-    <img class="d-block w-100" src="{{asset('assets/img/home/formas_fondo3.png')}}" style="background: #173138;">
-    <div class="container carousel-caption d-flex justify-content-start" style="top:90px;left: 9%;">
+
+
+
+<div class="fondo3 fondo0">
+    <div class="container"  >
         <div class="row">
-            <div class="col-md-6">
-                <div class="text-left">
-                    <h3 class="text-white" style="font-size: 50px;"><strong> Producto </strong></h3>
-                </div>
-                <div class="text-left d-flex ml-1">
-                    <a class="text-white" href="{{route('inicio')}}"><strong> Inicio </strong></a><strong class="ml-1">
-                        > </strong>
-                    <p style="color: #52CCA7" class="ml-1"><strong> Producto </strong></p>
-                </div>
+            <div class="col-sm-12 mt-5 mb-5">
+                <h1 class="text-white"  style="font-size: 50px;"><strong> Producto </strong> </h1>
+                <a class="text-white" href="{{route('inicio.index')}}"><strong> Inicio </strong></a><strong class="ml-1">
+                    > </strong>
+                <a style="color: #52CCA7" class="ml-1"><strong> Producto </strong></a>
+
             </div>
         </div>
     </div>
-</div>
+    </div>
 
-<div class="fuente">
+<div class="fuente mx-auto">
 <div class="container-fluid    mt-5">
     <div class="row mr-5 ml-5 mb-3">
       <div class="col-sm-4">
@@ -57,6 +56,9 @@
             <input type="hidden" name="package_id" value="{{$producto->id}}">
             <input type="hidden" name="categories_id" value="{{$producto->categories_id}}">
             <input type="hidden" name="monto" value="{{$producto->price}}">
+            <input type="hidden" name="name" value="{{$producto->name}}">
+            <input type="hidden" name="categorianame" value="{{$producto->getCategories->categories_name}}">
+
 
         <div class="card" style=" background:#FFFFFF;">
             <div class="ml-3 card-body">
@@ -72,7 +74,7 @@
 
 
                     <div class="action">
-                        <button class="btn text-dark btn-custom mt-2  mb-2 zoom5" type="submit">
+                        <button class="btn text-dark btn-custom mt-2  mb-2 zoom5" type="submit" >
                         <i class="fa fa-shopping-cart text-dark zoom5"></i><strong> Comprar </strong></button>
                     </div>
             </div>

@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'InicioController@home')->name('inicio.index');
 
 Auth::routes();
-Route::prefix('dashboard')->middleware('menu', 'auth')->group(function ()
+Route::prefix('')->middleware('menu', 'auth')->group(function ()
 {
     // Inicio
     Route::get('/home', 'HomeController@index')->name('home');
@@ -182,30 +182,42 @@ Route::prefix('dashboard')->middleware('menu', 'auth')->group(function ()
 
     Route::get('testRank', 'RankController@testRank')->name('testRank');
 
-    Route::prefix('backofice')->group(function(){
+    Route::prefix('')->group(function(){
+
     Route::get('/inicio', 'HomeController@home')->name('inicio');
-    Route::get('/inicio2', 'HomeController@inicio2')->name('inicio2');
+
 
     Route::get('/about', 'HomeController@about')->name('about')->withoutMiddleware(['auth']);
+
     Route::get('/contact_us', 'HomeController@contact_us')->name('contact_us')->withoutMiddleware(['auth']);
+
     Route::post('/contactar', 'HomeController@contact')->name('contact')->withoutMiddleware(['auth']);
+
     Route::get('/faq', 'HomeController@faq')->name('faq')->withoutMiddleware(['auth']);;
-    Route::get('/shopBackofice', 'TiendaController@shop')->name('shop.backofice')->withoutMiddleware(['auth']);
-    Route::get('/cart', 'TiendaController@cart')->name('cart');
-    Route::post('/cart-post', 'TiendaController@cart_save')->name('cart.post');
+
+    Route::get('/shop', 'TiendaController@shop')->name('shop.backofice')->withoutMiddleware(['auth']);
+
+    Route::get('/cart', 'TiendaController@cart')->name('cart')->withoutMiddleware(['auth']);
+
+    Route::post('/cart-post', 'TiendaController@cart_save')->name('cart.post')->withoutMiddleware(['auth']);
+
     Route::patch('cart-update/{id}', 'TiendaController@updateCart')->name('cart.update');
 
 
 
-    Route::get('/shopBackofice/checkout', 'TiendaController@checkout')->name('checkout.backofice')->withoutMiddleware(['auth']);
+    Route::get('/checkout', 'TiendaController@checkout')->name('checkout.backofice')->withoutMiddleware(['auth']);
 
-    Route::get('/shopBackofice/detalleproducto/{producto}', 'TiendaController@detalleproducto')->name('detalle.producto')->withoutMiddleware(['auth']);
+    Route::get('/product-detail/{producto}', 'TiendaController@detalleproducto')->name('detalle.producto')->withoutMiddleware(['auth']);
 
-    Route::get('Terms', 'HomeController@terms')->name('terms')->withoutMiddleware(['auth']);
+    Route::get('terms', 'HomeController@terms')->name('terms')->withoutMiddleware(['auth']);
+
     Route::get('policity', 'HomeController@policity')->name('policity')->withoutMiddleware(['auth']);
+
     Route::get('/categoria/{Categories}', 'CategoriasController@show')->name('categorias.show')->withoutMiddleware(['auth']);
+
     Route::post('orden', 'TiendaController@orden')->name('orden');
-    Route::delete('cart-eliminar/{producto}', 'TiendaController@destroy')->name('destroy');
+
+    Route::delete('cart-delete/{producto}', 'TiendaController@destroy')->name('destroy');
 
     });
 

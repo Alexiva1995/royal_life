@@ -2,13 +2,153 @@
 
 
 @media screen and (max-width: 980px) {
-.no{
-display: none;
+    .no{
+        display: none;
+
+}
+
+.ctg{
+    width: 35rem !important;
+}
+.ms{
+    height:550px !important;
+    background: #ffffff;
+}
+.fondo0{
+    z-index: 8;
+    background-image:url('../img/formas_fondo3.png');
+    background-size: cover;
+    background-position: top center;
+    max-width: 100.79%;
+    height: 15rem !important;
+    min-width: 20em;
+}
+
+    .condicional{
+        background:#66FFCC;
+         width: 28rem !important;
+        height: 15rem !important;
     }
+    .condicional2{
+        background:#66FFCC; width: 22rem !important;
+    }
+    .btn-cre {
+        border-color: #c3c3c4 !important;
+        color: black!important;
+        font-size: 12px;
+        background: #F2F1F3;
+        border-radius: 0.4285rem;
+        height: 20px !important;
+        width:25% !important;
+        }
+
+        .side:hover{
+            color: #66FFCC !important;
+            -webkit-transform:scale(1) !important;
+            -moz-transform:scale(1) !important;
+            -ms-transform:scale(1) !important;
+            -o-transform:scale(1) !important;
+            transform:scale(1) !important;
+
+            -webkit-transition:all 0.3s ease;
+            -moz-transition:all 0.3s ease;
+            -o-transition:all 0.3s ease;
+            -ms-transition:all 0.3s ease;
+            border-color: #66FFCC !important;
+
+          }
+          .side:active{
+            color: #66FFCC !important;
+            -webkit-transform:scale(1) !important;
+            -moz-transform:scale(1) !important;
+            -ms-transform:scale(1) !important;
+            -o-transform:scale(1) !important;
+            transform:scale(1) !important;
+
+            -webkit-transition:all 0.3s ease !important;
+            -moz-transition:all 0.3s ease !important;
+            -o-transition:all 0.3s ease !important;
+            -ms-transition:all 0.3s ease !important;
+            border-color: #66FFCC !important;
+
+          }
+
+          .side1:hover{
+            color: #000000 !important;
+            -webkit-transform:scale(1) !important;
+            -moz-transform:scale(1) !important;
+            -ms-transform:scale(1) !important;
+            -o-transform:scale(1) !important;
+            transform:scale(1) !important;
+
+            -webkit-transition:all 0.3s ease !important;
+            -moz-transition:all 0.3s ease !important;
+            -o-transition:all 0.3s ease !important;
+            -ms-transition:all 0.3s ease !important;
+            border-color: #66FFCC !important;
+
+          }
+          .side1:active{
+            color: #ffffff !important;
+            -webkit-transform:scale(1) !important;
+            -moz-transform:scale(1) !important;
+            -ms-transform:scale(1) !important;
+            -o-transform:scale(1) !important;
+            transform:scale(1) !important;
+
+            -webkit-transition:all 0.3s ease !important;
+            -moz-transition:all 0.3s ease !important;
+            -o-transition:all 0.3s ease !important;
+            -ms-transition:all 0.3s ease  !important;
+            border-color: #66FFCC !important;
+
+          }
+          .btn-primario1{
+
+            border-color: #66FFCC !important;
+            background-color: #66FFCC !important;
+            border-radius: 0.4285rem;
+            color: #303030 !important;
+            width: 7rem!important;
+          }
+          .btn-c{
+
+            border-color: #F2F1F3 !important;
+            color: black!important;
+            box-shadow: 0 8px 25px -8px #f2f1f3;
+            position: absolute;
+            top: 255px;
+            left: 18% !important;
+            width: 28% !important;
+            height: 23px;
+            background-color: #F2F1F3;
+            border-radius: 0.4285rem;
+            transform: translate(-50%, -50%);
+            }
 }
 
 
+
 /* nuevas clases para el home */
+.ms{
+    height:450px ;
+    background: #ffffff;
+}
+.btn-c{
+
+    border-color: #F2F1F3 !important;
+    color: black!important;
+    box-shadow: 0 8px 25px -8px #f2f1f3;
+    position: absolute;
+    top: 255px;
+    left: 29%;
+    width: 40%;
+    height: 23px;
+    background-color: #F2F1F3;
+    border-radius: 0.4285rem;
+    transform: translate(-50%, -50%);
+    }
+
 .btn-primario{
   box-shadow: 0 8px 25px -8px #66ffcc;
   border-color: #66FFCC !important;
@@ -16,6 +156,16 @@ display: none;
   border-radius: 0.4285rem;
   color: #303030;
 }
+.btn-primario1{
+
+    border-color: #66FFCC !important;
+    background-color: #66FFCC !important;
+    border-radius: 0.4285rem;
+    color: #303030 !important;
+  }
+
+
+
 .texto-simple{
   color: #303030;
   font-size: 15px;
@@ -77,6 +227,8 @@ display: none;
     border-radius: 0.4285rem;
     transform: translate(-50%, -50%);
   }
+
+
 /* fin de las nuevas clases */
 
 /* nuevas clases para contactanos */
@@ -829,6 +981,15 @@ cursor: pointer;
   width: 100%;
   margin-left: -5px;
 }
+.fondo0{
+    z-index: 8;
+    background-image:url('../img/formas_fondo3.png');
+    background-size: cover;
+    background-position: top center;
+    max-width: 100.79%;
+    height: 20rem;
+    min-width: 20em;
+}
 
 .fondo{
     z-index: 8;
@@ -892,6 +1053,37 @@ cursor: pointer;
   }
   .side:active{
     color: #66FFCC !important;
+    -webkit-transform:scale(0.9);
+    -moz-transform:scale(0.9);
+    -ms-transform:scale(0.9);
+    -o-transform:scale(0.9);
+    transform:scale(0.9);
+
+    -webkit-transition:all 0.3s ease;
+    -moz-transition:all 0.3s ease;
+    -o-transition:all 0.3s ease;
+    -ms-transition:all 0.3s ease;
+    border-color: #66FFCC !important;
+
+  }
+
+  .side1:hover{
+    color: #000000 !important;
+    -webkit-transform:scale(1.07);
+    -moz-transform:scale(1.07);
+    -ms-transform:scale(1.07);
+    -o-transform:scale(1.07);
+    transform:scale(1.07);
+
+    -webkit-transition:all 0.3s ease;
+    -moz-transition:all 0.3s ease;
+    -o-transition:all 0.3s ease;
+    -ms-transition:all 0.3s ease;
+    border-color: #66FFCC !important;
+
+  }
+  .side1:active{
+    color: #ffffff !important;
     -webkit-transform:scale(0.9);
     -moz-transform:scale(0.9);
     -ms-transform:scale(0.9);
