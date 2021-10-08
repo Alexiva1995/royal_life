@@ -30,11 +30,11 @@
 <div class="container">
     <div class="row">
 
-      <div class="col-sm-4">
+      <div class="col-sm-3 ctg" style="width: 1000px;">
        @include('backofice.ui.cardcategorias')
       </div>
 
-      <div class="col-sm-8">
+      <div class="col-sm-9">
        @include('backofice.ui.productos')
       </div>
 

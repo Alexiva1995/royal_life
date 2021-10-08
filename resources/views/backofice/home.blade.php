@@ -62,7 +62,7 @@
             <div class=" row ">
             <div class="col-sm-4 ">
 
-                <div style="background:#66FFCC; width: 120px; left: 10px; border-radius: 10px; position: relative; top: -10px;  height: 170px;">
+                <div class="condicional" style="background:#66FFCC; width: 8rem; left: 10px; border-radius: 10px; position: relative; top: -10px;  height: 170px;">
                     <a class="background "
                     href="{{action('TiendaController@detalleproducto', ['producto' => $producto->id ])}}">
 
@@ -182,7 +182,7 @@
         </div>
             <div class="ml-1 mr-1">
 
-                <div style="">
+                <div style="margin-top: -14px;">
                     <img src="{{ asset('assets/img/home/Vector.png') }}" alt="">
                     <img src="{{ asset('assets/img/home/Vector.png') }}" alt="">
                     <img src="{{ asset('assets/img/home/Vector.png') }}" alt="">
@@ -191,10 +191,9 @@
                 </div>
                 <div>
                     <p class=" text-dark mt-1 mb-1" >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Vel habitant elementum volutpat neque viverra. Risus felis
-                        metus, enim amet suspendisse elit in. Egestas turpis vitae
-                        et, et nibh porttitor. Accumsan eget.</p>
+                        Encontré mucho más de lo que esperaba, su dedicación al cliente supera cualquier otra experiencia previa, siempre
+                         responden a mis dudas con total cortesía y resuelven cualquier problema con eficacia.
+                    </p>
                 </div>
             </div>
 
@@ -209,7 +208,7 @@
             <p class="mt-2"><strong class="text-dark">Cliente</strong></p>
         </div>
             <div class="ml-1 mr-1">
-                <div style="margin-top: 8px;">
+                <div style="margin-top: -14px;">
                     <img src="{{ asset('assets/img/home/Vector.png') }}" alt="">
                     <img src="{{ asset('assets/img/home/Vector.png') }}" alt="">
                     <img src="{{ asset('assets/img/home/Vector.png') }}" alt="">
@@ -218,10 +217,10 @@
                 </div>
                 <div>
                     <p class=" text-dark  mt-1">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Vel habitant elementum volutpat neque viverra. Risus felis
-                        metus, enim amet suspendisse elit in. Egestas turpis vitae
-                        et, et nibh porttitor. Accumsan eget.</p>
+                        Royal life siempre nos atiende de manera cordial y eficiente,
+                        solucionando nuestras inquietudes y ocupándose de resolver los problemas
+                        que escapan de nuestras manos por falta de conocimiento. Realmente es
+                        agradable recibir un trato servicial, en la solución de nuestras inquietudes.</p>
                 </div>
             </div>
 

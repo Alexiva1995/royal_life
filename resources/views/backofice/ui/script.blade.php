@@ -1,4 +1,4 @@
-<script>
+<script >
 
 
 function handleClickSuma() {
@@ -52,5 +52,6 @@ function  operacion(a,number) {
 
    return number;
 }
+
 
 </script>

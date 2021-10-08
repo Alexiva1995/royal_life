@@ -4,7 +4,7 @@
 
     <div class="row   mt-3">
         @foreach ($packages as $producto )
-      <div class="col-sm-6">
+      <div class="col-sm-4">
 
         <div class="card zoom2 mt-1" style="width: 23rem;  background:#FFFFFF;">
             <div class="card-body">
@@ -31,7 +31,7 @@
                     <strong class="texto mr-1 prize text-right ">${{$producto->price}}</strong></p>
 
               <h5 class="card-title "><strong> {{$producto->name}} </strong> </h5>
-              <p class="card-text text-dark mb-1">{{ Str::words( strip_tags($producto->description) , 25 )}}</p>
+              <p class="card-text text-dark mb-1">{{ Str::words( strip_tags($producto->description) , 18 )}}</p>
 
             </div>
           </div>

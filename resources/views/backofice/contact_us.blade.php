@@ -64,7 +64,7 @@ color: #303030;
 .container {
         display: flex;
       }
- 
+
 .btn-custom{
     width: 188px;
     height: 40px;
@@ -79,91 +79,98 @@ input[type=text]:hover:not([disabled]), input[type=text]:focus, input[type=email
   color:red;
     margin-left: 1px;
     top:-1px;
-    font-size: 15px; 
+    font-size: 15px;
 }
 </style>
-<div class="carousel-inner">
-    <img class="d-block w-100" src="{{asset('assets/img/home/formas_fondo3.png')}}" style="background: #173138;">
-    <div class="container carousel-caption d-flex justify-content-start" style="top:90px;left: 9%;">
+
+
+<div class="fondo3 fondo0">
+    <div class="container"  >
         <div class="row">
-            <div class="col-md-6">
-                <div class="text-left">
-                    <h3 class="text-white" style="font-size: 50px;"><strong> Contactanos </strong></h3>
-                </div>
-                <div class="text-left d-flex ml-1">
-                    <a class="text-white" href="{{route('inicio')}}"><strong> Inicio </strong></a><strong class="ml-1">
-                        > </strong>
-                    <p style="color: #52CCA7" class="ml-1"><strong> Contacto </strong></p>
-                </div>
+            <div class="col-sm-12 mt-5 mb-5">
+                <h1 class="text-white"  style="font-size: 50px;"><strong> Contactanos </strong> </h1>
+                <a class="text-white" href="{{route('inicio.index')}}"><strong> Inicio </strong></a><strong class="ml-1">
+                    > </strong>
+                <a style="color: #52CCA7" class="ml-1"><strong> Contacto </strong></a>
+
             </div>
         </div>
     </div>
-</div>
+    </div>
 
-<div class="pl-2 pr-4 pt-3">
-<div class="row d-flex justify-content-center">
-<div class="col-md-7 mt-5 mb-5">
- 
-    <div class="card p-5" style="height:450px;background: #ffffff;">
-        <form action={{route('contact')}} method="POST" class="credit-card-div">
-            {{ csrf_field() }}
-            <div class="panel panel-default ">
-                <div class="panel-heading  ">
-                    <h3><strong>Déjanos un mensaje</strong></h3>
-                    <br>
-                    <div class="row ">
-                        <div class="col-md-6 col-sm-6 col-xs-3">
-                            <span class="help-block text-muted text textcustom">Tu nombre <sup class="requerido">*</sup></span>
-                            <input name="name" type="text" class="form-control custominput" style="background:  #F6F6F7;" />
+
+
+
+
+    <div class="container">
+        <div class="row mx-auto">
+            <div class="col-sm-8 mt-5 mb-5">
+
+                <div class="card p-5 ms" style="">
+                    <form action={{route('contact')}} method="POST" class="credit-card-div">
+                        {{ csrf_field() }}
+                        <div class="panel panel-default ">
+                            <div class="panel-heading  ">
+                                <h3><strong>Déjanos un mensaje</strong></h3>
+                                <br>
+                                <div class="row ">
+                                    <div class="col-md-6 col-sm-6 col-xs-3">
+                                        <span class="help-block text-muted text textcustom">Tu nombre <sup class="requerido">*</sup></span>
+                                        <input name="name" type="text" class="form-control custominput" style="background:  #F6F6F7;" />
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-3">
+                                        <span class="help-block text-muted textcustom">Email <sup class="requerido">*</sup></span>
+                                        <input type="email" name="email" class="form-control custominput" style="background:   #F6F6F7;" />
+                                    </div>
+                                </div>
+
+                                <br>
+
+                                <div class="row ">
+                                    <div class="col-md-6 col-sm-6 col-xs-3">
+                                        <span class="help-block text-muted text textcustom">Telefono </span>
+                                        <input type="number" name="telefono" class="form-control custominput" style="background:  #F6F6F7;" />
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-3">
+                                        <span class="help-block text-muted textcustom">Asunto</span>
+                                        <input type="text" name="asunto" class="form-control custominput" style="background:   #F6F6F7;" />
+                                    </div>
+                                </div>
+
+                                <br>
+
+                                <div class="row ">
+                                    <div class="col-md-12 pad-adjust">
+                                        <span class="help-block text-muted text textcustom">Mensaje</span>
+                                        <textarea name="mensaje" type="text" class="form-control custominput"
+                                            style="background:  #F6F6F7; color: black;"></textarea>
+                                    </div>
+                                </div>
+
+                                <br>
+                                <button type="submit" class="btn btn-con mt-2"><strong> Enviar </strong></button>
+                            </div>
                         </div>
-                        <div class="col-md-6 col-sm-6 col-xs-3">
-                            <span class="help-block text-muted textcustom">Email <sup class="requerido">*</sup></span>
-                            <input type="email" name="email" class="form-control custominput" style="background:   #F6F6F7;" />
-                        </div>
-                    </div>
-
-                    <br>
-
-                    <div class="row ">
-                        <div class="col-md-6 col-sm-6 col-xs-3">
-                            <span class="help-block text-muted text textcustom">Telefono </span>
-                            <input type="number" name="telefono" class="form-control custominput" style="background:  #F6F6F7;" />
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-xs-3">
-                            <span class="help-block text-muted textcustom">Asunto</span>
-                            <input type="text" name="asunto" class="form-control custominput" style="background:   #F6F6F7;" />
-                        </div>
-                    </div>
-
-                    <br>
-
-                    <div class="row ">
-                        <div class="col-md-12 pad-adjust">
-                            <span class="help-block text-muted text textcustom">Mensaje</span>
-                            <textarea name="mensaje" type="text" class="form-control custominput"
-                                style="background:  #F6F6F7; color: black;"></textarea>
-                        </div>
-                    </div>
-
-                    <br>
-                    <button type="submit" class="btn btn-con mt-2"><strong> Enviar </strong></button>
+                    </form>
                 </div>
-            </div>
-        </form>
-    </div>
-    </div>
-    <div class="col-3 mt-5 mb-5 d-flex">
-        <div class="row d-flex justify-content-start ml-1">
-            <div class="card col-md-11" style="height: 180px;background: white;">
+
+              </div>
+          <div class="col-sm-4 mt-5 ">
+
+            <div class="card  " style="background: white;">
                 <img class="mx-auto d-block mb-2 mt-2" style="width: 30%;" src="{{asset('assets/img/home/contact_us1.png')}}">
                 <div class="text-center text-about mb-1"><strong> info@royallife.com </strong></div>
+
             </div>
-            <div class="card col-md-11" style="height: 180px;margin-top: -70px;background: white;">
+
+            <div class="card " style="background: white;">
                 <img class="mx-auto d-block mb-2 mt-2" style="width: 40%;" src="{{asset('assets/img/home/contact_us2.png')}}">
                 <div class="text-center text-about mb-1"><strong> (+57)1234567 </strong></div>
+
             </div>
+          </div>
         </div>
-    </div>
+      </div>
 
 </div>
 </div>

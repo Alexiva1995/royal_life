@@ -5,7 +5,7 @@
         <div class="row">
         <div class="col-sm-4 ">
 
-            <div style="background:#66FFCC; top: -10px; width: 100px; left: 10px; border-radius: 10px; position: relative;">
+            <div class="condicional2" style="background:#66FFCC; top: -10px; width: 100px; left: 10px; border-radius: 10px; position: relative;">
                 <a class="background "
                 href="{{action('TiendaController@detalleproducto', ['producto' => $producto->id ])}}">
 

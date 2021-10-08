@@ -425,6 +425,7 @@ class TiendaController extends Controller
         $packages = Packages::get();
         $relacionados = Packages::where('categories_id', $producto->categories_id)->orderby('created_at','DESC')->take(3)->get();
         $categorias = Categories::get();
+
         return view('backofice.detalleproducto',compact('packages','producto','relacionados','sumar','valor','categorias'));
     }
 
@@ -445,19 +446,7 @@ class TiendaController extends Controller
        return  view('backofice.checkout',compact('products','suma','user'));
     }
 
-    public function cart()
-    {
-        if (Auth::user()->admin == 1) {
-            $products = Cart::paginate(10);
-            $suma = Cart::all()->sum('total');
 
-        }else{
-            $products = Cart::where('iduser', '=',Auth::id())->paginate(10);
-            $suma = Cart::where('iduser', '=',Auth::id())->sum('total');
-        }
-
-        return view('backofice.cart',compact('products','suma'));
-    }
 
     public function orden(Request $request){
         $user = Auth::user()->id;
@@ -558,8 +547,49 @@ class TiendaController extends Controller
 
     return $charge['data']['hosted_url'];
 }
+
+public function cart(Request $request)
+    {
+        if(Auth::user()== false){
+            $carrito = [
+                'name'=>$request->name,
+                'categorianame'=>$request->categorianame,
+                'img'=> 'img_name',
+                'iduser'=> $request->iduser,
+                'categories_id' => $request->package_id,
+                'cantidad'=> $request->cantidad
+            ];
+            return view('backofice.cart', compact('carrito'));
+        }
+        if (Auth::user()->admin == 1) {
+            $products = Cart::paginate(10);
+            $suma = Cart::all()->sum('total');
+
+        }else{
+            $products = Cart::where('iduser', '=',Auth::id())->paginate(10);
+            $suma = Cart::where('iduser', '=',Auth::id())->sum('total');
+        }
+
+        return view('backofice.cart',compact('products','suma'));
+    }
+
     public function cart_save(Request $request){
-        // dd($request);
+
+        if(Auth::user() == false){
+            //dd($request);
+            $carrito = [
+                'name'=>$request->name,
+                'categorianame'=>$request->categorianame,
+                'img'=> 'img_name',
+                'iduser'=> $request->iduser,
+                'categories_id' => $request->package_id,
+                'monto'=>$request->monto,
+                'cantidad'=> $request->cantidad,
+                'total'=>$request->cantidad * $request->monto
+            ];
+            return view('backofice.cart',compact('carrito'));
+        }
+
                 $products = Cart::where('iduser', auth::id())->get();
                 $switch = false;
                 foreach($products as $p){
@@ -602,7 +632,7 @@ class TiendaController extends Controller
         $this->authorize('delete', $producto);
         $producto->delete();
 
-        return redirect()->route('cart')->with('msj-success', 'producto eliminada exitosamente');
+        return redirect()->route('cart')->with('msj-success', 'producto eliminado exitosamente');
 
     }
 

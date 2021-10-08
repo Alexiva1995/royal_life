@@ -1,22 +1,21 @@
 @extends('backofice.layouts.dashboard')
 
 @section('content')
-<div class="carousel-inner">
-    <img class="d-block w-100" src="{{asset('assets/img/home/formas_fondo3.png')}}" style="background: #173138;">
-    <div class="container carousel-caption d-flex justify-content-start" style="top:90px;left: 7%;">
+
+
+<div class="fondo3 fondo0">
+    <div class="container"  >
         <div class="row">
-            <div class="col-md-12">
-                <div class="text-left d-flex ml-1">
-                    <p style="color: #52CCA7" class="ml-1"><strong> Semper tristique eget ornare at commodo enim </strong></p>
-                </div>
-                <div class="text-left">
-                    <h3 class="text-white" style="font-size: 50px;"><strong> ¿Quienes sómos? </strong></h3>
-                </div>
-                
+            <div class="col-sm-12 mt-5 mb-5">
+                <h1 class="text-white"  style="font-size: 50px;"><strong> ¿Quienes sómos?</strong> </h1>
+                <a class="text-white" href="{{route('inicio.index')}}"><strong> Inicio </strong></a><strong class="ml-1">
+                    > </strong>
+                <a style="color: #52CCA7" class="ml-1"><strong> Nosotros </strong></a>
+
             </div>
         </div>
     </div>
-</div>
+    </div>
 
 <div class="container pt-5">
     <div class="row">
@@ -41,7 +40,7 @@
 <div class="p-5">
     <div class="container mb-3">
         <h1 class="texto-title mt-5 mb-1 text-ab"><strong>¿Cómo Iniciamos?</strong></h1>
-        <p class="mb-3 text-ab" style="color: #324B50;font-size: 16px;"><strong>Sed cursus tartar dignissim morbi. </strong></p> 
+        <p class="mb-3 text-ab" style="color: #324B50;font-size: 16px;"><strong>Sed cursus tartar dignissim morbi. </strong></p>
         <p class="texto-aboutS text-ab">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio quis commodo sit dolor libero. Massa vitae elementum sit aliquam justo amet. Risus dolor orci faucibus aliquet lorem feugiat commodo luctus vitae. Maecenas in enim volutpat faucibus. Enim justo, egestas ultrices sit tristique. Eleifend et convallis felis duis tincidunt vitae. Suspendisse non volutpat sit nisi, aliquam, vivamus ultricies habitant. Blandit ac bibendum placerat nulla non. Mauris, a eget eu convallis diam. Lacus mauris at rhoncus vulputate pellentesque enim nisi. Ornare lacus, id bibendum facilisis gravida quis.
             Leo, amet cursus auctor aliquet ac nibh. Amet imperdiet tellus est urna enim vulputate. Sed iaculis consectetur lorem pretium tristique molestie enim. In in pellentesque lacinia id nisi, tortor, lacus. Aliquam lobortis nunc sit amet sociis egestas tincidunt. Ultricies non ipsum sollicitudin bibendum viverra dolor. Venenatis pellentesque neque pretium nunc risus, dictumst tempus gravida tristique. Amet luctus tincidunt sollicitudin venenatis tempus in.
             Morbi morbi a tincidunt diam amet nunc scelerisque arcu. Faucibus quam volutpat feugiat neque imperdiet nisl faucibus amet. Gravida donec tempus, sit ultrices fermentum interdum dui tempor massa. Sed consequat varius egestas elementum donec quis feugiat. Libero tristique justo fermentum aliquam tortor. Erat consequat vitae mi, purus imperdiet ut. Viverra enim adipiscing condimentum pharetra nec. Ultricies et metus adipiscing tempor tristique lectus vulputate diam.
