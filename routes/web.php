@@ -199,6 +199,9 @@ Route::prefix('')->middleware('menu', 'auth')->group(function ()
 
     Route::get('/cart', 'TiendaController@cart')->name('cart')->withoutMiddleware(['auth']);
 
+    Route::post('/cart-GUEST', 'TiendaController@cart')->name('cart.GUEST')->withoutMiddleware(['auth']);
+
+
     Route::post('/cart-post', 'TiendaController@cart_save')->name('cart.post')->withoutMiddleware(['auth']);
 
     Route::patch('cart-update/{id}', 'TiendaController@updateCart')->name('cart.update');
@@ -218,6 +221,9 @@ Route::prefix('')->middleware('menu', 'auth')->group(function ()
     Route::post('orden', 'TiendaController@orden')->name('orden');
 
     Route::delete('cart-delete/{producto}', 'TiendaController@destroy')->name('destroy');
+
+    Route::delete('cart-deleteGUES/{producto}', 'TiendaController@destroyGUES')->name('destroyGUES')->withoutMiddleware(['auth']);
+
 
     });
 

@@ -51,6 +51,7 @@
         </div>
 
       <div class="col-sm-5">
+        @if(Auth::user() == true)
         <form action="{{route('cart.post')}}" method="POST">
             @csrf
             <input type="hidden" name="package_id" value="{{$producto->id}}">
@@ -77,9 +78,49 @@
                         <button class="btn text-dark btn-custom mt-2  mb-2 zoom5" type="submit" >
                         <i class="fa fa-shopping-cart text-dark zoom5"></i><strong> Comprar </strong></button>
                     </div>
+
+
             </div>
           </div>
         </form>
+
+        @else
+
+        <form action="{{route('cart.GUEST')}}" method="POST">
+            @csrf
+        <input type="hidden" name="package_id" id="id" value="{{$producto->id}}">
+        <input type="hidden" name="categories_id" id="categories_id" value="{{$producto->categories_id}}">
+        <input type="hidden" name="monto" id="monto" value="{{$producto->price}}">
+        <input type="hidden" name="name" id="name" value="{{$producto->name}}">
+        <input type="hidden" name="categorianame" id="categorianame" value="{{$producto->getCategories->categories_name}}">
+
+
+    <div class="card" style=" background:#FFFFFF;">
+        <div class="ml-3 card-body">
+          <h5 class="card-title"><strong>{{$producto->name}}</strong></h5>
+
+            <h4>Price:</h4>
+            <p class="text-dark ">  <strong> ${{$producto->price}} </strong> </p>
+            <h4>Quantity:</h4>
+
+                <button class=" Rangoprecio shadow zoomj custominput text-white"  onclick="handleClickResta()" type="button"><i class="fa fa-minus"></i></button>
+                <input class="sinborde shadow  text-center text-dark" type="number" id="cantidad" name="cantidad" value="1" min="1" required>
+                <button class="Rangoprecio shadow zoomj custominput text-white" onclick="handleClickSuma()"  type="button"><i class="fa fa-plus"></i></button>
+
+
+                <div class="action">
+                    <button class="btn text-dark btn-custom mt-2  mb-2 zoom5"
+                            type="submit"
+                             name="btnAccion"
+                             value="AGREGAR">
+                    <i class="fa fa-shopping-cart text-dark zoom5"></i><strong> Comprar </strong></button>
+                </div>
+
+
+        </div>
+      </div>
+        </form>
+         @endif
       </div>
 
       <div class="col-sm-3">

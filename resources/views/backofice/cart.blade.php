@@ -150,11 +150,9 @@ background-color: #fd5d73 ;
 
 <div class="container pt-5 pb-5">
     <div class="row d-flex">
+        @if(Auth::user()== true)
         <div class="card col-12" style="background: white">
             <div class="table-responsive mt-2">
-                @if(Auth::user() == true)
-
-
                 <table class="table nowrap scroll-horizontal-vertical myTable table-striped">
                     <thead class="">
                         <tr class="text-center text-white bg-purple-alt2">
@@ -167,6 +165,9 @@ background-color: #fd5d73 ;
                             <th>Eliminar</th>
                         </tr>
                     <tbody>
+
+
+
                         @foreach ($products as $key => $item)
                         <tr class="text-center text-dark">
                             <td>
@@ -215,22 +216,25 @@ background-color: #fd5d73 ;
                             </td>
                         </tr>
                         @endforeach
+
+
+
                     </tbody>
                     </thead>
                 </table>
-                <div class="container mt-5 ">
+                <div class="container  ">
                     <div class="text-center link">
-                    {{$products->links('pagination::bootstrap-4') }}
+      {{--              {{$products->links('pagination::bootstrap-4') }} --}}
                     </div>
                 </div>
                 <div class="container">
                     <div class="row">
                         <div class="col-12 d-flex d-flex justify-content-end">
                             <div class="card bg-white text-dark ">
-                                <p><strong>Sub Total:</strong> {{$suma}}$</p>
+                      {{--            <p><strong>Sub Total:</strong> {{$suma}}$</p>
                                 <p><strong>Iva: </strong>15%</p>
                                 <p><strong>Total + Iva:</strong> {{($suma+(15/100)*$suma)}}$</p>
-                            </div>
+                            </div>--}}
                         </div>
                     </div>
                 </div>
@@ -251,29 +255,164 @@ background-color: #fd5d73 ;
 
                     </div>
                 </div>
-                @else
-                <table class="table nowrap scroll-horizontal-vertical myTable table-striped">
-                    <button class="Rangoprecio shadow zoomM custominput text-white"
-                     type="submit"><i class="fa fa-minus"></i></button>
 
-                    <thead class="">
-                        <tr class="text-center text-white bg-purple-alt2">
-                            <th>Imagen</th>
-                            <th>Nombre</th>
-                            <th>Categoria</th>
-                            <th>Cantidad</th>
-                            <th>Precio Por Unidad</th>
-                            <th>Precio Total</th>
-                            <th>Eliminar</th>
+
+                @else
+                <div class="card col-12" style="background: white">
+                    <div class="table-responsive mt-2">
+                        <table class="table nowrap scroll-horizontal-vertical myTable table-striped">
+                            <thead class="">
+                                @if(!empty($producto['CARRITO']))
+                                <tr class="text-center text-white bg-purple-alt2">
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Categoria</th>
+                                    <th>Cantidad</th>
+                                    <th>Precio Por Unidad</th>
+                                    <th>Precio Total</th>
+                                    <th>Eliminar</th>
+                                </tr>
+                            <tbody>
+
+
+
+                        @foreach ($producto['CARRITO'] as $indice=>$item )
+                        <tr class="text-center text-dark">
+
+
+
+                            <td>
+                                <img src="{{asset('assets/img/home/producto21.png')}}" alt="Product Image"
+                                style=" width: 100px; height: 100px;">
+                            </td>
+
+
+
+
+                            <td class="text-dark">{{$item['name']}}</td>
+                            <td class="text-dark">{{$item['categorianame']}}</td>
+
+                            <td>
+                                <form action="" method="POST">
+                                    @csrf
+                                    <input type="hidden"
+                                    name="package_id"
+                                    id="id"
+                                    value="{{$item['package_id']}}">
+
+                            <button class="Rangoprecio shadow zoomM custominput text-white"
+                                    onclick="handleClickResta1('cantidad{{$indice}}')"
+                                    type="submit"
+                                    name="btnAccion"
+                                   ><i class="fa fa-minus"></i></button>
+
+                            <input  class="sinborde shadow  text-center text-dark"
+                                    type="number"
+                                    id="cantidad{{$indice}}"
+                                    name="cantidad"
+                                    value="{{$item['cantidad']}}"
+                                    min="1" required >
+
+                            <button class="Rangoprecio shadow zoomM custominput text-white"
+                                    onclick="handleClickSuma1('cantidad{{$indice}}')"
+                                    type="submit"
+                                    name="btnAccion"
+                                    value="SUMAR"><i class="fa fa-plus"></i></button>
+                            </form>
+                            </td>
+
+
+
+                            <td class="text-dark">${{$item['monto']}}</td>
+                            <td class="text-dark">${{$item['total']}}</td>
+
+                            <td class="text-dark">
+                                <form action="{{route('cart.GUEST')}}" method="POST">
+                                    @csrf
+                                    <input type="hidden"
+                                    name="id"
+                                    id="id"
+                                    value="{{$item['package_id']}}">
+
+                                <button
+                                type="submit"
+                                name="btnAccion"
+                                class="shadow Rangoprecio2 text-white zoomD"
+                                value="ELIMINAR">
+                                <i class="fa fa-trash"></i></button>
+                                </form>
+                            </td>
                         </tr>
-                        <tbody>
-                            <tr id="datos" class="text-dark">
-                            </tr>
-                        </tbody>
-                    </table>
-                @endif
+
+                        @endforeach
+                        @else
+
+                        <div class="alert alert-danger text-center">
+                           <h4 style="color: #fd5d73"> <strong> Carrito Vacio </strong> </h4>
+                        </div>
+
+                        @endif
+                    </tbody>
+                </thead>
+            </table>
+        </div>
+     </div>
+
+     <div class="container mt-5 ">
+        <div class="text-center link">
+{{--              {{$products->links('pagination::bootstrap-4') }} --}}
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex d-flex justify-content-end">
+                <div class="card bg-white text-dark ">
+          {{--            <p><strong>Sub Total:</strong> {{$suma}}$</p>
+                    <p><strong>Iva: </strong>15%</p>
+                    <p><strong>Total + Iva:</strong> {{($suma+(15/100)*$suma)}}$</p>
+                </div>--}}
             </div>
         </div>
+    </div>
+
+    <div class="container mb-1">
+        <div class="row d-flex">
+             <div class="col-3 d-flex justify-content-start">
+                <a href="{{route('shop.backofice')}}" class="btn btn-custom text-dark Rangoprecio4 " type="submit" style="background: #67FFCC"><strong
+                        style="color:#173138">continuar comprado</strong></a>
+            </div>
+
+            @if(!empty($producto['CARRITO']))
+            <div class="col-9 d-flex justify-content-end">
+                <form action="{{route('cart.GUEST')}}" method="POST">
+                    @csrf
+                <button class="btn btn-custom text-dark Rangoprecio3 zoomM"
+                        type="submit"
+                        style="background: #67FFCC"
+                        name="btnAccion"
+                        value="COMPRAR">
+                        <strong
+                        style="color:#173138">Pagar</strong></button>
+                    </form>
+            </div>
+
+            @else
+            <div class="col-9 d-flex justify-content-end">
+            <button class="btn btn-custom text-dark Rangoprecio3 "
+            type="submit"
+            style="background: #e2dfdf"
+            type="submit"
+            name=""
+            value="">
+            <strong
+            style="color:#173138">Pagar</strong></button>
+            @endif
+        </div>
+    </div>
+
+
+        @endif
+
     </div>
 </div>
 
