@@ -478,6 +478,41 @@ background-color: #66FFCC;
                     </div>
                 </div>
             </div>
+            {{--FORMULARIO DE LOGIN--}}
+            <div class="mt-2">
+                <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#modalLogin">Login</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="modalLoginLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <form>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="InputEmail1">Email</label>
+                                <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="InputPassword">Password</label>
+                                <input type="password" class="form-control" id="InputPassword" name="password">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="submit" class="btn btn-primary">Iniciar Session</button>
+                        </div>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
     </div>
 
 
