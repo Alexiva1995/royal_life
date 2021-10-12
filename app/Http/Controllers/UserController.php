@@ -304,5 +304,20 @@ class UserController extends Controller
       return redirect()->route('users.list-user')->with('msj-success', 'Usuario '.$id.' Eliminado');
     }
 
+    public function login(Request $request)
+    {
+        $request->validate([
+            'email' => 'required|email',
+            'password' => 'required|string|min:8'
+        ]);
+
+        $user = User::where('email', $request->email)->first();
+
+        if(isset($user)){
+            if (Hash::check($request->password, $user->password)) {
+            
+            }
+        }
+    }
 }
 
