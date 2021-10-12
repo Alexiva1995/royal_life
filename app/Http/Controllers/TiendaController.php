@@ -642,7 +642,7 @@ public function cart(Request $request)
                             foreach($_SESSION['CARRITO'] as $indice=> $producto){
                                if($producto['package_id'] == $ID ){
                                 $_SESSION['CARRITO'][$indice]['cantidad'] =  $_SESSION['CARRITO'][$indice]['cantidad'] + 1;
-                               // $_SESSION['CARRITO'][$indice]['total'] =  $_SESSION['CARRITO'][$indice]['cantidad'] *  $_SESSION['CARRITO'][$indice]['total'];
+                                $_SESSION['CARRITO'][$indice]['total'] =  $_SESSION['CARRITO'][$indice]['cantidad'] *  $_SESSION['CARRITO'][$indice]['monto'];
                                }
                             }
                         }else{
