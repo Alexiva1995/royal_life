@@ -118,6 +118,27 @@
         </div>
       </div>
 
+      <div class="pb-5 pl-5 pr-5" style="background:#F0FFFA;">
+        <h1 class="texto-title mb-4 text-center"><strong> ¿Porqué elergirnos? </strong></h1>
+
+        <div class="container">
+
+        <div class="row  justify-content-center text-center col-sm">
+            <div class="card mb-1 cas-md-3 col-sm-3  ml-md-4" style="width: 18rem; background: white;">
+                <img class="mx-auto d-block mt-1 mb-2" src="{{asset('assets/img/home/about1.png')}}">
+                <div class="text-center text-about mb-1"><strong> Evíos <br> seguros </strong></div>
+            </div>
+            <div class="card mb-1 cas-md-3 col-md-3  ml-md-4" style="width: 18rem; background: white;">
+                <img class="mx-auto d-block mt-3 mb-2" src="{{asset('assets/img/home/about2.png')}}" alt="">
+                <div class="text-center text-about mb-1"><strong> Atención <br> Personalizada</strong></div>
+            </div>
+            <div class="card mb-1 cas-md-3 col-md-3  ml-md-4" style="width: 18rem; background: white;">
+                <img class="mx-auto d-block mt-3 mb-2" src="{{asset('assets/img/home/about3.png')}}" alt="">
+                <div class="text-center text-about mb-1"><strong> Productos <br> legales</strong></div>
+            </div>
+        </div>
+    </div>
+    </div>
 
 
 @endsection

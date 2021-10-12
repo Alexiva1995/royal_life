@@ -293,7 +293,7 @@ background-color: #fd5d73 ;
                             <td class="text-dark">{{$item['categorianame']}}</td>
 
                             <td>
-                                <form action="" method="POST">
+                                <form action="{{route('cart.GUEST')}}" method="POST">
                                     @csrf
                                     <input type="hidden"
                                     name="package_id"

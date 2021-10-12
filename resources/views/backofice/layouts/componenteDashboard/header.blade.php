@@ -3,7 +3,7 @@
 <nav class="navbar1  mx-auto navbar navbar-expand-lg navbar-light bg-light" style="font-size: 18px; ">
     <div class="container">
     <a class="navbar-brand " href="{{route('inicio.index')}}">
-        <img src="{{ asset('assets/img/royal_green/logos/logo.svg') }}" class="  "   >
+        <img src="{{ asset('assets/img/royal_green/logos/logoRoyal-liefe.png') }}" class="" style="width: 80px;">
      </a>
     <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class=" navbar-toggler-icon"></span>
@@ -12,20 +12,20 @@
     <div class=" collapse navbar-collapse" id="navbarSupportedContent">
         @if (Auth::user() == false)
       <ul class="navbar-nav mx-auto ">
-        <li class="nav-item active">
-          <a class="nav-link ml-3  mt-1 text-white side" href="{{route('inicio.index')}}">INICIO<span class="sr-only">(current)</span></a>
+        <li class="nav-item active ml-5">
+          <a class="nav-link ml-4  mt-1 text-white side " href="{{route('inicio.index')}}">INICIO<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link ml-3 mt-1 text-white side" href="{{route('shop.backofice')}}">TIENDA</a>
+          <a class="nav-link ml-5 mt-1 text-white side" href="{{route('shop.backofice')}}">TIENDA</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link ml-3 mt-1 text-white side" href="{{route('about')}}">NOSOTROS</a>
+            <a class="nav-link ml-5 mt-1 text-white side" href="{{route('about')}}">NOSOTROS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link ml-3 mt-1 text-white side" href="{{route('contact_us')}}">CONTACTO</a>
+            <a class="nav-link ml-5 mt-1 text-white side" href="{{route('contact_us')}}">CONTACTO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link ml-3 mt-1 text-white side1  btn-primario1" href="{{route('login')}}">Backoffice</a>
+            <a class="nav-link ml-5 mt-1 text-white side1  btn-primario1" href="{{route('login')}}">Backoffice</a>
           </li>
           <li class="nav-item mt-1 mr-5" >
             <a class="ml-2 nav-link text-white " style="font-size: 25px; position: relative; top: -5px;"
@@ -40,17 +40,17 @@
           @else
 
           <ul class="navbar-nav mx-auto">
-            <li class="nav-item active">
-              <a class="nav-link mt-1 ml-3 text-white side" href="{{route('inicio')}}">INICIO<span class="sr-only">(current)</span></a>
+            <li class="nav-item active ml-5">
+              <a class="nav-link mt-1 ml-5 text-white side" href="{{route('inicio')}}">INICIO<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mt-1 ml-3 text-white side" href="{{route('shop.backofice')}}">TIENDA</a>
+              <a class="nav-link mt-1 ml-5 text-white side" href="{{route('shop.backofice')}}">TIENDA</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link mt-1 ml-3 text-white side" href="{{route('about')}}">NOSOTROS</a>
+                <a class="nav-link mt-1 ml-5 text-white side" href="{{route('about')}}">NOSOTROS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mt-1 ml-3 text-white side" href="{{route('contact_us')}}">CONTACTO</a>
+                <a class="nav-link mt-1 ml-5 text-white side" href="{{route('contact_us')}}">CONTACTO</a>
               </li>
 
 
