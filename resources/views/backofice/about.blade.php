@@ -1,5 +1,20 @@
 @extends('backofice.layouts.dashboard')
+@push('custom_css')
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
+    .image{
+        float: right;
+    }
+    .image2{
+        float: left;
+    }
+    .fuente{
+    font-family: 'Montserrat';
+    font-style: normal;
+}
 
+</style>
+@endpush
 @section('content')
 
 
@@ -16,67 +31,93 @@
         </div>
     </div>
     </div>
+@include('backofice.ui.estylos')
 
-<div class="container pt-5">
-    <div class="row">
-        <div class="contenedorborder1 mb-2" style="background: #173138">
-            <img class="w-100" src="{{asset('assets/img/home/Rectangle21.png')}}" alt="" style="">
-        </div>
-    </div>
-    <p class="texto-aboutS text-ab">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id donec pellentesque purus pellentesque facilisis bibendum ac mauris, mauris. Suspendisse quis non magna ullamcorper. Ipsum tellus sodales neque, in fames suspendisse elementum. Lorem duis orci in sem morbi posuere proin. Eu mauris morbi nec ante ut magna suspendisse lacinia.
-        Semper proin vestibulum nulla sit non aliquam mauris. Penatibus gravida et consectetur fames facilisis arcu. Accumsan volutpat sit elementum amet augue ultrices. In enim ornare lacinia sed. Quis ultrices arcu lacus, id phasellus cras morbi.
-        Massa orci eros, turpis sed erat. Morbi proin hendrerit quis turpis sapien, leo massa. Turpis vestibulum facilisis sit porttitor purus. Viverra a.</p>
-</div>
+    <div class="container fuente">
+        <div class="row">
+          <div class="col-sm text-dark mt-5 mb-5">
+                    <h3><strong> QUIENES SOMOS?</strong></h3>
+                    Una vida en abundancia económica es importante, pero una vida saludable es el equilibrio perfecto, y entendiendo esto nace Royal Life, después de muchos análisis estamos seguros que
+                    El CBD tiene el potencial de fortalecer, mejorar y contribuir a tu día a día,  y es allí donde entramos nosotros!!  cuyo objetivo es aportar al equilibrio de tu vida, cualquiera que sea tu reto de vida estamos
+                    Seguros que podemos ayudar a mejorarlo.<br>
+                    <img class="ml-1 image mr-3" src="{{asset('assets/img/home/contact.png')}}" style="width: 40%;">
 
-<div class="p-5" style="background:#F0FFFA;">
-    <div class="container mb-3">
-        <h1 class="texto-title mt-5 mb-1 text-ab"><strong>Nuestra Misión y Visión</strong></h1>
-        <p class="mb-3 text-ab" style="color: #324B50;font-size: 16px;"><strong> Lorem, ipsum dolor item </strong></p>
-        <p class="texto-aboutS text-ab">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et tortor, scelerisque convallis aliquam facilisis nulla. Gravida cursus habitant id pellentesque amet leo massa. Egestas odio orci facilisis diam ultrices lorem enim feugiat. Lobortis et orci enim nec habitasse etiam urna ullamcorper urna. Non, in mauris commodo quis. Leo, quis varius phasellus in diam. Rhoncus, orci, a, in ut id elit. Quis adipiscing et tellus ac vel. Ridiculus tincidunt feugiat sed est lacus, varius scelerisque pharetra. Suspendisse sagittis nulla eu eu interdum cursus viverra. Ullamcorper elementum aliquet ac blandit blandit placerat.
-            Rhoncus in massa, dui id dictum sem amet lorem. Massa massa nisl laoreet ornare. Non mattis enim, dignissim ut vitae viverra faucibus enim. Rhoncus duis ullamcorper nibh dui consequat id. Erat dictum convallis viverra cursus.
-            Ut urna, vitae eu a consectetur porttitor quis turpis. Mauris facilisis morbi nec velit. Elit sed diam urna placerat mauris ultrices tempor. Volutpat tempor nisi, sollicitudin mi morbi augue eget. Quis id a, mi malesuada. Aliquam maecenas eget neque in morbi et aenean in. Orci justo cursus.</p>
-    </div>
-</div>
-<div class="p-5">
-    <div class="container mb-3">
-        <h1 class="texto-title mt-5 mb-1 text-ab"><strong>¿Cómo Iniciamos?</strong></h1>
-        <p class="mb-3 text-ab" style="color: #324B50;font-size: 16px;"><strong>Sed cursus tartar dignissim morbi. </strong></p>
-        <p class="texto-aboutS text-ab">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio quis commodo sit dolor libero. Massa vitae elementum sit aliquam justo amet. Risus dolor orci faucibus aliquet lorem feugiat commodo luctus vitae. Maecenas in enim volutpat faucibus. Enim justo, egestas ultrices sit tristique. Eleifend et convallis felis duis tincidunt vitae. Suspendisse non volutpat sit nisi, aliquam, vivamus ultricies habitant. Blandit ac bibendum placerat nulla non. Mauris, a eget eu convallis diam. Lacus mauris at rhoncus vulputate pellentesque enim nisi. Ornare lacus, id bibendum facilisis gravida quis.
-            Leo, amet cursus auctor aliquet ac nibh. Amet imperdiet tellus est urna enim vulputate. Sed iaculis consectetur lorem pretium tristique molestie enim. In in pellentesque lacinia id nisi, tortor, lacus. Aliquam lobortis nunc sit amet sociis egestas tincidunt. Ultricies non ipsum sollicitudin bibendum viverra dolor. Venenatis pellentesque neque pretium nunc risus, dictumst tempus gravida tristique. Amet luctus tincidunt sollicitudin venenatis tempus in.
-            Morbi morbi a tincidunt diam amet nunc scelerisque arcu. Faucibus quam volutpat feugiat neque imperdiet nisl faucibus amet. Gravida donec tempus, sit ultrices fermentum interdum dui tempor massa. Sed consequat varius egestas elementum donec quis feugiat. Libero tristique justo fermentum aliquam tortor. Erat consequat vitae mi, purus imperdiet ut. Viverra enim adipiscing condimentum pharetra nec. Ultricies et metus adipiscing tempor tristique lectus vulputate diam.
-            </p>
-    </div>
-</div>
-<div class="mt-5 p-5" style="background:#F0FFFA;">
-    <div class="container">
-    <div class="text-center">
-        <p class="text-ab" style="color: #173138;font-size: 16px;"><strong>Dap tincidunt amet neque facillisi</strong></p>
-        <h1 class="texto-title mb-1"><strong> ¿Porqué elergirnos? </strong></h1>
-        <p class="texto-aboutS">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab doloribus vitae
-            provident, cumque voluptatum nemo libero quod esse repudiandae repellat distinctio at porro nisi?
-            Dignissimos corrupti in ullam inventore dolor?</p>
-    </div>
-</div>
-</div>
-<div class="pb-5 pl-5 pr-5" style="background:#F0FFFA;">
-    <div class="container">
-    <div class="row d-flex justify-content-center">
-        <div class="card mb-1 cas-md-3 col-md-3" style="height: 400px;background: white;">
-            <img class="mx-auto d-block mt-1 mb-2" src="{{asset('assets/img/home/about1.png')}}">
-            <div class="text-center text-about mb-1"><strong> Evíos <br> seguros </strong></div>
-            <p class="pb-1 pr-2 pl-2 texto-aboutS text-center mb-1" style="color: black;">Lorem ipsum dolor sit amet, cosectetur adipiscing elit. Velit eleinfend cursus quisque dolor nec. eu volutpat nulla id id.</p>
+                    <br>
+                    Gracias a nuestro amplio portafolio de productos, podrás encontrar la combinación perfecta, para ello nos hemos aliado con los mejores laboratorios en los Estados Unidos que gracias a sus investigaciones
+                    Hoy te entregamos la mejor del mercado, productos excepcionales, los mejores procesos y la mas alta pureza.
+                    Con todo esto garantizamos un CBD con calidad premium, Royal Life llega para brindar salud y bienestar a cualquier persona, por eso queremos invitarte a que inicies esta carrera con nosotros donde
+                    De una manera practica y duplicable estamos seguros que contribuiremos a mejorar tu calidad de vida, toma nuestra mano y disfruta el proceso.<br>
+                    <br>
+                    <h3><strong> ROYAL LIFE EL EQUILIBRIO PERFECTO </strong> </h3>
+                    Cada proceso de nuestros productos son cuidadosamente vigilados por expertos, nuestros laboratorios aliados garantizan el CBD mas puro del mercado y nuestra linea de productos lo demuestra.
+                    Nuestra principal misión es mejorar tu calidad de vida, por eso queremos sorprenderte no una sola ves, si no todos los días!!
+                    LO QUE NECESITAS SABER PARA INICIAR CON NOSOTROS.<br>
+                    <br>
+                    <h3><strong> Entonces, QUE ES EL CBD?</strong> </h3>
+                    El CBD (cannabidiol) pertenece a una familia de compuestos llamados cannabinoides. Son únicos porque existen fuera del cuerpo y, cuando se consumen, pueden influir sobre una amplia red de receptores.
+                    Asi que el  CBD es uno de los dos componentes cannabinoides más importantes de la planta de cannabis, que se encuentra en proporciones variables dependiendo de la cepa,
+                    cuando el ser humano consume CBD y otros cannabinoides, sucede algo realmente extraordinario. Los cannabinoides interactúan con una extensa red de receptores que existe en todos nosotros. El alcance total de esta interacción sigue siendo objeto de investigación, pero podría afectar positivamente  el sueño, el apetito, el animo, etc.
+                    Afortunadamente, el CBD no solo interactúa con nuestro cuerpo de diversas formas, sino que además se tolera bien y no es tóxico. Esta combinación beneficiosa ha despertado mucho interés.
+                    <br>
+                    <br>
+                    <h3><strong> DE DONDE VIENE EL CBD?</strong> </h3>
+                    El CBD se encuentra en todos los tipos de cannabis sativa, pero el Cañamo es el que tiene las concentraciones mas altas.
+                    La relación entre la Humanidad y el cannabis comenzó hace miles de años. Esta larga historia nació en el Neolítico, cuando los humanos empezaron a practicar la agricultura y asentarse en poblados donde cultivaban esta planta por sus propiedades terapéuticas. Siendo originario de Asia central, el cannabis fue expandiéndose, primero, hacia China, donde la evidencia arqueológica muestra la quema de cogollos hace 2.500 años; para después viajar hacia Europa, hoy en dia se sigue cultivando esta planta de forma selectiva con propiedad comerciales, convirtiéndose en una fuente natural y rica en CBD.
+                    como Lo dijimos anteriormente, el CBD es parte de una amplia familia de cannabionoides. Aunque la mayoría de estos compuestos (incluyendo el CBD) no son psicoactivos, todas las familias tienen un miembro no deseado.
+                    La familia de los cannabinoides también incluye el THC, el compuesto ilegal que está presente en las plantaciones de marihuana.
+                    <br>
+                    <br>
+                    <h3><strong> EL CBD ES LO MISMO QUE EL THC?</strong></h3>
+                    Quizás sientas algún temor por que escuchaste primero el THC que el CBD, Y usualmente solemos pensar que es lo mismo.
+                    La principal diferencia entre el THC y el CBD es que el THC (tetrahidrocannabinol) es ilegal en gran parte del mundo ya que es derivado de la marihuana otra especie de cannabis sativa, pero lo primordial es
+                    Que este tiene efectos psicotropicos. ( hace que te drogues o eleves).
+                    Podrá parecer muy sencilla la diferencia que en la molécula química del THC y CBD existe, pero esta es suficiente para que el efecto del CBD no afecte de manera psicotropica el cuerpo, como resultado final
+                    El CBD no es TOXICO,NO DROGA y según la organización mundial de la salud (OMS) no causa adiccion ni tiene potencial al ABUSO.
+                    <br>
+                    <br>
+                    <h3><strong>EL CBD ME DROGA?</strong></h3>
+                    La Respuesta rapida es: NO.<br>
+                    Sin importar la cantidad que consumas, el CBD por sí solo no produce un EFECTO SUBIDON, ya que químicamente es imposible. Pero eso no significa que este compuesto no influya en cómo pensamos y nos sentimos. Las propiedades del CBD indican que puede mejorar los altibajos de la vida moderna, apoyando al cuerpo a conservar ese estado de equilibrio tan importante.
+                    Siempre que compres tus productos de CBD de un productor de confianza (Royal Life), no tendrás que preocuparte de que el THC vaya a dañar tu experiencia de bienestar a base de cannabinoides. Relájate y Tómate tu tiempo, acostúmbrate a sus efectos positivos, y deja que este cannabinoide natural contribuya a  tu bienestar cuando más lo requieras.
+                    <br>
+                    <br>
+                    <h3><strong> EN QUE ME AYUDA EL CBD?</strong></h3>
+                    El cannabidiol (CBD) se ha convertido en el compuesto cannabinoide no psicotrópico más prometedor de los últimos años debido a su diverso potencial en la medicina y en lo terapéutico.
+                    Propiedades terapéuticas del CBD<br>
+                    Las propiedades terapéuticas más importantes del CBD, demostradas con distinta calidad de evidencia son:<br>
+                    <br>
+                    <li>antiinflamatorio</li>
+                    <li>analgésico</li>
+                    <li>neuroprotector</li>
+                    <li>anticonvulsivante</li>
+                    <li>antioxidante</li>
+                    <li>anti-náusea y antiemético</li>
+                    <li>antitumoral</li>
+                    <li>ansiolítico</li>
+                    <li>antipsicótico</li>
+                    <li>reductor de la apetencia por heroína, cocaína y alcohol</li>
+                    <li>inmuno-modulador</li><br>
+                    <h5><strong> Estas propiedades hacen que el CBD se utilice en el tratamiento de múltiples enfermedades, algunas de las cuales son:</strong> </h5>
+                    <li>epilepsia</li>
+                    <li>enfermedades neurodegenerativas (por ejemplo, Alzheimer, Parkinson y Esclerosis Múltiple)</li>
+                    <li>dependencias químicas</li>
+                    <li>ansiedad</li>
+                    <li>psicosis</li>
+                    <li>trastorno de espectro autista</li>
+                    <li> enfermedades inflamatorias crónicas como la poliartritis crónica, enfermedad de Crohn, enfermedad inflamatoria intestinal,</li>
+                    <li>acompañamiento de la quimioterapia</li>
+                    <li>tratamiento antitumoral</li>
+                    <li>Depresión</li>
+                    <li>Insomnio</li>
+                    <li>Stres oxidativo</li>
+                    <li>Disminución del apetito</li>
+                    <li>Diabetes</li>
+                    <li>Artritis reumatoide</li><br>
+                    <h5><strong> Entre muchas otras, en algunos países más allá de sus usos terapéuticos también es recomendable usar CBD como suplemento alimentario.</strong> </li>
+          </div>
         </div>
-        <div class="card mb-1 cas-md-3 col-md-3  ml-md-3" style="height: 400px;background: white;">
-            <img class="mx-auto d-block mt-3 mb-2" src="{{asset('assets/img/home/about2.png')}}" alt="">
-            <div class="text-center text-about mb-1"><strong> Atención <br> Personalizada</strong></div>
-            <p class="pb-1 pr-2 pl-2 texto-aboutS text-center mb-1" style="color: black;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.Tellus morbi at urna sollicitudin eges eleifend ut. Fusce ac.</p>
-        </div>
-        <div class="card mb-1 cas-md-3 col-md-3  ml-md-3" style="height: 400px;background: white;">
-            <img class="mx-auto d-block mt-3 mb-2" src="{{asset('assets/img/home/about3.png')}}" alt="">
-            <div class="text-center text-about mb-1"><strong> Productos <br> legales</strong></div>
-            <p class="pb-1 pr-2 pl-2 texto-aboutS text-center mb-1" style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit.A pellentesque viverra morbi lacus. Cursus tincidunt in dignissim.</p>
-        </div>
-    </div>
-</div>
-</div>
+      </div>
+
+
+
 @endsection
