@@ -41,9 +41,9 @@
        @include('backofice.ui.productos')
 
 <div class="container mt-5  ">
-    <div class="ml-5 row">
-      <div class="link ml-5 mb-2 pg">
-        <div class="ml-1">
+    <div class="link1 row">
+      <div class="link mb-2 pg">
+        <div class="">
       {{$packages->links('pagination::bootstrap-4') }}
         </div>
       </div>

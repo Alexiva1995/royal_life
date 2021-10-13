@@ -25,10 +25,11 @@
                @endif
                     </a>
             </div>
-                <p class="text-right" style="color: rgb(0, 0, 0);">
-                    <a class="btn-c text-center ">{{ ucfirst($producto->getCategories->categories_name)}}</a>
-
-                    <strong class="texto mr-1 prize text-right ">${{$producto->price}}</strong></p>
+            <button href="" class="btn-cre custominput">
+                <p class="" >{{ ucfirst($producto->getCategories->categories_name)}}</p>
+            </button>
+            <a class=" blok text-right" style="color: #303030; font-size: 20px; float: right;">
+            <strong>${{$producto->price}}</strong></a>
 
               <h5 class="card-title "><strong> {{$producto->name}} </strong> </h5>
               <p class="card-text text-dark mb-1">{{ Str::words( strip_tags($producto->description) , 18 )}}</p>

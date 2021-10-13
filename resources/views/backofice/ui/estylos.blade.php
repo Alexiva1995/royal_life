@@ -3,10 +3,7 @@
 @push('custom_css')
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
-.custominput{
-    border: 0;
-    outline: 0 !important;
-}
+
 .zoom:hover {
     -webkit-transform:scale(1.05);
     -moz-transform:scale(1.05);

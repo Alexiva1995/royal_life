@@ -86,9 +86,9 @@
                 <h5><strong>{{$producto->name}}</strong></h5>
                 <p class="blok card-text " style="color: #303030; ">
                     {{ Str::words( strip_tags($producto->description) , 9 )}}</p>
-                    <a href="" class="btn btn-cre">
-                        <p class="text-center" style="margin-top: -9px; margin-left: -38px; width: 100px;">{{ ucfirst($producto->getCategories->categories_name)}}</p>
-                    </a>
+                    <button href="" class="custominput btn-cre">
+                        <p class="text-center" style="">{{ ucfirst($producto->getCategories->categories_name)}}</p>
+                    </button>
                 <p class=" blok text-right" style="color: #303030; font-size: 20px; float: right;">
                     <strong>${{$producto->price}}</strong></p>
             </div>
@@ -153,10 +153,11 @@
                @endif
                     </a>
             </div>
-                <p class="text-right" style="color: rgb(0, 0, 0);">
-                    <a class="btn-c text-center ">{{ ucfirst($producto->getCategories->categories_name)}}</a>
-
-                    <strong class="texto mr-1 prize text-right">${{$producto->price}}</strong></p>
+            <button href="" class="btn-cre custominput">
+                <p class="" >{{ ucfirst($producto->getCategories->categories_name)}}</p>
+            </button>
+        <a class=" blok text-right" style="color: #303030; font-size: 20px; float: right;">
+            <strong>${{$producto->price}}</strong></a>
 
               <h5 class="card-title"><strong> {{$producto->name}} </strong> </h5>
               <p class="card-text text-dark mb-1">{{ Str::words( strip_tags($producto->description) , 10 )}}</p>

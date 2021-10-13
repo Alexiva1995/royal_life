@@ -35,7 +35,7 @@
 <div class="fuente mx-auto">
 <div class="container-fluid    mt-5">
     <div class="row mr-5 ml-5 mb-3">
-      <div class="col-sm-4">
+      <div class=" cir col-sm-4">
             <div class="fondoProducto  shadow text-center " style="">
                 @if($producto->img == null)
                 <img class="o"
@@ -50,7 +50,7 @@
             </div>
         </div>
 
-      <div class="col-sm-5">
+      <div class="col-sm-5 ">
         @if(Auth::user() == true)
         <form action="{{route('cart.post')}}" method="POST">
             @csrf
@@ -61,16 +61,16 @@
             <input type="hidden" name="categorianame" value="{{$producto->getCategories->categories_name}}">
 
 
-        <div class="card" style=" background:#FFFFFF;">
-            <div class="ml-3 card-body">
-              <h5 class="card-title"><strong>{{$producto->name}}</strong></h5>
+        <div class="card mb-4" style=" background:#FFFFFF;">
+            <div class="textAlingComprar card-body ">
+              <h5 class="card-title"><strong style="font-size: 30px">{{$producto->name}}</strong></h5>
 
-                <h4>Price:</h4>
+                <h4>Precio:</h4>
                 <p class="text-dark ">  <strong> ${{$producto->price}} </strong> </p>
-                <h4>Quantity:</h4>
+                <h4>Cantidad:</h4>
 
                     <button class=" Rangoprecio shadow zoomj custominput text-white"  onclick="handleClickResta()" type="button"><i class="fa fa-minus"></i></button>
-                    <input class="sinborde shadow  text-center text-dark" type="number" id="cantidad" name="cantidad" value="1" min="1" required>
+                    <input class="sinborde shadow  text-center text-dark" type="number" id="cantidad" name="cantidad" value="1" min="1" required style="width: 100px;">
                     <button class="Rangoprecio shadow zoomj custominput text-white" onclick="handleClickSuma()"  type="button"><i class="fa fa-plus"></i></button>
 
 
@@ -96,15 +96,15 @@
 
 
     <div class="card" style=" background:#FFFFFF;">
-        <div class="ml-3 card-body">
-          <h5 class="card-title"><strong>{{$producto->name}}</strong></h5>
+        <div class="textAlingComprar card-body textAling">
+          <h5 class="card-title"><strong style="font-size: 30px">{{$producto->name}}</strong></h5>
 
-            <h4>Price:</h4>
+            <h4>Precio:</h4>
             <p class="text-dark ">  <strong> ${{$producto->price}} </strong> </p>
-            <h4>Quantity:</h4>
+            <h4>Cantidad:</h4>
 
                 <button class=" Rangoprecio shadow zoomj custominput text-white"  onclick="handleClickResta()" type="button"><i class="fa fa-minus"></i></button>
-                <input class="sinborde shadow  text-center text-dark" type="number" id="cantidad" name="cantidad" value="1" min="1" required>
+                <input class="sinborde shadow  text-center text-dark" type="number" id="cantidad" name="cantidad" value="1" min="1" required style="width: 100px">
                 <button class="Rangoprecio shadow zoomj custominput text-white" onclick="handleClickSuma()"  type="button"><i class="fa fa-plus"></i></button>
 
 
@@ -145,13 +145,13 @@
   </div>
 
   <div class="container-fluid ">
-    <div class="row mr-5 ml-5">
+    <div class="row mr-5 ml-5 mb-5">
       <div class="col-sm-12">
          <div class="row">
               <div class="col-sm-12 ">
                 <div class=" card "  style="background:#FFFFFF;   width: 18rem;">
                     <div class="card-body text-dark">
-                        <h1 class=" mt-2 mb-2"><strong class=""> Descripcion del producto </strong></h1>
+                        <h1 class=" mt-2 mb-2 textAling"><strong class=""> Descripcion del producto </strong></h1>
                         <p class="text-dark mb-2 " > {!! $producto->description !!} </p>
                     </div>
                 </div>
@@ -162,11 +162,13 @@
   </div>
 
 
-  <div class="container-fluid ">
-    <h1 class="ml-5 mt-2 mb-3"><strong class="ml-3"> Productos Relacionados </strong></h1>
+<div class="container-fluid " style=" background:#F0FFFA ">
+    <div class="col-sm-6 m-1" >
+        <h1 class="  mb-3 textAling m-5"><strong class="m"> Productos Relacionados </strong></h1>
+    </div>
     <div class="ml-5 mr-5 row">
         @include('backofice.ui.relacionados')
     </div>
-  </div>
+    </div>
 </div>
   @endsection
