@@ -12,8 +12,8 @@
     <div class=" collapse navbar-collapse" id="navbarSupportedContent">
         @if (Auth::user() == false)
       <ul class="navbar-nav mx-auto ">
-        <li class="nav-item active ml-5">
-          <a class="nav-link ml-4  mt-1 text-white side " href="{{route('inicio.index')}}">INICIO<span class="sr-only">(current)</span></a>
+        <li class="nav-item active ">
+          <a class="nav-link ml-5  mt-1 text-white side " href="{{route('inicio.index')}}">INICIO<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link ml-5 mt-1 text-white side" href="{{route('shop.backofice')}}">TIENDA</a>
@@ -27,7 +27,7 @@
           <li class="nav-item">
             <a class="nav-link ml-5 mt-1 text-white side1  btn-primario1" href="{{route('login')}}">Backoffice</a>
           </li>
-          <li class="nav-item mt-1 mr-5" >
+          <li class="nav-item mt-1 ml-2" >
             <a class="ml-2 nav-link text-white " style="font-size: 25px; position: relative; top: -5px;"
             href="{{route('cart')}}"><i class="side ml-1 feather icon-shopping-cart"></i></a>
           </li>
@@ -40,7 +40,7 @@
           @else
 
           <ul class="navbar-nav mx-auto">
-            <li class="nav-item active ml-5">
+            <li class="nav-item active ">
               <a class="nav-link mt-1 ml-5 text-white side" href="{{route('inicio')}}">INICIO<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">

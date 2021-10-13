@@ -118,7 +118,7 @@
         </div>
       </div>
 
-      <div class="pb-5 pl-5 pr-5" style="background:#F0FFFA;">
+      <div class="pb-5 pl-5 pr-5 no" style="background:#F0FFFA;">
         <h1 class="texto-title mb-4 text-center"><strong> ¿Porqué elergirnos? </strong></h1>
 
         <div class="container">
