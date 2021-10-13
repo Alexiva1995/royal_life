@@ -31,6 +31,9 @@
 .font{
     font-size: 55px;
 }
+.font1{
+    font-size: 30px;
+}
 .font2{
     font-size: 17px;
     z-index: 8 !important;
