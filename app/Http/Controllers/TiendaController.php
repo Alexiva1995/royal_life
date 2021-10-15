@@ -19,7 +19,6 @@ use Illuminate\Support\Facades\Redirect;
 use App\Http\Controllers\WalletController;
 use App\Http\Controllers\InversionController;
 use Facade\Ignition\Support\Packagist\Package;
-use Shakurov\Coinbase\Models\CoinbaseWebhookCall;
 
 class TiendaController extends Controller
 
@@ -435,8 +434,11 @@ class TiendaController extends Controller
     public function checkout(Request $request)
     {
         $producto = \Cart::instance('shopping')->content();
-    
+
         $suma = \Cart::subtotal();
+        $suma = str_replace(',','',$suma);
+        $suma = floatval($suma);
+
         $user=auth::user();
 
        return  view('backofice.checkout',compact('producto','suma','user'));
@@ -457,12 +459,17 @@ class TiendaController extends Controller
         'phone'=> 'required|min:9',
         ]);
 
-        try{
+      //  try{
             DB::beginTransaction();
-            
+
             $user = Auth::id();
-            $carrito = \Cart::instance('shopping')->content();;
+            $carrito = \Cart::instance('shopping')->content();
             $suma = \Cart::subtotal();
+
+            $suma = str_replace(',','',$suma);
+            $suma = floatval($suma);
+
+
             $data = [];
             foreach($carrito as $cart){
 
@@ -481,29 +488,28 @@ class TiendaController extends Controller
                     'cantidad'=>$cart->qty,
                     'monto'=>$cart->subtotal,
                     'status'=>1,
-                    'total'=>$suma + ( $suma * 15 / 100),
+                    'total'=>$suma+($suma * 15/100),
                     'descripcion'=>'prueba',
-                    
 
                 ];
                 $array['idorden'] = $this->saveOrden($array);
-            
                 $data[] = $array;
-                
+
+                $url = $this->url($data);
             }
-            //dd($data);
-            
-            $url = $this->url($data);
-            dd($url);
+
+
+            //dd($url);
+
             if (!empty($url)) {
                 //DB::commit();
                 return redirect($url);
             }
-        } catch (\Throwable $th) {
+     /*   } catch (\Throwable $th) {
             DB::rollback();
             Log::error('TiendaController - orden -> Error: '.$th);
             abort(403);
-        }
+        } */
    // $orden = DataOrdenUser::create($data);
    // Cart::where('iduser',$user->id)->delete();
     //$packages = Packages::paginate(8);
@@ -523,44 +529,42 @@ class TiendaController extends Controller
 
     private function url($data):string
     {
-
+//dd($data);
         $valores = [];
         foreach($data as $item){
-            $valores[] = [
-                'name' => 'Producto '.$item['name'],
-              //'description' => $data['descripcion'],
+
+            $charge = Coinbase::createCharge([
+                'name' => 'producto',
+                'description' => 'Description',
                 'local_price' => [
                     'amount' => $item['total'],
                     'currency' => 'USD',
                 ],
                 'pricing_type' => 'fixed_price',
-            ];
+            ]);
         }
-        
-        $charge = Coinbase::createCharge($valores);
-        dd($charge);
+       // dd($charge);
         foreach($data as $item){
             OrdenPurchases::where('id', $item['idorden'])->update([
                 'id_coinbase' => $charge['data']['id'],
                 'code_coinbase' => $charge['data']['code'],
-                /*
-                'name'=>$data['name'],
-                'lastname'=> $data['lastname'],
-                'country' => $data['country'],
-                'address'=> $data['address'],
-                'state'=> $data['state'],
-                'city'=> $data['city'],
-                'email'=> $data['email'],
-                'phone'=> $data['phone'],
-                'iduser'=> $data['iduser'],
-                'categories_id'=>$data['categories_id'],
-                'package_id'=>$data['package_id'],
-                'cantidad'=>$data['cantidad'],
-                'monto'=>$data['monto'],
-                'status'=>$data['status'],
-                'total'=>$data['total'],
-                */
-            // 'descripcion'=>'prueba',
+                'name'=>$item['name'],
+                'lastname'=> $item['lastname'],
+                'country' => $item['country'],
+                'address'=> $item['address'],
+                'state'=> $item['state'],
+                'city'=> $item['city'],
+                'email'=> $item['email'],
+                'phone'=> $item['phone'],
+                'iduser'=> $item['iduser'],
+                'categories_id'=>$item['categories_id'],
+                'package_id'=>$item['package_id'],
+                'cantidad'=>$item['cantidad'],
+                'monto'=>$item['monto'],
+                'status'=>$item['status'],
+                'total'=>$item['total'],
+
+
             ]);
         }
 
@@ -574,13 +578,13 @@ public function cart(Request $request)
             switch ($_POST['btnAccion']){
 
                 case ('AGREGAR'):
-            
+
                 $cartItem = \Cart::instance('shopping')->add($request->package_id, $request->name, $request->cantidad, $request->monto,['categoria_name' => $request->categorianame]);
                 $cartItem->associate('App\Models\Packages');
                 //dd($producto);
                 /*
                 $_POST['id'] =  $request->package_id;
-                
+
                 if( is_numeric($request->package_id)){
 
                     if(!isset($_SESSION['CARRITO'])){
@@ -643,23 +647,26 @@ public function cart(Request $request)
                 break;
 
                 case('COMPRAR'):
-                    
+
                     $producto = \Cart::instance('shopping')->content();
-    
+
                     $suma = \Cart::subtotal();
+                    $suma = str_replace(',','',$suma);
+                    $suma = floatval($suma);
+
                     if(Auth::id() != null){
                         $user = Auth::user();
                     }else{
                         $user = null;
                     }
-                    
+
                     return  view('backofice.checkout',compact('producto','suma','user'));
                 break;
 
                 case('SUMAR'):
                     //$producto = \Cart::instance('shopping')->add($request->package_id, $request->name, $request->cantidad, $request->monto,['categoria_name' => $request->categorianame]);
                     \Cart::instance('shopping')->update($request->rowId, $request->cantidad);
-                    
+
                     /*
                     $_POST['id'] =  $request->package_id;
                         if( is_numeric($_POST['id'])){
@@ -678,7 +685,7 @@ public function cart(Request $request)
                 break;
 
                 case('RESTAR'):
-            
+
                     \Cart::instance('shopping')->update($request->rowId, $request->cantidad);
                 break;
             }
@@ -715,7 +722,7 @@ public function cart(Request $request)
                 }
                 return redirect()->route('cart')->with('msj-success', 'Orden actualizada exitosamente');
         }
-        
+
     }
 
     public function updateCart(Request $request, $id){
