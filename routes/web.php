@@ -184,7 +184,7 @@ Route::prefix('')->middleware('menu', 'auth')->group(function ()
 
     Route::prefix('')->group(function(){
 
-    Route::get('/inicio', 'HomeController@home')->name('inicio');
+    //Route::get('/inicio', 'HomeController@home')->name('inicio');
 
 
     Route::get('/about', 'HomeController@about')->name('about')->withoutMiddleware(['auth']);
@@ -205,8 +205,6 @@ Route::prefix('')->middleware('menu', 'auth')->group(function ()
     Route::post('/cart-post', 'TiendaController@cart_save')->name('cart.post')->withoutMiddleware(['auth']);
 
     Route::patch('cart-update/{id}', 'TiendaController@updateCart')->name('cart.update');
-
-
 
     Route::get('/checkout', 'TiendaController@checkout')->name('checkout.backofice')->withoutMiddleware(['auth']);
 

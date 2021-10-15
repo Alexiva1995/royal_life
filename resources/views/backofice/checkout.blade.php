@@ -484,13 +484,21 @@ background-color: #66FFCC;
 
                 <!-- Modal -->
                 <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+
                     <div class="modal-dialog">
                     <div class="modal-content">
+
+                        <div class="mt-3 text-center">
+                            <img src="{{ asset('assets/img/royal_green/logos/logoRoyal-liefe.png') }}" class="" style="width: 150px;">
+                        </div>
+
                         <div class="modal-header">
                         <h5 class="modal-title" id="modalLoginLabel">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+                        <button style="top: -195px;" type="button" class="close btn-danger" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
+
                         </div>
                         <form>
                         <div class="modal-body">
@@ -504,7 +512,7 @@ background-color: #66FFCC;
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-danger text-white" data-dismiss="modal">Cerrar</button>
                             <button type="submit" class="btn btn-primary">Iniciar Session</button>
                         </div>
                         </form>

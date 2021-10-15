@@ -163,7 +163,7 @@ class Menu
             // Inicio
             'Royal life' => [
                 'submenu' => 0,
-                'ruta' => route('inicio'),
+                'ruta' => route('inicio.index'),
                 'blank'=> '', // si es para una pagina diferente del sistema solo coloquen _blank
                 'icon' => 'feather icon-home',
                 'complementoruta' => '',
@@ -351,7 +351,7 @@ class Menu
             // Inicio
             'Royal life' => [
                 'submenu' => 0,
-                'ruta' => route('inicio'),
+                'ruta' => route('inicio.index'),
                 'blank'=> '', // si es para una pagina diferente del sistema solo coloquen _blank
                 'icon' => 'feather icon-home',
                 'complementoruta' => '',

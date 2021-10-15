@@ -41,7 +41,7 @@
 
           <ul class="navbar-nav mx-auto">
             <li class="nav-item active ">
-              <a class="nav-link mt-1 ml-5 text-white side" href="{{route('inicio')}}">INICIO<span class="sr-only">(current)</span></a>
+              <a class="nav-link mt-1 ml-5 text-white side" href="{{route('inicio.index')}}">INICIO<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link mt-1 ml-5 text-white side" href="{{route('shop.backofice')}}">TIENDA</a>

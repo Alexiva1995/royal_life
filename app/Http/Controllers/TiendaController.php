@@ -480,7 +480,7 @@ class TiendaController extends Controller
             'email'=> $request->email,
             'phone'=> $request->phone,
             'iduser'=> $user,
-          'categories_id'=>$cart->categories_id,
+            'categories_id'=>$cart->categories_id,
             'package_id'=>$cart->package_id,
             'cantidad'=>$cart->cantidad,
             'monto'=>$cart->monto,
@@ -579,7 +579,6 @@ public function cart(Request $request)
                         );
                         $_SESSION['CARRITO'][0]= $carrito;
                         $producto = $_SESSION;
-
                 }
                     else{
 
@@ -651,7 +650,11 @@ public function cart(Request $request)
 
 
                  break;
+
+
              }
+
+
          }
          $producto = $_SESSION;
              return view('backofice.cart',compact('producto'));
