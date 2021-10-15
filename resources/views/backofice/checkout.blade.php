@@ -261,7 +261,7 @@ background-color: #66FFCC;
     <div class="mt-2 ml-5 mb-5 cheking fuente col-5">
         <div class="col-10  ml-5 text-dark ">
             <div class="row orden">
-            
+
                 <table class="table table-borderless factura">
                     <tr>
                         <h2 class="ml-1 "><strong>Tu orden <strong></h2>
@@ -317,12 +317,12 @@ background-color: #66FFCC;
                     </tfoot>
 
                 </table>
-                
+
                 <hr class="hr">
 
                 <button class=" zoomc form-group mt-5 mt-5 btn btn-custom text-dark button" style="left: 150px;">
 
-                    <input class="  custominput" value="Realizar pedido" type="submit" style="background: #67FFCC">
+                    <input class="custominput" value="Realizar pedido" type="submit" style="background: #67FFCC">
                     </button>
 
 
@@ -480,7 +480,7 @@ background-color: #66FFCC;
                     </div>
                 </div>
             </div>
-         
+
             {{--FORMULARIO DE LOGIN--}}
             <div class="mt-2">
                 <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#modalLogin">Login</button>
@@ -574,7 +574,7 @@ background-color: #66FFCC;
                 <span aria-hidden="true">&times;</span>
             </button>
             </div>
-            <form method="post" action="{{route('users.login')}}">
+               <form method="post" action="{{route('users.login')}}">
             @csrf
             <div class="modal-body">
                 <div class="form-group">
@@ -584,6 +584,9 @@ background-color: #66FFCC;
                 <div class="form-group">
                     <label for="InputPassword">Password</label>
                     <input type="password" class="form-control" id="InputPassword" name="password">
+                </div>
+                <div>
+                    <a class="">¿No tienes una cuenta ? Rgistrate aqui</a>
                 </div>
             </div>
             <div class="modal-footer">
