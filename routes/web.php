@@ -3,7 +3,6 @@
 use App\Http\Controllers\TiendaController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-
 /*+
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,11 +15,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-
+Route::post('/user/login', 'UserController@login')->name('users.login');
 
 Route::get('/', 'InicioController@home')->name('inicio.index');
 
 Auth::routes();
+
+
+
 Route::prefix('')->middleware('menu', 'auth')->group(function ()
 {
     // Inicio
@@ -226,5 +228,13 @@ Route::prefix('')->middleware('menu', 'auth')->group(function ()
 
 
     });
+});
 
+Route::get('test', function(){
+   // Cart::add('222', 'Product 123', 1, 9.99);
+    
+    foreach(Cart::instance('shopping')->content()->sortByDesc('id') as $item){
+        dd($item->model->name);    
+    }
+    return Cart::content();
 });

@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\ValidationException;
 use App\Rules\MatchOldPassword;
 use Illuminate\Support\Facades\Hash;
-
+session_start();
 class UserController extends Controller
 {
 
@@ -312,11 +312,17 @@ class UserController extends Controller
         ]);
 
         $user = User::where('email', $request->email)->first();
-
+        
         if(isset($user)){
             if (Hash::check($request->password, $user->password)) {
-            
+                
+                Auth::login($user);
+                return redirect()->route('checkout.backofice')->with('msj-success', 'Inicio session exitosamente');
+            }else{
+                return redirect('/cart')->with('msj-danger', 'El email y la contraseña no coinciden');
             }
+        }else{
+            return redirect('/cart')->with('msj-danger', 'No existe ningun usuario con ese email');
         }
     }
 }

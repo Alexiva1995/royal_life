@@ -150,119 +150,12 @@ background-color: #fd5d73 ;
 
 <div class="container pt-5 pb-5">
     <div class="row d-flex">
-        @if(Auth::user()== true)
-        <div class="card col-12" style="background: white">
-            <div class="table-responsive mt-2">
-                <table class="table nowrap scroll-horizontal-vertical myTable table-striped">
-                    <thead class="">
-                        <tr class="text-center text-white bg-purple-alt2">
-                            <th>Imagen</th>
-                            <th>Nombre</th>
-                            <th>Categoria</th>
-                            <th>Cantidad</th>
-                            <th>Precio Por Unidad</th>
-                            <th>Precio Total</th>
-                            <th>Eliminar</th>
-                        </tr>
-                    <tbody>
-
-
-
-                        @foreach ($products as $key => $item)
-                        <tr class="text-center text-dark">
-                            <td>
-                            @if($item->getPackage->img == null)
-                                    <img src="{{asset('assets/img/home/producto21.png')}}" alt="Product Image"
-                                        style=" width: 100px; height: 100px;">
-                             @else
-                                   <img class=" o"
-                                        src="{{ asset('storage/photo-producto/'.$item->getPackage->img) }}"
-                                        alt="Product Image"
-                                        style=" width: 100px; height: 100px;">
-                             @endif
-                            </td>
-                            <td>{{$item->getPackage->name}}</td>
-                            <td>{{$item->getCategories->categories_name}}</td>
-
-                            <td>
-                                <form method="POST" class="form form-vertical" action="{{route('cart.update',$item->id)}}" enctype="multipart/form-data">
-                                    @method('PATCH')
-                                    @csrf
-
-                                    <input type="hidden" name="monto"  value="{{$item->monto}}">
-                                    <button class="Rangoprecio shadow zoomM custominput text-white"  onclick="handleClickResta1('cantidad{{$key}}')" type="submit"><i class="fa fa-minus"></i></button>
-
-                                    <input  class="sinborde shadow  text-center text-dark"
-                                            type="number"
-                                            id="cantidad{{$key}}"
-                                            name="cantidad"
-                                            value="{{$item->cantidad}}"
-                                            min="1" required >
-
-                                    <button class="Rangoprecio shadow zoomM custominput text-white" onclick="handleClickSuma1('cantidad{{$key}}')"  type="submit"><i class="fa fa-plus"></i></button>
-
-
-                            </form>
-                            </td>
-
-                            <td>${{$item->monto}}</td>
-                            <td>${{($item->total)}}</td>
-                            <td>
-                                <form action="{{route('destroy',['producto'=>$item->id])}}" method="POST">
-                                    @csrf
-                                    @method('DELETE')
-                                    <button type="submit" class="shadow Rangoprecio2 text-white zoomD" value=""><i class="fa fa-trash"></i></button>
-                                </form>
-                            </td>
-                        </tr>
-                        @endforeach
-
-
-
-                    </tbody>
-                    </thead>
-                </table>
-                <div class="container  ">
-                    <div class="text-center link">
-      {{--              {{$products->links('pagination::bootstrap-4') }} --}}
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 d-flex d-flex justify-content-end">
-                            <div class="card bg-white text-dark ">
-                      {{--            <p><strong>Sub Total:</strong> {{$suma}}$</p>
-                                <p><strong>Iva: </strong>15%</p>
-                                <p><strong>Total + Iva:</strong> {{($suma+(15/100)*$suma)}}$</p>
-                            </div>--}}
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container mb-1">
-                    <div class="row d-flex">
-                         <div class="col-3 d-flex justify-content-start">
-                            <a href="{{route('shop.backofice')}}" class="btn btn-custom text-dark Rangoprecio4 " type="submit" style="background: #67FFCC"><strong
-                                    style="color:#173138">continuar comprado</strong></a>
-                        </div>
-
-                        <div class="col-9 d-flex justify-content-end">
-                            <form action="{{route('checkout.backofice')}}">
-                            <button class="btn btn-custom text-dark Rangoprecio3 zoomM" type="submit" style="background: #67FFCC"><strong
-                                    style="color:#173138">Pagar</strong></button>
-                                </form>
-                        </div>
-
-                    </div>
-                </div>
-
-
-                @else
+    
                 <div class="card col-12" style="background: white">
                     <div class="table-responsive mt-2">
                         <table class="table nowrap scroll-horizontal-vertical myTable table-striped">
                             <thead class="">
-                                @if(!empty($producto['CARRITO']))
+                                @if(!empty($producto))
                                 <tr class="text-center text-white bg-purple-alt2">
                                     <th>Imagen</th>
                                     <th>Nombre</th>
@@ -276,7 +169,7 @@ background-color: #fd5d73 ;
 
 
 
-                        @foreach ($producto['CARRITO'] as $indice=>$item )
+                        @foreach ($producto as $item )
                         <tr class="text-center text-dark">
 
 
@@ -289,8 +182,8 @@ background-color: #fd5d73 ;
 
 
 
-                            <td class="text-dark">{{$item['name']}}</td>
-                            <td class="text-dark">{{$item['categorianame']}}</td>
+                            <td class="text-dark">{{$item->name}}</td>
+                            <td class="text-dark">{{$item->options->categoria_name}}</td>
 
                             <td>
                                 <form action="{{route('cart.GUEST')}}" method="POST">
@@ -298,33 +191,36 @@ background-color: #fd5d73 ;
                                     <input type="hidden"
                                     name="package_id"
                                     id="id"
-                                    value="{{$item['package_id']}}">
+                                    value="{{$item->id}}">
 
-                            <button class="Rangoprecio shadow zoomM custominput text-white"
-                                    onclick="handleClickResta1('cantidad{{$indice}}')"
-                                    type="submit"
-                                    name="btnAccion"
-                                   ><i class="fa fa-minus"></i></button>
+                                <button class="Rangoprecio shadow zoomM custominput text-white"
+                                        onclick="handleClickResta1('cantidad{{$item->id}}')"
+                                        type="submit"
+                                        name="btnAccion"
+                                        value="RESTAR"
+                                    ><i class="fa fa-minus"></i></button>
 
-                            <input  class="sinborde shadow  text-center text-dark"
-                                    type="number"
-                                    id="cantidad{{$indice}}"
-                                    name="cantidad"
-                                    value="{{$item['cantidad']}}"
-                                    min="1" required >
+                                <input  class="sinborde shadow  text-center text-dark"
+                                        type="number"
+                                        id="cantidad{{$item->id}}"
+                                        name="cantidad"
+                                        value="{{$item->qty}}"
+                                        min="1" required >
+                                
+                                <input type="hidden" name="rowId" value="{{$item->rowId}}">
 
-                            <button class="Rangoprecio shadow zoomM custominput text-white"
-                                    onclick="handleClickSuma1('cantidad{{$indice}}')"
-                                    type="submit"
-                                    name="btnAccion"
-                                    value="SUMAR"><i class="fa fa-plus"></i></button>
-                            </form>
+                                <button class="Rangoprecio shadow zoomM custominput text-white"
+                                        onclick="handleClickSuma1('cantidad{{$item->id}}')"
+                                        type="submit"
+                                        name="btnAccion"
+                                        value="SUMAR"><i class="fa fa-plus"></i></button>
+                                </form>
                             </td>
 
 
 
-                            <td class="text-dark">${{$item['monto']}}</td>
-                            <td class="text-dark">${{$item['total']}}</td>
+                            <td class="text-dark">${{$item->price}}</td>
+                            <td class="text-dark">${{$item->subtotal}}</td>
 
                             <td class="text-dark">
                                 <form action="{{route('cart.GUEST')}}" method="POST">
@@ -332,14 +228,16 @@ background-color: #fd5d73 ;
                                     <input type="hidden"
                                     name="id"
                                     id="id"
-                                    value="{{$item['package_id']}}">
+                                    value="{{$item->id}}">
 
-                                <button
-                                type="submit"
-                                name="btnAccion"
-                                class="shadow Rangoprecio2 text-white zoomD"
-                                value="ELIMINAR">
-                                <i class="fa fa-trash"></i></button>
+                                    <input type="hidden" name="rowId" value="{{$item->rowId}}">
+
+                                    <button
+                                    type="submit"
+                                    name="btnAccion"
+                                    class="shadow Rangoprecio2 text-white zoomD"
+                                    value="ELIMINAR">
+                                    <i class="fa fa-trash"></i></button>
                                 </form>
                             </td>
                         </tr>
@@ -382,7 +280,7 @@ background-color: #fd5d73 ;
                         style="color:#173138">continuar comprado</strong></a>
             </div>
 
-            @if(!empty($producto['CARRITO']))
+            @if(!empty($producto))
             <div class="col-9 d-flex justify-content-end">
                 <form action="{{route('cart.GUEST')}}" method="POST">
                     @csrf
@@ -411,7 +309,7 @@ background-color: #fd5d73 ;
     </div>
 
 
-        @endif
+    
 
     </div>
 </div>
@@ -502,4 +400,5 @@ background-color: #fd5d73 ;
         </div>
     </div>
 </div>
+
 @endsection

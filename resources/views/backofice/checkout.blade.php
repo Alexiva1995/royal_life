@@ -144,7 +144,7 @@ background-color: #66FFCC;
                                     class="requerido">*</sup>
                             </span>
                             <input name="name" type="text" class="custominput text-dark mt-1 form-control"
-                                style="background:  #F6F6F7;" value="{{$user->name}}" />
+                                style="background:  #F6F6F7;" value="{{$user != null ? $user->name : ''}}" />
                                 @error('name')
                                     <span class="invalid-feedback d-block" role="alert">
                                         <strong>{{$message}}</strong>
@@ -155,7 +155,7 @@ background-color: #66FFCC;
                             <span class="help-block text-muted textcustom mb-1">Apellidos <sup
                                     class="requerido">*</sup></span>
                             <input name="lastname" type="text" class="form-control custominput  text-dark mt-1"
-                                style="background:   #F6F6F7;" value="{{$user->last_name}}" />
+                                style="background:   #F6F6F7;" value="{{$user != null ?$user->last_name : ''}}" />
 
                                 @error('lastname')
                                 <span class="invalid-feedback d-block" role="alert">
@@ -232,7 +232,7 @@ background-color: #66FFCC;
                         <div class="col-md-6 col-sm-6 col-xs-3">
                             <span class="help-block text-muted ">Email<sup class="requerido">*</sup></span>
                             <input name="email" type="text" class="form-control custominput  text-dark mt-1"
-                                style="background:  #F6F6F7;" value="{{$user->email}}"/>
+                                style="background:  #F6F6F7;" value="{{$user != null ?$user->email : ''}}"/>
                                 @error('email')
                                 <span class="invalid-feedback d-block" role="alert">
                                     <strong>{{$message}}</strong>
@@ -245,7 +245,7 @@ background-color: #66FFCC;
                         <div class="col-md-6 col-sm-6 col-xs-3">
                             <span class="help-block text-muted ">Telefono<sup class="requerido">*</sup></span>
                             <input name="phone" type="text" class="form-control custominput  text-dark mt-1"
-                                style="background:   #F6F6F7;" value="{{$user->whatsapp}}" />
+                                style="background:   #F6F6F7;" value="{{$user != null ?$user->whatsapp : ''}}" />
                                 @error('phone')
                                 <span class="invalid-feedback d-block" role="alert">
                                     <strong>{{$message}}</strong>
@@ -261,6 +261,7 @@ background-color: #66FFCC;
     <div class="mt-2 ml-5 mb-5 cheking fuente col-5">
         <div class="col-10  ml-5 text-dark ">
             <div class="row orden">
+            
                 <table class="table table-borderless factura">
                     <tr>
                         <h2 class="ml-1 "><strong>Tu orden <strong></h2>
@@ -272,15 +273,15 @@ background-color: #66FFCC;
                     <tbody>
                         <tr>
                         </tr>
-                        @foreach ($products as $item)
+                        @foreach ($producto as $item)
                         <tr>
 
                             <td>
-                                <h6>{{$item->getPackage->name}}</h6>
+                                <h6>{{$item->name}}</h6>
                             </td>
                             <td></td>
                             <td></td>
-                            <td class="text-right">${{$item->getPackage->price}}</td>
+                            <td class="text-right">${{$item->price}}</td>
 
                         </tr>
                         @endforeach
@@ -316,6 +317,7 @@ background-color: #66FFCC;
                     </tfoot>
 
                 </table>
+                
                 <hr class="hr">
 
                 <button class=" zoomc form-group mt-5 mt-5 btn btn-custom text-dark button" style="left: 150px;">
@@ -478,39 +480,10 @@ background-color: #66FFCC;
                     </div>
                 </div>
             </div>
+         
             {{--FORMULARIO DE LOGIN--}}
             <div class="mt-2">
                 <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#modalLogin">Login</button>
-
-                <!-- Modal -->
-                <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title" id="modalLoginLabel">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        </div>
-                        <form>
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <label for="InputEmail1">Email</label>
-                                <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" name="email">
-                            </div>
-                            <div class="form-group">
-                                <label for="InputPassword">Password</label>
-                                <input type="password" class="form-control" id="InputPassword" name="password">
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                            <button type="submit" class="btn btn-primary">Iniciar Session</button>
-                        </div>
-                        </form>
-                    </div>
-                    </div>
-                </div>
             </div>
 
     </div>
@@ -530,15 +503,15 @@ background-color: #66FFCC;
                     <tbody>
                         <tr>
                         </tr>
-                        @foreach ($producto['CARRITO'] as $indice=>$item )
+                        @foreach ($producto as $item )
                         <tr>
 
                             <td>
-                                <h6>{{$item['name']}}</h6>
+                                <h6>{{$item->name}}</h6>
                             </td>
                             <td></td>
                             <td></td>
-                            <td class="text-right">${{$item['monto']}}</td>
+                            <td class="text-right">${{$item->subtotal}}</td>
 
                         </tr>
                         @endforeach
@@ -591,4 +564,34 @@ background-color: #66FFCC;
 </div>
 
 @endif
+    <!-- Modal -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modalLoginLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <form method="post" action="{{route('users.login')}}">
+            @csrf
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="InputEmail1">Email</label>
+                    <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="InputPassword">Password</label>
+                    <input type="password" class="form-control" id="InputPassword" name="password">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="submit" class="btn btn-primary">Iniciar Session</button>
+            </div>
+            </form>
+        </div>
+        </div>
+    </div>
     @endsection
