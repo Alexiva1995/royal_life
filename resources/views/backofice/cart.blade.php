@@ -139,7 +139,7 @@ background-color: #fd5d73 ;
                     <h3 class="text-white" style="font-size: 50px;"><strong> Carrito </strong></h3>
                 </div>
                 <div class="text-left d-flex ml-1">
-                    <a class="text-white" href="{{route('inicio')}}"><strong> Inicio </strong></a><strong class="ml-1">
+                    <a class="text-white" href="{{route('inicio.index')}}"><strong> Inicio </strong></a><strong class="ml-1">
                         > </strong>
                     <p style="color: #52CCA7" class="ml-1"><strong> Carrito </strong></p>
                 </div>
