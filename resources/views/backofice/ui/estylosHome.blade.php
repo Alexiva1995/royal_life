@@ -286,7 +286,10 @@ background-color: #66FFCC;
     border-radius: 50%;
 }
 
+.sha{
+    box-shadow: 0 9px 9px 0 rgba(0, 0, 0, 0.16), 0 9px 9px 0 rgba(0, 0, 0, 0.12) !important;
 
+}
 
     </style>
 @endpush

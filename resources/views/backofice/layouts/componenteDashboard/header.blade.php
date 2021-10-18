@@ -95,6 +95,9 @@
             <a class="dropdown-item text-white side" href="{{ route('home') }}">
                 <i class="feather icon-home "></i>Backoffice</a>
 
+                <a class="dropdown-item text-white side" href="{{ route('MisCompras') }}">
+                    <i class="feather icon-shopping-cart"></i>Mis Compras</a>
+
             <div class="dropdown-divider"  href="#"></div>
 
             <a class="dropdown-item text-white side" href="{{ route('logout') }}"onclick="event.preventDefault();document.getElementById('logout-form').submit();">

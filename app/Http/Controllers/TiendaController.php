@@ -448,7 +448,7 @@ class TiendaController extends Controller
 
     public function orden(Request $request)
     {
-        $request->validate([
+      /*  $request->validate([
         'name'=> 'required|min:4',
         'lastname'=>'required|min:4',
         'country' => 'required|min:5',
@@ -457,23 +457,30 @@ class TiendaController extends Controller
         'city'=> 'required|min:6',
         'email'=> 'required|min:7',
         'phone'=> 'required|min:9',
-        ]);
+        ]); */
 
       //  try{
-            DB::beginTransaction();
-
+           // DB::beginTransaction();
             $user = Auth::id();
             $carrito = \Cart::instance('shopping')->content();
             $suma = \Cart::subtotal();
-
             $suma = str_replace(',','',$suma);
             $suma = floatval($suma);
 
 
-            $data = [];
-            foreach($carrito as $cart){
 
-                $array = [
+            foreach($carrito as $cart){
+                $data = $request->validate([
+                    'name'=> 'required|min:4',
+                    'lastname'=>'required|min:4',
+                    'country' => 'required|min:5',
+                    'address'=>'required|min:8',
+                    'state'=> 'required|min:5',
+                    'city'=> 'required|min:6',
+                    'email'=> 'required|min:7',
+                    'phone'=> 'required|min:9',
+                 ]);
+                $data = [
                     'name'=> $request->name,
                     'lastname'=> $request->lastname,
                     'country' => $request->country,
@@ -492,9 +499,7 @@ class TiendaController extends Controller
                     'descripcion'=>'prueba',
 
                 ];
-                $array['idorden'] = $this->saveOrden($array);
-                $data[] = $array;
-
+                $data['idorden'] = $this->saveOrden($data);
                 $url = $this->url($data);
             }
 
@@ -503,6 +508,7 @@ class TiendaController extends Controller
 
             if (!empty($url)) {
                 //DB::commit();
+
                 return redirect($url);
             }
      /*   } catch (\Throwable $th) {
@@ -528,24 +534,33 @@ class TiendaController extends Controller
     }
 
     private function url($data):string
-    {
-//dd($data);
-        $valores = [];
-        foreach($data as $item){
+    {//dd($data);
+        //$img = asset('assets/img/royal_green/logos/logoRoyal-liefe.png')
+                $charge = Coinbase::createCharge([
+                    'name' => 'Producto '.$data['name'],
+                //'description' => $data['descripcion'],
+                    'local_price' => [
+                        'amount' => $data['total'],
+                        'currency' => 'USD',
+                    ],
+                    'pricing_type' => 'fixed_price',
+                    "redirect_url" => route('MisCompras'),
+                    "cancel_url"=> route('inicio.index'),
+                ]);
 
-            $charge = Coinbase::createCharge([
+      /*      $charge = Coinbase::createCharge([
                 'name' => 'producto',
                 'description' => 'Description',
                 'local_price' => [
-                    'amount' => $item['total'],
+                    'amount' => $data['total'],
                     'currency' => 'USD',
                 ],
                 'pricing_type' => 'fixed_price',
-            ]);
-        }
+            ]); */
+
        // dd($charge);
-        foreach($data as $item){
-            OrdenPurchases::where('id', $item['idorden'])->update([
+
+        /*    OrdenPurchases::where('id', $item['idorden'])->update([
                 'id_coinbase' => $charge['data']['id'],
                 'code_coinbase' => $charge['data']['code'],
                 'name'=>$item['name'],
@@ -565,8 +580,29 @@ class TiendaController extends Controller
                 'total'=>$item['total'],
 
 
+            ]); */
+
+            OrdenPurchases::where('id', $data['idorden'])->update([
+                'id_coinbase' => $charge['data']['id'],
+                'code_coinbase' => $charge['data']['code'],
+                'name'=>$data['name'],
+                'lastname'=> $data['lastname'],
+                'country' => $data['country'],
+                'address'=> $data['address'],
+                'state'=> $data['state'],
+                'city'=> $data['city'],
+                'email'=> $data['email'],
+                'phone'=> $data['phone'],
+                'iduser'=> $data['iduser'],
+                'categories_id'=>$data['categories_id'],
+                'package_id'=>$data['package_id'],
+                'cantidad'=>$data['cantidad'],
+                'monto'=>$data['monto'],
+                'status'=>$data['status'],
+                'total'=>$data['total'],
+               // 'descripcion'=>'prueba',
             ]);
-        }
+
 
         return $charge['data']['hosted_url'];
 }
@@ -691,8 +727,13 @@ public function cart(Request $request)
             }
         }
         $producto = \Cart::instance('shopping')->content();
+
         //$producto = $_SESSION;
-        return view('backofice.cart',compact('producto'));
+        $categorias = Categories::all();
+        $productosMasVendidos = Packages::take(9)->get();
+        $productos = Packages::take(4)->get();
+
+        return view('backofice.cart',compact('producto','productos'));
     }
     public function cart_save(Request $request)
     {
@@ -749,9 +790,13 @@ public function cart(Request $request)
         return redirect()->route('cart')->with('msj-success', 'producto eliminado exitosamente');
 
     }
-        public function destroyGUES($producto){
 
 
-        }
+    public function misCompras(){
+        $ID = Auth::user()->id;
+        $producto = OrdenPurchases::where('iduser',$ID)->paginate(10);
+
+        return view('backofice.ordenes',compact('producto'));
+    }
 
 }

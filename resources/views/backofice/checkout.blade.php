@@ -114,16 +114,20 @@ background-color: #66FFCC;
 @if(Auth::user() == true )
 
 
-<div class="img-head">
-    <div class="texto-tienda">
-        <strong>Checkout</strong>
-    </div>
-    <div class="texto-tiendaB d-flex">
-        <a class="ml-1 text-white" href="{{route('shop.backofice')}}"><strong> Producto </strong></a><strong class="ml-1"> > </strong>
-        <p style="color: #52CCA7" class="ml-1"><strong>Checkout</strong></p>
-    </div>
-    <img src="{{asset('assets/img/home/formas_fondo3.png')}}" alt="" style="height: 200px;width: 100%;">
 
+
+<div class="fondo3 fondo0">
+<div class="container"  >
+    <div class="row">
+        <div class="col-sm-12 mt-5 mb-5 ml-5">
+            <h1 class="text-white"  style="font-size: 50px;"><strong>Checkout </strong> </h1>
+            <a class="text-white" href="{{route('shop.backofice')}}"><strong> Producto  </strong></a><strong class="ml-1">
+                > </strong>
+            <a style="color: #52CCA7" class="ml-1"><strong> Tienda </strong></a>
+
+        </div>
+    </div>
+</div>
 </div>
 
 
