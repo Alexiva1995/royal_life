@@ -1,4 +1,5 @@
 @extends('backofice.layouts.dashboard')
+@include('backofice.ui.estylosHome')
 @push('page_vendor_js')
 <script src="{{asset('assets/app-assets/vendors/js/extensions/sweetalert2.all.min.js')}}"></script>
 <script src="{{asset('assets/app-assets/vendors/js/extensions/polyfill.min.js')}}"></script>
@@ -150,7 +151,7 @@ background-color: #fd5d73 ;
 
 <div class="container pt-5 pb-5">
     <div class="row d-flex">
-    
+
                 <div class="card col-12" style="background: white">
                     <div class="table-responsive mt-2">
                         <table class="table nowrap scroll-horizontal-vertical myTable table-striped">
@@ -174,9 +175,19 @@ background-color: #fd5d73 ;
 
 
 
-                            <td>
-                                <img src="{{asset('assets/img/home/producto21.png')}}" alt="Product Image"
-                                style=" width: 100px; height: 100px;">
+                        <td>
+
+                       @if($item->model->img == null)
+                        <img class="o"
+
+                        src="{{asset('assets/img/home/producto21.png')}}"
+                        alt="Product Image"  height="100" width="100">
+
+                        @else
+
+                        <img src="{{ asset('storage/photo-producto/'.$item->model->img) }}" class="rounded ml-1" alt="" height="100" width="100">
+
+                        @endif
                             </td>
 
 
@@ -206,7 +217,7 @@ background-color: #fd5d73 ;
                                         name="cantidad"
                                         value="{{$item->qty}}"
                                         min="1" required >
-                                
+
                                 <input type="hidden" name="rowId" value="{{$item->rowId}}">
 
                                 <button class="Rangoprecio shadow zoomM custominput text-white"
@@ -309,14 +320,14 @@ background-color: #fd5d73 ;
     </div>
 
 
-    
+
 
     </div>
 </div>
 
 <div class="container">
     <div class="row">
-        <div class="card col-md-12" style="background: white">
+        <div class=" col-md-12" style="background: rgb(255, 255, 255)">
             <div class="pt-3">
                 <a href="">
                     <h2 style="color:#303030"><strong>Productos relacionados</strong></h2>
@@ -324,76 +335,44 @@ background-color: #fd5d73 ;
             </div>
             <hr>
 
-            <div class="row">
+            <div class=" row ml-1 mr-1" style="background: white">
+                @foreach ($productos as $producto )
+              <div class="col-sm-3">
 
-                <div class="card col-md-3" style="background: white">
-                    <div class="product text-center">
-                        <p class="text-center card-h">
-                            <img class="mx-auto d-block img-ho" src="{{asset('assets/img/home/producto21.png')}}">
-                        </p>
-                        <div class="card-body">
-                            <a href="" class="btn btn-rel">
-                                <p style="margin-left: -5px;margin-top: -10px;">cremas</p>
+                <div class="card zoom2 shadow" style="width: 18rem;  background:#FFFFFF;">
+                    <div class="card-body">
+
+                        <div class="text-center bg " style="">
+                            <a  href="{{action('TiendaController@detalleproducto', ['producto' => $producto->id ])}}" method="GET">
+                        @csrf
+                        @if($producto->img == null)
+                              <img class="mx-auto d-block  img-fluid "
+                               src="{{asset('assets/img/home/producto21.png')}}"
+                               alt="Product Image"
+                              >
+                       @else
+                             <img class="mx-auto d-block  img-fluid w-100"
+                                  src="{{ asset('storage/photo-producto/'.$producto->img) }}"
+                                  alt="Product Image"
+                                  style="height: 15.3rem;">
+                       @endif
                             </a>
-                            <p class="text-right" style="color:black;font-size:20px;"> <strong>$31</strong></p>
-                            <h4 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h4>
-                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget
-                                porttitor.</p>
-                        </div>
                     </div>
-                </div>
-                <div class="card col-md-3" style="background: white">
-                    <div class="product text-center">
-                        <p class="text-center card-h">
-                            <img class="mx-auto d-block img-ho" src="{{asset('assets/img/home/producto21.png')}}">
-                        </p>
-                        <div class="card-body">
-                            <a href="" class="btn btn-rel">
-                                <p style="margin-left: -5px;margin-top: -10px;">cremas</p>
-                            </a>
-                            <p class="text-right" style="color:black;font-size:20px;"> <strong>$31</strong></p>
-                            <h4 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h4>
-                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget
-                                porttitor.</p>
-                        </div>
+                    <button href="" class="btn-cre custominput">
+                        <p class="" >{{ ucfirst($producto->getCategories->categories_name)}}</p>
+                    </button>
+                <a class=" blok text-right" style="color: #303030; font-size: 20px; float: right;">
+                    <strong>${{$producto->price}}</strong></a>
+
+                      <h5 class="card-title"><strong> {{$producto->name}} </strong> </h5>
+                      <p class="card-text text-dark mb-1">{{ Str::words( strip_tags($producto->description) , 10 )}}</p>
+
                     </div>
-                </div>
-                <div class="card col-md-3" style="background: white">
-                    <div class="product text-center">
-                        <p class="text-center card-h">
-                            <img class="mx-auto d-block img-ho" src="{{asset('assets/img/home/producto21.png')}}">
-                        </p>
-                        <div class="card-body">
-                            <a href="" class="btn btn-rel">
-                                <p style="margin-left: -5px;margin-top: -10px;">cremas</p>
-                            </a>
-                            <p class="text-right" style="color:black;font-size:20px;"> <strong>$31</strong></p>
-                            <h4 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h4>
-                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget
-                                porttitor.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-md-3" style="background: white">
-                    <div class="product text-center">
-                        <p class="text-center card-h">
-                            <img class="mx-auto d-block img-ho" src="{{asset('assets/img/home/producto21.png')}}">
-                        </p>
-                        <div class="card-body">
-                            <a href="" class="btn btn-rel">
-                                <p style="margin-left: -5px;margin-top: -10px;">cremas</p>
-                            </a>
-                            <p class="text-right" style="color:black;font-size:20px;"> <strong>$31</strong></p>
-                            <h4 class="text-left" style="color:black;"><strong>Pomada CBD</strong></h4>
-                            <p class="text-left" style="color:#303030;">Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Amet lobortis venenatis vel integer. Odio feugiat tortor eget
-                                porttitor.</p>
-                        </div>
-                    </div>
-                </div>
+                  </div>
+
+              </div>
+              @endforeach
+            </div>
 
             </div>
 

@@ -224,15 +224,16 @@ Route::prefix('')->middleware('menu', 'auth')->group(function ()
 
     Route::delete('cart-deleteGUES/{producto}', 'TiendaController@destroyGUES')->name('destroyGUES')->withoutMiddleware(['auth']);
 
+    Route::get('/MisCompras','TiendaController@misCompras' )->name('MisCompras');
 
     });
 });
 
 Route::get('test', function(){
    // Cart::add('222', 'Product 123', 1, 9.99);
-    
+
     foreach(Cart::instance('shopping')->content()->sortByDesc('id') as $item){
-        dd($item->model->name);    
+        dd($item->model->name);
     }
     return Cart::content();
 });
