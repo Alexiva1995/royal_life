@@ -156,7 +156,9 @@ background-color: #fd5d73 ;
                     <div class="table-responsive mt-2">
                         <table class="table nowrap scroll-horizontal-vertical myTable table-striped">
                             <thead class="">
-                                @if(!empty($producto))
+
+                                @if(count($producto)>0)
+
                                 <tr class="text-center text-white bg-purple-alt2">
                                     <th>Imagen</th>
                                     <th>Nombre</th>
@@ -172,11 +174,7 @@ background-color: #fd5d73 ;
 
                         @foreach ($producto as $item )
                         <tr class="text-center text-dark">
-
-
-
                         <td>
-
                        @if($item->model->img == null)
                         <img class="o"
 
@@ -185,13 +183,11 @@ background-color: #fd5d73 ;
 
                         @else
 
-                        <img src="{{ asset('storage/photo-producto/'.$item->model->img) }}" class="rounded ml-1" alt="" height="100" width="100">
+                        <img src="{{ asset('storage/photo-producto/'.$item->model->img) }}"
+                        class="rounded ml-1" alt="" height="100" width="100">
 
                         @endif
                             </td>
-
-
-
 
                             <td class="text-dark">{{$item->name}}</td>
                             <td class="text-dark">{{$item->options->categoria_name}}</td>
@@ -257,7 +253,7 @@ background-color: #fd5d73 ;
                         @else
 
                         <div class="alert alert-danger text-center">
-                           <h4 style="color: #fd5d73"> <strong> Carrito Vacio </strong> </h4>
+                           <h1 class="feather icon-shopping-cart" style="color: #fd5d73">  <strong class="fuente ">Vacio</strong> </h1>
                         </div>
 
                         @endif
@@ -361,7 +357,7 @@ background-color: #fd5d73 ;
                     <button href="" class="btn-cre custominput">
                         <p class="" >{{ ucfirst($producto->getCategories->categories_name)}}</p>
                     </button>
-                <a class=" blok text-right" style="color: #303030; font-size: 20px; float: right;">
+                      <a class=" blok text-right" style="color: #303030; font-size: 20px; float: right;">
                     <strong>${{$producto->price}}</strong></a>
 
                       <h5 class="card-title"><strong> {{$producto->name}} </strong> </h5>

@@ -3,6 +3,7 @@
 use App\Http\Controllers\TiendaController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Artisan;
 /*+
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,11 +14,30 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('/clear', function() {
+    $exitCode = Artisan::call('cache:clear');
+    $exitCode = Artisan::call('config:cache');
+    $exitCode = Artisan::call('view:clear');
+    $exitCode = Artisan::call('route:clear');
+    // Mail::send('correo.subcripcion', ['data' => []], function ($correo2)
+    //     {
+    //         $correo2->subject('Limpio el sistema');
+    //         $correo2->to('cgonzalez.byob@gmail.com');
+    //     });
+    return 'DONE'; //Return anything
+});
+Route::get('/optimize', function() {
+    $exitCode = Artisan::call('optimize');
+    return 'DONE'; //Return anything
+});
+Route::get('/storage-link', function() {
+    $exitCode = Artisan::call('storage:link');
+    return 'DONE'; //Return anything
+});
 
 Route::post('/user/login', 'UserController@login')->name('users.login');
 
-Route::get('/', 'InicioController@home')->name('inicio.index');
+
 
 Auth::routes();
 
@@ -25,6 +45,7 @@ Auth::routes();
 
 Route::prefix('')->middleware('menu', 'auth')->group(function ()
 {
+    Route::get('/', 'InicioController@home')->name('inicio.index')->withoutMiddleware(['menu','auth']);
     // Inicio
     Route::get('/home', 'HomeController@index')->name('home');
      // Inicio de usuarios
@@ -189,40 +210,40 @@ Route::prefix('')->middleware('menu', 'auth')->group(function ()
     //Route::get('/inicio', 'HomeController@home')->name('inicio');
 
 
-    Route::get('/about', 'HomeController@about')->name('about')->withoutMiddleware(['auth']);
+    Route::get('/about', 'HomeController@about')->name('about')->withoutMiddleware(['menu','auth']);
 
-    Route::get('/contact_us', 'HomeController@contact_us')->name('contact_us')->withoutMiddleware(['auth']);
+    Route::get('/contact_us', 'HomeController@contact_us')->name('contact_us')->withoutMiddleware(['menu','auth']);
 
-    Route::post('/contactar', 'HomeController@contact')->name('contact')->withoutMiddleware(['auth']);
+    Route::post('/contactar', 'HomeController@contact')->name('contact')->withoutMiddleware(['menu','auth']);
 
-    Route::get('/faq', 'HomeController@faq')->name('faq')->withoutMiddleware(['auth']);;
+    Route::get('/faq', 'HomeController@faq')->name('faq')->withoutMiddleware('menu',['auth']);;
 
-    Route::get('/shop', 'TiendaController@shop')->name('shop.backofice')->withoutMiddleware(['auth']);
+    Route::get('/shop', 'TiendaController@shop')->name('shop.backofice')->withoutMiddleware(['menu','auth']);
 
-    Route::get('/cart', 'TiendaController@cart')->name('cart')->withoutMiddleware(['auth']);
+    Route::get('/cart', 'TiendaController@cart')->name('cart')->withoutMiddleware(['menu','auth']);
 
-    Route::post('/cart-GUEST', 'TiendaController@cart')->name('cart.GUEST')->withoutMiddleware(['auth']);
+    Route::post('/cart-GUEST', 'TiendaController@cart')->name('cart.GUEST')->withoutMiddleware(['menu','auth']);
 
 
-    Route::post('/cart-post', 'TiendaController@cart_save')->name('cart.post')->withoutMiddleware(['auth']);
+    Route::post('/cart-post', 'TiendaController@cart_save')->name('cart.post')->withoutMiddleware(['menu','auth']);
 
     Route::patch('cart-update/{id}', 'TiendaController@updateCart')->name('cart.update');
 
-    Route::get('/checkout', 'TiendaController@checkout')->name('checkout.backofice')->withoutMiddleware(['auth']);
+    Route::get('/checkout', 'TiendaController@checkout')->name('checkout.backofice')->withoutMiddleware(['menu','auth']);
 
-    Route::get('/product-detail/{producto}', 'TiendaController@detalleproducto')->name('detalle.producto')->withoutMiddleware(['auth']);
+    Route::get('/product-detail/{producto}', 'TiendaController@detalleproducto')->name('detalle.producto')->withoutMiddleware(['menu','auth']);
 
-    Route::get('terms', 'HomeController@terms')->name('terms')->withoutMiddleware(['auth']);
+    Route::get('terms', 'HomeController@terms')->name('terms')->withoutMiddleware(['menu','auth']);
 
-    Route::get('policity', 'HomeController@policity')->name('policity')->withoutMiddleware(['auth']);
+    Route::get('policity', 'HomeController@policity')->name('policity')->withoutMiddleware(['menu','auth']);
 
-    Route::get('/categoria/{Categories}', 'CategoriasController@show')->name('categorias.show')->withoutMiddleware(['auth']);
+    Route::get('/categoria/{Categories}', 'CategoriasController@show')->name('categorias.show')->withoutMiddleware(['menu','auth']);
 
-    Route::post('orden', 'TiendaController@orden')->name('orden');
+    Route::get('orden', 'TiendaController@orden')->name('orden');
 
     Route::delete('cart-delete/{producto}', 'TiendaController@destroy')->name('destroy');
 
-    Route::delete('cart-deleteGUES/{producto}', 'TiendaController@destroyGUES')->name('destroyGUES')->withoutMiddleware(['auth']);
+    Route::delete('cart-deleteGUES/{producto}', 'TiendaController@destroyGUES')->name('destroyGUES')->withoutMiddleware(['menu','auth']);
 
     Route::get('/MisCompras','TiendaController@misCompras' )->name('MisCompras');
 
