@@ -6,6 +6,14 @@
         display: none;
 
 }
+.fondo{
+    z-index: 8;
+    background-image:url('../img/formas_fondo1.png');
+    background-size: cover;
+    background-position: top center;
+    max-width: 102.8% !important;
+    min-width: 20em !important;
+}
 .cir{
     position: relative;
     left: 3.5% !important;

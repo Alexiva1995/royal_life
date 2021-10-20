@@ -733,6 +733,8 @@ public function cart(Request $request)
         $productosMasVendidos = Packages::take(9)->get();
         $productos = Packages::take(4)->get();
 
+        //dd($producto);
+
         return view('backofice.cart',compact('producto','productos'));
     }
     public function cart_save(Request $request)

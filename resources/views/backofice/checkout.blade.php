@@ -132,7 +132,7 @@ background-color: #66FFCC;
 
 
 <div class="mt-5 ml-10 pb-5 container ">
-    <form method="POST" action="{{route('orden')}}" class="credit-card-div fuente">
+    <form method="GET" action="{{route('orden')}}" class="credit-card-div fuente">
         @csrf
     <div class="row d-flex">
     <div class="col-5  ml-5 " style="background: #ffffff;">
@@ -357,7 +357,7 @@ background-color: #66FFCC;
 
 
 <div class="mt-5 ml-10 pb-5 container ">
-    <form method="POST" action="{{route('orden')}}" class="credit-card-div fuente">
+    <form method="GET" action="{{route('orden')}}" class="credit-card-div fuente">
         @csrf
     <div class="row d-flex">
     <div class="col-5  ml-5 " style="background: #ffffff;">
@@ -372,7 +372,7 @@ background-color: #66FFCC;
                             <span class="help-block text-muted text textcustom  control-span">Nombres<sup
                                     class="requerido">*</sup>
                             </span>
-                            <input name="name" type="text" class="custominput text-dark mt-1 form-control"
+                            <input required name="name" type="text" class="custominput text-dark mt-1 form-control"
                                 style="background:  #F6F6F7;" value="" />
                                 @error('name')
                                     <span class="invalid-feedback d-block" role="alert">
@@ -578,7 +578,7 @@ background-color: #66FFCC;
                 <span aria-hidden="true">&times;</span>
             </button>
             </div>
-               <form method="post" action="{{route('users.login')}}">
+               <form method="POST" action="{{route('users.login')}}">
             @csrf
             <div class="modal-body">
                 <div class="form-group">
